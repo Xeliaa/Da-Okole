@@ -1,0 +1,716 @@
+<configs>
+<!-- LEGEND -->
+
+<!-- MODDING LUCK PERKS -->
+<!-- MODDING HUMANITY PERKS -->
+<!-- PVE -->
+<!-- PVP -->
+<!-- MODDING MUTATION PERKS -->
+	<append xpath="/progression/attributes">
+    <attribute name="attLuck" name_key="attLuckName" desc_key="attLuckDesc" icon="ui_game_symbol_skull_crusher"> 
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="1" desc_key="reqPlayerAndPoint1"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="3" desc_key="reqPlayerAndPoint2"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="5" desc_key="reqPlayerAndPoint3"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqPlayerAndPoint4"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="15" desc_key="reqPlayerAndPoint5"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqPlayerAndPoint6"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="25" desc_key="reqPlayerAndPoint7"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqPlayerAndPoint8"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqPlayerAndPoint9"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqPlayerAndPoint10"/></level_requirements>
+			<effect_group>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0" level="1"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.04,0.2" level="2,10"/>
+			<passive_effect name="CraftingTime" operation="perc_subtract" value="0.02,0.2" level="1,10"/>
+			
+			<triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="self" buff="buffFightingExp">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffFightingExp">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="2"/>
+			</triggered_effect>
+			
+			<effect_description level="1" desc_key="attLuckRank1Desc"/>
+			<effect_description level="2" desc_key="attLuckRank2Desc"/>
+			<effect_description level="3" desc_key="attLuckRank3Desc"/>
+			<effect_description level="4" desc_key="attLuckRank4Desc"/>
+			<effect_description level="5" desc_key="attLuckRank5Desc"/>
+			<effect_description level="6" desc_key="attLuckRank6Desc"/>
+			<effect_description level="7" desc_key="attLuckRank7Desc"/>
+			<effect_description level="8" desc_key="attLuckRank8Desc"/>
+			<effect_description level="9" desc_key="attLuckRank9Desc"/>
+			<effect_description level="10" desc_key="attLuckRank10Desc"/>
+			
+			</effect_group>
+	</attribute>
+	
+	<attribute name="attHumanity" name_key="attHumanityName" desc_key="attHumanityDesc" icon="ui_game_symbol_talk"> 
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="10" desc_key="reqPlayerAndPoint1"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqPlayerAndPoint2"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="30" desc_key="reqPlayerAndPoint3"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqPlayerAndPoint4"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="reqPlayerAndPoint5"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqPlayerAndPoint6"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="70" desc_key="reqPlayerAndPoint7"/></level_requirements>
+		<level_requirements level="8"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqPlayerAndPoint8"/></level_requirements>
+		<level_requirements level="9"><requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="reqPlayerAndPoint9"/></level_requirements>
+		<level_requirements level="10"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqPlayerAndPoint10"/></level_requirements>
+			<effect_group>
+			<passive_effect name="HealthMax" operation="perc_add" value="0.01,0.09" level="1,9"/>
+			<passive_effect name="HealthMax" operation="perc_add" value="0.1" level="10"/>
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.01,0.09" level="1,9"/>
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.1" level="10"/>
+			
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="0.05,0.5" level="1,10"/>
+			
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.00833" level="1"/> <!-- every 120 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.01" level="2"/> <!-- every 100 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.0111" level="3"/> <!-- every 90 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.0125" level="4"/> <!-- every 80 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.01428" level="5"/> <!-- every 70 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.01666" level="6"/> <!-- every 60 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.02" level="7"/> <!-- every 50 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.025" level="8"/> <!-- every 40 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.0333" level="9"/> <!-- every 30 sek  -->
+			<passive_effect name="HealthChangeOT" operation="base_add" value="0.05" level="10"/> <!-- every 20 sek  -->
+			
+			<effect_description level="1" desc_key="attHumanityRank1Desc"/>
+			<effect_description level="2" desc_key="attHumanityRank2Desc"/>
+			<effect_description level="3" desc_key="attHumanityRank3Desc"/>
+			<effect_description level="4" desc_key="attHumanityRank4Desc"/>
+			<effect_description level="5" desc_key="attHumanityRank5Desc"/>
+			<effect_description level="6" desc_key="attHumanityRank6Desc"/>
+			<effect_description level="7" desc_key="attHumanityRank7Desc"/>
+			<effect_description level="8" desc_key="attHumanityRank8Desc"/>
+			<effect_description level="9" desc_key="attHumanityRank9Desc"/>
+			<effect_description level="10" desc_key="attHumanityRank10Desc"/>
+			
+			</effect_group>
+	</attribute>
+	
+	<attribute name="attMutation" name_key="attMutationName" max_level="7" desc_key="attMutationDesc" icon="ui_game_symbol_forge" icon_color="255,0,0"> 
+		<level_requirements level="1"><requirement name="PlayerLevel" target="self" operation="GTE" value="20" desc_key="reqLvAndPoint20"/></level_requirements>
+		<level_requirements level="2"><requirement name="PlayerLevel" target="self" operation="GTE" value="40" desc_key="reqLvAndPoint40"/></level_requirements>
+		<level_requirements level="3"><requirement name="PlayerLevel" target="self" operation="GTE" value="60" desc_key="reqLvAndPoint60"/></level_requirements>
+		<level_requirements level="4"><requirement name="PlayerLevel" target="self" operation="GTE" value="80" desc_key="reqLvAndPoint80"/></level_requirements>
+		<level_requirements level="5"><requirement name="PlayerLevel" target="self" operation="GTE" value="100" desc_key="reqLvAndPoint100"/></level_requirements>
+		<level_requirements level="6"><requirement name="PlayerLevel" target="self" operation="GTE" value="125" desc_key="reqLvAndPoint125"/></level_requirements>
+		<level_requirements level="7"><requirement name="PlayerLevel" target="self" operation="GTE" value="150" desc_key="reqLvAndPoint150"/></level_requirements>
+			<effect_group>
+			<passive_effect name="HypothermalResist" operation="base_add" value="0" level="1"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="0" level="1"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="10,25" level="2,5"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="10,25" level="2,5"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.04,0.1" level="2,5"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.04,0.2" level="2,5"/>
+			
+			<passive_effect name="CraftingTime" operation="perc_subtract" level="6" value="0.20"/>
+			<passive_effect name="CriticalChance" operation="perc_add" level="7" value="0.05"/>
+			
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadStorm">
+				<requirement name="EntityTagCompare" target="other" tags="radiated"/>
+			</triggered_effect>
+			
+			<effect_description level="1" desc_key="attMutationRank1Desc"/>
+			<effect_description level="2" desc_key="attMutationRank2Desc"/>
+			<effect_description level="3" desc_key="attMutationRank3Desc"/>
+			<effect_description level="4" desc_key="attMutationRank4Desc"/>
+			<effect_description level="5" desc_key="attMutationRank5Desc"/>
+			<effect_description level="6" desc_key="attMutationRank6Desc"/>
+			<effect_description level="7" desc_key="attMutationRank7Desc"/>
+			
+			</effect_group>
+	</attribute>
+    </append>
+ 
+ 
+ 
+       <append xpath="/progression/skills" >
+			<skill name="skillManiac" parent="attLuck" name_key="skillManiacName" desc_key="skillManiacDesc" icon="ui_game_symbol_resource"><effect_group/></skill>
+			<skill name="skillExplorer" parent="attLuck" name_key="skillExplorerName" desc_key="skillExplorerDesc" icon="ui_game_symbol_hand"><effect_group/></skill>
+			
+			<skill name="skillPeacefull" parent="attHumanity" name_key="skillPeacefullName" desc_key="skillPeacefullDesc" icon="ui_game_symbol_cardio"><effect_group/></skill>
+			<skill name="skillBelligerent" parent="attHumanity" name_key="skillBelligerentName" desc_key="skillBelligerentDesc" icon="ui_game_symbol_skull_crusher"><effect_group/></skill>
+			
+			<skill name="skillPhaseA" parent="attMutation" name_key="skillPhaseAName" desc_key="skillPhaseADesc" icon="ui_game_symbol_skull_crusher" icon_color="0,255,0"><effect_group/></skill>
+			<skill name="skillPhaseB" parent="attMutation" name_key="skillPhaseBName" desc_key="skillPhaseBDesc" icon="ui_game_symbol_skull_crusher" icon_color="0,255,255"><effect_group/></skill>
+			<skill name="skillPhaseC" parent="attMutation" name_key="skillPhaseCName" desc_key="skillPhaseCDesc" icon="ui_game_symbol_skull_crusher" icon_color="255,255,0"><effect_group/></skill>
+        </append>
+		
+		
+		
+       <append xpath="/progression/perks">
+<!-- MODDING LUCK PERKS -->
+	<perk name="perkInventor" parent="skillManiac" max_level="4" name_key="perkInventorName" desc_key="perkInventorDesc" icon="ui_game_symbol_forge">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="2" desc_key="reqattLuckLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="4" desc_key="reqattLuckLevel4"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="6" desc_key="reqattLuckLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="8" desc_key="reqattLuckLevel8"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,4" tags="forgedTungsten,fireaxeTungsten,shovelTungsten,cryoArrow,recurvedBow,dirtyBomb"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,4" tags="scimitar,specialArrow,militaryBow,sledgehammerTungsten,steelSpikesNew,automaticWrench"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,4" tags="slicerKnife,toxicArrow,powercrossbow,pickaxeDiamondCarbon,"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4" tags="excalibur,nukeArrow,gunActionCombatShotgun,ammoShotgunHE,barrageArrow,barrageBow"/>
+			<effect_description level="1" desc_key="perkInventorRank1Desc"/>
+			<effect_description level="2" desc_key="perkInventorRank2Desc"/>
+			<effect_description level="3" desc_key="perkInventorRank3Desc"/>
+			<effect_description level="4" desc_key="perkInventorRank4Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkHardened" parent="skillManiac" max_level="3" name_key="perkHardenedName" desc_key="perkHardenedDesc" icon="ui_game_symbol_medical">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="3" desc_key="reqattLuckLevel3"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="6" desc_key="reqattLuckLevel6"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="9" desc_key="reqattLuckLevel9"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="HealthMax" operation="perc_add" value="0.1,0.3" level="1,2"/>
+			<passive_effect name="HealthMax" operation="perc_add" value="0.5" level="3"/>
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.1,0.3" level="1,2"/>
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.5" level="3"/>
+			
+			<effect_description level="1" desc_key="perkHardenedRank1Desc"/>
+			<effect_description level="2" desc_key="perkHardenedRank2Desc"/>
+			<effect_description level="3" desc_key="perkHardenedRank3Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkRodent" parent="skillExplorer" max_level="5" name_key="perkRodentName" desc_key="perkRodentDesc" icon="ui_game_symbol_bat">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="1" desc_key="reqattLuckLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="3" desc_key="reqattLuckLevel3"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="5" desc_key="reqattLuckLevel5"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="7" desc_key="reqattLuckLevel7"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="9" desc_key="reqattLuckLevel9"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.05,0.20" level="1,4"/>
+			<passive_effect name="ScavengingTime" operation="perc_subtract" value="0.25" level="5"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.04,0.16" level="1,4"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.2" level="5"/>
+			
+			<effect_description level="1" desc_key="perkRodentRank1Desc"/>
+			<effect_description level="2" desc_key="perkRodentRank2Desc"/>
+			<effect_description level="3" desc_key="perkRodentRank3Desc"/>
+			<effect_description level="4" desc_key="perkRodentRank4Desc"/>
+			<effect_description level="5" desc_key="perkRodentRank5Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkDweller76" parent="skillExplorer" max_level="3" name_key="perkDweller76Name" desc_key="perkDweller76Desc" icon="ui_game_symbol_talk">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="3" desc_key="reqattLuckLevel3"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="6" desc_key="reqattLuckLevel6"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="9" desc_key="reqattLuckLevel9"/></level_requirements>
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.1,0.3" level="1,3" />
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.1" level="1"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.2" level="2"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.3" level="3"/>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3" tags="foodPerfectPreservedPie"/>
+
+			<effect_description level="1" desc_key="perkDweller76Rank1Desc"/>
+			<effect_description level="2" desc_key="perkDweller76Rank2Desc"/>
+			<effect_description level="3" desc_key="perkDweller76Rank3Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkPrivateer" max_level="2" parent="skillExplorer" name_key="perkPrivateerName" desc_key="perkPrivateerDesc" icon="ui_game_symbol_mother_load">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="5" desc_key="reqattLuckLevel5"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="10" desc_key="reqattLuckLevel10"/></level_requirements>
+
+		<effect_group>
+
+			<passive_effect name="HarvestCount" operation="perc_add" value="0.25,0.5" level="1,2" tags="oreWoodHarvest"/>
+			
+			<effect_description level="1" desc_key="perkPrivateerRank1Desc"/>
+			<effect_description level="2" desc_key="perkPrivateerRank2Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkMasterButcher" max_level="2" parent="skillManiac" name_key="perkMasterButcherName" desc_key="perkMasterButcherDesc" icon="ui_game_symbol_archery">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="5" desc_key="reqattLuckLevel5"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="10" desc_key="reqattLuckLevel10"/></level_requirements>
+
+		<effect_group>
+
+			<passive_effect name="HarvestCount" operation="perc_add" value="0.25,0.5" level="1,2" tags="butcherHarvest"/>
+			
+			<effect_description level="1" desc_key="perkMasterButcherRank1Desc"/>
+			<effect_description level="2" desc_key="perkMasterButcherRank2Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkWeatherProof" max_level="4" parent="skillExplorer" name_key="perkWeatherProofName" desc_key="perkWeatherProofDesc" icon="ui_game_symbol_temperature">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="2" desc_key="reqattLuckLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="5" desc_key="reqattLuckLevel5"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="7" desc_key="reqattLuckLevel7"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="10" desc_key="reqattLuckLevel10"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="HypothermalResist" operation="base_add" value="8,32" level="1,4"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="8,32" level="1,4"/>
+
+			<effect_description level="1" desc_key="perkWeatherProofRank1Desc" />
+			<effect_description level="2" desc_key="perkWeatherProofRank1Desc" />
+			<effect_description level="3" desc_key="perkWeatherProofRank1Desc" />
+			<effect_description level="4" desc_key="perkWeatherProofRank1Desc" />
+
+		</effect_group>
+	</perk>
+		
+	<perk name="perkGoFaster" max_level="3" parent="skillManiac" name_key="perkGoFasterName" desc_key="perkGoFasterDesc" icon="ui_game_symbol_archery">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="3" desc_key="reqattLuckLevel3"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="6" desc_key="reqattLuckLevel7"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="9" desc_key="reqattLuckLevel7"/></level_requirements>
+
+		<effect_group>
+
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.07,0.15" level="1,2"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.225" level="3"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.10,0.20" level="1,2"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.3" level="3"/>
+			<passive_effect name="CrouchSpeed" operation="perc_add" value="0.15,0.30" level="1,2"/>
+			<passive_effect name="CrouchSpeed" operation="perc_add" value="0.40" level="3"/>
+			
+			<effect_description level="1" desc_key="perkGoFasterRank1Desc"/>
+			<effect_description level="2" desc_key="perkGoFasterRank2Desc"/>
+			<effect_description level="3" desc_key="perkGoFasterRank3Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkWaterFactor" max_level="4" parent="skillManiac" name_key="perkWaterFactor" desc_key="perkWaterFactorDesc" icon="ui_game_symbol_healing_factor">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="1" desc_key="reqattLuckLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="3" desc_key="reqattLuckLevel3"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="6" desc_key="reqattLuckLevel6"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="10" desc_key="reqattLuckLevel10"/></level_requirements>
+		<effect_group>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="0.25" level="1"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="0.5" level="2"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="0.75" level="3"/>
+			<passive_effect name="StaminaChangeOT" operation="base_add" value="0.10" level="4"/>
+			
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.0625,0.125" level="1,2"/>
+			<passive_effect name="StaminaMax" operation="perc_add" value="0.187,0.25" level="3,4"/>
+		</effect_group>
+
+		<effect_group>
+			<effect_description level="1" desc_key="perkWaterFactorRank1Desc"/>
+			<effect_description level="2" desc_key="perkWaterFactorRank2Desc"/>
+			<effect_description level="3" desc_key="perkWaterFactorRank3Desc"/>
+			<effect_description level="4" desc_key="perkWaterFactorRank4Desc"/>
+		</effect_group>
+	</perk>
+	
+	<perk name="perkImmortalCall" max_level="5" parent="skillManiac" name_key="perkImmortalCall" desc_key="perkImmortalCallDesc" icon="ui_game_symbol_healing_factor">
+		<level_requirements level="1">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="5" desc_key="reqattLuckLevel5"/>
+				<requirement name="PlayerLevel" target="self" operation="GTE" value="36" desc_key="Player Level 36"/>
+		</level_requirements>
+		<level_requirements level="2">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="7" desc_key="reqattLuckLevel7"/>
+				<requirement name="PlayerLevel" target="self" operation="GTE" value="50" desc_key="Player Level 50"/>
+		</level_requirements>
+		<level_requirements level="3">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="8" desc_key="reqattLuckLevel8"/>
+				<requirement name="PlayerLevel" target="self" operation="GTE" value="72" desc_key="Player Level 72"/>
+		</level_requirements>
+		<level_requirements level="4">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="9" desc_key="reqattLuckLevel9"/>
+				<requirement name="PlayerLevel" target="self" operation="GTE" value="90" desc_key="Player Level 90"/>
+		</level_requirements>
+		<level_requirements level="5">
+				<requirement name="ProgressionLevel" progression_name="attLuck" operation="GTE" value="10" desc_key="reqattLuckLevel10"/>
+				<requirement name="PlayerLevel" target="self" operation="GTE" value="125" desc_key="Player Level 125"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffImmortalCall">
+				<requirement name="ProgressionLevel" progression_name="perkImmortalCall" operation="GTE" value="1"/>
+				<requirement name="NotHasBuff" target="self" buff="buffImmortalCall_Cooldown"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.2"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffImmortalCallRestore">
+				<requirement name="ProgressionLevel" progression_name="perkImmortalCall" operation="GTE" value="1"/>
+				<requirement name="hasBuff" target="self" buff="buffImmortalCall_Cooldown"/>
+			</triggered_effect>	
+
+			<effect_description level="1" desc_key="perkImmortalCallRank1Desc"/>
+			<effect_description level="2" desc_key="perkImmortalCallRank2Desc"/>
+			<effect_description level="3" desc_key="perkImmortalCallRank3Desc"/>
+			<effect_description level="4" desc_key="perkImmortalCallRank4Desc"/>
+			<effect_description level="5" desc_key="perkImmortalCallRank5Desc"/>
+		</effect_group>
+	</perk>
+<!-- MODDING HUMANITY PERKS -->
+
+<!-- PVE -->
+<!-- SKILLS 
+<skill name="skillPeacefull" parent="attHumanity" name_key="skillPeacefullName" desc_key="skillPeacefullDesc" icon="ui_game_symbol_cardio"><effect_group/></skill>
+<skill name="skillBelligerent" parent="attHumanity" name_key="skillBelligerentName" desc_key="skillBelligerentDesc" icon="ui_game_symbol_skull_crusher"><effect_group/></skill>
+-->
+<perk name="perkMuscleUp" parent="skillPeacefull" max_level="5" name_key="perkMuscleUpName" desc_key="perkMuscleUpDesc" icon="ui_game_symbol_muscle">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="1" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="3" desc_key="reqattHumanityLevel3"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="4" desc_key="reqattHumanityLevel4"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.05,0.20" level="1,4"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.25" level="5"/>
+			
+			<effect_description level="1" desc_key="perkMuscleUpRank1Desc"/>
+			<effect_description level="2" desc_key="perkMuscleUpRank2Desc"/>
+			<effect_description level="3" desc_key="perkMuscleUpRank3Desc"/>
+			<effect_description level="4" desc_key="perkMuscleUpRank4Desc"/>
+			<effect_description level="5" desc_key="perkMuscleUpRank5Desc"/>
+		</effect_group>
+</perk>
+	
+<perk name="perkLifesteal" parent="skillPeacefull" max_level="4" name_key="perkLifestealName" desc_key="perkLifestealDesc" icon="ui_game_symbol_bat">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="8" desc_key="reqattHumanityLevel8"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="10" desc_key="reqattHumanityLevel10"/></level_requirements>
+
+		<effect_group>
+		<!-- Triggered HEALING ONLY WITH MELEE WEAPONS -->
+		<requirement name="HoldingItemHasTags" tags="melee"/>
+		<requirement name="EntityTagCompare" target="other" tags="zombie"/>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffLifesteal_heal1">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="1"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="4"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffLifesteal_heal2">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="2"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="9"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffLifesteal_heal3">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="3"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+			</triggered_effect>	
+		
+		<!-- If get Healed, Debuff implicted -->
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="zombie" buff="buffLifesteal_damage1">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffLifesteal_heal1"/>
+			</triggered_effect>
+		
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="zombie" buff="buffLifesteal_damage2">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffLifesteal_heal2"/>
+			</triggered_effect>
+		
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" target_tags="zombie" buff="buffLifesteal_damage3">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="GTE" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffLifesteal_heal3"/>
+			</triggered_effect>	
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="otherAOE" range="3" target_tags="zombie" buff="buffLifesteal_damage3">
+				<requirement name="ProgressionLevel" progression_name="perkLifesteal" operation="Equals" value="4"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10"/>
+				<requirement name="HasBuff" target="self" buff="buffLifesteal_heal3"/>
+			</triggered_effect>	
+		
+			<effect_description level="1" desc_key="perkLifestealRank1Desc"/>
+			<effect_description level="2" desc_key="perkLifestealRank2Desc"/>
+			<effect_description level="3" desc_key="perkLifestealRank3Desc"/>
+			<effect_description level="4" desc_key="perkLifestealRank4Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkCollector" parent="skillPeacefull" max_level="4" name_key="perkCollectorName" desc_key="perkCollectorDesc" icon="ui_game_symbol_tree">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="1" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="4" desc_key="reqattHumanityLevel4"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="HarvestCount" operation="base_add" value="1" level="1" tags="cropHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="1" level="1" tags="wildCropsHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="2" level="3" tags="cropHarvest"/>
+			<passive_effect name="HarvestCount" operation="base_add" value="2" level="3" tags="wildCropsHarvest"/>
+			
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.1" level="2"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.25" level="4"/>
+
+			<effect_description level="1" desc_key="perkCollectorRank1Desc" />
+			<effect_description level="2" desc_key="perkCollectorRank2Desc" />
+			<effect_description level="3" desc_key="perkCollectorRank3Desc" />
+			<effect_description level="4" desc_key="perkCollectorRank4Desc" />
+		</effect_group>
+</perk>
+
+<perk name="perkLastBreath" parent="skillPeacefull" max_level="2" name_key="perkLastBreathName" desc_key="perkLastBreathDesc" icon="ui_game_symbol_talk">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="1" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<effect_group>
+			<!-- OTHER DAMAGED YOU -->
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffLastBreath1">
+				<requirement name="ProgressionLevel" progression_name="perkLastBreath" operation="Equals" value="1"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.1"/>
+				<requirement name="NotHasBuff" target="self" buff="buffLastBreath_Cooldown"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffLastBreath2">
+				<requirement name="ProgressionLevel" progression_name="perkLastBreath" operation="Equals" value="2"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.1"/>
+				<requirement name="NotHasBuff" target="self" buff="buffLastBreath_Cooldown"/>
+			</triggered_effect>
+			
+			<!-- SELF DAMAGE -->
+			<triggered_effect trigger="onSelfDamagedSelf" action="AddBuff" target="self" buff="buffLastBreath1">
+				<requirement name="ProgressionLevel" progression_name="perkLastBreath" operation="Equals" value="1"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.1"/>
+				<requirement name="NotHasBuff" target="self" buff="buffLastBreath_Cooldown"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfDamagedSelf" action="AddBuff" target="self" buff="buffLastBreath2">
+				<requirement name="ProgressionLevel" progression_name="perkLastBreath" operation="Equals" value="2"/>
+				<requirement name="StatComparePercCurrentToModMax" stat="Health" operation="LTE" value="0.1"/>
+				<requirement name="NotHasBuff" target="self" buff="buffLastBreath_Cooldown"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkLastBreathRank1Desc" />
+			<effect_description level="2" desc_key="perkLastBreathRank2Desc" />
+		</effect_group>
+</perk>
+
+<perk name="perkImmortal" parent="skillPeacefull" max_level="10" name_key="perkImmortalName" desc_key="perkImmortalDesc" icon="ui_game_symbol_muscle">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="1" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="3" desc_key="reqattHumanityLevel3"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="4" desc_key="reqattHumanityLevel4"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+		<level_requirements level="6"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="6" desc_key="reqattHumanityLevel6"/></level_requirements>
+		<level_requirements level="7"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="7" desc_key="reqattHumanityLevel7"/></level_requirements>
+		<level_requirements level="8"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="8" desc_key="reqattHumanityLevel8"/></level_requirements>
+		<level_requirements level="9"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="9" desc_key="reqattHumanityLevel9"/></level_requirements>
+		<level_requirements level="10"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="10" desc_key="reqattHumanityLevel10"/></level_requirements>
+
+		<effect_group>
+			<passive_effect name="HealthMax" operation="base_add" value="5,50" level="1,10"/>
+			<passive_effect name="StaminaMax" operation="base_add" value="1.25,12.5" level="1,10"/>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffInstanthealA">
+				<requirement name="ProgressionLevel" progression_name="perkImmortal" operation="GTE" value="5"/>
+				<requirement name="ProgressionLevel" progression_name="perkImmortal" operation="LTE" value="9"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onOtherAttackedSelf" action="AddBuff" target="self" buff="buffInstanthealB">
+				<requirement name="ProgressionLevel" progression_name="perkImmortal" operation="Equals" value="10"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="30"/>
+			</triggered_effect>
+			
+			<effect_description level="1" desc_key="perkImmortalRank1Desc"/>
+			<effect_description level="2" desc_key="perkImmortalRank2Desc"/>
+			<effect_description level="3" desc_key="perkImmortalRank3Desc"/>
+			<effect_description level="4" desc_key="perkImmortalRank4Desc"/>
+			<effect_description level="5" desc_key="perkImmortalRank5Desc"/>
+			<effect_description level="6" desc_key="perkImmortalRank6Desc"/>
+			<effect_description level="7" desc_key="perkImmortalRank7Desc"/>
+			<effect_description level="8" desc_key="perkImmortalRank8Desc"/>
+			<effect_description level="9" desc_key="perkImmortalRank9Desc"/>
+			<effect_description level="10" desc_key="perkImmortalRank10Desc"/>
+		</effect_group>
+</perk>
+<!-- PVP -->
+<perk name="perkOutburst" parent="skillBelligerent" max_level="3" name_key="perkOutburstName" desc_key="perkOutburstDesc" icon="ui_game_symbol_trex">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="4" desc_key="reqattHumanityLevel4"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="7" desc_key="reqattHumanityLevel6"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="10" desc_key="reqattHumanityLevel10"/></level_requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" target_tags="player" buff="buffOutburst">
+				<requirement name="ProgressionLevel" progression_name="perkOutburst" operation="Equals" value="1"/>
+				<requirement name="HasBuff" target="self" buff="buffMentalBreakdown"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="25"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" target_tags="player" buff="buffOutburst">
+				<requirement name="ProgressionLevel" progression_name="perkOutburst" operation="Equals" value="2"/>
+				<requirement name="HasBuff" target="self" buff="buffMentalBreakdown"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="35"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" target_tags="player" buff="buffOutburst">
+				<requirement name="ProgressionLevel" progression_name="perkOutburst" operation="Equals" value="3"/>
+				<requirement name="HasBuff" target="self" buff="buffMentalBreakdown"/>
+				<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="50"/>
+			</triggered_effect>
+			
+			<effect_description level="1" desc_key="perkOutburstRank1Desc"/>
+			<effect_description level="2" desc_key="perkOutburstRank2Desc"/>
+			<effect_description level="3" desc_key="perkOutburstRank3Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkSeeker" parent="skillBelligerent" max_level="2" name_key="perkSeekerName" desc_key="perkSeekerDesc" icon="ui_game_symbol_agility">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="4" desc_key="reqattHumanityLevel2"/></level_requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffSeeker">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="ProgressionLevel" progression_name="perkSeeker" operation="GTE" value="1"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkSeekerRank1Desc"/>
+			<effect_description level="2" desc_key="perkSeekerRank2Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkBloodlust" parent="skillBelligerent" max_level="3" name_key="perkBloodlustName" desc_key="perkBloodlustDesc" icon="ui_game_symbol_bat">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="1" desc_key="reqattHumanityLevel1"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="2" desc_key="reqattHumanityLevel2"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="3" desc_key="reqattHumanityLevel3"/></level_requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffBloodlust">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="ProgressionLevel" progression_name="perkBloodlust" operation="GTE" value="1"/>
+			</triggered_effect>
+			
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffBloodlust">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="ProgressionLevel" progression_name="perkBloodlust" operation="GTE" value="1"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkBloodlustRank1Desc"/>
+			<effect_description level="2" desc_key="perkBloodlustRank2Desc"/>
+			<effect_description level="3" desc_key="perkBloodlustRank3Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkPrecipitation" parent="skillBelligerent" max_level="2" name_key="perkPrecipitationName" desc_key="perkPrecipitationDesc" icon="ui_game_symbol_club">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="10" desc_key="reqattHumanityLevel10"/></level_requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffPrecipitation">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HoldingItemHasTags" target="self" tags="melee"/>
+				<requirement name="NotHasBuff" target="self" buff="buffConcentration"/>
+				<requirement name="ProgressionLevel" progression_name="perkPrecipitation" operation="GTE" value="1"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkPrecipitationRank1Desc"/>
+			<effect_description level="2" desc_key="perkPrecipitationRank2Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkLuckyShot" parent="skillBelligerent" max_level="2" name_key="perkLuckyShotName" desc_key="perkLuckyShotDesc" icon="ui_game_symbol_head_shot">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="5" desc_key="reqattHumanityLevel5"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attHumanity" operation="GTE" value="10" desc_key="reqattHumanityLevel10"/></level_requirements>
+
+		<effect_group>
+			<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="self" buff="buffLuckyShot">
+				<requirement name="EntityTagCompare" target="other" tags="player"/>
+				<requirement name="HoldingItemHasTags" target="self" tags="ranged,gun"/>
+				<requirement name="NotHasBuff" target="self" buff="buffConcentration"/>
+				<requirement name="ProgressionLevel" progression_name="perkPrecipitation" operation="GTE" value="1"/>
+			</triggered_effect>
+
+			<effect_description level="1" desc_key="perkLuckyShotRank1Desc"/>
+			<effect_description level="2" desc_key="perkLuckyShotRank2Desc"/>
+		</effect_group>
+</perk>
+<!-- MODDING MUTATION PERKS -->
+<!-- PHASE_A , PHASE_B -->
+
+<!-- PHASE_A -->
+<perk name="perkMutatedLegs" parent="skillPhaseA" max_level="1" name_key="perkMutatedLegsName" desc_key="perkMutatedLegsDesc" icon="ui_game_symbol_parkour">
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="3" desc_key="reqattMutationLevel3"/>
+			<requirement name="CVarCompare" cvar="phaseACountA" operation="Equals" value="0" desc_key="reqNoMutatedUpperArms"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseACountB" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="WalkSpeed" operation="perc_add" value="0.05" level="1"/>
+			<passive_effect name="RunSpeed" operation="perc_add" value="0.05" level="1"/>
+			<passive_effect name="CrouchSpeed" operation="perc_add" value="0.05" level="1"/>
+			
+			<passive_effect name="JumpStrength" operation="perc_add" value=".5" level="1"/>
+			
+			<effect_description level="1" desc_key="perkMutatedLegsRank1Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkMutatedUpperArms" parent="skillPhaseA" max_level="1" name_key="perkMutatedUpperArmsName" desc_key="perkMutatedUpperArmsDesc" icon="ui_game_symbol_muscle">
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="3" desc_key="reqattMutationLevel3"/>
+			<requirement name="CVarCompare" cvar="phaseACountB" operation="Equals" value="0" desc_key="reqNoMutatedLegs"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseACountA" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="BlockDamage" operation="perc_add" value="0.25" level="1" />
+			<passive_effect name="EntityDamage" operation="perc_add" value="0.20" level="1" />
+
+			<effect_description level="1" desc_key="perkMutatedUpperArmsRank1Desc"/>
+		</effect_group>
+</perk>
+<!-- PHASE_B -->
+<perk name="perkSeventhSense" parent="skillPhaseB" max_level="1" name_key="perkSeventhSenseName" desc_key="perkSeventhSenseDesc" icon="ui_game_symbol_stealth">
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="5" desc_key="reqattMutationLevel5"/>
+			<requirement name="CVarCompare" cvar="phaseBCountA" operation="Equals" value="0" desc_key="reqNoMindless"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseBCountB" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="ScavengingItemCount" operation="perc_add" value="0.25" level="1"/>
+			<passive_effect name="CrouchSpeed" operation="perc_subtract" value="0.25" level="1"/>
+			
+			<effect_description level="1" desc_key="perkSeventhSenseRank1Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkMindless" parent="skillPhaseB" max_level="1" name_key="perkMindlessName" desc_key="perkMindlessDesc" icon="ui_game_symbol_intellect" icon_color="0,0,50"> 
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="5" desc_key="reqattMutationLevel5"/>
+			<requirement name="CVarCompare" cvar="phaseBCountB" operation="Equals" value="0" desc_key="reqNoSeventhSense"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseBCountA" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="HealthMax" operation="base_add" value="50" level="1"/>
+			<passive_effect name="HypothermalResist" operation="base_add" value="25" level="1"/>
+			<passive_effect name="HyperthermalResist" operation="base_add" value="25" level="1"/>
+			
+			<effect_description level="1" desc_key="perkMindlessRank1Desc"/>
+		</effect_group>
+</perk>
+<!-- PHASE_C -->
+<perk name="perkIronSkin" parent="skillPhaseC" max_level="1" name_key="perkIronSkinName" desc_key="perkIronSkinDesc" icon="ui_game_symbol_skull_crusher">
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="6" desc_key="reqattMutationLevel6"/>
+			<requirement name="CVarCompare" cvar="phaseCCountA" operation="Equals" value="0" desc_key="reqNaturalAdaptation"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseCCountB" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="BuffResistance" operation="base_add" value="0.9" level="1" tags="buffInjuryBleeding,buffBurning"/>
+			
+			<effect_description level="1" desc_key="perkIronSkinRank1Desc"/>
+		</effect_group>
+</perk>
+
+<perk name="perkNaturalAdaptation" parent="skillPhaseC" max_level="1" name_key="perkNaturalAdaptationName" desc_key="perkNaturalAdaptationDesc" icon="ui_game_symbol_stealth" icon_color="0,0,50"> 
+		<level_requirements level="1">
+			<requirement name="ProgressionLevel" progression_name="attMutation" operation="GTE" value="6" desc_key="reqattMutationLevel6"/>
+			<requirement name="CVarCompare" cvar="phaseCCountB" operation="Equals" value="0" desc_key="reqNoIronSkin"/>
+		</level_requirements>
+		<effect_group>
+			<triggered_effect trigger="onPerkLevelChanged" cvar="phaseCCountA" action="ModifyCVar" operation="set" value="1"/>
+			<passive_effect name="NoiseMultiplier" operation="perc_subtract" value="0.33" level="7" tags="running,crouch_run"/>
+			
+			<effect_description level="1" desc_key="perkNaturalAdaptationRank1Desc"/>
+		</effect_group>
+</perk>
+</append>
+	   
+<set xpath="/progression/level/@exp_to_level">9000</set>
+<set xpath="/progression/level/@experience_multiplier">1.05</set>
+<set xpath="/progression/level/@max_level">300</set>
+</configs>

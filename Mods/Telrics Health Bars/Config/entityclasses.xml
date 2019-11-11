@@ -1,6 +1,0 @@
-<configs>
-<append xpath="/entity_classes/entity_class[@name='zombieTemplateMale']">
-
-	<property name="Buffs" value="DamageDisplayBuff" />
-</append>
-</configs>

@@ -1,7 +1,0 @@
-<config>
-
-<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialOldGroup']">
-<prefab name="NLE_Vault69" max_count="1" prob="10"/>
-</append>
-
-</config>

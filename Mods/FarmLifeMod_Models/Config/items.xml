@@ -1,5 +1,0 @@
-<configs>
-  <setattribute xpath="/items/item[@name='Pitch Fork']/property[@name='Meshfile']" name="value">
-    #@modfolder:Resources/objects.unity3d?PitchforkPrefab
-  </setattribute>
-</configs>

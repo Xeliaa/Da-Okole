@@ -1,0 +1,1461 @@
+
+<configs>
+	<append xpath="/recipes">
+<!-- SELF RECIPES MODDING -->
+<recipe name="meleeToolModifiedShovelStone" count="1">
+	<ingredient name="resourceRockSmall" count="5"/>
+	<ingredient name="resourceYuccaFibers" count="3"/>
+	<ingredient name="resourceWood" count="3"/>
+	<ingredient name="meleeToolShovelStone" count="1" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceRockSmall,resourceWood,resourceYuccaFibers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="meleeToolModifiedStoneAxe" count="1">
+	<ingredient name="resourceRockSmall" count="4"/>
+	<ingredient name="resourceYuccaFibers" count="2"/>
+	<ingredient name="resourceWood" count="2"/>
+	<ingredient name="meleeToolStoneAxe" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceRockSmall,resourceWood,resourceYuccaFibers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="meleeModifiedClubWood" count="1">
+	<ingredient name="resourceWood" count="6"/>
+	<ingredient name="meleeClubWood" count="1"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceWood"/>
+	</effect_group>
+</recipe>
+
+<recipe name="meleeModifiedClubIron" count="1">
+	<ingredient name="meleeClubIron" count="1"/>
+	<ingredient name="resourceScrapIron" count="200"/>
+	<ingredient name="resourceWood" count="25"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceWood,resourceScrapIron"/>
+	</effect_group>
+</recipe>
+
+<recipe name="resourceCoal" count="1000" craft_area="chemistryStation" always_unlocked="true"> 
+	<ingredient name="resourceRawDiamond" count="1"/>
+</recipe>
+
+<recipe name="resourceCoal" count="1" craft_area="campfire" always_unlocked="true">
+	<ingredient name="resourceWood" count="3"/>
+</recipe>
+
+<recipe name="casinoCoin" count="50" craft_area="workbench" always_unlocked="true">
+	<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="10"/>
+	<ingredient name="resourceClayLump" count="5"/>
+	<ingredient name="resourceGlue" count="1"/>
+</recipe>
+
+<recipe name="drugVitamins" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceCropGoldenrodPlant" count="2"/>
+	<ingredient name="resourceCropChrysanthemumPlant" count="2"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="15"/>
+	<ingredient name="drinkJarBoiledWater" count="1"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="bloodCoin" count="1" craft_time = "0.1" craft_exp_gain="25" always_unlocked="true">
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="resourceBone" count="5"/>
+</recipe>
+
+<recipe name="minerCoin" count="1" craft_time = "0.1" craft_exp_gain="25" always_unlocked="true">
+	<ingredient name="foodRottingFlesh" count="10"/>
+	<ingredient name="resourceBone" count="5"/>
+</recipe>
+
+<recipe name="meleeToolSledgehammerIronSchematic" count="1" craft_area="workbench">
+	<ingredient name="meleeToolSledgehammerIron" count="1" />
+	<ingredient name="resourcePaper" count="12" />
+	<ingredient name="resourceOil" count="1" />
+	<ingredient name="resourceFeather" count="1" />
+	<ingredient name="resourceLeather" count="2" />
+</recipe>
+
+<recipe name="meleeToolSledgehammerSteelSchematic" count="1" craft_area="workbench">
+	<ingredient name="meleeToolSledgehammerSteel" count="1" />
+	<ingredient name="resourcePaper" count="12" />
+	<ingredient name="resourceOil" count="1" />
+	<ingredient name="resourceFeather" count="1" />
+	<ingredient name="resourceLeather" count="2" />
+</recipe>
+
+<recipe name="meleeToolKnifeIronSchematic" count="1" craft_area="workbench">
+	<ingredient name="meleeToolKnifeIronSchematic" count="1" />
+	<ingredient name="resourcePaper" count="30" />
+	<ingredient name="resourceOil" count="2" />
+	<ingredient name="resourceFeather" count="1" />
+	<ingredient name="resourceLeather" count="2" />
+</recipe>
+
+<recipe name="pickaxeDiamondCarbon" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedIron" count="60" />
+	<ingredient name="resourceCoal" count="20" />
+	<ingredient name="resourceRawDiamond" count="1" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,3" tags="resourceForgedIron,resourceCoal,resourceRawDiamond"/>
+	</effect_group>
+</recipe>
+
+<recipe name="sledgehammerTungsten" count="1" craft_area="workbench" tags="learnable,perkSkullCrusher">
+	<ingredient name="meleeToolSledgehammerSteel" count="1" />
+	<ingredient name="resourceGoldNugget" count="8" />
+	<ingredient name="forgedTungsten" count="20" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceGoldNugget,forgedTungsten"/>
+	</effect_group>
+</recipe>
+
+<recipe name="meleeToolKnifeMachete" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="15" />
+	<ingredient name="resourceScrapIron" count="40" />
+	<ingredient name="resourceScrapBrass" count="40" />
+	<ingredient name="resourceGlue" count="8" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceScrapIron,resourceScrapBrass,resourceGlue"/>
+	</effect_group>
+</recipe>
+
+<recipe name="steelSpikesNew" count="1" craft_area="forge" craft_tool="toolAnvil" tags="learnable">
+	<ingredient name="unit_iron" count="100"/>
+	<ingredient name="unit_clay" count="10"/>
+</recipe>
+
+<recipe name="resourceOil" count="1" craft_area="campfire" craft_tool="toolBeaker" always_unlocked="true">
+	<ingredient name="drinkJarBoiledWater" count="1" />
+	<ingredient name="resourceAnimalFat" count="2" />
+	<ingredient name="foodRottingFlesh" count="1" />
+</recipe>
+
+<recipe name="resourceMilitaryFiber" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedIron" count="2" />
+	<ingredient name="resourceForgedSteel" count="2" />
+	<ingredient name="resourceSilverNugget" count="4" />
+	<ingredient name="resourceLeather" count="4" />
+</recipe>
+
+<recipe name="armorMilitaryVest" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="resourceMilitaryFiber" count="8" />
+	<ingredient name="resourceScrapPolymers" count="8" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="armorMilitaryLegs" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="resourceMilitaryFiber" count="4" />
+	<ingredient name="resourceScrapPolymers" count="4" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="armorMilitaryBoots" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="resourceMilitaryFiber" count="4" />
+	<ingredient name="resourceScrapPolymers" count="4" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="armorMilitaryHelmet" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="resourceMilitaryFiber" count="5" />
+	<ingredient name="resourceScrapPolymers" count="5" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="armorMilitaryGloves" count="1" craft_area="workbench" tags="learnable,perkLightArmor">
+	<ingredient name="resourceMilitaryFiber" count="6" />
+	<ingredient name="resourceScrapPolymers" count="6" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMilitaryFiber,resourceScrapPolymers"/>
+	</effect_group>
+</recipe>
+
+<recipe name="resourcePotassiumNitratePowder" count="5" craft_area="campfire" always_unlocked="true">
+	<ingredient name="resourceBone" count="1" />
+</recipe>
+
+<recipe name="resourcePotassiumNitratePowder" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="50" />
+</recipe>
+
+<recipe name="resourceCoal" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="50" />
+</recipe>
+
+<recipe name="resourceScrapIron" count="10" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="100" />
+</recipe>
+
+<recipe name="resourceScrapBrass" count="5" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="100" />
+</recipe>
+
+<recipe name="resourceScrapLead" count="5" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="100" />
+</recipe>
+
+<recipe name="resourceSilverNugget" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="300" />
+</recipe>
+
+<recipe name="resourceGoldNugget" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="650" />
+</recipe>
+
+<recipe name="resourceRawDiamond" count="5" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="resourceRockSmall" count="2000" />
+</recipe>
+
+<!--
+<recipe name="dirtyBomb" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMetalPipe" count="1" />
+	<ingredient name="resourceCloth" count="8"/>
+	<ingredient name="resourceGunPowder" count="30"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourcePaper" count="30"/>
+</recipe>
+-->
+
+<!-- TAB A -->
+<recipe name="recurvedBow" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMetalPipe" count="2" />
+	<ingredient name="resourceLeather" count="12" />
+	<ingredient name="resourceDuctTape" count="1" />
+	<ingredient name="resourceMilitaryFiber" count="8" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceLeather,resourceDuctTape,resourceMilitaryFiber"/>
+	</effect_group>
+</recipe>
+
+<recipe name="militaryBow" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMetalPipe" count="4" />
+	<ingredient name="resourceMilitaryFiber" count="24" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceMilitaryFiber"/>
+	</effect_group>
+</recipe>
+
+<recipe name="barrageBow" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceMetalPipe" count="2" />
+	<ingredient name="resourceLeather" count="2" />
+	<ingredient name="resourceDuctTape" count="1" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceMetalPipe,resourceLeather,resourceDuctTape"/>
+	</effect_group>
+</recipe>
+
+<recipe name="powercrossbow" count="1" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceLeather" count="5"/>
+	<ingredient name="resourceGlue" count="5"/>
+	<ingredient name="resourceDuctTape" count="5"/>
+	<ingredient name="resourceWood" count="30"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceLeather,resourceGlue,resourceDuctTape,resourceWood"/>
+	</effect_group>
+</recipe>
+
+<recipe name="specialArrow" count="10" craft_area="workbench" craft_time = "0.1" tags="learnable">
+	<ingredient name="ammoArrowFlaming" count="10" />
+	<ingredient name="resourceRocketCasing" count="1" />
+	<ingredient name="resourceRocketTip" count="1" />
+	<ingredient name="resourceOil" count="1" />
+	<ingredient name="resourceGunPowder" count="1" />
+</recipe>
+
+<recipe name="cryoArrow" count="10" craft_area="workbench" craft_time = "0.1" tags="learnable">
+	<ingredient name="ammoArrowIron" count="10" />
+	<ingredient name="resourceRocketCasing" count="1" />
+	<ingredient name="resourceRocketTip" count="1" />
+	<ingredient name="drinkCanMegaCrush" count="1" />
+	<ingredient name="resourceGunPowder" count="1" />
+</recipe>
+
+<recipe name="toxicArrow" count="10" craft_area="workbench" craft_time = "0.1" tags="learnable">
+	<ingredient name="ammoArrowIron" count="10" />
+	<ingredient name="resourceMetalPipe" count="2" />
+	<ingredient name="foodRottingFlesh" count="4" />
+</recipe>
+
+<recipe name="nukeArrow" count="1" craft_area="workbench" craft_time = "0.1" tags="learnable">
+	<ingredient name="ammoArrowIron" count="1" />
+	<ingredient name="thrownDynamite" count="1" />
+	<ingredient name="resourceDuctTape" count="3" />
+</recipe>
+
+<recipe name="barrageArrow" count="4" craft_area="workbench" craft_time = "0.1" tags="learnable">
+	<ingredient name="ammoArrowIron" count="4" />
+	<ingredient name="thrownDynamite" count="1" />
+	<ingredient name="resourceDuctTape" count="12" />
+</recipe>
+<!-- SEEDS-->
+<recipe name="cornSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="50"/>
+</recipe>
+
+<recipe name="potatoSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="75"/>
+</recipe>
+
+<recipe name="blueberrySeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="150"/>
+</recipe>
+
+<recipe name="coffeeBeansPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="180"/>
+</recipe>
+
+<recipe name="cottonSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="60"/>
+</recipe>
+
+<recipe name="goldenrodSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="125"/>
+</recipe>
+
+<recipe name="aloeSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="210"/>
+</recipe>
+
+<recipe name="chrysanthemumSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="80"/>
+</recipe>
+
+<recipe name="mushroomSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="40"/>
+</recipe>
+
+<recipe name="yuccaSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="250"/>
+</recipe>
+
+<recipe name="hopSeedPlus" count="1" craft_area="chemistryStation">
+	<ingredient name="resourceClayLump" count="220"/>
+</recipe>
+<!--SEED PLUS-->
+<recipe name="cornSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="potatoSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="blueberrySeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="coffeeBeansPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="cottonSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="goldenrodSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="aloeSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="chrysanthemumSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="mushroomSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="yuccaSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+
+<recipe name="hopSeedPlus" count="1" >
+	<ingredient name="unkownedSeedPlus" count="5"/>
+</recipe>
+<!--DIFF ITEM-->
+<recipe name="foodSweetCandy" count="3" >
+	<ingredient name="meleeToolKnifeCandy" count="1"/>
+</recipe>
+
+<recipe name="foodSweetCandy" count="9" >
+	<ingredient name="meleeClubCandy" count="1"/>
+</recipe>
+
+<recipe name="foodSweetCandy" count="5" >
+	<ingredient name="resourceCandyTin" count="1"/>
+</recipe>
+
+
+<recipe name="scimitar" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="meleeToolKnifeMachete" count="1"/>
+	<ingredient name="resourceForgedSteel" count="30"/>
+	<ingredient name="resourceWood" count="30"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceWood"/>
+	</effect_group>
+</recipe>
+
+<recipe name="excalibur" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="excaliburPart" count="10"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="excaliburPart"/>
+	</effect_group>
+</recipe>
+<!-- TAB B -->
+<recipe name="stainlessSteelBlock" count="10" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelRamp" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelWedge" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelWedgeTip" count="40" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelHalf" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelQuarter" count="40" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelEighth" count="40" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelPlate" count="40" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelPyramid" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelPillar100" count="10" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelPillar50" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelStairs25" count="25" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelPole" count="40" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="stainlessSteelArrowSlitHalf" count="20" craft_area="workbench">
+	<ingredient name="unobtaniumNugget" count="1" />
+	<ingredient name="resourceForgedSteel" count="10" />
+	<ingredient name="resourceClayLump" count="100" />
+	<ingredient name="resourceConcreteMix" count="50" />
+</recipe>
+
+<recipe name="automaticwrench" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="20"/>
+	<ingredient name="resourceMechanicalParts" count="6"/>
+	<ingredient name="resourceElectricParts" count="5"/>
+	<ingredient name="resourceOil" count="1" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceElectricParts"/>
+	</effect_group>
+</recipe>
+
+<recipe name="meleeToolWrench" count="1">
+	<ingredient name="resourceForgedSteel" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="1"/>
+	<ingredient name="resourceSpring" count="4"/>
+	<ingredient name="junkWrench" count="1" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceSpring"/>
+	</effect_group>
+</recipe>
+
+<recipe name="toolCookingPot" count="1">
+	<ingredient name="junkCookingPot" count="2"/>
+	<ingredient name="resourceForgedIron" count="1"/>
+	<ingredient name="resourceDuctTape" count="3"/>
+</recipe>
+
+<recipe name="foodPerfectPreservedPie" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
+	<ingredient name="drinkJarBoiledWater" count="5"/>
+	<ingredient name="foodCornMeal" count="8"/>
+	<ingredient name="foodCropBlueberries" count="2"/>
+</recipe>
+
+
+<!--BLOOD COIN -->
+<recipe name="qt_taylor" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_nickole" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_stephan" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_jennifer" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_claude" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_sarah" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="qt_raphael" count="1" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceElectricParts" count="20" >
+	<ingredient name="minerCoin" count="250" />
+</recipe>
+
+<recipe name="resourceMilitaryFiber" count="20" >
+	<ingredient name="minerCoin" count="600" />
+</recipe>
+
+<recipe name="resourceElectronicParts" count="15" >
+	<ingredient name="minerCoin" count="250" />
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="20" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="resourceOilShale" count="25" >
+	<ingredient name="minerCoin" count="300" />
+</recipe>
+
+<recipe name="resourceOilShale" count="25" >
+	<ingredient name="bloodCoin" count="150" />
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="15" >
+	<ingredient name="minerCoin" count="300" />
+</recipe>
+
+<recipe name="drugVitamins" count="5" >
+	<ingredient name="bloodCoin" count="300" />
+</recipe>
+
+<recipe name="resourceSpring" count="10" >
+	<ingredient name="minerCoin" count="300" />
+</recipe>
+
+<recipe name="qc_massacre" count="1" >
+	<ingredient name="bloodCoin" count="2000" />
+</recipe>
+
+<recipe name="qc_missingchilds" count="1" >
+	<ingredient name="bloodCoin" count="500" />
+</recipe>
+
+<recipe name="qc_wildhunt" count="1" >
+	<ingredient name="bloodCoin" count="500" />
+</recipe>
+
+<recipe name="qc_thelastoffensive" count="1" >
+	<ingredient name="bloodCoin" count="2000" />
+</recipe>
+
+<recipe name="qc_horde" count="1" >
+	<ingredient name="bloodCoin" count="2000" />
+</recipe>
+
+<recipe name="qc_freeExp" count="1" >
+	<ingredient name="bloodCoin" count="1250" />
+	<ingredient name="questCoin" count="2" />
+</recipe>
+
+<recipe name="qc_freeSkill" count="1" >
+	<ingredient name="bloodCoin" count="3000" />
+	<ingredient name="questCoin" count="10" />
+</recipe>
+
+<recipe name="slicerKnife" count="1" tags="learnable">
+	<ingredient name="bloodCoin" count="750" />
+</recipe>
+
+<recipe name="qc_killingseries_two" count="1">
+	<ingredient name="bloodCoin" count="2500" />
+	<ingredient name="questCoin" count="3" />
+	<ingredient name="qc_killingseries" count="1" />
+</recipe>
+
+<recipe name="qc_wolvesDen" count="1">
+	<ingredient name="bloodCoin" count="300" />
+	<ingredient name="foodRawMeat" count="20" />
+</recipe>
+
+<recipe name="qc_bearsDen" count="1">
+	<ingredient name="bloodCoin" count="500" />
+	<ingredient name="foodRawMeat" count="30" />
+</recipe>
+
+<recipe name="qc_chickenHeaven" count="1">
+	<ingredient name="bloodCoin" count="750" />
+	<ingredient name="resourceFeather" count="120" />
+</recipe>
+<!--BLOOD COIN END-->
+
+<!--MINER COIN-->
+<recipe name="resourcePotassiumNitratePowder" count="20" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceCoal" count="50" >
+	<ingredient name="bloodCoin" count="80" />
+</recipe>
+
+<recipe name="resourceScrapIron" count="500" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceScrapBrass" count="100" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceWood" count="500" >
+	<ingredient name="bloodCoin" count="25" />
+</recipe>
+
+<recipe name="resourceScrapLead" count="200" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceClayLump" count="500" >
+	<ingredient name="bloodCoin" count="25" />
+</recipe>
+
+<recipe name="resourceRockSmall" count="500" >
+	<ingredient name="bloodCoin" count="25" />
+</recipe>
+<!--CRATE with MINER -->
+<recipe name="cntShippingCrateBookstore" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateCarParts" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateConstructionSupplies" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateShotgunMessiah" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateWorkingStiffs" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateShamway" count="1" >
+	<ingredient name="minerCoin" count="500" />
+</recipe>
+
+<recipe name="cntShippingCrateLabEquipment" count="1" >
+	<ingredient name="minerCoin" count="250" />
+</recipe>
+<!-- CRATE with BLOOD -->
+<recipe name="cntShippingCrateBookstore" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateCarParts" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateConstructionSupplies" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateShotgunMessiah" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateWorkingStiffs" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateShamway" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateLabEquipment" count="1" >
+	<ingredient name="bloodCoin" count="250" />
+</recipe>
+
+<recipe name="cntShippingCrateHero" count="1" >
+	<ingredient name="minerCoin" count="1000" />
+	<ingredient name="bloodCoin" count="200" />
+</recipe>
+<!--MINER COIN END-->
+
+<!-- Shipping Order -->
+<recipe name="cntShippingCrateBookstore" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateCarParts" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateConstructionSupplies" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateShotgunMessiah" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateWorkingStiffs" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateShamway" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntShippingCrateLabEquipment" count="1" >
+	<ingredient name="shippingOrder" count="5" />
+</recipe>
+
+<recipe name="cntLockedLootBlock" count="1" >
+	<ingredient name="shippingOrder" count="10" />
+</recipe>
+
+<recipe name="cntLockedLootBlock2" count="1" >
+	<ingredient name="shippingOrder" count="15" />
+</recipe>
+
+<recipe name="cntShippingCrateHero" count="1" >
+	<ingredient name="shippingOrder" count="20" />
+</recipe>
+
+<recipe name="cntMedicContainer" count="1" >
+	<ingredient name="shippingMedicOrder" count="1" />
+</recipe>
+<!-- END of SHIPPING ORDER -->
+
+<!-- TRANSFORM QUEST INTO BLOOD/MINER COIN RECIPES -->
+<!--Coin of Blood-->
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_silenceofthelambs" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_drunkanddisorderly" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_nurseyoubacktohealth" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_starvingtourists" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_dogdaysareover" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_itsbitsyspider" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_ladykiller" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_maneater" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_imalumberjackandimokay" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_yournothingspecial" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_killthewabbit" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_nailsomechicks" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_thatlldopig" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_stagparty" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_dontfeedthebears" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_buythefarm" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_blitzdefense" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_givemeaz" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_dishonorabledischarge" count="1" />
+</recipe>
+
+<recipe name="bloodCoin" count="100" >
+	<ingredient name="qc_cableguysnevermadeit" count="1" />
+</recipe>
+
+<!-- Coin of Miner -->
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_silenceofthelambs" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_drunkanddisorderly" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_nurseyoubacktohealth" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_starvingtourists" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_dogdaysareover" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_itsbitsyspider" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_ladykiller" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_maneater" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_imalumberjackandimokay" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_yournothingspecial" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_killthewabbit" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_nailsomechicks" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_thatlldopig" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_stagparty" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_dontfeedthebears" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_buythefarm" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_blitzdefense" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_givemeaz" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_dishonorabledischarge" count="1" />
+</recipe>
+
+<recipe name="minerCoin" count="150" >
+	<ingredient name="qc_cableguysnevermadeit" count="1" />
+</recipe>
+<!-- END OF TRANSFORMING -->
+
+<recipe name="gunActionCombatShotgun" craft_area="workbench" count="1" tags="learnable">
+	<ingredient name="resourceForgedSteel" count="65"/>
+	<ingredient name="resourceMechanicalParts" count="35"/>
+	<ingredient name="resourceDuctTape" count="14"/>
+	<ingredient name="resourceScrapPolymers" count="12"/>
+	<ingredient name="resourceSpring" count="14"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="resourceForgedSteel,resourceMechanicalParts,resourceDuctTape,resourceScrapPolymers,resourceSpring"/>
+	</effect_group>
+</recipe>
+
+<recipe name="ammoShotgunHE" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="resourceBulletTip" count="5"/>
+	<ingredient name="resourceGunPowder" count="4"/>
+	<ingredient name="resourceBulletCasing" count="3"/>
+</recipe>
+
+<recipe name="shovelTungsten" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="forgedTungsten" count="20" />
+	<ingredient name="resourceWood" count="20" />
+	<ingredient name="resourceGoldNugget" count="8" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="forgedTungsten,resourceWood,resourceGoldNugget"/>
+	</effect_group>
+</recipe>
+
+<recipe name="fireaxeTungsten" count="1" craft_area="workbench" tags="learnable">
+	<ingredient name="forgedTungsten" count="20" />
+	<ingredient name="resourceWood" count="20" />
+	<ingredient name="resourceGoldNugget" count="8" />
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="forgedTungsten,resourceWood,resourceGoldNugget"/>
+	</effect_group>
+</recipe>
+
+<recipe name="resourceSteelPolish" count="1" craft_area="workbench">
+	<ingredient name="resourceYuccaFibers" count="200" />
+	<ingredient name="medicalAloeCream" count="10" />
+	<ingredient name="resourceLeather" count="1" />
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="forgedTungsten" count="1" craft_area="forge" material_based="true" tags="learnable">
+	<ingredient name="unit_iron" count="40"/>
+	<ingredient name="unit_clay" count="20"/>
+</recipe>
+
+<recipe name="treeCactus01" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="treeCactus02" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="treeCactus03" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="treeCactus04" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="treeCactus05" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="treeCactus06" count="1">
+	<ingredient name="foodCropYuccaFruit" count="12"/>
+</recipe>
+
+<recipe name="powerBuildingBlock" count="100">
+	<ingredient name="resourceWood" count="200"/>
+	<ingredient name="resourceFeather" count="100"/>
+</recipe>
+
+<recipe name="capsPile" count="1"  always_unlocked="true">
+	<ingredient name="capsCoin" count="1000"/>
+</recipe>
+
+<recipe name="capsCoin" count="1000" always_unlocked="true">
+	<ingredient name="capsPile" count="1"/>
+</recipe>
+
+<recipe name="cntLockedLootBlock2" count="1" craft_area="workbench" craft_time="5" always_unlocked="true">
+	<ingredient name="cntLockedLootBlock" count="1"/>
+	<ingredient name="questCoin" count="5"/>
+	<ingredient name="minerCoin" count="200"/>
+	<ingredient name="bloodCoin" count="200"/>
+</recipe>
+
+<!-- DNA REZEPTE -->
+<recipe name="dnaAlpha" count="1" craft_area="chemistryStation" craft_time = "2" always_unlocked="true">
+	<ingredient name="junkPuppet" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="dnaBeta" count="1" craft_area="chemistryStation" craft_time = "2" always_unlocked="true">
+	<ingredient name="junkPuppet" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="dnaGamma" count="1" craft_area="chemistryStation" craft_time = "2" always_unlocked="true">
+	<ingredient name="junkPuppet" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="dnaDelta" count="1" craft_area="chemistryStation" craft_time = "2" always_unlocked="true">
+	<ingredient name="junkPuppet" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="dnaZeta" count="1" craft_area="chemistryStation" craft_time = "2" always_unlocked="true">
+	<ingredient name="junkPuppet" count="1"/>
+	<ingredient name="drinkJarEmpty" count="1"/>
+	<ingredient name="drinkJarRiverWater" count="1"/>
+</recipe>
+
+<recipe name="liquideLuck" count="1" craft_area="chemistryStation" craft_time = "2.5" craft_exp_gain="75" always_unlocked="true">
+	<ingredient name="dnaAlpha" count="7" />
+	<ingredient name="dnaBeta" count="4" />
+	<ingredient name="dnaGamma" count="10" />
+	<ingredient name="dnaDelta" count="5" />
+	<ingredient name="dnaZeta" count="2" />
+</recipe>
+
+<recipe name="drugSteroids" count="1" craft_area="chemistryStation" craft_time = "2.5" craft_exp_gain="75" always_unlocked="true">
+	<ingredient name="dnaAlpha" count="4" />
+	<ingredient name="dnaBeta" count="2" />
+	<ingredient name="dnaGamma" count="2" />
+	<ingredient name="dnaDelta" count="3" />
+	<ingredient name="dnaZeta" count="5" />
+</recipe>
+
+<recipe name="ambrosia" count="1" craft_area="chemistryStation" craft_time = "2.5" craft_exp_gain="75" always_unlocked="true">
+	<ingredient name="dnaAlpha" count="2" />
+	<ingredient name="dnaBeta" count="7" />
+	<ingredient name="dnaGamma" count="5" />
+	<ingredient name="dnaDelta" count="8" />
+	<ingredient name="dnaZeta" count="5" />
+</recipe>
+
+<recipe name="drugHotShock" count="1" craft_area="chemistryStation" craft_time = "2.5" craft_exp_gain="75" always_unlocked="true">
+	<ingredient name="dnaAlpha" count="8" />
+	<ingredient name="dnaBeta" count="3" />
+	<ingredient name="dnaGamma" count="3" />
+	<ingredient name="dnaDelta" count="5" />
+	<ingredient name="dnaZeta" count="8" />
+</recipe>
+
+<recipe name="drugMentalBreakdown" count="1" craft_area="chemistryStation" craft_time = "2.5" craft_exp_gain="15" always_unlocked="true">
+	<ingredient name="dnaAlpha" count="1" />
+	<ingredient name="dnaBeta" count="3" />
+	<ingredient name="dnaGamma" count="3" />
+	<ingredient name="dnaDelta" count="1" />
+	<ingredient name="dnaZeta" count="1" />
+</recipe>
+
+
+
+<!-- JUNK ITEM CONVERSION -->
+	
+<!-- CHEMSTATION -->
+<recipe name="resourceAcid" count="2" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkAbraxoCleaner" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="4" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkRatPoison" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="2" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkAntiFreeze" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="4" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkSuperAntiFreeze" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="2" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkCoolantGel" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="6" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkMakeshiftBattery" count="1"/>
+</recipe>
+
+<recipe name="resourceGlue" count="2" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkDuctTape" count="1"/>
+</recipe>
+
+<recipe name="resourceGlue" count="7" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkDuctTapePack" count="1"/>
+</recipe>
+
+<recipe name="resourceGlue" count="12" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkWonderGlue" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="3" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkAlarmClockWhite" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="3" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkAlarmClockYellow" count="1"/>
+</recipe>
+
+<recipe name="resourceOil" count="1" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkIndustrialSolvent" count="1"/>
+</recipe>
+
+<recipe name="resourceOil" count="3" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkOilCan" count="1"/>
+</recipe>
+
+<recipe name="resourceOil" count="2" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkOldHide" count="1"/>
+</recipe>
+
+
+<!-- WORKBENCH -->
+<recipe name="resourceSpring" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkBandageSciccors" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkFishingRod" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkFlipLighter" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkAntiqueGlobe" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="13" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkGiddyupBuddercup" count="1"/>
+</recipe>
+
+<recipe name="resourceOil" count="6" craft_area="chemistryStation" craft_time="2" always_unlocked="true"> 
+	<ingredient name="junkGiddyupBuddercup" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkHandCuffs" count="1"/>
+</recipe>
+
+<recipe name="resourceGoldNugget" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkGoldWatch" count="1"/>
+</recipe>
+
+<recipe name="resourceSilverNugget" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSilverWatch" count="1"/>
+</recipe>
+
+<recipe name="resourceRepairKit" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkBlowTorch" count="1"/>
+</recipe>
+
+<recipe name="resourceRepairKit" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkBunsenBurner" count="1"/>
+</recipe>
+
+<recipe name="resourceRepairKit" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkClipBoard" count="1"/>
+</recipe>
+
+<recipe name="resourceRepairKit" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkRelayCoil" count="1"/>
+</recipe>
+
+<recipe name="resourceFeather" count="21" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkComfyPillow" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkCircutBoard" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="5" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkCircutBoard" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="8" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkCircutBoard" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="3" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkDeskFan" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkExtinguisherOld" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkExtinguisherOld" count="1"/>
+</recipe>
+
+<recipe name="meleeToolClawHammer" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkOldHammer" count="1"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkLightBulb" count="1"/>
+</recipe>
+
+<recipe name="resourceNail" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkToyCar" count="1"/>
+</recipe>
+
+<recipe name="resourceNail" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkToyTruck" count="1"/>
+</recipe>
+
+<recipe name="resourceNail" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkToyRocket" count="1"/>
+</recipe>
+
+<recipe name="resourceNail" count="12" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSnapCamera" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="6" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSnapCamera" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSnapCamera" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="6" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkHotPlate" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="10" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkHotPlate" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkHouseFuse" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="4" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkHouseFuse" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="28" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkLabMicroscope" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="10" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkLabMicroscope" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="12" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkLabMicroscope" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="5" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkOldTelephone" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="12" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkLifePreserver" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkOldUmbrella" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="4" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkPowerMagnet" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkPowerMagnet" count="1"/>
+</recipe>
+
+<recipe name="resourceElectronicParts" count="4" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkPowerMagnet" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkSteelScrewdriver" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSteelToaster" count="1"/>
+</recipe>
+
+<recipe name="resourceAcid" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkTurpentineCan" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="6" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkTypeWriter" count="1"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="3" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkTypeWriter" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="18" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkTypeWriter" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="6" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkBaseballBase" count="1"/>
+</recipe>
+
+<recipe name="resourceLeather" count="4" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkBaseballGlove" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="1" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkBabyBottle" count="1"/>
+</recipe>
+
+<recipe name="resourceClayLump" count="80" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkFertilizerBag" count="1"/>
+</recipe>
+
+<recipe name="resourceCement" count="8" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkCementBag" count="1"/>
+</recipe>
+
+<recipe name="resourceFeather" count="12" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkFeatherDuster" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="3" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkFeatherDuster" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="3" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkMagnifyingGlass" count="1"/>
+</recipe>
+
+<recipe name="resourceElectricParts" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkVaccumTube" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapPolymers" count="18" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkMoonMonkey" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkBreadBox" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkSaltMill" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="2" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkPepperMill" count="1"/>
+</recipe>
+
+<recipe name="resourceSpring" count="1" craft_area="workbench" always_unlocked="true">
+	<ingredient name="junkClipBoard" count="1"/>
+</recipe>
+
+<recipe name="resourceScrapLead" count="2" craft_area="chemistryStation" always_unlocked="true">
+	<ingredient name="junkLeadPencil" count="1"/>
+</recipe>
+
+</append>
+<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodBoiledMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodCharredMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodChiliDog']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodGrilledMeat']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodMeatStew']/ingredient[@name='foodRawMeat']/@count">1</set>
+<set xpath="/recipes/recipe[@name='foodSteakAndPotato']/ingredient[@name='foodRawMeat']/@count">1</set>
+
+</configs>

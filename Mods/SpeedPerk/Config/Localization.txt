@@ -1,0 +1,14 @@
+﻿Key,Source,Context,Changes,English
+
+reqPlayerLevel5,progression,Attribute,New,Player Level 5
+reqPlayerLevel10,progression,Attribute,New,Player Level 10
+reqPlayerLevel20,progression,Attribute,New,Player Level 20
+reqPlayerLevel30,progression,Attribute,New,Player Level 30
+attspeed,progression,Attribute,New,Speed
+attSpeedDesc,progression,Attribute,New,Speed is the measure of how fast you travel by foot.
+attSpeedName,progression,Attribute,New,Attribute: Speed
+attSpeedRank1Desc,progression,Attribute,New,Increase walk speed 10%\nIncrease run speed 2%.
+attSpeedRank2Desc,progression,Attribute,New,Increase walk speed 20%\nIncrease run speed 4%.
+attSpeedRank3Desc,progression,Attribute,New,Increase walk speed 30%\nIncrease run speed 6%.
+attSpeedRank4Desc,progression,Attribute,New,Increase walk speed 40%\nIncrease run speed 8%.
+attSpeedRank5Desc,progression,Attribute,New,Increase walk speed 50%\nIncrease run speed 10%.

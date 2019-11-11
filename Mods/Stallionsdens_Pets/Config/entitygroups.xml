@@ -1,0 +1,97 @@
+<stallionsden>
+<append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']" ><entity name="foghornLeghorn" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']" ><entity name="foghornLeghorn" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']" ><entity name="foghornLeghorn" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']" ><entity name="sirHiss" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsDesert']" ><entity name="MrFox" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']" ><entity name="foghornLeghorn" prob="0.05" /></append>
+ 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="bigBadWolf" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="wileyCoyote" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="yogiBear" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="Baloo" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsSnow']" ><entity name="Luca" prob="0.05" /></append>
+
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']" ><entity name="Buck" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']" ><entity name="Bambi" prob="0.05" /></append>
+ 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']" ><entity name="bigBadWolf" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']" ><entity name="wileyCoyote" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']" ><entity name="yogiBear" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsForest']" ><entity name="Baloo" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']" ><entity name="Buck" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']" ><entity name="Bambi" prob="0.05" /></append> 
+
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']" ><entity name="yogiBear" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsBurntForest']" ><entity name="Baloo" prob="0.05" />	</append>
+
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']" ><entity name="Buck" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']" ><entity name="Bambi" prob="0.05" /></append>
+ 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsPlains']" ><entity name="sirHiss" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsPlains']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsPlains']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsPlains']" ><entity name="bigBadWolf" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsPlains']" ><entity name="wileyCoyote" prob="0.05" /></append>
+ 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="Buck" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="Bambi" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']" ><entity name="foghornLeghorn" prob="0.05" /></append>
+ 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="bugsBunny" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="porkyPig" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="missPiggy" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Buck" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Bambi" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="foghornLeghorn" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="bigBadWolf" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="wileyCoyote" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="yogiBear" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Baloo" prob="0.05" />	</append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="sirHiss" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Scooby" prob="0.05" /></append>
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="MrFox" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='AnimalsAll']" ><entity name="Luca" prob="0.05" />	</append> 
+ 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="sirHiss" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="Tweety" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="beakyBuzzard" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="Scooby" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="yogiBear" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="Baloo" prob="0.05" />	</append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="MrFox" prob="0.05" /></append> 
+<append xpath="/entitygroups/entitygroup[@name='EnemyAnimalsWasteland']" ><entity name="Luca" prob="0.05" />	</append> 
+
+</stallionsden>

@@ -1,0 +1,628 @@
+<configs>
+	<append xpath="/quests">
+	
+	<quest id="challenge_welcomeMod">
+		<property name="name_key" value="challenge_welcomeMod" />
+		<property name="subtitle_key" value="challenge_welcomeModsubtitle" />
+		<property name="description_key" value="challenge_welcomeModdesc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_welcomeModoffer" />
+		<property name="difficulty" value="normal" />
+		
+		<reward type="Exp" value="1250" />
+
+	</quest>
+	
+	<quest id="challenge_massacre">
+		<property name="name_key" value="challenge_massacre" />
+		<property name="subtitle_key" value="challenge_massacre_subtitle" />
+		<property name="description_key" value="challenge_massacre_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_massacre_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="Time" value="7200" optional="true" />
+		<objective type="ZombieKill" value="250"  />
+
+		<reward type="Exp" value="15000" />
+		<reward type="Item" id="bloodCoin" value="500" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="300-900" stage="aftercomplete" />
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+	</quest>
+	
+	<quest id="challenge_thelastoffensive">
+		<property name="name_key" value="challenge_thelastoffensive" />
+		<property name="subtitle_key" value="challenge_thelastoffensive_subtitle" />
+		<property name="description_key" value="challenge_thelastoffensive_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_thelastoffensive_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="Time" value="1500" optional="true" />
+		<objective type="ZombieKill" id="zombieArlene" value="5" />
+		<objective type="ZombieKill" id="zombieBiker" value="5" />
+		<objective type="ZombieKill" id="zombieStripper" value="5" />
+		<objective type="ZombieKill" id="zombieFatCop" value="5" />
+		<objective type="ZombieKill" id="zombieBusinessMan" value="5" />
+			
+		<reward type="SkillPoints" value="1" />
+		<reward type="SkillPoints" value="1" optional="true" />
+		
+		<reward type="Exp" value="8000" />
+		<reward type="Item" id="bloodCoin" value="50" stage="aftercomplete" />
+		<reward type="Item" id="sledgehammerDeath" value="1" tier="1,6" optional="true" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="100-300" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="challenge_wildhunt">
+		<property name="name_key" value="challenge_wildhunt" />
+		<property name="subtitle_key" value="challenge_wildhunt_subtitle" />
+		<property name="description_key" value="challenge_wildhunt_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_wildhunt_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="AnimalKill" id="animalStag" value="5"  />
+		<objective type="AnimalKill" id="animalRabbit" value="5"  />
+		<objective type="AnimalKill" id="animalBoar" value="5"  />
+		<objective type="AnimalKill" id="animalWolf" value="5"  />
+		
+		<reward type="Exp" value="3000" />
+		<reward type="Item" id="bloodCoin" value="100" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="100-300" stage="aftercomplete" />
+
+	</quest>
+	
+	<quest id="challenge_freeExp">
+		<property name="name_key" value="challenge_freeExp" />
+		<property name="subtitle_key" value="challenge_freeExp_subtitle" />
+		<property name="description_key" value="challenge_freeExp_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_freeExp_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<reward type="Exp" value="10000" />
+		<reward type="Item" id="casinoCoin" value="1-100" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="challenge_wannaBeFreeExp">
+		<property name="name_key" value="challenge_freeExp" />
+		<property name="subtitle_key" value="challenge_wannaBeFreeExp_subtitle" />
+		<property name="description_key" value="challenge_wannaBeFreeExp_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_wannaBeFreeExp_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<reward type="Exp" value="750" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="challenge_freeSkill">
+		<property name="name_key" value="challenge_freeSkill" />
+		<property name="subtitle_key" value="challenge_freeSkill_subtitle" />
+		<property name="description_key" value="challenge_freeSkill_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_freeSkill_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<reward type="SkillPoints" value="1" />
+		<reward type="Item" id="casinoCoin" value="1-100" stage="aftercomplete" />
+
+	</quest>
+	
+	<quest id="challenge_missingchilds">
+		<property name="name_key" value="challenge_missingchilds" />
+		<property name="subtitle_key" value="challenge_missingchilds_subtitle" />
+		<property name="description_key" value="challenge_missingchilds_offer" />
+		<property name="icon" value="ui_game_symbol_zombie" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_missingchilds_offer" />
+		<property name="difficulty" value="insane" />
+
+		<objective type="RandomGoto" value="100-200" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+		
+		<action type="SpawnEnemy" id="zombieFatHawaiian" value="1" phase="3" />
+		<action type="SpawnEnemy" id="zombieScreamer" value="7" phase="3" />
+		<action type="SpawnEnemy" id="zombieScreamerRadiated" value="3" phase="3" />
+		
+		<objective type="ZombieKill" id="zombieFatHawaiian" value="1" phase="3" />
+		<objective type="ZombieKill" id="zombieScreamer" value="3" phase="3" />
+		<objective type="ZombieKill" id="zombieScreamerRadiated" value="1" phase="3" />
+
+		<reward type="Exp" value="8000" />
+		<reward type="Item" id="junkPuppet" value="1" stage="aftercomplete" />
+		<reward type="Item" id="bloodCoin" value="50" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="300-600" />
+	</quest>
+	
+	<quest id="challenge_wolvesDen">
+		<property name="name_key" value="challenge_wolvesDen" />
+		<property name="subtitle_key" value="challenge_wolvesDen_subtitle" />
+		<property name="description_key" value="challenge_wolvesDen_offer" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_wolvesDen_offer" />
+		<property name="difficulty" value="insane" />
+
+		<objective type="RandomGoto" value="100-200" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+		
+		<action type="SpawnEnemy" id="animalWolf" value="8" phase="3" />
+		<action type="SpawnEnemy" id="animalDireWolf" value="1" phase="3" />
+		
+		<objective type="AnimalKill" id="animalWolf" value="5" phase="3" />
+		<objective type="AnimalKill" id="animalDireWolf" value="1" phase="3" />
+
+		<reward type="Exp" value="5000" />
+		<reward type="Item" id="bloodCoin" value="30" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="150-250" />
+	</quest>
+	
+	<quest id="challenge_bearsDen">
+		<property name="name_key" value="challenge_bearsDen" />
+		<property name="subtitle_key" value="challenge_bearsDen_subtitle" />
+		<property name="description_key" value="challenge_bearsDen_offer" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_bearsDen_offer" />
+		<property name="difficulty" value="insane" />
+
+		<objective type="RandomGoto" value="100-200" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+		
+		<action type="SpawnEnemy" id="animalBear" value="3" phase="3" />
+		
+		<objective type="AnimalKill" id="animalBear" value="3" phase="3" />
+
+		<reward type="Exp" value="7500" />
+		<reward type="Item" id="bloodCoin" value="60" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="150-250" />
+	</quest>
+	
+	<quest id="challenge_chickenHeaven">
+		<property name="name_key" value="challenge_chickenHeaven" />
+		<property name="subtitle_key" value="challenge_chickenHeaven_subtitle" />
+		<property name="description_key" value="challenge_chickenHeaven_offer" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_chickenHeaven_offer" />
+		<property name="difficulty" value="insane" />
+
+		<objective type="RandomGoto" value="1500-2500" phase="1">
+			<property name="completion_distance" value="50" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+		
+		<action type="SpawnEnemy" id="animalChicken" value="30" phase="3" />
+		
+		<objective type="AnimalKill" id="animalChicken" value="5" phase="3" />
+
+		<reward type="Exp" value="2500" />
+		<reward type="Item" id="bloodCoin" value="50" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="25-50" />
+	</quest>
+	
+	<quest id="challenge_horde">
+		<property name="name_key" value="challenge_horde" />
+		<property name="subtitle_key" value="challenge_horde_subtitle" />
+		<property name="description_key" value="challenge_horde_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_horde_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="RandomGoto" value="300-400" phase="1">
+			<property name="completion_distance" value="30" />
+		</objective>
+
+		<objective type="RallyPoint">
+			<property name="start_mode" value="Create" />
+			<property name="phase" value="2" />
+		</objective>
+
+		<action type="SpawnEnemy" id="zombieBoe" value="12" phase="3" />
+		<action type="SpawnEnemy" id="zombieLab" value="8" phase="3" />
+		<action type="SpawnEnemy" id="zombieJoeRadiated" value="4" phase="3" />
+		<action type="SpawnEnemy" id="zombieArlene" value="12" phase="3" />
+		<action type="SpawnEnemy" id="zombieLabRadiated" value="4" phase="3" />
+
+		<objective type="ZombieKill" id="zombieBoe" value="6" phase="3" />
+		<objective type="ZombieKill" id="zombieLab" value="4" phase="3" />
+		<objective type="ZombieKill" id="zombieJoeRadiated" value="2" phase="3" />
+		<objective type="ZombieKill" id="zombieArlene" value="8" phase="3" />
+		<objective type="ZombieKill" id="zombieLabRadiated" value="2" phase="3" />
+			
+		<reward type="Exp" value="12000" />
+		<reward type="Item" id="bloodCoin" value="200" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="500-900" stage="aftercomplete" />
+	</quest>
+	
+	<!-- KILLING SERIES 1-->
+	<quest id="challenge_killingseries_one">
+		<property name="name_key" value="challenge_killingseries_one" />
+		<property name="subtitle_key" value="challenge_killingseries_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="10"  />
+
+		<reward type="Exp" value="1000" />
+		<reward type="Item" id="bloodCoin" value="10" stage="aftercomplete" />
+		<reward type="Item" id="dnaZeta" value="1" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="25-50" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_two" stage="aftercomplete"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_two">
+		<property name="name_key" value="challenge_killingseries_one" />
+		<property name="subtitle_key" value="challenge_killingseries_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="15"  />
+
+		<reward type="Exp" value="15000" />
+		<reward type="Item" id="bloodCoin" value="15" stage="aftercomplete" />
+		<reward type="Item" id="dnaAlpha" value="1" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="40-60" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_three" stage="aftercomplete"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_three">
+		<property name="name_key" value="challenge_killingseries_one" />
+		<property name="subtitle_key" value="challenge_killingseries_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="20"  />
+
+		<reward type="Exp" value="2000" />
+		<reward type="Item" id="bloodCoin" value="20" stage="aftercomplete" />
+		<reward type="Item" id="dnaBeta" value="1" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="50-80" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_four" stage="aftercomplete"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_four">
+		<property name="name_key" value="challenge_killingseries_one" />
+		<property name="subtitle_key" value="challenge_killingseries_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="25"  />
+
+		<reward type="Exp" value="2500" />
+		<reward type="Item" id="bloodCoin" value="25" stage="aftercomplete" />
+		<reward type="Item" id="dnaDelta" value="1" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_final" stage="aftercomplete"/>
+		<reward type="Item" id="casinoCoin" value="70-100" stage="aftercomplete" />
+	</quest>
+	
+	<quest id="challenge_killingseries_final">
+		<property name="name_key" value="challenge_killingseries_one" />
+		<property name="subtitle_key" value="challenge_killingseries_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="30"  />
+
+		<reward type="Exp" value="4000" />
+		<reward type="Item" id="bloodCoin" value="30" stage="aftercomplete" />
+		<reward type="Item" id="dnaGamma" value="1" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="80-120" stage="aftercomplete" />
+		<reward type="Item" id="qc_killingseries" value="1" stage="aftercomplete" />
+		<reward type="Item" id="cntLockedLootBlock" value="1" />
+	</quest>
+	
+	<!-- KILLING SERIES 2 -->
+	<quest id="challenge_killingseries_two_one">
+		<property name="name_key" value="challenge_killingseries_two_one" />
+		<property name="subtitle_key" value="challenge_killingseries_two_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_two_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_two_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="30"  />
+
+		<reward type="Exp" value="2500" />
+		<reward type="Item" id="bloodCoin" value="30" stage="aftercomplete" />
+		<reward type="Item" id="dnaZeta" value="2" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="50-100" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_two_two" stage="aftercomplete"/>
+		<reward type="Item" id="shippingOrder" value="0-3" prob="0.001"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_two_two">
+		<property name="name_key" value="challenge_killingseries_two_one" />
+		<property name="subtitle_key" value="challenge_killingseries_two_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_two_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_two_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="45"  />
+
+		<reward type="Exp" value="3250" />
+		<reward type="Item" id="bloodCoin" value="45" stage="aftercomplete" />
+		<reward type="Item" id="dnaAlpha" value="2" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="80-120" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_two_three" stage="aftercomplete"/>
+		<reward type="Item" id="shippingOrder" value="0-3" prob="0.001"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_two_three">
+		<property name="name_key" value="challenge_killingseries_two_one" />
+		<property name="subtitle_key" value="challenge_killingseries_two_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_two_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_two_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="60"  />
+
+		<reward type="Exp" value="4000" />
+		<reward type="Item" id="bloodCoin" value="60" stage="aftercomplete" />
+		<reward type="Item" id="dnaBeta" value="2" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="100-160" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_two_four" stage="aftercomplete"/>
+		<reward type="Item" id="shippingOrder" value="0-3" prob="0.001"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_two_four">
+		<property name="name_key" value="challenge_killingseries_two_one" />
+		<property name="subtitle_key" value="challenge_killingseries_two_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_two_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_two_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="75"  />
+
+		<reward type="Exp" value="4750" />
+		<reward type="Item" id="bloodCoin" value="75" stage="aftercomplete" />
+		<reward type="Item" id="dnaDelta" value="2" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Quest" id="challenge_killingseries_two_final" stage="aftercomplete"/>
+		<reward type="Item" id="casinoCoin" value="140-200" stage="aftercomplete" />
+		<reward type="Item" id="shippingOrder" value="0-3" prob="0.001"/>
+	</quest>
+	
+	<quest id="challenge_killingseries_two_final">
+		<property name="name_key" value="challenge_killingseries_two_one" />
+		<property name="subtitle_key" value="challenge_killingseries_two_one_subtitle" />
+		<property name="description_key" value="challenge_killingseries_two_one_desc" />
+		<property name="icon" value="ui_game_symbol_knife" />
+		<property name="repeatable" value="true" />
+		<property name="category_key" value="challenge" />
+		<property name="offer_key" value="challenge_killingseries_two_one_offer" />
+		<property name="difficulty" value="normal" />
+		
+		<objective type="ZombieKill" value="90"  />
+
+		<reward type="Exp" value="7500" />
+		<reward type="Item" id="bloodCoin" value="90" stage="aftercomplete" />
+		<reward type="Item" id="dnaGamma" value="2" stage="aftercomplete" />
+		<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+		<reward type="Item" id="casinoCoin" value="500-1000" stage="aftercomplete" />
+		<reward type="Item" id="qc_killingseries" value="1" stage="aftercomplete" />
+		<reward type="Item" id="unobtaniumNugget" value="1-4" stage="aftercomplete"/>
+		<reward type="Item" id="cntLockedLootBlock" value="1-3" />
+		<reward type="Item" id="cntLockedLootBlock2" value="1" prob="0.66"/>
+		<reward type="Item" id="cntShippingCrateShotgunMessiah" value="1-2" prob="0.025"/>
+		<reward type="Item" id="cntShippingCrateWorkingStiffs" value="1-2" prob="0.025"/>
+		<reward type="Item" id="cntShippingCrateConstructionSupplies" value="1-2" prob="0.025"/>
+		<reward type="Item" id="shippingOrder" value="5-20" prob="0.2"/>
+		<reward type="Item" id="shippingMedicOrder" value="1-5" prob="0.2"/>
+	</quest>
+
+	</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival1']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival2']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival3']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival4']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival5']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival6']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival7']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_BasicSurvival8']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='quest_whiteRiverCitizen1']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+<reward type="Item" id="armorMiningHelmet" value="1" tier="3,6" />
+<reward type="Item" id="qc_killingseries" value="1" stage="aftercomplete" />
+
+</append>
+
+<append xpath="quests/quest[@id='challenge_silenceofthelambs']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_drunkanddisorderly']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_nurseyoubacktohealth']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_starvingtourists']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_dogdaysareover']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_itsybitsyspider']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_ladykiller']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_maneater']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_yournothingspecial']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_imalumberjackandimokay']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_blitzdefense']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_givemeaz']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_dishonorabledischarge']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_cableguysnevermadeit']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_killthewabbit']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_nailsomechicks']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_thatlldopig']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_stagparty']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_dontfeedthebears']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+<append xpath="quests/quest[@id='challenge_buythefarm']">
+<reward type="Item" id="questCoin" value="1" stage="aftercomplete" />
+</append>
+
+</configs>

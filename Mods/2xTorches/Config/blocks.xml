@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<configs>
+	<!-- TORCH -->
+	<set xpath="/blocks/block[@name='wallTorchLightPlayer']/property[@name='HeatMapStrength']/@value">.5</set>
+	
+	<!-- CANDLES -->
+	<set xpath="/blocks/block[@name='candleWallLight']/property[@name='HeatMapStrength']/@value">.25</set>
+	
+</configs>

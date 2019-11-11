@@ -5,6 +5,8 @@
 			<Description>
 This is a mod pack for my server Da Okole - a 7 days to die server
 
+Server Connection Info: 198.204.242.74:25070
+
 Modlets and other changes in this pack is is specific to my server and i will try to keep up with updates of the mods on the client and server.
 
 All mods,plugins are owned and maintained by their respective owners a list of mods running on this server are listed below with author's name. All mods found here can be found on the official forums @ https://7daystodie.com/forums
@@ -17,8 +19,9 @@ Telrics Health Bars JaxTeller718 - CarRespawner JaxTeller718 - Birds Nest And Tr
 				<Exclude>Servers</Exclude>
 			</Excludes>
 			<Version>alpha18</Version>
-			<RSS/>
-			<ReleaseNotes/>
+			<Address>198.204.242.74</Address>
+			<Port>25070</Port>
+			<WebSite>chaoticrealms.net</WebSite>
 			<Downloads>
 				<Download>https://github.com/Xeliaa/Da-Okole</Download>
 			</Downloads>

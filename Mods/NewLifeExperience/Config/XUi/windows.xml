@@ -1,6 +1,18 @@
 <configs>
+	<!-- replaced Icons from Progression System -->
 	<set xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel/grid[@name='categories']/@cols">10</set>
 	<set xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel/grid[@name='categories']/@width">695</set>
 	<set xpath="/windows/window[@name='windowSkillList']/panel[@name='content']/rect[@name='categoryHeader']/panel/grid[@name='categories']/@cell_width">38</set>
 	
+	<!-- Setup for Inputslot 3 -->
+	<set xpath="/windows/window[@name='windowForgeInput']/@height">279</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/sprite[@name='backgroundMain']/@height">228</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/@height">223</set>
+	<set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content']/grid/@rows">3</set>
+
+  <!-- Allow to Melt and Storeage Tungsten into the Forge -->
+  <set xpath="/windows/window[@name='windowForgeInput']/@materials_accepted">iron,brass,lead,glass,stone,clay,tungsten</set>
+  <set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/@height">223</set>
+  <set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/grid/@rows">7</set>
+  <set xpath="/windows/window[@name='windowForgeInput']/rect[@name='content2']/grid/@cell_height">28</set>
 </configs>

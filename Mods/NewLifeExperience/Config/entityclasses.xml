@@ -661,6 +661,8 @@
 <append xpath="entity_classes/entity_class[@name='zombieFatCop']">
 <drop event="Harvest" name="bloodCoin" tag="allToolsHarvest" count="30"/>
 <drop event="Harvest" name="dnaZeta" tag="allToolsHarvest" count="1,2" prob="0.25"/>
+<drop event="Harvest" name="sukaCola" tag="allToolsHarvest" count="1,2" prob="0.06"/>
+<drop event="Harvest" name="sukaColaQuantum" tag="allToolsHarvest" count="1,2" prob="0.02"/>
 </append>
 
 <append xpath="entity_classes/entity_class[@name='zombieFatCopFeral']">

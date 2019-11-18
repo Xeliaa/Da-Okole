@@ -2,7 +2,7 @@
 	<append xpath="/items">
 <!-- USER MOD ITEMS -->
 <item name="meleeToolModifiedShovelStone">
-	<property name="Tags" value="melee,medium,tool,shovel,perkDeepCuts,perkMotherLode"/>
+	<property name="Tags" value="melee,grunting,medium,tool,shovel,attStrength,perkMiner69r,perkMotherLode,canHaveCosmetic"/>
 	<property name="DisplayType" value="melee"/>
 	<property name="CustomIcon" value="meleeToolShovelStone" />
 	<property name="CustomIconTint" value="F9E79F" />
@@ -17,6 +17,7 @@
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
@@ -30,21 +31,26 @@
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="UsePowerAttackAnimation" value="true"/>
 	</property>
-	<effect_group name="Base Effects">
-		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
-		<passive_effect name="BlockRange" operation="base_set" value="4"/>
-		<passive_effect name="EntityDamage" operation="base_set" value="15"/> <!-- meleeToolShovelStone -->
+	<effect_group name="meleeToolModifiedShovelStone">
+		<passive_effect name="EntityDamage" operation="base_set" value="15"/>
 		<passive_effect name="BlockDamage" operation="base_set" value="30"/>
 		<passive_effect name="AttacksPerMinute" operation="base_set" value="40"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="19" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="140,450" tier="1,6" tags="perkMiner69r"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="1" tags="perkMiner69r"/>
+		<passive_effect name="MaxRange" operation="base_set" value="3.4"/>
+		<passive_effect name="BlockRange" operation="base_set" value="4"/>
+		
+		<passive_effect name="ModSlots" operation="base_set" value="0,1,1,1,2,2" tier="1,2,3,4,5,6"/>
+		<passive_effect name="ModPowerBonus" operation="perc_add" value=".25" tags="EntityDamage,BlockDamage"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="333" tags="EconomicValue"/>
+		
+		<passive_effect name="EntityDamage" operation="perc_add" value=".05,.3" tier="2,6"/> 
+		<passive_effect name="BlockDamage" operation="perc_add" value=".05,.3" tier="2,6"/> 
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="wood"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="stone"/>
 		<passive_effect name="DamageModifier" operation="perc_add" value="-.5" tags="metal"/>
-		<passive_effect name="DamageModifier" operation="perc_add" value="1.1" tags="earth"/>
-		<passive_effect name="StaminaLoss" operation="base_set" value="19" tags="primary"/>
-		<passive_effect name="DegradationMax" operation="base_set" value="140,450" tier="1,6"/>
-		<passive_effect name="ModSlots" operation="base_set" value="0,2" tier="1,6"/>
-		<passive_effect name="ModPowerBonus" operation="perc_add" value=".25" tags="EntityDamage,BlockDamage"/>
-		<passive_effect name="ModPowerBonus" operation="base_add" value="333" tags="EconomicValue"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="1.1" tags="earth"/>	
 	</effect_group>
 	<effect_group name="Power Attack">
 		<passive_effect name="EntityDamage" operation="perc_add" value="1" tags="secondary"/>
@@ -52,9 +58,7 @@
 		<passive_effect name="AttacksPerMinute" operation="perc_add" value="-.3" tags="secondary"/>
 		<passive_effect name="StaminaLoss" operation="base_add" value="25" tags="secondary"/>
 	</effect_group>
-	<property name="Group" value="Tools/Traps,Basics"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
-	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+	<property name="Group" value="Tools/Traps"/>
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="7.5"/>
 </item>
@@ -75,6 +79,7 @@
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="50"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.1"/>
@@ -133,7 +138,7 @@
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="FuelValue" value="250"/>
-
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
@@ -197,7 +202,7 @@
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="EconomicValue" value="550"/>
 	<property name="FuelValue" value="300"/>
-
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sound_start" value="swoosh"/>
@@ -290,6 +295,7 @@
 	<property name="DegradationBreaksAfter" value="false" />
 	<property name="RepairTools" value="rawDiamond" />
 	<property name="EconomicValue" value="7500" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>
@@ -356,7 +362,7 @@
 	<property name="Group" value="Ammo/Weapons,Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
@@ -558,6 +564,7 @@
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="8"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Catapult"/>
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
@@ -649,6 +656,7 @@
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="8"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Catapult"/>
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
@@ -740,6 +748,7 @@
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="8"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Catapult"/>
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
@@ -826,6 +835,7 @@
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="8"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Launcher"/>
 		<property name="Hitmask_override" value="Arrow"/>
@@ -1039,6 +1049,7 @@
 	<property name="Stacknumber" value="8" /> <!-- STK ammo -->
 	<property name="FuelValue" value="60" />
 	<property name="EconomicValue" value="25" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action1">
 		<property name="Class" value="Projectile" />
 		<property name="Explosion.ParticleIndex" value="6" /> <!-- which Prefab/particle is used -->
@@ -1091,7 +1102,7 @@
 	<property name="Group" value="Ammo/Weapons,Tools/Traps"/>
 	<property name="ActionSkillGroup" value="Blunt Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
-	
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
@@ -1167,7 +1178,7 @@
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 	<property name="LightValue" value="0.45"/>
 	<property name="EconomicValue" value="1100"/>
-
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Delay" value="0.6"/> <!-- obsolete if rounds per minute exists -->
@@ -1355,7 +1366,6 @@
 <item name="foodSweetCandy">
 	<property name="DisplayType" value="waterRedTea"/>
 	<property name="CustomIcon" value="sweet_candys" />
-	<property name="CustomIconTint" value="AA0CAA" />
 	<property name="HoldType" value="31"/>
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -1612,6 +1622,7 @@
 	<property name="SoundJammed" value="ItemNeedsRepair" />
 	<property name="SoundDestroy" value="wooddestroy1" />
 	<property name="Weight" value="200" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
@@ -1722,6 +1733,7 @@
 	<property name="EconomicValue" value="300" />
 	<property name="SoundJammed" value="ItemNeedsRepair" />
 	<property name="SoundDestroy" value="wooddestroy1" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
@@ -1791,6 +1803,7 @@
 	<property name="SoundJammed" value="ItemNeedsRepair" />
 	<property name="SoundDestroy" value="wooddestroy1" />
 	<property name="Weight" value="200" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Damage_type" value="Slashing"/>
@@ -1953,6 +1966,7 @@
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="EconomicValue" value="288"/>
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="Ranged"/>
 		<property name="Hitmask_override" value="Melee"/>
@@ -2011,6 +2025,7 @@
 	<property name="CustomIconTint" value="D6AC63" />
 	<property name="RepairTools" value="forgedTungsten" />
 	<property name="EconomicValue" value="1500" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>   <!-- limit to 0.15, else the sphere cast can overlap the target already -->
@@ -2062,6 +2077,7 @@
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
 	<property name="RepairTools" value="forgedTungsten" />
 	<property name="EconomicValue" value="1250" />
+	<property name="ShowQuality" value="true"/>
 	<property class="Action0">
 		<property name="Class" value="DynamicMelee"/>
 		<property name="Sphere" value="0.15"/>
@@ -2112,7 +2128,7 @@
 	<property name="CustomIcon" value="resourceForgedSteel" /> <!-- xxx model to be replaced -->
 	<property name="CustomIconTint" value="D6AC63" />
 	<property name="HoldType" value="21" />
-	<property name="Material" value="Mmetal" />
+	<property name="Material" value="Mtungsten" />
 	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="EconomicValue" value="75" />
 	<property name="Group" value="Resources" />
@@ -4392,6 +4408,33 @@
 	<property name="Group" value="Resources"/>
 </item>
 
+<!-- New Resource Material/Metal/Ore-->
+<item name="resourceTungsten">
+      <property name="Tags" value="tungsten"/>
+	  <property name="CustomIcon" value="TungstenOre"/>
+      <property name="CreativeMode" value="Player"/>
+      <property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+      <property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+      <property name="Material" value="MresourceTungstenFragment"/>
+      <property name="HoldType" value="45" />
+      <property name="Stacknumber" value="5000"/>
+      <property name="Weight" value="2"/>
+      <property name="EconomicValue" value="35"/>
+      <property name="EconomicBundleSize" value="25"/>
+      <property name="CraftingIngredientExp" value="5"/>
+      <property name="CraftingIngredientTime" value="45"/>
+      <property name="Group" value="Resources"/>
+      <property name="DescriptionKey" value="resourceTungstenDesc"/>
+</item>
+
+<item name="unit_tungsten">
+      <property name="Extends" value="unit_iron"/>
+      <property name="CustomIcon" value="resourceTungsten"/>
+      <property name="Material" value="Mtungsten"/>
+      <property name="CreativeMode" value="None"/>
+      <property name="DescriptionKey" value="resourceTungstenDesc"/>
+</item>
+
 <!-- END ADDING NEW ITEMS MOD -->
 </append>
 <!-- MODIFING EXISTS ITEM PROBS-->
@@ -4416,6 +4459,7 @@
 <set xpath="/items/item[@name='drinkJarGoldenRodTea']/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='drinkJarRedTea']/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='drinkJarBoiledWater']/property[@name='Stacknumber']/@value">100</set>
+<set xpath="/items/item[@name='drinkJarPureMineralWater']/property[@name='Stacknumber']/@value">100</set>
 <set xpath="/items/item[@name='resourceIronFragment']/property[@name='Stacknumber']/@value">5000</set>
 <set xpath="/items/item[@name='oldCash']/property[@name='Stacknumber']/@value">9999</set>
 
@@ -4447,8 +4491,6 @@ AMMO DMG
 <append xpath="items/item[@name='foodCanMiso']">
 <property name="Stacknumber" value="50" /> 
 </append>
-
-
 
 <append xpath="items/item[@name='medicalPlasterCast']">
 <property name="Stacknumber" value="50" />

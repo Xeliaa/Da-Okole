@@ -2,7 +2,7 @@
 <configs>
 	<append xpath="/recipes">
 <!-- SELF RECIPES MODDING -->
-<recipe name="meleeToolModifiedShovelStone" count="1">
+<recipe name="meleeToolModifiedShovelStone" count="1" tags="perkMiner69r">
 	<ingredient name="resourceRockSmall" count="5"/>
 	<ingredient name="resourceYuccaFibers" count="3"/>
 	<ingredient name="resourceWood" count="3"/>
@@ -12,7 +12,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="meleeToolModifiedStoneAxe" count="1">
+<recipe name="meleeToolModifiedStoneAxe" count="1" tags="perkMiner69r">
 	<ingredient name="resourceRockSmall" count="4"/>
 	<ingredient name="resourceYuccaFibers" count="2"/>
 	<ingredient name="resourceWood" count="2"/>
@@ -22,7 +22,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="meleeModifiedClubWood" count="1">
+<recipe name="meleeModifiedClubWood" count="1" tags="perkMiner69r">
 	<ingredient name="resourceWood" count="6"/>
 	<ingredient name="meleeClubWood" count="1"/>
 	<effect_group>
@@ -30,7 +30,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="meleeModifiedClubIron" count="1">
+<recipe name="meleeModifiedClubIron" count="1" tags="perkSkullCrusher">
 	<ingredient name="meleeClubIron" count="1"/>
 	<ingredient name="resourceScrapIron" count="200"/>
 	<ingredient name="resourceWood" count="25"/>
@@ -41,6 +41,33 @@
 
 <recipe name="resourceCoal" count="1000" craft_area="chemistryStation" always_unlocked="true"> 
 	<ingredient name="resourceRawDiamond" count="1"/>
+</recipe>
+
+<recipe name="warningFloorBlock" count="1" craft_area="workbench" always_unlocked="true"> 
+	<ingredient name="resourceConcreteMix" count="8"/>
+	<ingredient name="resourcePaint" count="2"/>
+</recipe>
+
+<recipe name="floorChain" count="1" craft_area="workbench" always_unlocked="true"> 
+	<ingredient name="resourceMetalPipe" count="8"/>
+	<ingredient name="resourceForgedIron" count="1"/>
+</recipe>
+
+<recipe name="floorCarpet" count="1" craft_area="workbench" always_unlocked="true"> 
+	<ingredient name="resourceWood" count="4"/>
+	<ingredient name="resourceCropCottonPlant" count="8"/>
+</recipe>
+
+<recipe name="floorJeans" count="4" craft_area="workbench" always_unlocked="true"> 
+	<ingredient name="resourceWood" count="16"/>
+	<ingredient name="resourceCropCottonPlant" count="32"/>
+	<ingredient name="modDyeBlue" count="1"/>
+</recipe>
+
+<recipe name="floorJeans" count="1" craft_area="workbench" always_unlocked="true"> 
+	<ingredient name="resourceWood" count="4"/>
+	<ingredient name="resourceCropCottonPlant" count="8"/>
+	<ingredient name="foodCropBlueberries" count="4"/>
 </recipe>
 
 <recipe name="resourceCoal" count="1" craft_area="campfire" always_unlocked="true">
@@ -96,7 +123,7 @@
 	<ingredient name="resourceLeather" count="2" />
 </recipe>
 
-<recipe name="pickaxeDiamondCarbon" count="1" craft_area="workbench" tags="learnable">
+<recipe name="pickaxeDiamondCarbon" count="1" craft_area="workbench" tags="learnable,perkMiner69r">
 	<ingredient name="resourceForgedIron" count="60" />
 	<ingredient name="resourceCoal" count="20" />
 	<ingredient name="resourceRawDiamond" count="1" />
@@ -114,7 +141,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="meleeToolKnifeMachete" count="1" craft_area="workbench">
+<recipe name="meleeToolKnifeMachete" count="1" craft_area="workbench" tags="perkDeepCuts">
 	<ingredient name="resourceForgedSteel" count="15" />
 	<ingredient name="resourceScrapIron" count="40" />
 	<ingredient name="resourceScrapBrass" count="40" />
@@ -229,7 +256,7 @@
 -->
 
 <!-- TAB A -->
-<recipe name="recurvedBow" count="1" craft_area="workbench" tags="learnable">
+<recipe name="recurvedBow" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceMetalPipe" count="2" />
 	<ingredient name="resourceLeather" count="12" />
 	<ingredient name="resourceDuctTape" count="1" />
@@ -239,7 +266,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="militaryBow" count="1" craft_area="workbench" tags="learnable">
+<recipe name="militaryBow" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceMetalPipe" count="4" />
 	<ingredient name="resourceMilitaryFiber" count="24" />
 	<effect_group>
@@ -247,7 +274,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="barrageBow" count="1" craft_area="workbench" tags="learnable">
+<recipe name="barrageBow" count="1" craft_area="workbench" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceMetalPipe" count="2" />
 	<ingredient name="resourceLeather" count="2" />
 	<ingredient name="resourceDuctTape" count="1" />
@@ -256,7 +283,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="powercrossbow" count="1" tags="learnable">
+<recipe name="powercrossbow" count="1" tags="learnable,workbenchCrafting">
 	<ingredient name="resourceForgedSteel" count="10"/>
 	<ingredient name="resourceLeather" count="5"/>
 	<ingredient name="resourceGlue" count="5"/>
@@ -402,7 +429,7 @@
 </recipe>
 
 
-<recipe name="scimitar" count="1" craft_area="workbench" tags="learnable">
+<recipe name="scimitar" count="1" craft_area="workbench" tags="learnable,perkDeepCuts">
 	<ingredient name="meleeToolKnifeMachete" count="1"/>
 	<ingredient name="resourceForgedSteel" count="30"/>
 	<ingredient name="resourceWood" count="30"/>
@@ -411,7 +438,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="excalibur" count="1" craft_area="workbench" tags="learnable">
+<recipe name="excalibur" count="1" craft_area="workbench" tags="learnable,perkDeepCuts">
 	<ingredient name="excaliburPart" count="10"/>
 	<effect_group>
 		<passive_effect name="CraftingIngredientCount" level="2,6" operation="perc_add" value=".5,2.5" tags="excaliburPart"/>
@@ -526,7 +553,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="meleeToolWrench" count="1">
+<recipe name="meleeToolWrench" count="1" tags="learnable,perkSalvageOperations">
 	<ingredient name="resourceForgedSteel" count="2"/>
 	<ingredient name="resourceMechanicalParts" count="1"/>
 	<ingredient name="resourceSpring" count="4"/>
@@ -644,7 +671,7 @@
 	<ingredient name="questCoin" count="10" />
 </recipe>
 
-<recipe name="slicerKnife" count="1" tags="learnable">
+<recipe name="slicerKnife" count="1" tags="learnable,perkDeepCuts">
 	<ingredient name="bloodCoin" count="750" />
 </recipe>
 
@@ -675,8 +702,8 @@
 	<ingredient name="bloodCoin" count="100" />
 </recipe>
 
-<recipe name="resourceCoal" count="50" >
-	<ingredient name="bloodCoin" count="80" />
+<recipe name="resourceCoal" count="100" >
+	<ingredient name="bloodCoin" count="50" />
 </recipe>
 
 <recipe name="resourceScrapIron" count="500" >
@@ -687,20 +714,28 @@
 	<ingredient name="bloodCoin" count="100" />
 </recipe>
 
-<recipe name="resourceWood" count="500" >
-	<ingredient name="bloodCoin" count="25" />
+<recipe name="resourceTungsten" count="50" >
+	<ingredient name="bloodCoin" count="100" />
+</recipe>
+
+<recipe name="resourceWood" count="300" >
+	<ingredient name="bloodCoin" count="20" />
 </recipe>
 
 <recipe name="resourceScrapLead" count="200" >
 	<ingredient name="bloodCoin" count="100" />
 </recipe>
 
-<recipe name="resourceClayLump" count="500" >
+<recipe name="resourceClayLump" count="300" >
 	<ingredient name="bloodCoin" count="25" />
 </recipe>
 
-<recipe name="resourceRockSmall" count="500" >
-	<ingredient name="bloodCoin" count="25" />
+<recipe name="resourceRockSmall" count="300" >
+	<ingredient name="bloodCoin" count="20" />
+</recipe>
+
+<recipe name="resourceCrushedSand" count="300" >
+	<ingredient name="bloodCoin" count="20" />
 </recipe>
 <!--CRATE with MINER -->
 <recipe name="cntShippingCrateBookstore" count="1" >
@@ -975,7 +1010,7 @@
 </recipe>
 <!-- END OF TRANSFORMING -->
 
-<recipe name="gunActionCombatShotgun" craft_area="workbench" count="1" tags="learnable">
+<recipe name="gunActionCombatShotgun" craft_area="workbench" count="1" tags="learnable,perkBoomstick">
 	<ingredient name="resourceForgedSteel" count="65"/>
 	<ingredient name="resourceMechanicalParts" count="35"/>
 	<ingredient name="resourceDuctTape" count="14"/>
@@ -992,7 +1027,7 @@
 	<ingredient name="resourceBulletCasing" count="3"/>
 </recipe>
 
-<recipe name="shovelTungsten" count="1" craft_area="workbench" tags="learnable">
+<recipe name="shovelTungsten" count="1" craft_area="workbench" tags="learnable,perkMiner69r">
 	<ingredient name="forgedTungsten" count="20" />
 	<ingredient name="resourceWood" count="20" />
 	<ingredient name="resourceGoldNugget" count="8" />
@@ -1001,7 +1036,7 @@
 	</effect_group>
 </recipe>
 
-<recipe name="fireaxeTungsten" count="1" craft_area="workbench" tags="learnable">
+<recipe name="fireaxeTungsten" count="1" craft_area="workbench" tags="learnable,perkMiner69r">
 	<ingredient name="forgedTungsten" count="20" />
 	<ingredient name="resourceWood" count="20" />
 	<ingredient name="resourceGoldNugget" count="8" />
@@ -1018,8 +1053,16 @@
 </recipe>
 
 <recipe name="forgedTungsten" count="1" craft_area="forge" material_based="true" tags="learnable">
-	<ingredient name="unit_iron" count="40"/>
-	<ingredient name="unit_clay" count="20"/>
+	<ingredient name="unit_tungsten" count="120"/>
+	<ingredient name="unit_lead" count="20"/>
+	<ingredient name="unit_clay" count="40"/>
+</recipe>
+
+<recipe name="blockTungsten" count="1" craft_area="workbench" material_based="true">
+	<ingredient name="forgedTungsten" count="8"/>
+	<ingredient name="resourceGlue" count="6"/>
+	<ingredient name="resourceYuccaFibers" count="34" />
+	<ingredient name="resourceMilitaryFiber" count="8"/>
 </recipe>
 
 <recipe name="treeCactus01" count="1">

@@ -25,6 +25,37 @@
 	<property name="MaxDamage" value="500" />
 	<property name="Experience" value="5.0"/>
 </material>
+<!-- New Material / Ore / Metal -->
+    <material id="MtungstenNoGlue">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="tungsten"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="0"/>
+      <property name="Mass" type="int" value="1"/>
+      <property name="MaxDamage" value="450"/>
+      <property name="Experience" value="8"/>
+    </material>
+
+    <material id="MresourceTungstenFragment">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="tungsten"/>
+      <property name="Experience" value="16"/>
+    </material>
+
+    <material id="Mtungsten">
+      <property name="damage_category" value="metal"/>
+      <property name="surface_category" value="metal"/>
+      <property name="forge_category" value="tungsten"/>
+      <property name="Hardness" type="float" value="1"/>
+      <property name="stepsound" value="metal"/>
+      <property name="stability_glue" value="300"/>
+      <property name="Mass" type="int" value="10"/>
+      <property name="MaxDamage" value="450"/>
+      <property name="Experience" value="16"/>
+    </material>
 
 <!-- End self made Materials -->
 </append>

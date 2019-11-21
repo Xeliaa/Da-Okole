@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<prefab>
+  <property name="CopyAirBlocks" value="True" />
+  <property name="AllowTopSoilDecorations" value="False" />
+  <property name="YOffset" value="-24" />
+  <property name="Zoning" value="Industrial" />
+  <property name="RotationToFaceNorth" value="2" />
+  <property name="AllowedTownships" value="city,town,rural,wilderness" />
+  <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+  <property name="TraderArea" value="False" />
+  <property name="ExcludeDistantPOIMesh" value="False" />
+  <property name="SleeperVolumeSize" value="45, 4, 46#15, 7, 15#8, 6, 20#8, 15, 11#15, 25, 19#16, 3, 23#15, 6, 26#37, 5, 21#7, 4, 9#29, 4, 21#14, 4, 24#15, 3, 23#9, 5, 13#13, 19, 20#29, 5, 21" />
+  <property name="SleeperVolumeStart" value="0, 23, 0#2, 26, 2#18, 15, 22#25, 15, 22#0, 2, 23#0, 15, 0#16, 7, 20#9, 9, 0#9, 3, 12#17, 3, 0#18, 3, 22#0, 19, 0#0, 9, 8#33, 2, 21#17, 15, 0" />
+  <property name="SleeperVolumeGroup" value="S_-_Group_Zom_Soldier,7,8,S_-_Group_Zom_Soldier,5,6,S_-_Group_Zom_Soldier,3,4,S_-_Group_Zom_Soldier,3,4,S_Zom_Utility_Worker,5,6,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,5,6,S_-Group_Generic_Zombie,7,8,S_-_Group_Zom_Soldier,3,4,S_-Group_Generic_Zombie,7,8,S_Zom_Utility_Worker,3,4,S_-Group_Generic_Zombie,5,6,S_-_Group_Zom_Soldier,5,6,S_-_Group_Zom_Soldier,7,8,S_Zom_Utility_Worker,7,8" />
+  <property name="SleeperVolumeGameStageAdjust" value="medium,hard,medium,medium,medium,medium,medium,medium,medium,medium,medium,medium,medium,medium,medium" />
+  <property name="SleeperIsLootVolume" value="True,True,True,True,True,True,True,True,False,True,False,False,True,False,False" />
+  <property name="DistantPOIYOffset" value="0" />
+  <property name="EditorGroups" value="government" />
+  <property name="SleeperIsBossVolume" value="False,False,False,False,False,False,False,False,False,False,False,False,False,False,False" />
+  <property name="DifficultyTier" value="1" />
+  <property name="ExcludePOICulling" value="False" />
+  <property name="SleeperVolumeGroupId" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+  <property name="SleeperVolumeFlags" value="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" />
+  <property class="Stats">
+    <property name="TotalVertices" value="624433" />
+    <property name="TotalTriangles" value="542114" />
+    <property class="BlockEntities">
+      <property name="Vertices" value="233013" />
+      <property name="Triangles" value="256585" />
+    </property>
+    <property class="ChunkMeshes0">
+      <property name="Vertices" value="269151" />
+      <property name="Triangles" value="177630" />
+    </property>
+    <property class="ChunkMeshes1">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes2">
+      <property name="Vertices" value="2512" />
+      <property name="Triangles" value="1256" />
+    </property>
+    <property class="ChunkMeshes3">
+      <property name="Vertices" value="444" />
+      <property name="Triangles" value="222" />
+    </property>
+    <property class="ChunkMeshes4">
+      <property name="Vertices" value="104659" />
+      <property name="Triangles" value="82397" />
+    </property>
+    <property class="ChunkMeshes5">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes6">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes7">
+      <property name="Vertices" value="14654" />
+      <property name="Triangles" value="24024" />
+    </property>
+    <property class="ChunkMeshes8">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+    <property class="ChunkMeshes9">
+      <property name="Vertices" value="0" />
+      <property name="Triangles" value="0" />
+    </property>
+  </property>
+</prefab>

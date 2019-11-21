@@ -1,0 +1,472 @@
+<configs>
+	<set xpath="/blocks/block[@name='forge']/property[@class='Workstation']/property[@name='InputMaterials']/@value">iron,brass,lead,glass,stone,clay,tungsten</set>
+	<append xpath="/blocks">
+
+<!-- Self Made Blocks -->
+<block name="powerBuildingBlock">
+	<property name="Material" value="power+wood"/>
+	<property name="CustomIcon" value="woodBlock" />
+	<property name="CustomIconTint" value="FF4D00" />
+	<property name="MaxDamage" value="500"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="Texture" value="10"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+	<property name="DropScale" value="1"/>
+	<property name="Map.Color" value="255,11,12"/>
+	<property class="RepairItems"><property name="resourceConcreteMix" value="1"/></property>
+	<property name="Group" value="Building"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	
+	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="EconomicBundleSize" value="9999"/>
+</block>
+
+<block name="oreTungstenBoulder">
+      <property name="Extends" value="oreBoulderMaster"/>
+	  <property name="CustomIcon" value="TungstenOre" />
+	  <property name="Tags" value="ore"/>
+      <property name="Material" value="MoreMetal"/>
+	  <property name="Map.Color" value="255,0,0"/>
+	  <property name="Shape" value="ModelEntity"/>
+      <property name="Model" value="#@modfolder:Resources/TungstenBoulder.unity3d?TungstenBoulderPrefab"/> 
+      <property name="Mesh" value="models"/>
+	  <drop event="Harvest" name="resourceTungsten" count="15" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+	  <drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+	  <drop event="Fall" name="resourceTungsten" count="4" prob="0.4" stick_chance="0.2"/>
+</block>
+
+<block name="blockTungsten">
+	<property name="Material" value="Mtungsten"/>
+	<property name="CustomIcon" value="TungstenBlock" />
+	<property name="CustomIconTint" value="777777" />
+	<property name="MaxDamage" value="4000"/>
+	<property name="Tags" value="tungsten"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/TungstenBlock.unity3d?TungstenBlockPrefab"/>
+	<property name="Mesh" value="models"/>
+	<!-- <property name="Texture" value="33"/> 440 -->
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceTungsten" value="2"/></property>
+	<drop event="Harvest" name="resourceTungsten" count="6" prob="0.7" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="resourceTungsten" count="4" prob="0.4" stick_chance="0.2"/>
+	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="FilterTags" value="fterrain"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="floorChain">
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="FloorChain" />
+	<property name="MaxDamage" value="750"/>
+	<property name="Tags" value="iron,chain"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FloorChain.unity3d?FloorChainPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceForgedIron" value="1"/></property>
+	<drop event="Harvest" name="resourceScrapIron" count="6" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fwood,fbuilding"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="warningFloorBlock">
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="CustomIcon" value="ConstructionBlock" />
+	<property name="MaxDamage" value="1000"/>
+	<property name="Tags" value="iron,chain"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/WarningBlock.unity3d?WarningBlockPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceConcreteMix" value="2"/></property>
+	<drop event="Harvest" name="resourceConcreteMix" count="2" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fwood,fbuilding"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="floorCarpet">
+	<property name="Material" value="Mwood_weak"/>
+	<property name="CustomIcon" value="FloorCarpet" />
+	<property name="Tags" value="wood"/>
+	<property name="MaxDamage" value="180"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FloorCarpet.unity3d?FloorCarpetPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+	<property name="DropScale" value="1"/>
+	<property class="RepairItems"><property name="resourceCropCottonPlant" value="4"/></property>
+	<property name="Group" value="Building"/>
+	<property name="CanMobsSpawnOn" value="true" />
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="250"/>
+</block>
+
+<block name="floorJeans">
+	<property name="Material" value="Mwood_weak"/>
+	<property name="CustomIcon" value="FloorJeans" />
+	<property name="Tags" value="wood"/>
+	<property name="MaxDamage" value="180"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FloorJeans.unity3d?FloorJeansPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="25"/>
+	<property name="DropScale" value="1"/>
+	<property class="RepairItems"><property name="resourceCropCottonPlant" value="4"/></property>
+	<property name="Group" value="Building"/>
+	<property name="CanMobsSpawnOn" value="true" />
+	<property name="EconomicValue" value="5"/>
+	<property name="EconomicBundleSize" value="250"/>
+</block>
+
+<block name="steelSpikesNew">
+	<property name="CreativeMode" value="None"/>
+	<property name="CustomIcon" value="trapSpikesScrapIronMaster" />
+	<property name="CustomIconTint" value="F0ACAB" />
+	<property name="Class" value="TrunkTip"/>
+	<property name="Damage" value="75"/>
+	<property name="Damage_received" value="50"/>
+	<property name="Material" value="MsteelSpikes1"/>
+	<property name="DisplayType" value="blockHardened" />
+	<property name="MaxDamage" value="7500" />
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Traps/trap_iron_spikes_dmg0" param1="main_mesh"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="Collide" value="movement,melee"/>
+	<property name="LightOpacity" value="6"/>
+	<property name="Path" value="solid"/>
+	<property name="BuffsWhenWalkedOn" value="buffInternalBleedingStrong"/>
+	<property class="RepairItems"> <property name="resourceForgedSteel" value="1"/> </property>
+	<property name="CustomUpgradeSound" value="place_block_metal"/>
+	<drop event="Destroy" name="resourceForgedSteel" count="100,200"/>
+	<drop event="Fall" count="0"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="DescriptionKey" value="trapSpikesGroupDesc"/>
+	<property name="EconomicValue" value="250"/>
+	<property name="EconomicBundleSize" value="10"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>
+
+<block name="steelSpikesDamage1">
+	<property name="Extends" value="steelSpikesNew"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Traps/trap_iron_spikes_dmg1" param1="main_mesh"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelSpikesNew"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="2"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+	<property name="DowngradeBlock" value="steelSpikesDamage2"/>
+</block>
+
+<block name="steelSpikesDamage2">
+	<property name="Extends" value="steelSpikesNew"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Model" value="Traps/trap_iron_spikes_dmg2" param1="main_mesh"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="steelSpikesNew"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="3"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>
+</block>
+
+<!--
+<block name="dirtyBomb">
+	<property name="Class" value="TNT" />
+	<property name="DescriptionKey" value="dirtyBombDesc"/>
+	<property name="Material" value="MclothStable" />
+	<property name="CustomIcon" value="tnt" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="Entities/Lighting/barrel03_burning_playerPrefab" />
+	<property name="Stacknumber" value="50" /> 
+	<property class="Explosion">
+	<property name="ParticleIndex" value="4" /> 
+	<property name="RadiusBlocks" value="25" />
+	<property name="BlockDamage" value="18000" /> 
+	<property name="RadiusEntities" value="25" /> 
+	<property name="EntityDamage" value="1800" /> 
+	</property>
+	<property name="LPHardnessScale" value="0" /> 
+	<property name="CanPickup" value="true" />
+	<property name="Group" value="Tools/Traps" />
+	<property name="EconomicValue" value="2500" />
+</block>
+-->
+
+<block name="cntLockedLootBlock">
+	<property name="DescriptionKey" value="cntLockedLootBlockDesc"/>
+	<property name="CustomIcon" value="lootBox" />
+	<property name="Shape" value="ModelEntity"/>
+     <property name="Model" value="#@modfolder:Resources/LootBoxMain.unity3d?LootBoxMainPrefab"/> 
+     <property name="Mesh" value="models"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="Path" value="solid"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mtrash"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="Stacknumber" value="5" />
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="cntLootBlock"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="cntLootBlock">
+	<property name="Extends" value="cntAmmoPileSmall"/>
+	<property name="MaxDamage" value="777"/>
+	<property class="RepairItems"> <property name="resourceCloth" value="1"/> </property>
+	<property name="Shape" value="ModelEntity"/>
+     <property name="Model" value="#@modfolder:Resources/LootBoxMain.unity3d?LootBoxMainPrefab"/> 
+     <property name="Mesh" value="models"/>
+	<property name="LootList" value="133"/>
+</block>
+
+<block name="cntPowerLoot">
+	<property name="Extends" value="cntAmmoPileSmall"/>
+	<property name="CustomIcon" value="PowerLootBox" />
+	<property name="MaxDamage" value="25000"/>
+	<property class="RepairItems"> <property name="resourceCloth" value="1"/> </property>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Map.Color" value="0,255,0"/>
+     <property name="Model" value="#@modfolder:Resources/PowerLoot.unity3d?PowerLootPrefab"/> 
+     <property name="Mesh" value="models"/>
+	<property name="LootList" value="135"/>
+</block>
+
+<block name="cntLockedLootBlock2">
+	<property name="DescriptionKey" value="cntLockedLootBlockDesc"/>
+	<property name="CustomIcon" value="lootBoxHQ" />
+	<property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="#@modfolder:Resources/LootBoxMain2.unity3d?LootBoxMainPrefab 1"/> 
+    <property name="Mesh" value="models"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="Path" value="solid"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mtrash"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="Stacknumber" value="5" />
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="cntLootBlock2"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="cntLootBlock2">
+	<property name="Extends" value="cntAmmoPileSmall"/>
+	<property name="MaxDamage" value="777"/>
+	<property class="RepairItems"> <property name="resourceCloth" value="1"/> </property>
+	<property name="Shape" value="ModelEntity"/>
+    <property name="Model" value="#@modfolder:Resources/LootBoxMain2.unity3d?LootBoxMainPrefab 1"/> 
+    <property name="Mesh" value="models"/>
+	<property name="LootList" value="134"/>
+</block>
+
+<block name="cntMedicContainer">
+	<property name="DescriptionKey" value="cntMedicContainerDesc"/>
+	<property name="CustomIcon" value="lootBox" />
+	<property name="CustomIconTint" value="FF4D00" />
+	<property name="Shape" value="ModelEntity"/>
+	<property name="MaxDamage" value="1"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Crafting/ChemSetCPrefab"/>
+	<property name="DisplayInfo" value="Name"/>
+	<property name="Material" value="Mtrash"/>
+	<property name="CanMobsSpawnOn" value="false" />
+	<property name="Stacknumber" value="5" />
+	<drop event="Destroy" count="0"/>
+	<property name="DowngradeBlock" value="cntMedicLootPileA"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+</append>
+
+<!-- MODIFIED BLOCK STATS TO REPLACE -->
+<append xpath="blocks/block[@name='rockResource']">
+<drop event="Harvest" name="minerCoin" count="5" prob="0.8" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceSilverNugget" count="1,2" prob="0.04" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceGoldNugget" count="1,2" prob="0.02" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceRawDiamond" count="1,2" prob="0.005" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceTungsten" count="0,4" prob="0.01" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="unobtaniumNugget" count="1,2" prob="0.0025" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="excaliburPart" count="1,2" prob="0.001" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrStone']">
+<drop event="Harvest" name="minerCoin" count="2,4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceSilverNugget" count="1,2" prob="0.02"/>
+<drop event="Harvest" name="resourceGoldNugget" count="1,2" prob="0.0066"/>
+<drop event="Harvest" name="resourceRawDiamond" count="1,2" prob="0.0025"/>
+<drop event="Harvest" name="unobtaniumNugget" count="1,2" prob="0.001"/>
+</append>
+
+<append xpath="blocks/block[@name='terrDestroyedStone']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrDirt']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrFertileGrass']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrForestWGrass1']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrForestWGrass2']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrBurntForestWGrass1']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrBurntForestWGrass2']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrBurntForestFromDirt']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrForestGround']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrBurntForestGround']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+
+<append xpath="blocks/block[@name='terrAsphalt']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreIron']">
+<drop event="Harvest" name="minerCoin" count="4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreLead']">
+<drop event="Harvest" name="minerCoin" count="4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreCoal']">
+<drop event="Harvest" name="minerCoin" count="4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOrePotassiumNitrate']">
+<drop event="Harvest" name="minerCoin" count="4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreOilDeposit']">
+<drop event="Harvest" name="minerCoin" count="4" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrDesertGround']">
+<drop event="Harvest" name="minerCoin" count="3" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+<set xpath="/blocks/block[@name='terrDesertGround']/drop[@name='resourceClayLump']/@count">4</set>
+
+<append xpath="blocks/block[@name='terrSandStone']">
+<drop event="Harvest" name="minerCoin" count="3" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceClayLump" count="2" />
+</append>
+
+<append xpath="blocks/block[@name='terrSnow']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrDestroyedStone']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrGravel']">
+<drop event="Harvest" name="minerCoin" count="2" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="capsCoin" count="1,3" prob="0.01" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreSilver']">
+<drop event="Harvest" name="minerCoin" count="2,6" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceGoldNugget" count="1" prob="0.05"/>
+<drop event="Harvest" name="resourceRawDiamond" count="1" prob="0.03"/>
+<drop event="Harvest" name="unobtaniumNugget" count="1" prob="0.01"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreGold']">
+<drop event="Harvest" name="minerCoin" count="2,6" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceSilverNugget" count="1" prob="0.07"/>
+<drop event="Harvest" name="resourceRawDiamond" count="1" prob="0.03"/>
+<drop event="Harvest" name="unobtaniumNugget" count="1" prob="0.01"/>
+</append>
+
+<append xpath="blocks/block[@name='terrOreDiamond']">
+<drop event="Harvest" name="minerCoin" count="2,6" tag="oreWoodHarvest"/>
+<drop event="Harvest" name="resourceSilverNugget" count="1" prob="0.07"/>
+<drop event="Harvest" name="resourceGoldNugget" count="1" prob="0.05"/>
+<drop event="Harvest" name="unobtaniumNugget" count="1" prob="0.01"/>
+</append>
+
+<append xpath="blocks/block[@name='goreBlockAnimal']">
+<drop event="Harvest" name="bloodCoin" count="6,15" prob="1" tag="butcherHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='goreBlockHumanCorpse']">
+<drop event="Harvest" name="bloodCoin" count="8,16" prob="1" tag="butcherHarvest"/>
+<drop event="Harvest" name="capsCoin" count="2,8" prob="0.3" tag="oreWoodHarvest"/>
+</append>
+
+<append xpath="blocks/block[@name='bedroll']">
+<property name="BuffsWhenWalkedOn" value="buffGoodNightLow"/>
+</append>
+
+
+<append xpath="blocks/block[@name='bed01']">
+<property name="BuffsWhenWalkedOn" value="buffGoodNightMed"/>
+</append>
+
+
+<append xpath="blocks/block[@name='bed02']">
+<property name="BuffsWhenWalkedOn" value="buffGoodNightHigh"/>
+</append>
+
+</configs>

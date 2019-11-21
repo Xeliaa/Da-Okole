@@ -1,0 +1,81 @@
+<configs>
+<!-- Modifie over all Spawnings -->
+<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesAll']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='city']/spawn[@entitygroup='ZombiesNight']/@maxcount">15</set>
+<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='city_wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='FriendlyAnimalsForest']/@maxcount">8</set>
+<set xpath="/spawning/biome[@name='pine_forest']/spawn[@entitygroup='FriendlyAnimalsForest']/@respawndelay">3</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='ZombiesAll']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='FriendlyAnimalsDesert']/@maxcount">8</set>
+<set xpath="/spawning/biome[@name='desert']/spawn[@entitygroup='FriendlyAnimalsDesert']/@respawndelay">3</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesAll']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='wasteland']/spawn[@entitygroup='ZombiesWastelandNight']/@maxcount">12</set>
+<set xpath="/spawning/biome[@name='burnt_forest']/spawn[@entitygroup='ZombiesBurntForest']/@maxcount">9</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='SnowZombies']/@maxcount">6</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='FriendlyAnimalsSnow']/@maxcount">8</set>
+<set xpath="/spawning/biome[@name='snow']/spawn[@entitygroup='FriendlyAnimalsSnow']/@respawndelay">3</set>
+
+<!-- Modifie Dogs Barns -->
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalAlive']/@value">8</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">8</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Sm_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Farm -->
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalAlive']/@value">16</set>
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='TotalPerWave']/@value">16</set>
+<set xpath="/spawning/entityspawner[@name='Farm_Med_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Zombie Soldier Spawns -->
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalAlive']/@value">22</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='TotalPerWave']/@value">22</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Soldier_Med_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Zombie Ghost Town Medium Spawns -->
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalAlive']/@value">27</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='TotalPerWave']/@value">27</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Large_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Zombie Ghost Town Small Spawns -->
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalAlive']/@value">8</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='TotalPerWave']/@value">8</set>
+<set xpath="/spawning/entityspawner[@name='Zombie_Ghost_Town_Sm_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Dogs Junkyards -->
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='Dog_Med_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Spawn Burn Town-->
+<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalAlive']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='TotalPerWave']/@value">24</set>
+<set xpath="/spawning/entityspawner[@name='SpawnBurntTown']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<!-- Modifie Small Feral Territoral -->
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalAlive']/@value">5</set>
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='TotalPerWave']/@value">5</set>
+<set xpath="/spawning/entityspawner[@name='Spawn_Small_Feral_Territorial']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">2</set>
+
+<!-- Modifie PoI Spawners -->
+<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalAlive']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='TotalPerWave']/@value">6</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExtraSmall']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalAlive']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='TotalPerWave']/@value">12</set>
+<set xpath="/spawning/entityspawner[@name='SpawnSmall']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalAlive']/@value">18</set>
+<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='TotalPerWave']/@value">18</set>
+<set xpath="/spawning/entityspawner[@name='SpawnMedium']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalAlive']/@value">30</set>
+<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='TotalPerWave']/@value">30</set>
+<set xpath="/spawning/entityspawner[@name='SpawnLarge']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+
+<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalAlive']/@value">36</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='TotalPerWave']/@value">36</set>
+<set xpath="/spawning/entityspawner[@name='SpawnExLarge']/day/property[@name='DaysToRespawnIfPlayerLeft']/@value">1</set>
+</configs>
+

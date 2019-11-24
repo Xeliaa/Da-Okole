@@ -16,11 +16,16 @@
 	<property name="Map.Color" value="255,11,12"/>
 	<property class="RepairItems"><property name="resourceConcreteMix" value="1"/></property>
 	<property name="Group" value="Building"/>
-	<property name="CanMobsSpawnOn" value="false" />
-	
+	<property name="CanPickup" value="true"/>
+	<property name="CustomPickUpSound" value="#@modfolder:Resources/MusicBox.unity3d?MusicBox_Load" />
+	<property name="CanMobsSpawnOn" value="false" />	
 	<property name="BuffsWhenWalkedOn" value="asphaltStaBoostTrigger"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="EconomicBundleSize" value="9999"/>
+	<effect_group tiered="false">					
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" buff="musicBox"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" buff="musicBox"/> 
+	</effect_group>
 </block>
 
 <block name="oreTungstenBoulder">
@@ -60,6 +65,198 @@
 	<property name="DisplayType" value="blockTerrain"/>
 </block>
 
+<block name="storageBoxAmmo">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxAmmo"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxAmmo.unity3d?StorageBoxAmmoPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxFood">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxFood"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxFood.unity3d?StorageBoxFoodPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxJunk">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxJunk"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxJunk.unity3d?StorageBoxJunkPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxMedic">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxMedic"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxMedic.unity3d?StorageBoxMedicPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxMineral">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxMineral"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxMineral.unity3d?StorageBoxMineralPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxMining">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxMining"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxMining.unity3d?StorageBoxMiningPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxQuest">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxQuest"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxQuest.unity3d?StorageBoxQuestPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxTerrain">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxTerrain"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxTerrain.unity3d?StorageBoxTerrainPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxTool">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxTools"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxTool.unity3d?StorageBoxToolPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxWeapon">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxWeapon"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxWeapon.unity3d?StorageBoxWeaponPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxCurrency">
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxCurrency"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxCurrency.unity3d?StorageBoxCurrencyPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
+<block name="storageBoxPart">	
+	<property name="DescriptionKey" value="storageBoxDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Loot"/>
+	<property name="CustomIcon" value="StorageBoxParts"/>
+	<property name="Material" value="MwoodReinforced"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/StorageBoxPart.unity3d?StorageBoxPartPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="LootList" value="140"/>
+	<property class="RepairItems"> <property name="resourceWood" value="10"/> </property>
+	<drop event="Destroy" name="resourceWood" count="3,5"/>
+	<drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<property name="FilterTags" value="floot"/>
+</block>
+
 <block name="floorChain">
 	<property name="Material" value="Mmetal"/>
 	<property name="CustomIcon" value="FloorChain" />
@@ -71,6 +268,62 @@
 	<property name="ImposterExclude" value="true"/>
 	<property class="RepairItems"><property name="resourceForgedIron" value="1"/></property>
 	<drop event="Harvest" name="resourceScrapIron" count="6" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fwood,fbuilding"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="manorHedge"> <!-- HERE -->
+	<property name="Material" value="power+wood"/>
+	<property name="CustomIcon" value="PLACEHOLDER" />
+	<property name="MaxDamage" value="125000"/>
+	<property name="Tags" value="fibre,green"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/ManorHedge.unity3d?ManorHedgePrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceForgedIron" value="1"/></property>
+	<drop event="Harvest" name="resourceWood" count="2" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="false"/>
+	<property name="FilterTags" value="fwood,fbuilding"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="vaultMusic1"> <!-- HERE -->
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="PLACEHOLDER" />
+	<property name="MaxDamage" value="10"/>
+	<property name="Tags" value="iron,chain"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/PlayVaultMusic01.unity3d?playVaultMusic01Prefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceForgedIron" value="1"/></property>
+	<drop event="Harvest" name="resourceScrapIron" count="6" tag="oreWoodHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanMobsSpawnOn" value="true"/>
+	<property name="FilterTags" value="fwood,fbuilding"/>
+	<property name="SortOrder1" value="d0l0"/>
+	<property name="SortOrder2" value="0050"/>
+	<property name="DisplayType" value="blockTerrain"/>
+</block>
+
+<block name="falloutRadio">
+	<property name="Material" value="Mmetal"/>
+	<property name="CustomIcon" value="PLACEHOLDER" />
+	<property name="MaxDamage" value="200"/>
+	<property name="Tags" value="iron,chain"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#@modfolder:Resources/FOMusicRadio.unity3d?FOMusicRadioPrefab"/>
+	<property name="Mesh" value="models"/>
+	<property name="ImposterExclude" value="true"/>
+	<property class="RepairItems"><property name="resourceForgedIron" value="1"/></property>
 	<drop event="Destroy" count="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 	<property name="FilterTags" value="fwood,fbuilding"/>

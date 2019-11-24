@@ -173,6 +173,11 @@
 	<item name="resourceTungsten" count="3,15" prob="0.35"/>
 </lootcontainer>
 
+<!-- Empty StorageBox(Ammo,Weapons,tools,etc) -->
+<lootcontainer id="140" count="0" size="10,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
 </append>
 
 <!-- EDIT LOOT CONTAINER-->

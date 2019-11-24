@@ -48,6 +48,66 @@
 	<ingredient name="resourcePaint" count="2"/>
 </recipe>
 
+<recipe name="storageBoxAmmo" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxFood" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxJunk" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxMedic" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxMineral" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxMining" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxQuest" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxTerrain" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxTool" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxWeapon" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxCurrency" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
+<recipe name="storageBoxPart" count="1" always_unlocked="true">
+	<ingredient name="resourceWood" count="24"/>
+	<ingredient name="resourceNail" count="8"/>
+</recipe>
+
 <recipe name="floorChain" count="1" craft_area="workbench" always_unlocked="true"> 
 	<ingredient name="resourceMetalPipe" count="8"/>
 	<ingredient name="resourceForgedIron" count="1"/>

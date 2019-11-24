@@ -523,5 +523,16 @@
 			<passive_effect name="HealthChangeOT" operation="base_subtract" duration="0,10" value="0,8"/>
 		</effect_group>
 </buff>
+
+<!-- MUSIC BOX -->
+<buff name="musicBox" name_key="musicBox" description_key="musicBoxDesc" tooltip_key="musicBoxDesc" >
+		<stack_type value="ignore"/>
+		<duration value="1"/>
+		<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="PlaySound" value="#@modfolder:Resources/MusicBox.unity3d?MusicBox_Load"/>
+		</effect_group>
+</buff>
+
+
 </append>
 </configs>

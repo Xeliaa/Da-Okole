@@ -643,6 +643,23 @@ cntMedicContainer,blocks,Block,KgNone,Imported Medical Supplies,,Importiere Medi
 cntMedicContainerDesc,blocks,Block,EnChanged,"Take for of your self with these Supplies",,"Ein kleiner Vorrat an medizinischer Ware.",,,
 chemPlantedOak,blocks,Block,KgNone,Chemical modified Oak Seed,,Chemisch modifizierter Eichen Samen,,,
 chemPlantedOakDesc,blocks,Block,EnChanged,"Take lesser Distance between seeds and rewards more Wood",,"Verbraucht weniger Platz zwischen den Samen und liefert mehr Holz",,,
+manorHedge,blocks,Block,KgNone,Wellington Manor Hedge,,Hecke des Wellingtonanwesens,,,
+
+storageBoxAmmo,blocks,Block,KgNone,Ammo Crate,,Kiste für Munition,,,
+storageBoxFood,blocks,Block,KgNone,Food Crate,,Kiste für Lebensmittel,,,
+storageBoxJunk,blocks,Block,KgNone,Junk Crate,,Kiste für Schrott und Rohstoffe,,,
+storageBoxMedic,blocks,Block,KgNone,Medical Crate,,Kiste für Medikamente,,,
+storageBoxMineral,blocks,Block,KgNone,Mineral Crate,,Kiste für Erzrohstoff,,,
+storageBoxMining,blocks,Block,KgNone,Mining Crate,,Kiste für Bergbau,,,
+storageBoxQuest,blocks,Block,KgNone,Questnote Crate,,Kiste für Aufgaben und Missionen,,,
+storageBoxTerrain,blocks,Block,KgNone,Soil and Sand Crate,,Kiste für Werkstoffe,,,
+storageBoxTool,blocks,Block,KgNone,Tools Crate,,Kiste für Werkzeuge,,,
+storageBoxWeapon,blocks,Block,KgNone,Weapon Crate,,Kiste für Waffen,,,
+storageBoxCurrency,blocks,Block,KgNone,Currency Crate,,Kiste für Wertsachen,,,
+storageBoxPart,blocks,Block,KgNone,Questnote Crate,,Kiste für Aufgaben und Missionen,,,
+storageBoxDesc,blocks,Block,KgNone,"Contains storage for many good Things",,"Bietet genügend Platz für viele schöne Dinge",,,
+
+
 
 OWN BLOCKS (UNITY3D)
 blockTungsten,blocks,Block,KgNone,Tungsten Block,,Wolframblock,,,

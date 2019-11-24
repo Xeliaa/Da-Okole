@@ -1,7 +1,27 @@
 <config>
 
 <append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialOldGroup']">
-<prefab name="NLE_Vault69" max_count="1" prob="10"/>
+<prefab name="NLE_Vault69" min_count="1" max_count="1" min_repeat_distance="4000" prob="1"/>
 </append>
+
+
+<!-- Upcoming Patch Stuff
+<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='residentialOldGroup']">
+<prefab name="NLE_Manor" min_count="1"  max_count="1" min_repeat_distance="4000" prob="1"/>
+</append>
+
+<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='wildernessGroup']">
+<prefab name="NLE_Manor" min_count="1" max_count="25" prob="15"/>
+</append>
+
+<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='oldResidential_Bldgs']">
+<prefab name="NLE_Manor" min_count="1" max_count="25" prob="15"/>
+</append>
+
+<append xpath="/rwgmixer/prefab_rules/prefab_rule[@name='downtownGroup']">
+<prefab name="NLE_Manor" min_count="1" max_count="25" prob="15"/>
+</append>
+-->
+
 
 </config>

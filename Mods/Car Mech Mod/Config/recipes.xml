@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+
+
+<!--
+<remove xpath="/recipes/recipe[@name='']"/>
+-->
+
+<append xpath="/recipes">
+
+</append>
+
+</configs>
+
+
+
+<!-- Custom recipes for butcher mod -->
+
+<!--
+ 
+		Standard Crafting
+ 
+<recipe name="" count="">
+	<ingredient name="" count=""/>
+</recipe>
+
+		Campfire Crafting
+
+<recipe name="" count="" craft_area="campfire" craft_tool="toolCookingGrill">
+	<ingredient name="" count=""/>
+</recipe>
+
+<recipe name="" count="" craft_area="campfire" craft_tool="toolCookingPot">
+	<ingredient name="" count=""/>
+</recipe>
+
+<recipe name="" count="" craft_area="campfire" craft_tool="toolBeaker">
+	<ingredient name="" count=""/>
+</recipe>
+
+<recipe name="" count="" craft_area="campfire">
+	<ingredient name="" count=""/>
+</recipe>
+
+		Forge Crafting
+
+<recipe name="" count="" craft_area="forge" craft_tool="toolAnvil">
+	<ingredient name="unit_iron" count=""/>
+	<ingredient name="unit_clay" count=""/>
+	<ingredient name="unit_brass" count=""/>
+	<ingredient name="unit_lead" count=""/>	
+	<ingredient name="unit_glass" count=""/>
+</recipe>
+
+<recipe name="" count="" craft_area="forge" craft_tool="toolForgeCrucible">
+	<ingredient name="unit_iron" count=""/>
+	<ingredient name="unit_clay" count=""/>
+	<ingredient name="unit_brass" count=""/>
+	<ingredient name="unit_lead" count=""/>	
+	<ingredient name="unit_glass" count=""/>
+</recipe>
+
+<recipe name="" count="" craft_area="forge" craft_tool="toolAndDieSet">
+	<ingredient name="unit_iron" count=""/>
+	<ingredient name="unit_clay" count=""/>
+	<ingredient name="unit_brass" count=""/>
+	<ingredient name="unit_lead" count=""/>	
+	<ingredient name="unit_glass" count=""/>
+</recipe>
+
+		Chemistry Station
+
+<recipe name="" count="" craft_area="chemistryStation">
+	<ingredient name="" count=""/>
+</recipe>
+
+		Table Saw
+
+<recipe name="" count="" craft_area="tablesaw">
+	<ingredient name="" count=""/>
+</recipe>
+
+		Cement Mixer
+
+<recipe name="" count="" craft_area="cementMixer">
+	<ingredient name="" count=""/>
+</recipe>
+
+-->
+

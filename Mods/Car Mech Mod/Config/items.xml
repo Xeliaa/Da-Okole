@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+
+<!--
+	<append xpath="/items/item[contains(@name, 'foodCanBeef')]">
+		<property name="CustomIcon" value="BGFoodCannedRation"/>
+	</append>		
+-->
+	
+<append xpath="/items">
+
+</append>
+
+</configs>
+

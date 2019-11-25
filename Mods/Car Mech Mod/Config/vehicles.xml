@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	
+<remove xpath="/vehicles/vehicle[@name='vehicle4x4Truck']/property[@name='velocityMax']"/>
+	
+	
+	<append xpath="/vehicles/vehicle[contains(@name, 'vehicle4x4Truck')]">
+		<property name="velocityMax" value="50,125"/>
+	</append>
+
+	
+	
+	
+
+</configs>
+
+
+

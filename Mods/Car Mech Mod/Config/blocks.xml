@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+<configs>
+
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v01')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v02')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v03')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v04')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v05')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v06')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v07')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>		
+	<append xpath="/blocks/block[contains(@name, 'cntCar03SedanDamage2v08')]">
+		<property name="DowngradeBlock" value="cntCarReapawnSedanDamageWhite"/>
+	</append>	
+	
+
+
+	
+	<append xpath="/blocks">
+
+	<block name="cntCarReapawnSedanDamageWhite">
+		<property name="Extends" value="cntCar03SedanDamage2Master"/>
+		<property name="CreativeMode" value="Player"/>
+		<property name="CustomIconTint" value="5050d0"/>
+		<property name="Class" value="UpgradeRated"/>
+		<property name="VerticalOffset" value="0.3"/>
+		<property name="Model" value="#Entities/Vehicles?Car/car_blue_dmg2Prefab.prefab"/>
+		<property name="UpgradeRated.ToBlock" value="cntCar03SedanDamage0v03"/>
+		<property name="UpgradeRated.Rate" value="30"/> <!-- The coder told me that "63 or maybe more" is max for this timer. -->
+		<property name="MaxDamage" value="10000"/>
+		<drop event="Destroy" name="cntCarReapawnSedanDamageWhite" count="1"/>
+		</block>
+
+	</append>
+	
+	
+</configs>
+

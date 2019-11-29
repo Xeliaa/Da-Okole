@@ -1,0 +1,61 @@
+<War3zuk>
+
+<append xpath="/entitygroups">
+	  
+    <entitygroup name="Giant Animals">
+		<entity name="Giant Rabbit" prob="0.5"/>
+		<entity name="Giant Chicken" prob="0.4"/>
+		<entity name="Giant Snake" prob="0.2"/>
+		<entity name="Giant Boar" prob="0.3"/>
+    </entitygroup>
+		
+</append>
+
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']"><entity name="Giant Rabbit" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']"><entity name="Giant Chicken" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsSmall']"><entity name="Giant Boar" prob="0.5"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']"><entity name="Giant Snake" prob="0.2"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']"><entity name="Giant Rabbit" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']"><entity name="Giant Chicken" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsFarm']"><entity name="Giant Boar" prob="0.5"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']"><entity name="Giant Snake" prob="0.3"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']"><entity name="Giant Rabbit" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']"><entity name="Giant Chicken" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsDesert']"><entity name="Giant Boar" prob="0.6"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']"><entity name="Giant Snake" prob="0.3"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']"><entity name="Giant Rabbit" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']"><entity name="Giant Chicken" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsDesert']"><entity name="Giant Boar" prob="0.4"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']"><entity name="Giant Chicken" prob="0.5"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']"><entity name="Giant Rabbit" prob="0.4"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsSnow']"><entity name="Giant Boar" prob="0.3"/></append>
+ 
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']"><entity name="Giant Snake" prob="0.2"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']"><entity name="Giant Rabbit" prob="0.3"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']"><entity name="Giant Chicken" prob="0.2"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsForest']"><entity name="Giant Boar" prob="0.4"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']"><entity name="Giant Snake" prob="0.2"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']"><entity name="Giant Rabbit" prob="0.4"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']"><entity name="Giant Chicken" prob="0.3"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsBurntForest']"><entity name="Giant Boar" prob="0.4"/></append>
+ 
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']"><entity name="Giant Snake" prob="0.3"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']"><entity name="Giant Rabbit" prob="0.4"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']"><entity name="Giant Chicken" prob="0.4"/></append>
+  <append xpath="/entitygroups/entitygroup[@name='FriendlyAnimalsPlains']"><entity name="Giant Boar" prob="0.5"/></append>
+
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsAll']"><entity name="Giant Rabbit" prob="0.5"/></append> 
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsAll']"><entity name="Giant Chicken" prob="0.4"/></append> 
+  <append xpath="/entitygroups/entitygroup[@name='AnimalsAll']"><entity name="Giant Boar" prob="0.3"/></append> 
+
+  <append xpath="/entitygroups/entitygroup/entity[@name='Giant Snake']">prob="0.2"</append>
+  <append xpath="/entitygroups/entitygroup/entity[@name='Giant Chicken']">prob="0.5"</append>
+  <append xpath="/entitygroups/entitygroup/entity[@name='Giant Rabbit']">prob="0.4"</append>
+  <append xpath="/entitygroups/entitygroup/entity[@name='Giant Boar']">prob="0.3"</append>
+  <!--  Thanks Mean For the moddified Code -->
+</War3zuk>

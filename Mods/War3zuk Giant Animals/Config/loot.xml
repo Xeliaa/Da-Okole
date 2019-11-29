@@ -1,0 +1,30 @@
+<configs>
+		
+<insertAfter xpath="/lootcontainers/lootgroup[@name='groupBirdNestMain']">
+
+<!-- Animal Rabbit -->
+<lootcontainer id="511" count="2,3" size="6,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="qualPlus1Template">
+<item name="foodRawMeat" count="2,4" prob="0.03"/>
+<item name="resourceAnimalFat" count="2,4" prob="0.03"/>
+</lootcontainer>
+
+<!-- Animal Chicken -->
+<lootcontainer id="512" count="2,3" size="6,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="qualPlus1Template">
+<item name="foodEgg" count="4,8" prob="0.02"/>
+<item name="resourceFeather" count="5,10" prob="0.05"/>
+</lootcontainer>
+
+<!-- Animal Snake -->
+<lootcontainer id="513" count="2,3" size="6,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="qualPlus1Template">
+<item name="foodRawMeat" count="1,2" prob="0.02"/>
+<item name="resourceAnimalFat" count="1,2" prob="0.02"/>
+</lootcontainer>
+
+<!-- Animal Boar -->
+<lootcontainer id="514" count="2,3" size="6,3" destroy_on_close="false" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" open_time="1" loot_quality_template="qualPlus1Template">
+<item name="foodRawMeat" count="1,2" prob="0.02"/>
+<item name="resourceAnimalFat" count="1,2" prob="0.02"/>
+</lootcontainer>
+
+</insertAfter>
+</configs>

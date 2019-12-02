@@ -1,0 +1,8 @@
+<craftworx>
+
+<!-- QoL -->
+<append xpath="/items/item[@name='toolBeaker']">
+	<property name="UnlockedBy" value="perkYeahScience"/>
+</append>
+
+</craftworx>

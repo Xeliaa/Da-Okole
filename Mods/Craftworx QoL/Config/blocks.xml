@@ -1,0 +1,80 @@
+<craftworx>
+
+<!-- QoL -->
+<!-- Add Jail Bars and Doors to Workbench -->
+<append xpath="/blocks/block[@name='jailDoorStatic']">
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</append>
+
+<append xpath="/blocks/block[@name='jailDoorStaticCentered']">
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</append>
+
+<append xpath="/blocks/block[@name='jailBars']">
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</append>
+
+<!-- Add resources for havesting crushed cars -->
+<append xpath="blocks/block[@name='crushedCars']">
+	<drop event="Harvest" name="crushedCars" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="ammoGasCan" count="50,250" prob="0.3" tag="salvageHarvest"/> 
+	<drop event="Harvest" name="resourceScrapIron" count="20,60" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="2,6" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.1" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="50" tag="allHarvest"/>
+</append>
+
+<!-- Increase wood harvest from pallets and pallet stacks -->
+<append xpath="/blocks/block[@name='palletEmpty']">
+	<drop event="Harvest" name="resourceWood" count="1,5" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceNail" count="0,2" prob="0.15" tag="allHarvest"/>
+</append>
+
+<append xpath="/blocks/block[@name='palletEmptyStack']">
+	<drop event="Harvest" name="resourceWood" count="3,8" tag="allHarvest"/>
+	<drop event="Harvest" name="resourceNail" count="0,3" prob="0.15" tag="allHarvest"/>
+</append>
+
+<!-- Harvest decorative car motors -->
+<set xpath="/blocks/block[@name='decoCarMotorFlat']">
+	<property name="Extends" value="decoEntityPolymerMaster"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#Entities/Vehicles?Car/motorPrefab.prefab"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/> 
+	<drop event="Harvest" name="decoCarMotorFlat" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="6,11" tag="oreWoodHarvest"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+</set>
+
+<set xpath="/blocks/block[@name='decoCarMotorFlipped']">
+	<property name="Extends" value="decoEntityPolymerMaster"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Texture" value="282"/>
+	<property name="Model" value="#Entities/Vehicles?Car/motor_flippedPrefab.prefab"/>
+	<property name="MultiBlockDim" value="1,1,2"/>
+	<property name="IsTerrainDecoration" value="true"/>
+	<property name="Collide" value="melee,bullet,arrow,rocket,movement"/> 
+	<drop event="Harvest" name="decoCarMotorFlipped" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMetalPipe" count="5" prob="0.4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="12" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapPolymers" count="2,7" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,5" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="0,2" prob="0.2" tag="salvageHarvest"/>
+	<drop event="Destroy" name="resourceScrapIron" count="6,11" tag="oreWoodHarvest"/>
+	<property name="FilterTags" value="fdecor,fother,foutdoor"/>
+</set>
+
+
+
+</craftworx>

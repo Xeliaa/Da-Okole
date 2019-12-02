@@ -1,0 +1,12 @@
+<Claymore>
+<append xpath="/blocks/block[@name='rockResource']">
+	<drop event="Harvest" name="resourceIronFragment" count="9" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceCoal" count="8" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourcePotassiumNitratePowder" count="8" prob="0.33" tag="oreWoodHarvest"/>
+	<drop event="Harvest" name="resourceScrapLead" count="8" prob="0.33" tag="oreWoodHarvest"/>
+</append>
+<append xpath="/blocks/block[@name='terrStone']">
+	<drop event="Harvest" name="resourceIronFragment" count="2" tag="oreWoodHarvest"/>
+	<drop event="Fall" name="resourceIronFragment" count="4" prob="0.23" stick_chance="0"/>
+</append>
+</Claymore>

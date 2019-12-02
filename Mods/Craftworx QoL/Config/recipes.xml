@@ -1,0 +1,30 @@
+<craftworx>
+<!-- QoL Missing Recipes -->
+    <append xpath="/recipes">
+
+<!-- Jail Bars and Doors (static) -->
+<recipe name="jailDoorStatic" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="24"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="jailDoorStaticCentered" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="24"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+
+<recipe name="jailBars" count="1" craft_area="workbench" tags="learnable,perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="12"/>
+</recipe>
+
+<recipe name="toolBeaker" count="1" craft_area="forge" material_based="true" tags="learnable,perkYeahScience">
+	<ingredient name="unit_glass" count="20" />
+    <ingredient name="unit_clay" count="5" />
+	<ingredient name="unit_lead" count="5"/>
+</recipe>
+
+</append>
+
+</craftworx>

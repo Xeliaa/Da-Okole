@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="XP for Zombies" />
+		<Description value="XP = HP times 5 for all hostile enemies" />
+		<Author value="Claymore" />
+		<Version value="1.0.1" />
+	</ModInfo>
+</xml>

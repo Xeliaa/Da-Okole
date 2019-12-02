@@ -1,0 +1,134 @@
+<Claymore>
+<set xpath="/entity_classes/entity_class[@name='zombieWightFeral']/property[@name='ExperienceGain']/@value">2660</set>
+<set xpath="/entity_classes/entity_class[@name='zombieWightRadiated']/property[@name='ExperienceGain']/@value">5050</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBoe']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieBoeFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBoeRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieFootballPlayer']/property[@name='ExperienceGain']/@value">1250</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFemaleFat']"><property name="ExperienceGain" value="1000"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatFeral']/property[@name='ExperienceGain']/@value">1900</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFemaleFatRadiated']/property[@name='ExperienceGain']/@value">3610</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieJoe']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieJoeFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieJoeRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieMoe']/property[@name='ExperienceGain']/@value">1250</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMoeFeral']/property[@name='ExperienceGain']/@value">2375</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMoeRadiated']/property[@name='ExperienceGain']/@value">4510</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieArlene']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieArleneFeral']/property[@name='ExperienceGain']/@value">1185</set>
+<set xpath="/entity_classes/entity_class[@name='zombieArleneRadiated']/property[@name='ExperienceGain']/@value">2255</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieLab']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieLabFeral']/property[@name='ExperienceGain']/@value">1185</set>
+<set xpath="/entity_classes/entity_class[@name='zombieLabRadiated']/property[@name='ExperienceGain']/@value">2255</set>
+<append xpath="/entity_classes/entity_class[@name='legendaryZombieLab']"><property name="ExperienceGain" value="4000"/></append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieScreamer']"><property name="ExperienceGain" value="375"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamerFeral']/property[@name='ExperienceGain']/@value">710</set>
+<set xpath="/entity_classes/entity_class[@name='zombieScreamerRadiated']/property[@name='ExperienceGain']/@value">1350</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieDarlene']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieDarleneFeral']/property[@name='ExperienceGain']/@value">1185</set>
+<set xpath="/entity_classes/entity_class[@name='zombieDarleneRadiated']/property[@name='ExperienceGain']/@value">2255</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieMarlene']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieMarleneFeral']/property[@name='ExperienceGain']/@value">1185</set>
+<set xpath="/entity_classes/entity_class[@name='zombieMarleneRadiated']/property[@name='ExperienceGain']/@value">2255</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieYo']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieYoFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieYoRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieSteve']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']"><property name="ExperienceGain" value="450"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']/property[@name='ExperienceGain']/@value">760</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBusinessMan']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieBusinessManFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<append xpath="/entity_classes/entity_class[@name='legendaryZombieBusinessMan']"><property name="ExperienceGain" value="4500"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='zombieSnow']/property[@name='ExperienceGain']/@value">1500</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSnowFeral']/property[@name='ExperienceGain']/@value">2850</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieSpider']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieSpiderFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSpiderRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieBurnt']"><property name="ExperienceGain" value="625"/></append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieNurse']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieNurseFeral']/property[@name='ExperienceGain']/@value">1185</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiian']/property[@name='ExperienceGain']/@value">1500</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatHawaiianFeral']/property[@name='ExperienceGain']/@value">2850</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieFatCop']/property[@name='ExperienceGain']/@value">1250</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCopFeral']/property[@name='ExperienceGain']/@value">2375</set>
+<set xpath="/entity_classes/entity_class[@name='zombieFatCopRadiated']/property[@name='ExperienceGain']/@value">4510</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieMaleHazmat']"><property name="ExperienceGain" value="750"/></append>
+
+<append xpath="/entity_classes/entity_class[@name='zombieUtilityWorker']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieUtilityWorkerFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<append xpath="/entity_classes/entity_class[@name='legendaryZombieUtilityWorker']"><property name="ExperienceGain" value="4500"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='zombieSoldier']/property[@name='ExperienceGain']/@value">625</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldierFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSoldierRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieDemolition']/property[@name='ExperienceGain']/@value">5000</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieSkateboarder']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieSkateboarderRadiated']/property[@name='ExperienceGain']/@value">2705</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieCheerleader']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieCheerleaderFeral']/property[@name='ExperienceGain']/@value">1185</set>
+<set xpath="/entity_classes/entity_class[@name='zombieCheerleaderRadiated']/property[@name='ExperienceGain']/@value">2255</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieOldTimer']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieOldTimerFeral']/property[@name='ExperienceGain']/@value">1425</set>
+<set xpath="/entity_classes/entity_class[@name='zombieOldTimerRadiated']/property[@name='ExperienceGain']/@value">1400</set>
+
+<set xpath="/entity_classes/entity_class[@name='zombieBiker']/property[@name='ExperienceGain']/@value">1400</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBikerFeral']/property[@name='ExperienceGain']/@value">2660</set>
+<set xpath="/entity_classes/entity_class[@name='zombieBikerRadiated']/property[@name='ExperienceGain']/@value">5050</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieFarmer']"><property name="ExperienceGain" value="750"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieFarmerFeral']/property[@name='ExperienceGain']/@value">1425</set>
+
+<append xpath="/entity_classes/entity_class[@name='zombieStripper']"><property name="ExperienceGain" value="625"/></append>
+<set xpath="/entity_classes/entity_class[@name='zombieStripperFeral']/property[@name='ExperienceGain']/@value">1185</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalBear']/property[@name='ExperienceGain']/@value">4000</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieBear']/property[@name='ExperienceGain']/@value">5000</set>
+
+<append xpath="/entity_classes/entity_class[@name='animalWolf']"><property name="ExperienceGain" value="700"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='animalCoyote']/property[@name='ExperienceGain']/@value">400</set>
+
+<set xpath="/entity_classes/entity_class[@name='animalDireWolf']/property[@name='ExperienceGain']/@value">1250</set>
+
+<append xpath="/entity_classes/entity_class[@name='animalMountainLion']"><property name="ExperienceGain" value="1250"/></append>
+
+<append xpath="/entity_classes/entity_class[@name='animalZombieVulture']"><property name="ExperienceGain" value="150"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='animalZombieVultureRadiated']/property[@name='ExperienceGain']/@value">600</set>
+
+<append xpath="/entity_classes/entity_class[@name='animalZombieDog']"><property name="ExperienceGain" value="600"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='animalSnake']/property[@name='ExperienceGain']/@value">50</set>
+
+<append xpath="/entity_classes/entity_class[@name='animalBoar']"><property name="ExperienceGain" value="1250"/></append>
+
+<set xpath="/entity_classes/entity_class[@name='animalBossGrace']/property[@name='ExperienceGain']/@value">4500</set>
+</Claymore>

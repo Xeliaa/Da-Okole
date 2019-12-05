@@ -490,7 +490,7 @@
 	<property name="Shape" value="ModelEntity"/>
      <property name="Model" value="#@modfolder:Resources/LootBoxMain.unity3d?LootBoxMainPrefab"/> 
      <property name="Mesh" value="models"/>
-	<property name="LootList" value="133"/>
+	<property name="LootList" value="180"/>
 </block>
 
 <block name="cntPowerLoot">
@@ -502,7 +502,7 @@
 	<property name="Map.Color" value="0,255,0"/>
      <property name="Model" value="#@modfolder:Resources/PowerLoot.unity3d?PowerLootPrefab"/> 
      <property name="Mesh" value="models"/>
-	<property name="LootList" value="135"/>
+	<property name="LootList" value="182"/>
 </block>
 
 <block name="cntLockedLootBlock2">
@@ -529,7 +529,7 @@
 	<property name="Shape" value="ModelEntity"/>
     <property name="Model" value="#@modfolder:Resources/LootBoxMain2.unity3d?LootBoxMainPrefab 1"/> 
     <property name="Mesh" value="models"/>
-	<property name="LootList" value="134"/>
+	<property name="LootList" value="181"/>
 </block>
 
 <block name="cntMedicContainer">

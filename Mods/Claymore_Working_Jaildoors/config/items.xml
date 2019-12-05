@@ -1,0 +1,5 @@
+<Claymore>
+<append xpath="/items/item[@name='poweredDoorsSchematic']/effect_group">
+<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="jailDoorPowered" operation="set" value="1"/>
+</append>
+</Claymore>

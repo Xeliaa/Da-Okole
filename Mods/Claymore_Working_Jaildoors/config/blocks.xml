@@ -1,0 +1,55 @@
+<Claymore>
+<append xpath="/blocks">
+<block name="jailDoor">
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Msteel"/>
+	<property name="CustomIcon" value="jailDoorStatic" />
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="open_door_jail"/>
+	<property name="CloseSound" value="close_door_jail"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+</block>
+<block name="jailDoorPowered">
+	<property name="Recipes_to_learn" value="jailDoorPowered,poweredDoorsSchematic" />
+	<property name="Class" value="PoweredDoor"/>
+	<property name="Material" value="Msteel"/>
+	<property name="CustomIcon" value="jailDoorStatic" />
+	<property name="PassThroughDamage" value="true"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/>
+	<property name="PlaceEverywhere" value="true"/>
+	<property name="Model" value="Entities/Doors/jail_doorPrefab"/> <property name="ModelOffset" value="0,.5,0"/>
+	<property name="ImposterExclude" value="true"/>
+	<property name="OpenSound" value="open_door_jail"/>
+	<property name="CloseSound" value="close_door_jail"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="resourceSpring" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceMechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="resourceElectricParts" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceScrapIron" count="20,60"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building,advBuilding"/>
+	<property name="FilterTags" value="fdecor,fdoors"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,poweredDoorsSchematic"/>
+</block>
+</append>
+</Claymore>

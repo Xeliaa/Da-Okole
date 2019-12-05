@@ -1,0 +1,4 @@
+Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+jailDoorDesc,blocks,Block,New,Where do you think you're going?,,,,
+jailDoorPowered,blocks,Door,New,Powered Jail Door,,Elektrische Gefängnistür,,,
+jailDoorPoweredDesc,blocks,Block,New,Make zombies to your inmates. Electrical controlled jaildoors!,,,,

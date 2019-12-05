@@ -8,7 +8,63 @@
 <remove xpath="/recipes/recipe[@name='']"/>
 -->
 
+<remove xpath="/recipes/recipe[@name='vehicle4x4TruckAccessories']"/>
+<remove xpath="/recipes/recipe[@name='vehicle4x4TruckChassis']"/>
+<remove xpath="/recipes/recipe[@name='vehicle4x4TruckPlaceable']"/>
+
 <append xpath="/recipes">
+
+<!-- 4x4 Accessories Update Mod -->
+
+<recipe name="vehicle4x4TruckAccessories" count="1" craft_time="120" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="resourceHeadlight" count="8"/>
+	<ingredient name="vehicleWheels" count="1"/>
+	<ingredient name="Car Frame" count="1"/>
+	<ingredient name="Car Axle" count="2"/>
+	<ingredient name="Car Muffler" count="2"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+	</effect_group>
+</recipe>
+<!-- 4x4 Chassis Update Mod -->
+<recipe name="vehicle4x4TruckChassis" count="1" craft_time="120" craft_area="workbench" tags="perkGreaseMonkey,learnable,workbenchCrafting">
+	<ingredient name="Car Trunk" count="1"/>
+	<ingredient name="Car Hood" count="1"/>
+	<ingredient name="Car Door" count="2"/>
+	<ingredient name="Car Seat" count="2"/>
+	<ingredient name="Car Transmission" count="1"/>	
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+	</effect_group>
+</recipe>
+<!-- Placeable Car Update -->
+<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="300" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="Impact Wrench" count="1"/>
+	<ingredient name="vehicle4x4TruckChassis" count="1"/>
+	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+<!-- No impact -->
+<recipe name="vehicle4x4TruckPlaceable" count="1" craft_time="1200" craft_area="workbench" tags="workbenchCrafting">
+	<ingredient name="vehicle4x4TruckChassis" count="1"/>
+	<ingredient name="vehicle4x4TruckAccessories" count="1"/>
+	<ingredient name="smallEngine" count="1"/>
+	<ingredient name="carBattery" count="1"/>
+</recipe>
+
+
+<recipe name="Impact Wrench" count="1" craft_time="35" craft_area="workbench" tags="perkGreaseMonkey,workbenchCrafting">
+	<ingredient name="resourceMechanicalParts" count="15"/>
+	<ingredient name="resourceElectricParts" count="30"/>
+	<ingredient name="resourceSpring" count="20"/>
+	<effect_group>
+		<passive_effect name="CraftingIngredientCount" operation="perc_add" level="0,3" value=".5,.5" tags="resourceMechanicalParts,resourceMetalPipe,resourceElectricParts,resourceSpring"/>
+	</effect_group>
+</recipe>
+
+
+
 
 </append>
 
@@ -16,75 +72,13 @@
 
 
 
-<!-- Custom recipes for butcher mod -->
+
 
 <!--
  
 		Standard Crafting
  
-<recipe name="" count="">
-	<ingredient name="" count=""/>
-</recipe>
-
-		Campfire Crafting
-
-<recipe name="" count="" craft_area="campfire" craft_tool="toolCookingGrill">
-	<ingredient name="" count=""/>
-</recipe>
-
-<recipe name="" count="" craft_area="campfire" craft_tool="toolCookingPot">
-	<ingredient name="" count=""/>
-</recipe>
-
-<recipe name="" count="" craft_area="campfire" craft_tool="toolBeaker">
-	<ingredient name="" count=""/>
-</recipe>
-
-<recipe name="" count="" craft_area="campfire">
-	<ingredient name="" count=""/>
-</recipe>
-
-		Forge Crafting
-
-<recipe name="" count="" craft_area="forge" craft_tool="toolAnvil">
-	<ingredient name="unit_iron" count=""/>
-	<ingredient name="unit_clay" count=""/>
-	<ingredient name="unit_brass" count=""/>
-	<ingredient name="unit_lead" count=""/>	
-	<ingredient name="unit_glass" count=""/>
-</recipe>
-
-<recipe name="" count="" craft_area="forge" craft_tool="toolForgeCrucible">
-	<ingredient name="unit_iron" count=""/>
-	<ingredient name="unit_clay" count=""/>
-	<ingredient name="unit_brass" count=""/>
-	<ingredient name="unit_lead" count=""/>	
-	<ingredient name="unit_glass" count=""/>
-</recipe>
-
-<recipe name="" count="" craft_area="forge" craft_tool="toolAndDieSet">
-	<ingredient name="unit_iron" count=""/>
-	<ingredient name="unit_clay" count=""/>
-	<ingredient name="unit_brass" count=""/>
-	<ingredient name="unit_lead" count=""/>	
-	<ingredient name="unit_glass" count=""/>
-</recipe>
-
-		Chemistry Station
-
-<recipe name="" count="" craft_area="chemistryStation">
-	<ingredient name="" count=""/>
-</recipe>
-
-		Table Saw
-
-<recipe name="" count="" craft_area="tablesaw">
-	<ingredient name="" count=""/>
-</recipe>
-
-		Cement Mixer
-
-<recipe name="" count="" craft_area="cementMixer">
+<recipe name="" count="" craft_time="10" modTag="">
 	<ingredient name="" count=""/>
 </recipe>
 

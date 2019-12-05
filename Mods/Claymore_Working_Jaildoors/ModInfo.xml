@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Working Jaildoors" />
+		<Description value="Grabbed the block and recipe from 16.4. Fully working jaildoors." />
+		<Author value="Claymore" />
+		<Version value="1.2.0" />
+	</ModInfo>
+</xml>

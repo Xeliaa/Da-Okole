@@ -2,13 +2,414 @@
 
 <configs>
 
-<!--
-	<append xpath="/items/item[contains(@name, 'foodCanBeef')]">
-		<property name="CustomIcon" value="BGFoodCannedRation"/>
-	</append>		
--->
+    <!-- Base Game Edit -->
+	<append xpath="/items/item[contains(@name, 'smallEngine')]">
+		<property name="CustomIcon" value="BGCarEngine"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'carBattery')]">
+		<property name="CustomIcon" value="BGCarBattery"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'resourceAirFilter')]">
+		<property name="CustomIcon" value="BGCarFilter"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'resourceHubcap')]">
+		<property name="CustomIcon" value="BGCarHubCap"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'resourceRadiator')]">
+		<property name="CustomIcon" value="BGCarRadiator"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleWheels')]">
+		<property name="CustomIcon" value="BGCarWheel"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'resourceHeadlight')]">
+		<property name="CustomIcon" value="BGHeadLight"/>
+	</append>	
+	<!-- icon Patch -->
+	<append xpath="/items/item[contains(@name, 'vehicleMinibikeChassis')]">
+		<property name="CustomIcon" value="vehicleMinibikeChassis"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleMinibikeHandlebars')]">
+		<property name="CustomIcon" value="vehicleMinibikeHandlebars"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleMinibikePlaceable')]">
+		<property name="CustomIcon" value="vehicleMinibikePlaceable"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleBicycleChassis')]">
+		<property name="CustomIcon" value="vehicleBicycleChassis"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleBicycleHandlebars')]">
+		<property name="CustomIcon" value="vehicleBicycleHandlebars"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleBicyclePlaceable')]">
+		<property name="CustomIcon" value="vehicleBicyclePlaceable"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleMotorcycleChassis')]">
+		<property name="CustomIcon" value="vehicleMotorcycleChassis"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleMotorcycleHandlebars')]">
+		<property name="CustomIcon" value="vehicleMotorcycleHandlebars"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleMotorcyclePlaceable')]">
+		<property name="CustomIcon" value="vehicleMotorcyclePlaceable"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicle4x4TruckChassis')]">
+		<property name="CustomIcon" value="vehicle4x4TruckChassis"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicle4x4TruckAccessories')]">
+		<property name="CustomIcon" value="vehicle4x4TruckAccessories"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicle4x4TruckPlaceable')]">
+		<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleGyroCopterChassis')]">
+		<property name="CustomIcon" value="vehicleGyroCopterChassis"/>
+	</append>	
+
+	<append xpath="/items/item[contains(@name, 'vehicleGyroCopterAccessories')]">
+		<property name="CustomIcon" value="vehicleGyroCopterAccessories"/>
+	</append>	
+	<append xpath="/items/item[contains(@name, 'vehicleGyrocopterPlaceable')]">
+		<property name="CustomIcon" value="vehicleGyrocopterPlaceable"/>
+	</append>	
+
+
+
 	
 <append xpath="/items">
+<!-- Stage One -->
+<item name="Car Mirror"> <!-- Glass -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarMirror"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceBrokenGlass"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="200"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="Car Keys"> <!-- Scrap Iron -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarKeys"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="Car Wipers"> <!-- Polymers -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarWiper"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Resources"/>
+</item>
+
+<item name="Car Door">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarDoor"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+		<property name="Group" value="Tools/Traps"/>
+		<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceElectricParts,resourceElectronicParts,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="500,30,30,15"/>
+	</property>	
+</item>
+
+<item name="Car Hood">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarHood"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+		<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceElectricParts,resourceElectronicParts,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="500,2,2,75"/>
+	</property>	
+</item>
+
+<item name="Car Trunk">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarTrunk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceElectricParts,resourceElectronicParts,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="500,25,25,50"/>
+	</property>	
+</item>
+
+<item name="Car Radio">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarRadio"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+		<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceElectricParts,resourceElectronicParts,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="3,5,25,10"/>
+	</property>	
+</item>
+<!-- Stage Two -->
+<item name="Car Seat">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarSeat"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+		<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceLeather,resourceSpring,resourceScrapPolymers"/>
+		<property name="Create_item_count" value="15,25,35"/>
+	</property>	
+</item>
+
+<!-- Stage Three -->
+<item name="Car Frame">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarFrame"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="1500,50"/>
+	</property>	
+</item>
+<item name="Car Chassis">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarChassis"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="1000,50"/>
+	</property>	
+</item>
+<item name="Car Axle">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarAxle"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapIron,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="750,50"/>
+	</property>	
+</item>
+
+<item name="Car Muffler">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarMuffler"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapLeadSmall"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapLead"/>
+		<property name="Create_item_count" value="150"/>
+	</property>	
+</item>
+
+<item name="Car Rim">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarRim"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapLeadSmall"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+	<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceScrapLead"/>
+		<property name="Create_item_count" value="150"/>
+	</property>	
+</item>
+
+<item name="Car Transmission">
+	<property name="CreativeMode" value="Player"/>
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ModCarTransmission"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Miron"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="EconomicValue" value="26"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="ItemTypeIcon" value="treasure"/>
+		<property class="Action0">
+		<property name="Class" value="OpenBundle"/>
+		<property name="Delay" value="0"/>
+		<property name="Use_time" value="0"/>
+		<property name="Sound_start" value="UseActions/close_vehicle"/>
+		<property name="Create_item" value="resourceElectricParts,resourceElectronicParts,resourceMechanicalParts"/>
+		<property name="Create_item_count" value="15,25,35"/>
+	</property>	
+</item>
+
+
+<item name="Ball Peen Hammer"> <!-- Polymers -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ToolBallPeenHammer"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="Impact Wrench"> <!-- Polymers -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ToolImpactWrench"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+<item name="Hex Socket"> <!-- Polymers -->
+	<property name="HoldType" value="45"/>
+	<property name="CustomIcon" value="ToolHexSocket"/>
+	<property name="Tags" value="junk"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceScrapPolymers"/>
+	<property name="Stacknumber" value="5000"/> <!-- STK loot -->
+	<property name="Weight" value="10"/>
+	<property name="EconomicValue" value="240"/>
+	<property name="Group" value="Tools/Traps"/>
+</item>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 </append>
 

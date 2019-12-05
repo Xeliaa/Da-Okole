@@ -1,0 +1,19 @@
+<Claymore>
+<append xpath="/recipes">
+<recipe name="jailDoor" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+</recipe>
+<recipe name="jailDoorPowered" count="1" craft_area="workbench">
+	<ingredient name="resourceForgedSteel" count="12"/>
+	<ingredient name="resourceSpring" count="2"/>
+	<ingredient name="resourceMechanicalParts" count="2"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+<recipe name="jailDoorPowered" count="1" craft_area="workbench">
+	<ingredient name="jailDoor" count="1"/>
+	<ingredient name="resourceElectricParts" count="2"/>
+</recipe>
+</append>
+</Claymore>

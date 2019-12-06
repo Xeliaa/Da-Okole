@@ -3,4 +3,12 @@
 
 	<property name="Buffs" value="DamageDisplayBuff" />
 </append>
+<append xpath="/entity_classes/entity_class[@name='animalTemplateTimid']">
+
+	<property name="Buffs" value="DamageDisplayBuff" />
+</append>
+<append xpath="/entity_classes/entity_class[@name='animalTemplateHostile']">
+
+	<property name="Buffs" value="DamageDisplayBuff" />
+</append>
 </configs>

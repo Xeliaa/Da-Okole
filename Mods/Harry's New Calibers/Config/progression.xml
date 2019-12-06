@@ -1,0 +1,251 @@
+<HarrysIronBullets>
+<append xpath="progression/perks">
+
+
+
+	<perk name="Ammunition Smithing" parent="skillCraftsmanship" name_key="Ammunition smithing" desc_key="Learn to create your own ammunition with each level!" icon="ui_game_symbol_forge" min_level="0" max_level="5" base_skill_point_cost="1" cost_multiplier_per_level="1">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel03"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel08"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="22short,22LR,380ACP,30Carbine,410GaugeShotgunShells"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="AmmunitionBeltLinks,357SIG,40S_W,327Magnum,30_30Winchester,762x51mmNATO,223Remington,545x39mm,410GaugeShotgunShellsSlugs,410Gauge000BuckShotgunShells,20GaugeShotgunShells"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="10mmauto,45ACP,38Special,762x54R,65Creedmoor,308Winchester,792x57mmMauser,30_06SPRG,556x45mmNATO,300AACBlackout,16GaugeShotgunShells,16GaugeShotgunSlug,20GaugeSSTShotgunSlug,4GaugeLeadBall"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="50ActionExpress,357Magnum,45_70Government,300WinchesterMagnum,338LapuaMagnum,9x39mm,458SOCOM,12GaugePower_Shok,12GaugeDragonsBreath,10GaugeShotgunShells"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="500S_WMagnum,50Beowulf,458WinchesterMagnum,500NitroExpress,50BMG,10GaugeSSTSabotSlug,10GaugeMagnum00Buckshot"/>		
+		</effect_group>
+		<effect_group>
+			<effect_description level="1" desc_base="Basic Ballistics 1"
+			long_desc_key=".22 Short, .22 LR, .380 ACP, .30 Carbine, .410 Gauge Shotgun Shells"/>
+
+			<effect_description level="2" desc_base="Basic Ballistics 2"
+			long_desc_key="Ammunition Belt Links, .357 SIG, .40 S/W, .327 Magnum, .30-30 Winchester, 7.62x51mm NATO, .223 Remington, 5.45x39mm, .410 Gauge Shotgun Slugs, .410 Gauge 000 Buckshot, 20 Gauge Shotgun Shells"/>
+
+			<effect_description level="3" desc_base="Advanced Ballistics 1"
+			long_desc_key="10mm Auto, .45 ACP, .38 Special, 7.62x54R, 6.5 Creedmoor, .308 Winchester, 7.92x57mm Mauser, 30-06 SPRG, 5.56x45mm NATO, .300 AAC Blackout, 20 Gauge SST Slugs, 16 Gauge Shotgun Shells, 16 Gauge Shotgun Slugs, 1.2 Inch Lead Ball"/>
+
+			<effect_description level="4" desc_base="Advanced Ballistics 2"
+			long_desc_key=".50 Action Express, .357 Magnum, .45-70 Government, .300 Winchester Magnum, .338 Lapua Magnum, 9x39mm, .458 SOCOM, 12 Gauge Power-Shok, 12 Gauge Dragon's Breath, 10 Gauge Shotgun Shells"/>
+
+			<effect_description level="5" desc_base="Ballistics Expert"
+			long_desc_key=".500 S/W Magnum, .50 Beowulf, .458 Winchester Magnum, 500 Nitro Express, 50 BMG, 10 Gauge SST Sabot Slug, 10 Gauge Magnum 00 Buckshot"/>
+
+		</effect_group>
+	</perk>
+
+
+
+
+
+		<perk name="Gun Smithing" parent="skillCraftsmanship" name_key="Gun smithing" desc_key="Master the art of creating and converting your very own guns!" icon="ui_game_symbol_workbench" min_level="0" max_level="5" base_skill_point_cost="1" cost_multiplier_per_level="1">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="3" desc_key="reqIntellectLevel03"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="6" desc_key="reqIntellectLevel06"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel08"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags="Receiver22LR,Barrel22LR,Conversionkit22LR,Receiver380ACP,Barrel380ACP,Conversionkit380ACP,Receiver30Carbine,Barrel30Carbine,Conversionkit30Carbine,Receiver410Gauge,Barrel410Gauge,Conversionkit410Gauge"/>	
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags="Pistol Frame,SxS Shotgun Frame,Receiver357SIG,Barrel357SIG,Conversionkit357SIG,Receiver40S_W,Barrel40S_W,Conversionkit40S_W,Receiver327Magnum,Barrel327Magnum,Conversionkit327Magnum,Receiver30_30Winchester,Barrel30_30Winchester,Conversionkit30_30Winchester,Receiver762x54R,Barrel762x54R,Conversionkit762x54R,Receiver9x39mm,Barrel9x39mm,Conversionkit9x39mm,Receiver223_556,Barrel223_556,Conversionkit223_556,Receiver20Gauge,Barrel20Gauge,Conversionkit20Gauge"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags="Pump Shotgun Frame,Rifle Frame,Receiver10mmAuto,Barrel10mmAuto,Conversionkit10mmAuto,Receiver45ACP,Barrel45ACP,Conversionkit45ACP,Receiver357MAG38SP,Barrel357MAG38SP,Conversionkit357MAG38SP,Receiver65Creedmoor,Barrel65Creedmoor,Conversionkit65Creedmoor,Receiver308Win_762mmNATO,Barrel308Win_762mmNATO,Conversionkit308Win_762mmNATO,Receiver792x57mmMauser,Barrel792x57mmMauser,Conversionkit792x57mmMauser,Receiver30_06SPRG,Barrel30_06SPRG,Conversionkit30_06SPRG,Receiver545x39mm,Barrel545x39mm,Conversionkit545x39mm,Receiver16Gauge,Barrel16Gauge,Conversionkit16Gauge"/>
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags="SMG Frame,Magnum Frame,Receiver50ActionExpress,Barrel50ActionExpress,Conversionkit50ActionExpress,Receiver500S_WMagnum,Barrel500S_WMagnum,Conversionkit500S_WMagnum,Receiver45_70Government,Barrel45_70Government,Conversionkit45_70Government,Receiver300Win_Mag,Barrel300Win_Mag,Conversionkit300Win_Mag,Receiver338LapuaMagnum,Barrel338LapuaMagnum,Conversionkit338LapuaMagnum,Receiver300AACBlackout,Barrel300AACBlackout,Conversionkit300AACBlackout,Receiver458SOCOM,Barrel458SOCOM,Conversionkit458SOCOM,Receiver12Gauge,Barrel12Gauge,Conversionkit12Gauge"/>	
+
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5" tags="DMR Frame,AK Frame,LMG Frame,Receiver50Beowulf,Barrel50Beowulf,Conversionkit50Beowulf,Receiver458Win_Mag,Barrel458Win_Mag,Conversionkit458Win_Mag,Receiver500NitroExpress,Barrel500NitroExpress,Conversionkit500NitroExpress,Receiver50BMG,Barrel50BMG,Conversionkit50BMG,Receiver10Gauge,Barrel10Gauge,Conversionkit10Gauge"/>
+
+
+		</effect_group>
+		<effect_group>
+			<effect_description level="1" desc_base="Basic Gunsmithing 1"
+			long_desc_key="Learn to create Receivers, Barrels and Conversion kits of the following calibers - .22 S/LR, .380 ACP, .30 Carbine, .410 Gauge Shotgun Shells"/>
+
+			<effect_description level="2" desc_base="Basic Gunsmithing 2"
+			long_desc_key="Learn to create Pistol Frames, SxS Shotgun Frames, Receivers, Barrels and Conversion kits of the following calibers - .357 SIG, .40 S/W, .327 Magnum, .30-30 Winchester, 7.62x54R, 9x39mm, .223/5.56, 20 Gauge Shotguns"/>
+
+			<effect_description level="3" desc_base="Advanced Gunsmithing 1"
+			long_desc_key="Learn to create Pump Shotgun Frames, Rifle Frames, Receivers, Barrels and Conversion kits of the following calibers - 10mm Auto, .45 ACP, .357 MAG/.38 SP, 6.5 Creedmoor, .308 Win/7.62mm NATO, 7.92x57mm Mauser, 30-06 SPRG, 5.45x39mm, 16 Gauge Shotguns"/>
+
+			<effect_description level="4" desc_base="Advanced Gunsmithing 2"
+			long_desc_key="Learn to create SMG Frames, Magnum Frames, Receivers, Barrels and Conversion kits of the following calibers - .50 Action Express, .500 S/W Magnum, .45-70 Government, .300 Winchester Magnum, .338 Lapua Magnum, .300 AAC Blackout, .458 SOCOM, 12 Gauge Shotguns"/>
+
+			<effect_description level="5" desc_base="Experienced Gunsmith"
+			long_desc_key="Learn to create LMG Frames, DMR Frames, AK Frames, Receivers, Barrels and Conversion kits of the following calibers - .50 Beowulf, .458 Winchester Magnum, 500 Nitro Express, 50 BMG, 10 Gauge Shotguns"/>
+		</effect_group>
+	</perk>
+</append>
+
+<!--
+	old turret system
+	
+	<perk name="Turret Whisperer" parent="skillCraftsmanship" name_key="Turret whisperer" desc_key="Gain the skills to build advanced turrets with each level!" icon="ui_game_symbol_hammer" min_level="0" max_level="5" base_skill_point_cost="1" cost_multiplier_per_level="1">
+		<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="7" desc_key="reqIntellectLevel07"/></level_requirements>
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="8" desc_key="reqIntellectLevel08"/></level_requirements>
+		<level_requirements level="3"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="9" desc_key="reqIntellectLevel9"/></level_requirements>
+		<level_requirements level="4"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+		<level_requirements level="5"><requirement name="ProgressionLevel" progression_name="attIntellect" operation="GTE" value="10" desc_key="reqIntellectLevel10"/></level_requirements>
+		<effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="1,5" tags=".22 LR autoTurret,.380 ACP autoTurret,.30 Carbine autoTurret,.410 Gauge shotgunTurret"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5" tags=".357 SIG autoTurret,.40 S/W autoTurret,.30-30 Winchester autoTurret,7.62x54R autoTurret,9x39mm autoTurret,.223 Remington autoTurret,20 Gauge shotgunTurret,MK-2 .22 LR autoTurret,MK-2 .380 ACP autoTurret,MK-2 .30 Carbine autoTurret,MK-2 .410 Gauge shotgunTurret"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5" tags=".45 ACP autoTurret,6.5 Creedmoor autoTurret,.308 Winchester autoTurret,7.92x57mm Mauser autoTurret,30-06 SPRG autoTurret,5.45x39mm autoTurret,5.56x45mm NATO autoTurret,16 Gauge shotgunTurret,MK-2 .357 SIG autoTurret,MK-2 .40 S/W autoTurret,MK-2 .30-30 Winchester autoTurret,MK-2 7.62x54R autoTurret,MK-2 9x39mm autoTurret,MK-2 .223 Remington autoTurret,MK-2 20 Gauge shotgunTurret"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5" tags=".50 Action Express autoTurret,.45-70 Government autoTurret,.300 W/M autoTurret,.338 Lapua Mag autoTurret,.300 Blackout autoTurret,.458 SOCOM autoTurret,10 Gauge shotgunTurret,Slug shotgunTurret,MK-2 autoTurret,MK-2 .45 ACP autoTurret,MK-2 6.5 Creedmoor autoTurret,MK-2 .308 Winchester autoTurret,MK-2 7.92x57mm Mauser autoTurret,MK-2 30-06 SPRG autoTurret,MK-2 5.45x39mm autoTurret,MK-2 5.56x45mm NATO autoTurret,MK-2 16 Gauge shotgunTurret,MK-2 shotgunTurret"/>		
+			
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5,5" tags=".50 Beowulf autoTurret,.458 W/M autoTurret,500 Nitro Express autoTurret,50 BMG autoTurret,MK-2 .50 Action Express autoTurret,MK-2 .45-70 Government autoTurret,MK-2 .300 W/M autoTurret,MK-2 .338 Lapua Mag autoTurret,MK-2 .300 Blackout autoTurret,MK-2 .458 SOCOM autoTurret,MK-2 10 Gauge shotgunTurret,MK-2 Slug shotgunTurret,MK-2 .50 Beowulf autoTurret,MK-2 .458 W/M autoTurret,MK-2 500 Nitro Express autoTurret,MK-2 50 BMG autoTurret"/>	
+		</effect_group>
+
+
+
+		<effect_group>
+			<effect_description level="1" desc_base=".22 LR autoTurret, .380 ACP autoTurret, .30 Carbine autoTurret, .410 Gauge shotgunTurret"/>
+			<effect_description level="2" desc_base=".357 SIG autoTurret, .40 S/W autoTurret, .30-30 Winchester autoTurret, 7.62x54R autoTurret, 9x39mm autoTurret, .223 Rem autoTurret, 20 Gauge shotgunTurret, And The Ability to craft MK-2 Turrets from the Previous Level"/>
+			<effect_description level="3" desc_base=".45 ACP autoTurret, 6.5 Creedmoor autoTurret, .308 Winchester autoTurret, 7.92x57mm Mauser autoTurret, 30-06 SPRG autoTurret, 5.45x39mm autoTurret, 5.56x45mm NATO autoTurret, 16 Gauge shotgunTurret, And The Ability to craft MK-2 Turrets from the Previous Level"/>
+			<effect_description level="4" desc_base=".50 Action Express autoTurret, .45-70 Government autoTurret, .300 W/M autoTurret, .338 Lapua Mag autoTurret, .300 Blackout autoTurret, .458 SOCOM autoTurret, 10 Gauge shotgunTurret, Slug shotgunTurret, And The Ability to craft MK-2 Turrets from the Previous Level"/>
+			<effect_description level="5" desc_base=".50 Beowulf autoTurret, .458 W/M autoTurret, 500 Nitro Express autoTurret, 50 BMG autoTurret, And The Ability to craft MK-2 Turrets from all Levels"/>
+		</effect_group>
+	</perk>
+</append>-->
+
+
+
+
+
+<!--
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="2,5"
+			tags=".22 LR autoTurret,.380 ACP autoTurret,.30 Carbine autoTurret,.410 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="3,5"
+			tags=".357 SIG autoTurret,.40 S/W autoTurret,.30-30 Winchester autoTurret,7.62x54R autoTurret,9x39mm autoTurret,.223 Remington autoTurret,20 Gauge shotgunTurret,MK-2 .22 LR autoTurret,MK-2 .380 ACP autoTurret,MK-2 .30 Carbine autoTurret,MK-2 .410 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="4,5"
+			tags=".45 ACP autoTurret,6.5 Creedmoor autoTurret,.308 Winchester autoTurret,7.92x57mm Mauser autoTurret,30-06 SPRG autoTurret,5.45x39mm autoTurret,5.56x45mm NATO autoTurret,16 Gauge shotgunTurret,MK-2 .357 SIG autoTurret,MK-2 .40 S/W autoTurret,MK-2 .30-30 Winchester autoTurret,MK-2 7.62x54R autoTurret,MK-2 9x39mm autoTurret,MK-2 .223 Remington autoTurret,MK-2 20 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" value="1" level="5"
+			tags=".50 Action Express autoTurret,.45-70 Government autoTurret,.300 W/M autoTurret,.338 Lapua Mag autoTurret,.300 Blackout autoTurret,.458 SOCOM autoTurret,10 Gauge shotgunTurret,Slug shotgunTurret,MK-2 autoTurret,MK-2 .45 ACP autoTurret,MK-2 6.5 Creedmoor autoTurret,MK-2 .308 Winchester autoTurret,MK-2 7.92x57mm Mauser autoTurret,MK-2 30-06 SPRG autoTurret,MK-2 5.45x39mm autoTurret,MK-2 5.56x45mm NATO autoTurret,MK-2 16 Gauge shotgunTurret,MK-2 shotgunTurret,.50 Beowulf autoTurret,.458 W/M autoTurret,500 Nitro Express autoTurret,50 BMG autoTurret,MK-2 .50 Action Express autoTurret,MK-2 .45-70 Government autoTurret,MK-2 .300 W/M autoTurret,MK-2 .338 Lapua Mag autoTurret,MK-2 .300 Blackout autoTurret,MK-2 .458 SOCOM autoTurret,MK-2 10 Gauge shotgunTurret,MK-2 Slug shotgunTurret,MK-2 .50 Beowulf autoTurret,MK-2 .458 W/M autoTurret,MK-2 500 Nitro Express autoTurret,MK-2 50 BMG autoTurret"/>
+	</append>
+
+
+
+	<append xpath="/progression/perks/perk[@name='perkAutoWeaponsMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">,,,,,,,,,,</append>
+
+
+<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group/passive_effect[@name='RecipeTagUnlocked'][@level='5' and @tags]@tags">,MK-2 50 BMG autoTurret</append>
+
+TURRETS NEED FIXXING-->
+
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags=".22 LR autoTurret,.30 Carbine autoTurret,.410 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="20 Gauge shotgunTurret,MK-2 .22 LR autoTurret,MK-2 .30 Carbine autoTurret,MK-2 .410 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="4,5" value="1"
+			tags=".45 ACP autoTurret,7.62x51mm NATO autoTurret,30-06 SPRG autoTurret,5.56x45mm NATO autoTurret,16 Gauge shotgunTurret,MK-2 20 Gauge shotgunTurret"/>
+	</append>
+
+	<append xpath="/progression/perks/perk[@name='perkAdvancedEngineering']/effect_group">
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="10 Gauge shotgunTurret,Slug shotgunTurret,MK-2 autoTurret,MK-2 .45 ACP autoTurret,MK-2 7.62x51mm NATO autoTurret,MK-2 30-06 SPRG autoTurret,MK-2 5.56x45mm NATO autoTurret,MK-2 16 Gauge shotgunTurret,MK-2 shotgunTurret,50 BMG autoTurret,MK-2 10 Gauge shotgunTurret,MK-2 Slug shotgunTurret,MK-2 50 BMG autoTurret"/>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+	<set xpath="/progression/perks/perk[@name='perkAutoWeaponsMachineGuns']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">gunM60,M60E4 [.223/5.56],M60E4 [.300 AAC Blackout],M60E4 [.458 SOCOM],M60E4 [.50 Beowulf],M60E4 [.308 Win/7.62mm NATO],M60E4 [7.92x57mm Mauser],M60E4 [30-06 SPRG]</set>
+
+	<set xpath="/progression/perks/perk[@name='perkMachineGunner']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">gunAK47,AK-47 [.30 Carbine],AK-47 [.223/5.56],AK-47 [5.45x39mm],AK-47 [.300 AAC Blackout],AK-47 [9x39mm],AK-47 [.458 SOCOM],AK-47 [.50 Beowulf]</set>
+
+	<set xpath="/progression/perks/perk[@name='perkDeadEye']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">gunHuntingRifle,Remington 700 [.30 Carbine],Remington 700 [.223/5.56],Remington 700 [.30-30 Winchester],Remington 700 [7.62x54R],Remington 700 [9x39mm],Remington 700 [.308 Win/7.62mm NATO],Remington 700 [.45-70 Government],Remington 700 [.458 Win-Mag],Remington 700 [500 Nitro Express]</set>
+
+	<set xpath="/progression/perks/perk[@name='perkBoomstick']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">gunDoubleBarrelShotgun,Remington Model-1887 [10 Gauge],Remington Model-1887 [16 Gauge],Remington Model-1887 [20 Gauge],Remington Model-1887 [.410]</set>
+
+	<set xpath="/progression/perks/perk[@name='perkGunslinger']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">gunPistol,Beretta M9 [.22 S/LR],Beretta M9 [.380 ACP],Beretta M9 [.40 S/W],10mmAutoPistol,Beretta M9 [.45 ACP],Beretta M9 [.50 Action Express]</set>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<set xpath="/progression/perks/perk[@name='perkEnforcerComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">ammoBundle44MagnumBulletAP,ammoBundle44MagnumBulletHP,ammoBundle44MagnumBulletBall,ammoBundle327Magnum,ammoBundle38Special,ammoBundle357Magnum,ammoBundle500S_WMagnum</set>
+
+
+
+<set xpath="/progression/perks/perk[@name='perkSniperComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">ammoBundle762mmBulletBall,ammoBundle762mmBulletHP,ammoBundle762mmBulletAP,22shortBundle,ammoBundle22LR,ammoBundle30_30Winchester,ammoBundle762x54R,ammoBundle65Creedmoor,ammoBundle9x39mm,ammoBundle308Winchester,ammoBundle762x51mmNATO,ammoBundle792x57mmMauser,ammoBundle30_06SPRG,ammoBundle300WinchesterMagnum,ammoBundle45_70Government,ammoBundle338LapuaMagnum,ammoBundle458WinchesterMagnum,ammoBundle500NitroExpress,ammoBundle50BMG,ammoBundle30Carbine,ammoBundle223Remington,ammoBundle556x45mmNATO,ammoBundle545x39mm,ammoBundle300AACBlackout,ammoBundle458SOCOM,ammoBundle50Beowulf</set>
+
+
+
+<set xpath="/progression/perks/perk[@name='perkShotgunMessiahComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">ammoBundleShotgunShell,ammoBundleShotgunSlug,ammoBundleShotgunBreachingSlug,ammoBundleBlunderbuss,ammoBundle10GaugeShotgunShells,ammoBundle16GaugeShotgunShells,16GaugeShotgunSlugBundle,ammoBundle20GaugeShotgunShells,20GaugeSSTShotgunSlugBundle,ammoBundle410GaugeShotgunShells,410GaugeShotgunShellsSlugsBundle,410Gauge000BuckShotgunShellsBundle,ammoBundle12GaugeDragonsBreath,ammoBundle12GaugePower_Shok,ammoBundle10GaugeSSTSabotSlug,ammoBundle10GaugeMagnum00Buckshot</set>
+
+
+
+<set xpath="/progression/perks/perk[@name='perkPistolPeteComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked' and @tags]/@tags">ammoBundle9mmBulletBall,ammoBundle9mmBulletHP,ammoBundle9mmBulletAP,ammoBundle380ACP,ammoBundle357SIG,ammoBundle40S_W,10mmautoBundle,ammoBundle45ACP,ammoBundle50ActionExpress</set>
+
+</HarrysIronBullets>

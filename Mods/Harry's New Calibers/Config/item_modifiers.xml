@@ -1,0 +1,2611 @@
+<HarrysIronBullets>
+<!--
+	<item_modifier name="AK47 9MM Receiver Barrel" installable_tags="magazine" modifier_tags="magazine" type="attachment">
+		<property name="Stacknumber" value="1"/>
+
+<! <set xpath="/items/item[contains(@name,'gun')]/property[@class='Action0']/property[@name='Magazine_items' and @value]/@value">380ACP</set> >
+
+
+		<item_property_overrides name="gunPistol">
+
+			<property class="Action0">
+			<property name="Magazine_items" value="30-06 (AMMO)"/>
+			</property>
+
+		</item_property_overrides>
+	</item_modifier> -->
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']">
+		<item_property_overrides name="Beretta M9 [.22 S/LR]">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.380 ACP]">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.40 S/W]">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="10mmAutoPistol">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.45 ACP]">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.50 Action Express]">
+			<property name="Sound_start" value="pistol_s_fire"/>
+			<property name="BarrelOffset" value="0,0.0093,-0.0273"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="M60E4 [.223/5.56]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.300 AAC Blackout]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.458 SOCOM]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.50 Beowulf]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.308 Win/7.62mm NATO]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [7.92x57mm Mauser]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [30-06 SPRG]">
+			<property name="Sound_start" value="m60_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,-.009,.551"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Mossberg 590 [.410 Gauge]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [20 Gauge]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [16 Gauge]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [10 Gauge]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="Sound_start" value="pump_shotgun_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.0322,0.4516"/>
+			<property name="BarrelScale" value="1.1,1.1,1.5"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="Sound_start" value="ak47_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="-0.001,-0.0197,0.3197"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<!--	USING SNIPER RIFLE SILENCER INSTEAD OF THE MP5 ONE
+		<item_property_overrides name="gun44Magnum">
+			<property name="BarrelOffset" value="0,0.0477,-0.1593"/>
+			<property name="BarrelScale" value="1,1,1"/>
+			<property name="BarrelCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+		-->
+
+		
+
+		<item_property_overrides name="S/W Governor [.410 Gauge]">
+			<property name="BarrelOffset" value="0,0.0418,-0.0207"/>
+			<property name="BarrelScale" value="0.8,0.8,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 617 [.22 S/LR]">
+			<property name="BarrelOffset" value="0,0.0418,-0.0207"/>
+			<property name="BarrelScale" value="0.8,0.8,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Ruger GP100 [.327 Magnum]">
+			<property name="BarrelOffset" value="0,0.0418,-0.0207"/>
+			<property name="BarrelScale" value="0.8,0.8,1.5"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="S/W Model 686 [.357 MAG/.38 SP]">
+			<property name="BarrelOffset" value="0,0.0418,-0.0207"/>
+			<property name="BarrelScale" value="0.8,0.8,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W 500 [.500 S/W Magnum]">
+			<property name="BarrelOffset" value="0,0.0418,-0.0207"/>
+			<property name="BarrelScale" value="0.8,0.8,1.5"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="Sound_start" value="mp5_s_fire"/>
+			<property name="Sound_end" value="silencefiller"/>
+			<property name="BarrelOffset" value="0,0,0"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="BarrelOffset" value="0,-0.02,0.2182"/>
+			<property name="BarrelScale" value="0.88,0.88,0.88"/>
+
+			<property name="Sound_start" value="sniperrifle_s_fire"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="Sound_start" value="hunting_rifle_s_fire"/>
+			<property name="BarrelOffset" value="0,-0.009,0.551"/>
+			<property name="BarrelScale" value="1,1,1"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+		<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight']">
+		<item_property_overrides name="Beretta M9 [.22 S/LR]">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.380 ACP]">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.40 S/W]">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="10mmAutoPistol">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.45 ACP]">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.50 Action Express]">
+			<property name="SideOffset" value="0,0.0148,0.0479"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="M60E4 [.223/5.56]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.300 AAC Blackout]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.458 SOCOM]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.50 Beowulf]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [7.92x57mm Mauser]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [30-06 SPRG]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3735"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Mossberg 590 [.410 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [20 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [16 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [10 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="SideOffset" value="0,0,0.31"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="S/W Governor [.410 Gauge]">
+			<property name="SideOffset" value="0,0.065,0.14"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 617 [.22 S/LR]">
+			<property name="SideOffset" value="0,0.065,0.14"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Ruger GP100 [.327 Magnum]">
+			<property name="SideOffset" value="0,0.065,0.14"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="S/W Model 686 [.357 MAG/.38 SP]">
+			<property name="SideOffset" value="0,0.065,0.14"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W 500 [.500 S/W Magnum]">
+			<property name="SideOffset" value="0,0.065,0.14"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="SideOffset" value="0,0.0108,0.0148"/>
+			<property name="SideScale" value="1.25,1.25,1.25"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="SideOffset" value="0,0.003,0.1674"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+		<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight']">
+		<item_property_overrides name="Beretta M9 [.380 ACP]">
+			<property name="SideOffset" value="0,0.0198,0.0475"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.40 S/W]">
+			<property name="SideOffset" value="0,0.0198,0.0475"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="10mmAutoPistol">
+			<property name="SideOffset" value="0,0.0198,0.0475"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.45 ACP]">
+			<property name="SideOffset" value="0,0.0198,0.0475"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.50 Action Express]">
+			<property name="SideOffset" value="0,0.0198,0.0475"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="M60E4 [.223/5.56]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.300 AAC Blackout]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.458 SOCOM]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.50 Beowulf]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [7.92x57mm Mauser]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="M60E4 [30-06 SPRG]">
+			<property name="SideOffset" value="-0.0386,0.0382,0.3519"/>
+			<property name="SideRotation" value="0,0,-90"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Mossberg 590 [.410 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [20 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [16 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [10 Gauge]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="SideOffset" value="0,-0.0,0.41"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="SideOffset" value="0,-0.00672,0.39514"/>
+			<property name="SideOffset" value="0,0,0.28"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="S/W Governor [.410 Gauge]">
+			<property name="SideOffset" value="0,0.0621,0.095"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 617 [.22 S/LR]">
+			<property name="SideOffset" value="0,0.0621,0.095"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Ruger GP100 [.327 Magnum]">
+			<property name="SideOffset" value="0,0.0621,0.095"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="S/W Model 686 [.357 MAG/.38 SP]">
+			<property name="SideOffset" value="0,0.0621,0.095"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W 500 [.500 S/W Magnum]">
+			<property name="SideOffset" value="0,0.0621,0.095"/>
+			<property name="SideScale" value="0.75,0.75,0.75"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="SideOffset" value="0,0.0065,0"/>
+			<property name="SideScale" value="1.5,1.5,1.5"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="SideOffset" value="0,0.0061,0.2455"/>
+			<property name="SideScale" value="1,1,1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="SideOffset" value="0,-0.0025,0.175"/>
+			<property name="SideScale" value="1.12,1.12,1.12"/>
+		</item_property_overrides>
+	</append>
+
+	<!-- ACOG is a trademarked acronym. Do not use. -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+		
+
+
+
+
+
+		<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="gunPumpShotgun">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+		</append>
+
+
+
+
+
+		<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight']">
+		<item_property_overrides name="Beretta M9 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.380 ACP]">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.40 S/W]">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="10mmAutoPistol">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.45 ACP]">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.50 Action Express]">
+			<property name="ScopeOffset" value="0,0.08,-0.01"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.035,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Mossberg 590 [.410 Gauge]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [20 Gauge]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [16 Gauge]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Mossberg 590 [10 Gauge]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="ScopeOffset" value="0.0001,0.055,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0343,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="ScopeOffset" value="0,0.08,-0.2035"/>
+			<property name="ScopeScale" value="0.63,0.63,0.63"/>
+			<property name="ScopeCameraOffset" value="0,-.009,.45"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="ScopeOffset" value="-0.0006,0.06,0.08"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value=".0003,-0.0185,0.1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="S/W Governor [.410 Gauge]">
+			<property name="ScopeOffset" value="0,0.11,0.015"/>
+			<property name="ScopeScale" value="0.5,0.5,0.5"/>
+			<property name="ScopeCameraOffset" value="0,-.0395,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 617 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,0.11,0.015"/>
+			<property name="ScopeScale" value="0.5,0.5,0.5"/>
+			<property name="ScopeCameraOffset" value="0,-.0395,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Ruger GP100 [.327 Magnum]">
+			<property name="ScopeOffset" value="0,0.11,0.015"/>
+			<property name="ScopeScale" value="0.5,0.5,0.5"/>
+			<property name="ScopeCameraOffset" value="0,-.0395,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 686 [.357 MAG/.38 SP]">
+			<property name="ScopeOffset" value="0,0.11,0.015"/>
+			<property name="ScopeScale" value="0.5,0.5,0.5"/>
+			<property name="ScopeCameraOffset" value="0,-.0395,0.1"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W 500 [.500 S/W Magnum]">
+			<property name="ScopeOffset" value="0,0.11,0.015"/>
+			<property name="ScopeScale" value="0.5,0.5,0.5"/>
+			<property name="ScopeCameraOffset" value="0,-.0395,0.1"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="ScopeOffset" value=".0001,0.1,-0.15"/>
+			<property name="ScopeScale" value="0.55,0.55,0.55"/>
+			<property name="ScopeCameraOffset" value="-.00005,-.0214,.15"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="ScopeOffset" value="0,0.073,-0.13"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-.0147,0.12"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+			<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall']">
+		<item_property_overrides name="Beretta M9 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.380 ACP]">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.40 S/W]">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="10mmAutoPistol">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.45 ACP]">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Beretta M9 [.50 Action Express]">
+			<property name="ScopeOffset" value="0,0.0851,-0.0761"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0225,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="ScopeOffset" value="0.00,0.060,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="ScopeOffset" value="0,0.088,-.2"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.04,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="S/W Governor [.410 Gauge]">
+			<property name="ScopeOffset" value="0,0.1037,0.0689"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W Model 617 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,0.1037,0.0689"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Ruger GP100 [.327 Magnum]">
+			<property name="ScopeOffset" value="0,0.1037,0.0689"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+		
+		<item_property_overrides name="S/W Model 686 [.357 MAG/.38 SP]">
+			<property name="ScopeOffset" value="0,0.1037,0.0689"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="S/W 500 [.500 S/W Magnum]">
+			<property name="ScopeOffset" value="0,0.1037,0.0689"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="ScopeOffset" value="0,0.0999,-0.2534"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="ScopeOffset" value="-0.0006,0.081,0.005"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.01,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="ScopeOffset" value="0,0.0736,-0.1497"/>
+			<property name="ScopeScale" value="0.9,0.9,0.9"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium']">
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="ScopeOffset" value="0.00,0.056,-0.080"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="ScopeOffset" value="0,0.088,-.14"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Saiga-12 [.410 Gauge]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [20 Gauge]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [16 Gauge]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [12 Gauge]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Saiga-12 [10 Gauge]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="ScopeOffset" value="-0.0018,0.075,0.015"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,-0.0238,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="ScopeOffset" value="-0.0018,0.07,-.10"/>
+			<property name="ScopeScale" value="1.6,1.6,1.6"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge']">
+		<item_property_overrides name="Remington 7600 [.22 S/LR]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.223/5.56]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [30-06 SPRG]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 7600 [.45-70 Government]">
+			<property name="ScopeOffset" value="0.00,-0.014,0.005"/>
+			<property name="ScopeScale" value="0.7,0.7,0.7"/>
+			<property name="ScopeCameraOffset" value="0,-0.0375,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="AK-47 [.30 Carbine]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.223/5.56]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [5.45x39mm]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.300 AAC Blackout]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [9x39mm]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.458 SOCOM]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="AK-47 [.50 Beowulf]">
+			<property name="ScopeOffset" value="0,-0.0523,0.1686"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="Remington 700 [.30 Carbine]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.223/5.56]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.30-30 Winchester]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [7.62x54R]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [9x39mm]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.45-70 Government]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [.458 Win-Mag]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="Remington 700 [500 Nitro Express]">
+			<property name="ScopeOffset" value="-0.0006,0.0,0.14"/>
+			<property name="ScopeScale" value="1.2,1.2,1.2"/>
+			<property name="ScopeCameraOffset" value="0,-0.022,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="MP5 [.22 S/LR]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.380 ACP]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.357 SIG]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.40 S/W]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [10mm Auto]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="MP5 [.45 ACP]">
+			<property name="ScopeOffset" value="0,-0.1029,-0.1373"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+
+
+		<item_property_overrides name="R11 RSASS [.223/5.56]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [6.5 Creedmoor]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.308 Win/7.62mm NATO]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [7.92x57mm Mauser]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [30-06 SPRG]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.300 Win-Mag]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [.338 Lapua Magnum]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+
+		<item_property_overrides name="R11 RSASS [50 BMG]">
+			<property name="ScopeOffset" value="0,0,0"/>
+			<property name="ScopeScale" value="1,1,1"/>
+			<property name="ScopeCameraOffset" value="0,0,0"/>
+		</item_property_overrides>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--Saiga-12 GUN-->
+<!--
+
+Beretta M9
+RevolverShotgun
+
+Revolver
+MP5
+
+Remington 700
+Remington 7600
+
+R11 RSASS
+AK-47
+
+Saiga-12
+Mossberg 590
+
+
+
+
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer' and @installable_tags]/@installable_tags"></set>  everygun has
+
+<set xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel' and @installable_tags]/@installable_tags"></set>
+
+<set xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupSemi' and @installable_tags]/@installable_tags"></set>
+
+
+
+Alpha - 18 NO LONGER IN USE
+<append xpath="/item_modifiers/item_modifier[@name='modGunFlashSuppressor' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+
+
+
+
+
+-->
+
+
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunMuzzleBrake' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunLaserSight' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunFlashlight' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunReflexSight' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeSmall' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeMedium' and @installable_tags]/@installable_tags">,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunScopeLarge' and @installable_tags]/@installable_tags">,Remington 7600</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupBurst3' and @installable_tags]/@installable_tags">,Saiga-12</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunTriggerGroupAutomatic' and @installable_tags]/@installable_tags">,Saiga-12</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunRodAndSpring' and @installable_tags]/@installable_tags">,Saiga-12</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunBipod' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunForegrip' and @installable_tags]/@installable_tags">,Saiga-12</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunRetractingStock' and @installable_tags]/@installable_tags">,Saiga-12,Remington 7600</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunDuckbill' and @installable_tags]/@installable_tags">,Saiga-12,RevolverShotgun</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunChoke' and @installable_tags]/@installable_tags">,Saiga-12,RevolverShotgun</append>
+
+<append xpath="/item_modifiers/item_modifier[@name='modGunMagazineExtender' and @installable_tags]/@installable_tags">,</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunDrumMagazineExtender' and @installable_tags]/@installable_tags">,Saiga-12</append>
+<append xpath="/item_modifiers/item_modifier[@name='modGunShotgunTubeExtenderMagazine' and @installable_tags]/@installable_tags">,Mossberg 590,Remington 7600</append>
+
+
+
+
+<append xpath="/item_modifiers/item_modifier[@name='modShotgunSawedOffBarrel' and @blocked_tags]/@blocked_tags">,Saiga-12,Remington 7600</append>
+
+
+<setattribute xpath="/item_modifiers/item_modifier[@name='modGunSoundSuppressorSilencer']" name="blocked_tags">doubleBarrel</setattribute>
+
+<setattribute xpath="/item_modifiers/item_modifier[@name='modGunBarrelExtender']" name="blocked_tags">Mossberg 590,shotgun,Saiga-12,RevolverShotgun</setattribute>
+
+
+
+<!--
+
+	<append xpath="item_modifiers">
+
+	<item_modifier name="modGunBarrelExtender" installable_tags="barrelAttachments" modifier_tags="barrelAttachment" type="attachment">
+	<item_modifier name="modGunMuzzleBrake" installable_tags="barrelAttachments" modifier_tags="barrelAttachment" type="attachment">
+	<item_modifier name="modGunFlashSuppressor" installable_tags="barrelAttachments" modifier_tags="barrelAttachment" type="attachment">
+
+
+	<item_modifier name="modGunSoundSuppressorSilencer" installable_tags="gun" blocked_tags="noSilencer,flaredBarrel" modifier_tags="barrelAttachment" type="attachment">
+
+
+	<item_modifier name="modGunLaserSight" installable_tags="sideAttachments" modifier_tags="sideAttachment" type="attachment">
+	<item_modifier name="modGunFlashlight" installable_tags="sideAttachments" modifier_tags="sideAttachment" type="attachment">
+
+
+	<item_modifier name="modGunReflexSight" installable_tags="smallTopAttachments" blocked_tags="bow" modifier_tags="scope" type="attachment">
+	<item_modifier name="modGunScopeSmall" installable_tags="smallTopAttachments" blocked_tags="shotgun" modifier_tags="scope" type="attachment">
+
+	<item_modifier name="modGunScopeMedium" installable_tags="mediumTopAttachments" blocked_tags="shotgun" modifier_tags="scope" type="attachment">
+
+	<item_modifier name="modGunScopeLarge" installable_tags="largeTopAttachments" blocked_tags="shotgun" modifier_tags="scope" type="attachment">
+	</item_modifier>
+
+
+
+
+	<item_modifier name="modGunTriggerGroupSemi" installable_tags="firingMode" modifier_tags="trigger" type="attachment">
+	<item_modifier name="modGunTriggerGroupBurst" installable_tags="firingMode" modifier_tags="trigger" type="attachment">
+	<item_modifier name="modGunTriggerGroupAutomatic" installable_tags="firingMode" modifier_tags="trigger" type="attachment">
+
+
+	<item_modifier name="modGunRodAndSpring" installable_tags="selfLoading" modifier_tags="fireRate" type="attachment">
+
+
+	<item_modifier name="modGunBipod" installable_tags="bottomAttachments" blocked_tags="shortRange" modifier_tags="accuracy" type="attachment">
+	<item_modifier name="modGunForegrip" installable_tags="bottomAttachments" modifier_tags="grips" type="attachment">
+
+
+	<item_modifier name="modGunRetractingStock" installable_tags="stock" modifier_tags="stocks" type="attachment">
+
+
+	<item_modifier name="modGunDuckbill" installable_tags="shotgun" blocked_tags="flaredBarrel" modifier_tags="barrelAttachment" type="attachment">
+	<item_modifier name="modGunChoke" installable_tags="shotgun" blocked_tags="flaredBarrel" modifier_tags="barrelAttachment" type="attachment">
+	<item_modifier name="modShotgunSawedOffBarrel" installable_tags="shotgun" blocked_tags="flaredBarrel" modifier_tags="barrelAttachment" type="attachment" icon="resourceScrapIron">
+
+
+	<item_modifier name="modGunMagazineExtender" installable_tags="magazine" modifier_tags="magazine" type="attachment">
+
+
+
+	
+
+	<item_modifier name="modGunButtkick3000" installable_tags="weapon" type="attachment" rarity="1">
+	</item_modifier>
+
+	<item_modifier name="modGunButtkick4000" installable_tags="weapon" type="attachment" rarity="1">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeFeelTheHeat" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunCrippleEm" installable_tags="ranged" modifier_tags="crippling" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunBowPolymerString" installable_tags="perkArchery" modifier_tags="velocity" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunBowArrowRest" installable_tags="bow" modifier_tags="accuracy" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeTheHunter" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeRadRemover" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeBlessedMetal" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeNiCdBattery" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeFlammableOil" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+	<item_modifier name="modGunMeleeLiquidNitrogen" installable_tags="weapon" modifier_tags="damage" type="attachment" rarity="0.5">
+	</item_modifier>
+
+</append> -->
+</HarrysIronBullets>
+
+
+

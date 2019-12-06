@@ -628,6 +628,10 @@ powercrossbow,,items,Gun,newKey,Enhanced Crossbow,,Verbesserte Armbrust,,,
 powercrossbowDesc,,items,Gun,newKey,A high Quallity Crossbow does more damage and bolts fly straighter which makes it easier to aim.\nRepair with Forged Steel.,,Eine hoch qualitative Armbrust der Polzen weiter fliegen lässt und mehr Schaden mit enormer durchschlagskraft erzielt.,,,
 gunActionCombatShotgun,,items,Gun,newKey,Action Combat Shotgun,,Reaktive Kampfflinte,,,
 gunActionCombatShotgunDesc,,items,Gun,newKey,A Gun with higher frequently Firerate and a big size Magazine,,Eine Kampfflinte mit Hoch frequenten Feuerrate sowie erweiterten Trommelmagazin.,,,
+gunHades,,items,Gun,newKey,Hades,,Hades,,,
+gunHadesDesc,,items,Gun,newKey,Long Range SMG with 762mm Bullets and slot for Special Ammunition,,Ein Langstrecken Maschingewehr mit 762mm Munition und Schubfach für Elektrisierte Patronen,,,
+gun10mmPistol,,items,Gun,newKey,10mm Agitator,,10mm Agitator,,,
+gun10mmPistolDesc,,items,Gun,newKey,Still the better Pistol with shock ammunition,,Die einfach bessere Pistole mit Einschubfach für elektroschock Patronen,,,
 
 AMMO
 specialArrow,,items,Ammo,newKey,Explosive Arrow (Ammo),,Sprengkapsel-Pfeil (Mun),,,
@@ -642,6 +646,16 @@ barrageArrow,,items,Ammo,newKey,Barrage Arrow (Ammo),,Explosiver Pfeilhagel (Mun
 barrageArrowDesc,,items,Ammo,--,"Take Care, this Arrows are Made to hail down a Storm of Death.Can only be used with a Barrage Bow",,"Sei vorsichtig. Diese Pfeile sind konzeptiert um den Tod vom Himmel regnen zu lassen. Kann nur mit einem Pfeilhagel Bogen benutzt werden.",,,
 ammoShotgunHE,,items,Ammo,newKey,HE Shotgunshell (Ammo),,HE Schrotflintenpatrone (Mun),,,
 ammoShotgunHEDesc,,items,Ammo,--,"Shotgunshell with a high explosive compressed Blackpower Core. Pay attention on use, its like Magic.",,"Eine Patrone mit einem hoch explosiven und stark kompremierten Schwarzpulver Kern.Verwende sie achtsam, denn es ist wie Magie.",,,
+ammo10mmBulletBall,,items,Ammo,newKey,10mm Agitator Bullet,,10mm Agitator Patrone,,,
+ammo10mmBulletBallDesc,,items,Ammo,--,"Default Ammo for the 10mm Agitator",,"Standart Partonen für die Agitator 10mm",,,
+ammo10mmBulletBallAP,,items,Ammo,newKey,10mm Agitator Bullet AP,,10mm Agitator Patrone AP,,,
+ammo10mmBulletBallAPDesc,,items,Ammo,--,"Armor Penetrating Ammo for the 10mm Agitator",,"Rüstungsdurchdringende Partonen für die Agitator 10mm",,,
+ammo10mmBulletBallHP,,items,Ammo,newKey,10mm Agitator Bullet HP,,10mm Agitator Patrone HP,,,
+ammo10mmBulletBallHPDesc,,items,Ammo,--,"Hollow Point Ammo for the 10mm Agitator",,"Hohlmantel Partonen für die Agitator 10mm",,,
+ammo10mmBulletCluster,,items,Ammo,newKey,10mm Agitator Electro Bullet ,,10mm Agitator Shock Patrone ,,,
+ammo10mmBulletClusterDesc,,items,Ammo,--,"ZAP the Foes, but only Zombies",,"Verpasst Zombies einen Stromschlag.",,,
+ammo762mmBulletCluster,,items,Ammo,newKey,762mm Electroshock Bullet,,762mm Elektroschock Geschosse,,,
+ammo762mmBulletClusterDesc,,items,Ammo,--,"Stacking Electroshocks dealing Projectiles into your Enemies. Affected only Zombies.",,"Stappelt den Effekt von Elektrischen Schocks die an den Feind übertragen werden.Wirkt nur bei Zombies.",,,
 --------------------------------------------------------------
 
 ------------------BLOCKS / BUFFS--------------------
@@ -673,7 +687,7 @@ storageBoxTerrain,,blocks,Block,newKey,Soil and Sand Crate,,Kiste für Werkstoff
 storageBoxTool,,blocks,Block,newKey,Tools Crate,,Kiste für Werkzeuge,,,
 storageBoxWeapon,,blocks,Block,newKey,Weapon Crate,,Kiste für Waffen,,,
 storageBoxCurrency,,blocks,Block,newKey,Currency Crate,,Kiste für Wertsachen,,,
-storageBoxPart,,blocks,Block,newKey,Questnote Crate,,Kiste für Aufgaben und Missionen,,,
+storageBoxPart,,blocks,Block,newKey,Build Part Crate,,Kiste für Bauteile,,,
 storageBoxDesc,,blocks,Block,newKey,"Contains storage for many good Things",,"Bietet genügend Platz für viele schöne Dinge",,,
 manorHedge,,blocks,Block,newKey,Wellington Manor Hedge,,Hecke des Wellingtonanwesens,,,
 plantedSweetWeed1,,blocks,Block,newKey,"Sweet Sugar Grass (Crop)",,"Zuckersüsses Gras (Setzling)",,,

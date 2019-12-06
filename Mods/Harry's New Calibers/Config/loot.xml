@@ -1,0 +1,2397 @@
+<HarrysIronBullets>
+<!--
+<lootgroup name="questAmmo">
+	<item name="ammoShotgunShell" count="15,30" prob="1.0"/>
+	<item name="ammo9mmBullet" count="20,50" prob="1.0"/>
+	<item name="ammo762mmBulletFMJ" count="20,40" prob="1.0"/>
+	<item name="ammo44MagnumBullet" count="20,30" loot_prob_template="GradeCLoot"/>
+	<item name="ammoArrowFlaming" count="16,25" prob="1.0"/>
+	<item name="ammoCrossbowBoltExploding" count="16,25" loot_prob_template="GradeCLoot"/>
+	<item name="thrownAmmoPipeBomb" count="8,16" prob="1.0"/>
+	<item name="thrownDynamite" count="4,8" prob="0.8"/>
+	<item name="thrownAmmoMolotovCocktail" count="8,16" prob="1.0"/>
+	<item name="ammoShotgunSlug" count="8,16" loot_prob_template="GradeCLoot"/>
+	<item name="ammoRocketFrag" loot_prob_template="GradeCLoot"/>
+</lootgroup>-->
+<!-- wertewrwertwrtretrtetreterterertertertert
+<append xpath="lootcontainers/lootgroup[@name='questAmmo']">
+	<item name="ammoShotgunShell" count="15,30" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+	<item name=".380 ACP (AMMO)" count="20,50" prob="1.0"/>
+
+	<item name="ammo762mmBulletFMJ" count="20,40" prob="1.0"/>
+	<item name="ammo44MagnumBullet" count="20,30" loot_prob_template="GradeCLoot"/>
+	<item name="ammoArrowFlaming" count="16,25" prob="1.0"/>
+	<item name="ammoCrossbowBoltExploding" count="16,25" loot_prob_template="GradeCLoot"/>
+	<item name="thrownAmmoPipeBomb" count="8,16" prob="1.0"/>
+	<item name="thrownDynamite" count="4,8" prob="0.8"/>
+	<item name="thrownAmmoMolotovCocktail" count="8,16" prob="1.0"/>
+	<item name="ammoShotgunSlug" count="8,16" loot_prob_template="GradeCLoot"/>
+	<item name="ammoRocketFrag" loot_prob_template="GradeCLoot"/>
+</append>-->
+<!--
+<lootgroup name="ammo" count="1">
+	<item name="ammoShotgunShell" count="1,10"/>
+	<item name="ammo9mmBullet" count="1,20" prob="1.5"/>
+	<item name="ammo762mmBulletFMJ" count="1,20"/>
+	<item name="ammo44MagnumBullet" count="1,12" prob="0.2"/>
+	<item name="ammoArrowSteelAP" count="8,16"/>
+	<item name="ammoCrossbowBoltSteelAP" count="8,16"/>
+
+
+
+
+
+
+
+
+
+this code was in the AMMO LOOT GROUP
+
+
+
+<item name="Receiver380ACP" count="1,1" prob="0.01"/>
+<item name="Barrel380ACP" count="1,1" prob="0.01"/>
+<item name="Conversionkit380ACP" count="1,1" prob="0.01"/>
+
+<item name="Receiver357SIG" count="1,1" prob="0.01"/>
+<item name="Barrel357SIG" count="1,1" prob="0.01"/>
+<item name="Conversionkit357SIG" count="1,1" prob="0.01"/>
+
+<item name="Receiver40S_W" count="1,1" prob="0.01"/>
+<item name="Barrel40S_W" count="1,1" prob="0.01"/>
+<item name="Conversionkit40S_W" count="1,1" prob="0.01"/>
+
+<item name="Receiver45ACP" count="1,1" prob="0.01"/>
+<item name="Barrel45ACP" count="1,1" prob="0.01"/>
+<item name="Conversionkit45ACP" count="1,1" prob="0.01"/>
+
+<item name="Receiver327Magnum" count="1,1" prob="0.01"/>
+<item name="Barrel327Magnum" count="1,1" prob="0.01"/>
+<item name="Conversionkit327Magnum" count="1,1" prob="0.01"/>
+
+<item name="Receiver [.38 Special]" count="1,1" prob="0.01"/>
+<item name="Barrel [.38 Special]" count="1,1" prob="0.01"/>
+<item name="Conversion kit [.38 Special]" count="1,1" prob="0.01"/>
+
+<item name="Receiver50ActionExpress" count="1,1" prob="0.01"/>
+<item name="Barrel50ActionExpress" count="1,1" prob="0.01"/>
+<item name="Conversionkit50ActionExpress" count="1,1" prob="0.01"/>
+
+<item name="Receiver500S_WMagnum" count="1,1" prob="0.01"/>
+<item name="Barrel500S_WMagnum" count="1,1" prob="0.01"/>
+<item name="Conversionkit500S_WMagnum" count="1,1" prob="0.01"/>
+
+
+
+
+
+<item name="Receiver22LR" count="1,1" prob="0.01"/>
+<item name="Barrel22LR" count="1,1" prob="0.01"/>
+<item name="Conversionkit22LR" count="1,1" prob="0.01"/>
+
+<item name="Receiver30_30Winchester" count="1,1" prob="0.01"/>
+<item name="Barrel30_30Winchester" count="1,1" prob="0.01"/>
+<item name="Conversionkit30_30Winchester" count="1,1" prob="0.01"/>
+
+<item name="Receiver762x54R" count="1,1" prob="0.01"/>
+<item name="Barrel762x54R" count="1,1" prob="0.01"/>
+<item name="Conversionkit762x54R" count="1,1" prob="0.01"/>
+
+<item name="Receiver65Creedmoor" count="1,1" prob="0.01"/>
+<item name="Barrel65Creedmoor" count="1,1" prob="0.01"/>
+<item name="Conversionkit65Creedmoor" count="1,1" prob="0.01"/>
+
+<item name="Receiver9x39mm" count="1,1" prob="0.01"/>
+<item name="Barrel9x39mm" count="1,1" prob="0.01"/>
+<item name="Conversionkit9x39mm" count="1,1" prob="0.01"/>
+
+<item name="Receiver [.308 Winchester]" count="1,1" prob="0.01"/>
+<item name="Barrel [.308 Winchester]" count="1,1" prob="0.01"/>
+<item name="Conversion kit [.308 Winchester]" count="1,1" prob="0.01"/>
+
+<item name="Receiver792x57mmMauser" count="1,1" prob="0.01"/>
+<item name="Barrel792x57mmMauser" count="1,1" prob="0.01"/>
+<item name="Conversionkit792x57mmMauser" count="1,1" prob="0.01"/>
+
+<item name="Receiver30_06SPRG" count="1,1" prob="0.01"/>
+<item name="Barrel30_06SPRG" count="1,1" prob="0.01"/>
+<item name="Conversionkit30_06SPRG" count="1,1" prob="0.01"/>
+
+<item name="Receiver300Win_Mag" count="1,1" prob="0.01"/>
+<item name="Barrel300Win_Mag" count="1,1" prob="0.01"/>
+<item name="Conversionkit300Win_Mag" count="1,1" prob="0.01"/>
+
+<item name="Receiver45_70Government" count="1,1" prob="0.01"/>
+<item name="Barrel45_70Government" count="1,1" prob="0.01"/>
+<item name="Conversionkit45_70Government" count="1,1" prob="0.01"/>
+
+<item name="Receiver338LapuaMagnum" count="1,1" prob="0.01"/>
+<item name="Barrel338LapuaMagnum" count="1,1" prob="0.01"/>
+<item name="Conversionkit338LapuaMagnum" count="1,1" prob="0.01"/>
+
+<item name="Receiver458Win_Mag" count="1,1" prob="0.01"/>
+<item name="Barrel458Win_Mag" count="1,1" prob="0.01"/>
+<item name="Conversionkit458Win_Mag" count="1,1" prob="0.01"/>
+
+<item name="Receiver500NitroExpress" count="1,1" prob="0.01"/>
+<item name="Barrel500NitroExpress" count="1,1" prob="0.01"/>
+<item name="Conversionkit500NitroExpress" count="1,1" prob="0.01"/>
+
+<item name="Receiver50BMG" count="1,1" prob="0.01"/>
+<item name="Barrel50BMG" count="1,1" prob="0.01"/>
+<item name="Conversionkit50BMG" count="1,1" prob="0.01"/>
+
+
+
+
+
+<item name="Receiver30Carbine" count="1,1" prob="0.01"/>
+<item name="Barrel30Carbine" count="1,1" prob="0.01"/>
+<item name="Conversionkit30Carbine" count="1,1" prob="0.01"/>
+
+<item name="Receiver223_556" count="1,1" prob="0.01"/>
+<item name="Barrel223_556" count="1,1" prob="0.01"/>
+<item name="Conversionkit223_556" count="1,1" prob="0.01"/>
+
+<item name="Receiver545x39mm" count="1,1" prob="0.01"/>
+<item name="Barrel545x39mm" count="1,1" prob="0.01"/>
+<item name="Conversionkit545x39mm" count="1,1" prob="0.01"/>
+
+<item name="Receiver300AACBlackout" count="1,1" prob="0.01"/>
+<item name="Barrel300AACBlackout" count="1,1" prob="0.01"/>
+<item name="Conversionkit300AACBlackout" count="1,1" prob="0.01"/>
+
+<item name="Receiver458SOCOM" count="1,1" prob="0.01"/>
+<item name="Barrel458SOCOM" count="1,1" prob="0.01"/>
+<item name="Conversionkit458SOCOM" count="1,1" prob="0.01"/>
+
+<item name="Receiver50Beowulf" count="1,1" prob="0.01"/>
+<item name="Barrel50Beowulf" count="1,1" prob="0.01"/>
+<item name="Conversionkit50Beowulf" count="1,1" prob="0.01"/>
+
+
+
+
+
+<item name="Receiver10Gauge" count="1,1" prob="0.01"/>
+<item name="Barrel10Gauge" count="1,1" prob="0.01"/>
+<item name="Conversionkit10Gauge" count="1,1" prob="0.01"/>
+
+<item name="Receiver16Gauge" count="1,1" prob="0.01"/>
+<item name="Barrel16Gauge" count="1,1" prob="0.01"/>
+<item name="Conversionkit16Gauge" count="1,1" prob="0.01"/>
+
+<item name="Receiver20Gauge" count="1,1" prob="0.01"/>
+<item name="Barrel20Gauge" count="1,1" prob="0.01"/>
+<item name="Conversionkit20Gauge" count="1,1" prob="0.01"/>
+
+<item name="Receiver410Gauge" count="1,1" prob="0.01"/>
+<item name="Barrel410Gauge" count="1,1" prob="0.01"/>
+<item name="Conversionkit410Gauge" count="1,1" prob="0.01"/>
+
+
+
+
+
+</lootgroup>
+
+end and start of new code
+
+<append xpath="lootcontainers/lootgroup[@name='modGunT1']">
+<item name="Receiver22LR"/>
+<item name="Barrel22LR"/>
+<item name="Conversionkit22LR"/>
+
+<item name="Receiver380ACP"/>
+<item name="Barrel380ACP"/>
+<item name="Conversionkit380ACP"/>
+
+<item name="Receiver357SIG"/>
+<item name="Barrel357SIG"/>
+<item name="Conversionkit357SIG"/>
+
+<item name="Receiver40S_W"/>
+<item name="Barrel40S_W"/>
+<item name="Conversionkit40S_W"/>
+
+
+
+<item name="Receiver30_30Winchester"/>
+<item name="Barrel30_30Winchester"/>
+<item name="Conversionkit30_30Winchester"/>
+
+<item name="Receiver762x54R"/>
+<item name="Barrel762x54R"/>
+<item name="Conversionkit762x54R"/>
+
+<item name="Receiver65Creedmoor"/>
+<item name="Barrel65Creedmoor"/>
+<item name="Conversionkit65Creedmoor"/>
+
+<item name="Receiver9x39mm"/>
+<item name="Barrel9x39mm"/>
+<item name="Conversionkit9x39mm"/>
+
+
+
+<item name="Receiver30Carbine"/>
+<item name="Barrel30Carbine"/>
+<item name="Conversionkit30Carbine"/>
+
+<item name="Receiver223_556"/>
+<item name="Barrel223_556"/>
+<item name="Conversionkit223_556"/>
+
+<item name="Receiver545x39mm"/>
+<item name="Barrel545x39mm"/>
+<item name="Conversionkit545x39mm"/>
+
+
+
+<item name="Receiver16Gauge"/>
+<item name="Barrel16Gauge"/>
+<item name="Conversionkit16Gauge"/>
+
+<item name="Receiver20Gauge"/>
+<item name="Barrel20Gauge"/>
+<item name="Conversionkit20Gauge"/>
+
+<item name="Receiver410Gauge"/>
+<item name="Barrel410Gauge"/>
+<item name="Conversionkit410Gauge"/>
+</append>  
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='modGunT2']">
+<item name="Receiver45ACP"/>
+<item name="Barrel45ACP"/>
+<item name="Conversionkit45ACP"/>
+
+<item name="Receiver327Magnum"/>
+<item name="Barrel327Magnum"/>
+<item name="Conversionkit327Magnum"/>
+
+<item name="Receiver357MAG38SP"/>
+<item name="Barrel357MAG38SP"/>
+<item name="Conversionkit357MAG38SP"/>
+
+
+
+<item name="Receiver308Win_762mmNATO"/>
+<item name="Barrel308Win_762mmNATO"/>
+<item name="Conversionkit308Win_762mmNATO"/>
+
+<item name="Receiver792x57mmMauser"/>
+<item name="Barrel792x57mmMauser"/>
+<item name="Conversionkit792x57mmMauser"/>
+
+<item name="Receiver30_06SPRG"/>
+<item name="Barrel30_06SPRG"/>
+<item name="Conversionkit30_06SPRG"/>
+
+<item name="Receiver300Win_Mag"/>
+<item name="Barrel300Win_Mag"/>
+<item name="Conversionkit300Win_Mag"/>
+
+
+
+<item name="Receiver300AACBlackout"/>
+<item name="Barrel300AACBlackout"/>
+<item name="Conversionkit300AACBlackout"/>
+
+
+
+<item name="Receiver12Gauge"/>
+<item name="Barrel12Gauge"/>
+<item name="Conversionkit12Gauge"/>
+</append> 
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='modGunT3']">
+<item name="Receiver50ActionExpress"/>
+<item name="Barrel50ActionExpress"/>
+<item name="Conversionkit50ActionExpress"/>
+
+<item name="Receiver500S_WMagnum"/>
+<item name="Barrel500S_WMagnum"/>
+<item name="Conversionkit500S_WMagnum"/>
+
+
+
+<item name="Receiver45_70Government"/>
+<item name="Barrel45_70Government"/>
+<item name="Conversionkit45_70Government"/>
+
+<item name="Receiver338LapuaMagnum"/>
+<item name="Barrel338LapuaMagnum"/>
+<item name="Conversionkit338LapuaMagnum"/>
+
+<item name="Receiver458Win_Mag"/>
+<item name="Barrel458Win_Mag"/>
+<item name="Conversionkit458Win_Mag"/>
+
+<item name="Receiver500NitroExpress"/>
+<item name="Barrel500NitroExpress"/>
+<item name="Conversionkit500NitroExpress"/>
+
+<item name="Receiver50BMG"/>
+<item name="Barrel50BMG"/>
+<item name="Conversionkit50BMG"/>
+
+
+
+<item name="Receiver458SOCOM"/>
+<item name="Barrel458SOCOM"/>
+<item name="Conversionkit458SOCOM"/>
+
+<item name="Receiver50Beowulf"/>
+<item name="Barrel50Beowulf"/>
+<item name="Conversionkit50Beowulf"/>
+
+
+
+<item name="Receiver10Gauge"/>
+<item name="Barrel10Gauge"/>
+<item name="Conversionkit10Gauge"/>
+</append> 
+-->
+
+
+
+
+
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+
+
+
+<lootgroup name="Beretta22+ammo" count="all">
+	<item name="Beretta M9 [.22 S/LR]"/>
+	<item name="22LR" count="19,48"/>
+	<item name="22short" count="32,108"/>
+</lootgroup>
+
+<lootgroup name="Beretta380+ammo" count="all">
+	<item name="Beretta M9 [.380 ACP]"/>
+	<item name="380ACP" count="20,47"/>
+</lootgroup>
+
+<lootgroup name="Beretta40+ammo" count="all">
+	<item name="Beretta M9 [.40 S/W]"/>
+	<item name="40S_W" count="15,30"/>
+</lootgroup>
+
+<lootgroup name="10mmAutoPistol+ammo" count="all">
+	<item name="10mmAutoPistol"/>
+	<item name="10mmauto" count="15,28"/>
+</lootgroup>
+
+<lootgroup name="Beretta45+ammo" count="all">
+	<item name="Beretta M9 [.45 ACP]"/>
+	<item name="45ACP" count="15,26"/>
+</lootgroup>
+
+<lootgroup name="Beretta50+ammo" count="all">
+	<item name="Beretta M9 [.50 Action Express]"/>
+	<item name="50ActionExpress" count="5,17"/>
+</lootgroup>
+<lootgroup name="Beretta50rare+ammo" count="all">
+	<item name="Beretta M9 [.50 Action Express]"/>
+	<item name="50ActionExpress" count="23,35"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="magnum410+ammo" count="all">
+	<item name="S/W Governor [.410 Gauge]"/>
+	<item name="410GaugeShotgunShells" count="8,23"/>
+	<item name="410GaugeShotgunShellsSlugs" count="0,5"/>
+	<item name="410Gauge000BuckShotgunShells" count="0,5"/>
+</lootgroup>
+
+<lootgroup name="magnum22+ammo" count="all">
+	<item name="S/W Model 617 [.22 S/LR]"/>
+	<item name="22LR" count="12,37"/>
+	<item name="22short" count="6,48"/>
+</lootgroup>
+
+<lootgroup name="magnum327+ammo" count="all">
+	<item name="Ruger GP100 [.327 Magnum]"/>
+	<item name="327Magnum" count="7,16"/>
+</lootgroup>
+
+<lootgroup name="magnum357+ammo" count="all">
+	<item name="S/W Model 686 [.357 MAG/.38 SP]"/>
+	<item name="357Magnum" count="4,10"/>
+	<item name="38Special" count="6,14"/>
+</lootgroup>
+
+<lootgroup name="magnum500+ammo" count="all">
+	<item name="S/W 500 [.500 S/W Magnum]"/>
+	<item name="500S_WMagnum" count="3,8"/>
+</lootgroup>
+<lootgroup name="magnum500rare+ammo" count="all">
+	<item name="S/W 500 [.500 S/W Magnum]"/>
+	<item name="500S_WMagnum" count="12,25"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="mp522+ammo" count="all">
+	<item name="MP5 [.22 S/LR]"/>
+	<item name="22LR" count="90,270"/>
+</lootgroup>
+
+<lootgroup name="mp5380+ammo" count="all">
+	<item name="MP5 [.380 ACP]"/>
+	<item name="380ACP" count="28,58"/>
+</lootgroup>
+
+<lootgroup name="mp5357+ammo" count="all">
+	<item name="MP5 [.357 SIG]"/>
+	<item name="357SIG" count="24,51"/>
+</lootgroup>
+
+<lootgroup name="mp540+ammo" count="all">
+	<item name="MP5 [.40 S/W]"/>
+	<item name="40S_W" count="20,45"/>
+</lootgroup>
+
+<lootgroup name="mp510mmauto+ammo" count="all">
+	<item name="MP5 [10mm Auto]"/>
+	<item name="10mmauto" count="18,40"/>
+</lootgroup>
+
+<lootgroup name="mp545+ammo" count="all">
+	<item name="MP5 [.45 ACP]"/>
+	<item name="45ACP" count="15,30"/>
+</lootgroup>
+<lootgroup name="mp545rare+ammo" count="all">
+	<item name="MP5 [.45 ACP]"/>
+	<item name="45ACP" count="30,68"/>
+</lootgroup>
+
+
+
+
+<!-- 6-25ammo for 7.62 -->
+<lootgroup name="Remington70030+ammo" count="all">
+	<item name="Remington 700 [.30 Carbine]"/>
+	<item name="30Carbine" count="4,30"/>
+</lootgroup>
+
+<lootgroup name="Remington700223+ammo" count="all">
+	<item name="Remington 700 [.223/5.56]"/>
+	<item name="556x45mmNATO" count="0,9"/>
+	<item name="223Remington" count="3,12"/>
+</lootgroup>
+
+<lootgroup name="Remington7003030+ammo" count="all">
+	<item name="Remington 700 [.30-30 Winchester]"/>
+	<item name="30_30Winchester" count="4,20"/>
+</lootgroup>
+
+<lootgroup name="Remington70076254r+ammo" count="all">
+	<item name="Remington 700 [7.62x54R]"/>
+	<item name="762x54R" count="4,18"/>
+</lootgroup>
+
+<lootgroup name="Remington700939+ammo" count="all">
+	<item name="Remington 700 [9x39mm]"/>
+	<item name="9x39mm" count="3,16"/>
+</lootgroup>
+
+<lootgroup name="Remington700308762+ammo" count="all">
+	<item name="Remington 700 [.308 Win/7.62mm NATO]"/>
+	<item name="308Winchester" count="0,10"/>
+	<item name="762x51mmNATO" count="5,9"/>
+</lootgroup>
+
+<lootgroup name="Remington7004570+ammo" count="all">
+	<item name="Remington 700 [.45-70 Government]"/>
+	<item name="45_70Government" count="3,10"/>
+</lootgroup>
+
+<lootgroup name="Remington700458+ammo" count="all">
+	<item name="Remington 700 [.458 Win-Mag]"/>
+	<item name="458WinchesterMagnum" count="3,10"/>
+</lootgroup>
+
+<lootgroup name="Remington700500+ammo" count="all">
+	<item name="Remington 700 [500 Nitro Express]"/>
+	<item name="500NitroExpress" count="2,10"/>
+</lootgroup>
+<lootgroup name="Remington700500rare+ammo" count="all">
+	<item name="Remington 700 [500 Nitro Express]"/>
+	<item name="500NitroExpress" count="10,25"/>
+</lootgroup>
+
+
+
+
+<!-- 6-25ammo for 7.62 -->
+<lootgroup name="Remington760022+ammo" count="all">
+	<item name="Remington 7600 [.22 S/LR]"/>
+	<item name="22LR" count="12,58"/>
+	<item name="22short" count="24,88"/>
+</lootgroup>
+
+<lootgroup name="Remington7600223556+ammo" count="all">
+	<item name="Remington 7600 [.223/5.56]"/>
+	<item name="556x45mmNATO" count="0,14"/>
+	<item name="223Remington" count="8,18"/>
+</lootgroup>
+
+<lootgroup name="Remington76003030+ammo" count="all">
+	<item name="Remington 7600 [.30-30 Winchester]"/>
+	<item name="30_30Winchester" count="8,20"/>
+</lootgroup>
+
+<lootgroup name="Remington7600308762+ammo" count="all">
+	<item name="Remington 7600 [.308 Win/7.62mm NATO]"/>
+	<item name="308Winchester" count="0,15"/>
+	<item name="762x51mmNATO" count="10,17"/>
+</lootgroup>
+
+<lootgroup name="Remington76003006+ammo" count="all">
+	<item name="Remington 7600 [30-06 SPRG]"/>
+	<item name="30_06SPRG" count="6,15"/>
+</lootgroup>
+
+<lootgroup name="Remington7600300+ammo" count="all">
+	<item name="Remington 7600 [.300 Win-Mag]"/>
+	<item name="300WinchesterMagnum" count="6,10"/>
+</lootgroup>
+
+<lootgroup name="Remington76004570+ammo" count="all">
+	<item name="Remington 7600 [.45-70 Government]"/>
+	<item name="45_70Government" count="5,13"/>
+</lootgroup>
+<lootgroup name="Remington76004570rare+ammo" count="all">
+	<item name="Remington 7600 [.45-70 Government]"/>
+	<item name="45_70Government" count="14,26"/>
+</lootgroup>
+
+
+
+
+<!-- 6-25ammo for 7.62 -->
+<lootgroup name="RSASS223556+ammo" count="all">
+	<item name="R11 RSASS [.223/5.56]"/>
+	<item name="556x45mmNATO" count="0,13"/>
+	<item name="223Remington" count="7,16"/>
+</lootgroup>
+
+<lootgroup name="RSASS65+ammo" count="all">
+	<item name="R11 RSASS [6.5 Creedmoor]"/>
+	<item name="65Creedmoor" count="6,12"/>
+</lootgroup>
+
+<lootgroup name="RSASS308762+ammo" count="all">
+	<item name="R11 RSASS [.308 Win/7.62mm NATO]"/>
+	<item name="308Winchester" count="0,15"/>
+	<item name="762x51mmNATO" count="9,14"/>
+</lootgroup>
+
+<lootgroup name="RSASS79257+ammo" count="all">
+	<item name="R11 RSASS [7.92x57mm Mauser]"/>
+	<item name="792x57mmMauser" count="6,14"/>
+</lootgroup>
+
+<lootgroup name="RSASS3006+ammo" count="all">
+	<item name="R11 RSASS [30-06 SPRG]"/>
+	<item name="30_06SPRG" count="5,14"/>
+</lootgroup>
+
+<lootgroup name="RSASS300+ammo" count="all">
+	<item name="R11 RSASS [.300 Win-Mag]"/>
+	<item name="300WinchesterMagnum" count="5,12"/>
+</lootgroup>
+
+<lootgroup name="RSASS338+ammo" count="all">
+	<item name="R11 RSASS [.338 Lapua Magnum]"/>
+	<item name="338LapuaMagnum" count="5,10"/>
+</lootgroup>
+
+<lootgroup name="RSASS50+ammo" count="all">
+	<item name="R11 RSASS [50 BMG]"/>
+	<item name="50BMG" count="2,7"/>
+</lootgroup>
+<lootgroup name="RSASS50rare+ammo" count="all">
+	<item name="R11 RSASS [50 BMG]"/>
+	<item name="50BMG" count="6,17"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="AK-4730+ammo" count="all">
+	<item name="AK-47 [.30 Carbine]"/>
+	<item name="30Carbine" count="32,62"/>
+</lootgroup>
+
+<lootgroup name="AK-47223556+ammo" count="all">
+	<item name="AK-47 [.223/5.56]"/>
+	<item name="556x45mmNATO" count="0,38"/>
+	<item name="223Remington" count="21,27"/>
+</lootgroup>
+
+<lootgroup name="AK-4754539+ammo" count="all">
+	<item name="AK-47 [5.45x39mm]"/>
+	<item name="545x39mm" count="28,58"/>
+</lootgroup>
+
+<lootgroup name="AK-47300bo+ammo" count="all">
+	<item name="AK-47 [.300 AAC Blackout]"/>
+	<item name="300AACBlackout" count="22,34"/>
+</lootgroup>
+
+<lootgroup name="AK-479x39mm+ammo" count="all">
+	<item name="AK-47 [9x39mm]"/>
+	<item name="9x39mm" count="18,30"/>
+</lootgroup>
+
+<lootgroup name="AK-47458so+ammo" count="all">
+	<item name="AK-47 [.458 SOCOM]"/>
+	<item name="458SOCOM" count="12,22"/>
+</lootgroup>
+<lootgroup name="AK-47458sorare+ammo" count="all">
+	<item name="AK-47 [.458 SOCOM]"/>
+	<item name="458SOCOM" count="28,50"/>
+</lootgroup>
+
+<lootgroup name="AK-4750bw+ammo" count="all">
+	<item name="AK-47 [.50 Beowulf]"/>
+	<item name="50Beowulf" count="12,20"/>
+</lootgroup>
+<lootgroup name="AK-4750bwrare+ammo" count="all">
+	<item name="AK-47 [.50 Beowulf]"/>
+	<item name="50Beowulf" count="25,45"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="Saiga-12410+ammo" count="all">
+	<item name="Saiga-12 [.410 Gauge]"/>
+	<item name="410GaugeShotgunShells" count="12,28"/>
+	<item name="410GaugeShotgunShellsSlugs" count="0,12"/>
+	<item name="410Gauge000BuckShotgunShells" count="0,8"/>
+</lootgroup>
+
+
+<lootgroup name="Saiga-1220+ammo" count="all">
+	<item name="Saiga-12 [20 Gauge]"/>
+	<item name="20GaugeShotgunShells" count="10,23"/>
+	<item name="20GaugeSSTShotgunSlug" count="0,18"/>
+</lootgroup>
+
+
+<lootgroup name="Saiga-1216+ammo" count="all">
+	<item name="Saiga-12 [16 Gauge]"/>
+	<item name="16GaugeShotgunShells" count="10,18"/>
+	<item name="16GaugeShotgunSlug" count="0,13"/>
+</lootgroup>
+
+
+<lootgroup name="Saiga-1212+ammo" count="all">
+	<item name="Saiga-12 [12 Gauge]"/>
+	<item name="ammoShotgunShell" count="5,10"/>
+	<item name="ammoShotgunSlug" count="0,8"/>
+	<item name="12GaugePower_Shok" count="0,8"/>
+	<item name="12GaugeDragonsBreath" count="0,8"/>
+</lootgroup>
+<lootgroup name="Saiga-1212slug+ammo" count="all">
+	<item name="Saiga-12 [12 Gauge]"/>
+	<item name="ammoShotgunShell" count="0,5"/>
+	<item name="ammoShotgunSlug" count="10,20"/>
+	<item name="12GaugePower_Shok" count="0,8"/>
+	<item name="12GaugeDragonsBreath" count="0,8"/>
+</lootgroup>
+<lootgroup name="Saiga-1212rare+ammo" count="all">
+	<item name="Saiga-12 [12 Gauge]"/>
+	<item name="ammoShotgunShell" count="23,37"/>
+	<item name="ammoShotgunSlug" count="17,27"/>
+	<item name="12GaugePower_Shok" count="7,18"/>
+	<item name="12GaugeDragonsBreath" count="8,16"/>
+</lootgroup>
+
+
+<lootgroup name="Saiga-1210+ammo" count="all">
+	<item name="Saiga-12 [10 Gauge]"/>
+	<item name="10GaugeShotgunShells" count="8,14"/>
+	<item name="10GaugeMagnum00Buckshot" count="0,8"/>
+	<item name="10GaugeSSTSabotSlug" count="0,8"/>
+</lootgroup>
+<lootgroup name="Saiga-1210rare+ammo" count="all">
+	<item name="Saiga-12 [10 Gauge]"/>
+	<item name="10GaugeShotgunShells" count="12,26"/>
+	<item name="10GaugeMagnum00Buckshot" count="9,17"/>
+	<item name="10GaugeSSTSabotSlug" count="6,15"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="Mossberg590410+ammo" count="all">
+	<item name="Mossberg 590 [.410 Gauge]"/>
+	<item name="410GaugeShotgunShells" count="20,37"/>
+	<item name="410GaugeShotgunShellsSlugs" count="0,10"/>
+	<item name="410Gauge000BuckShotgunShells" count="0,6"/>
+</lootgroup>
+
+<lootgroup name="Mossberg59020+ammo" count="all">
+	<item name="Mossberg 590 [20 Gauge]"/>
+	<item name="20GaugeShotgunShells" count="16,26"/>
+	<item name="20GaugeSSTShotgunSlug" count="0,18"/>
+</lootgroup>
+
+<lootgroup name="Mossberg59016+ammo" count="all">
+	<item name="Mossberg 590 [16 Gauge]"/>
+	<item name="16GaugeShotgunShells" count="13,20"/>
+	<item name="16GaugeShotgunSlug" count="0,10"/>
+</lootgroup>
+
+<lootgroup name="Mossberg59010+ammo" count="all">
+	<item name="Mossberg 590 [10 Gauge]"/>
+	<item name="10GaugeShotgunShells" count="10,15"/>
+	<item name="10GaugeMagnum00Buckshot" count="0,6"/>
+	<item name="10GaugeSSTSabotSlug" count="0,6"/>
+</lootgroup>
+
+<lootgroup name="Mossberg59010rare+ammo" count="all">
+	<item name="Mossberg 590 [10 Gauge]"/>
+	<item name="10GaugeShotgunShells" count="19,26"/>
+	<item name="10GaugeMagnum00Buckshot" count="8,17"/>
+	<item name="10GaugeSSTSabotSlug" count="5,16"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="M60E4308762+ammo" count="all">
+	<item name="M60E4 [.308 Win/7.62mm NATO]"/>
+	<item name="308Winchester" count="0,78"/>
+	<item name="762x51mmNATO" count="42,62"/>
+</lootgroup>
+
+<lootgroup name="M60E479257+ammo" count="all">
+	<item name="M60E4 [7.92x57mm Mauser]"/>
+	<item name="792x57mmMauser" count="47,70"/>
+</lootgroup>
+
+<lootgroup name="M60E43006+ammo" count="all">
+	<item name="M60E4 [30-06 SPRG]"/>
+	<item name="30_06SPRG" count="40,60"/>
+</lootgroup>
+
+<lootgroup name="M60E4223556+ammo" count="all">
+	<item name="M60E4 [.223/5.56]"/>
+	<item name="223Remington" count="80,120"/>
+	<item name="556x45mmNATO" count="0,62"/>
+</lootgroup>
+
+<lootgroup name="M60E4300bo+ammo" count="all">
+	<item name="M60E4 [.300 AAC Blackout]"/>
+	<item name="300AACBlackout" count="65,85"/>
+</lootgroup>
+
+<lootgroup name="M60E4458so+ammo" count="all">
+	<item name="M60E4 [.458 SOCOM]"/>
+	<item name="458SOCOM" count="43,62"/>
+</lootgroup>
+
+<lootgroup name="M60E450bw+ammo" count="all">
+	<item name="M60E4 [.50 Beowulf]"/>
+	<item name="50Beowulf" count="38,55"/>
+</lootgroup>
+
+<lootgroup name="M60E450bwrare+ammo" count="all">
+	<item name="M60E4 [.50 Beowulf]"/>
+	<item name="50Beowulf" count="68,155"/>
+</lootgroup>
+
+<lootgroup name="M60E43006rare+ammo" count="all">
+	<item name="M60E4 [30-06 SPRG]"/>
+	<item name="30_06SPRG" count="75,110"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="PedersoliKodiakMarkIV300+ammo" count="all">
+	<item name="Pedersoli Kodiak Mark IV [.300 Winchester Magnum]"/>
+	<item name="300WinchesterMagnum" count="3,18"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="RemingtonModel1887410+ammo" count="all">
+	<item name="Remington Model-1887 [.410]"/>
+	<item name="410GaugeShotgunShells" count="14,26"/>
+	<item name="410GaugeShotgunShellsSlugs" count="0,6"/>
+	<item name="410Gauge000BuckShotgunShells" count="0,6"/>
+</lootgroup>
+
+<lootgroup name="RemingtonModel188720+ammo" count="all">
+	<item name="Remington Model-1887 [20 Gauge]"/>
+	<item name="20GaugeShotgunShells" count="10,18"/>
+	<item name="20GaugeSSTShotgunSlug" count="0,6"/>
+</lootgroup>
+
+<lootgroup name="RemingtonModel188716+ammo" count="all">
+	<item name="Remington Model-1887 [16 Gauge]"/>
+	<item name="16GaugeShotgunShells" count="8,15"/>
+	<item name="16GaugeShotgunSlug" count="0,6"/>
+</lootgroup>
+
+<lootgroup name="RemingtonModel188710+ammo" count="all">
+	<item name="Remington Model-1887 [10 Gauge]"/>
+	<item name="10GaugeShotgunShells" count="4,10"/>
+	<item name="10GaugeMagnum00Buckshot" count="0,4"/>
+	<item name="10GaugeSSTSabotSlug" count="0,4"/>
+</lootgroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<lootgroup name="GunStuffT1" count="1" prob="0.8">
+<item name="Pistol Frame" count="1,1" prob="0.02"/>
+<item name="Rifle Frame" count="1,1" prob="0.02"/>
+
+
+
+	<item name="Receiver22LR" prob="0.7"/>
+	<item name="Receiver380ACP" prob="0.5"/>
+	<item name="Receiver357SIG" prob="0.3"/>
+	<item name="Receiver40S_W" prob="0.3"/>
+
+	<item name="Receiver30_30Winchester" prob="0.5"/>
+	<item name="Receiver762x54R" prob="0.3"/>
+	<item name="Receiver65Creedmoor" prob="0.2"/>
+	<item name="Receiver9x39mm" prob="0.2"/>
+
+	<item name="Receiver30Carbine" prob="0.4"/>
+	<item name="Receiver223_556" prob="0.3"/>
+	<item name="Receiver545x39mm" prob="0.3"/>
+
+	<item name="Receiver16Gauge" prob="0.4"/>
+	<item name="Receiver20Gauge" prob="0.5"/>
+	<item name="Receiver410Gauge" prob="0.7"/>
+
+
+
+	<item name="Barrel22LR" prob="0.9"/>
+	<item name="Barrel380ACP" prob="0.7"/>
+	<item name="Barrel357SIG" prob="0.6"/>
+	<item name="Barrel40S_W" prob="0.5"/>
+
+	<item name="Barrel30_30Winchester" prob="0.7"/>
+	<item name="Barrel762x54R" prob="0.5"/>
+	<item name="Barrel65Creedmoor" prob="0.4"/>
+	<item name="Barrel9x39mm" prob="0.4"/>
+
+	<item name="Barrel30Carbine" prob="0.6"/>
+	<item name="Barrel223_556" prob="0.5"/>
+	<item name="Barrel545x39mm" prob="0.5"/>
+
+	<item name="Barrel16Gauge" prob="0.6"/>
+	<item name="Barrel20Gauge" prob="0.7"/>
+	<item name="Barrel410Gauge" prob="0.9"/>
+
+
+
+	<item name="Conversionkit22LR" prob="0.09"/>
+	<item name="Conversionkit380ACP" prob="0.07"/>
+	<item name="Conversionkit357SIG" prob="0.06"/>
+	<item name="Conversionkit40S_W" prob="0.05"/>
+
+	<item name="Conversionkit30_30Winchester" prob="0.07"/>
+	<item name="Conversionkit762x54R" prob="0.05"/>
+	<item name="Conversionkit65Creedmoor" prob="0.04"/>
+	<item name="Conversionkit9x39mm" prob="0.04"/>
+
+	<item name="Conversionkit30Carbine" prob="0.06"/>
+	<item name="Conversionkit223_556" prob="0.05"/>
+	<item name="Conversionkit545x39mm" prob="0.05"/>
+
+	<item name="Conversionkit16Gauge" prob="0.06"/>
+	<item name="Conversionkit20Gauge" prob="0.07"/>
+	<item name="Conversionkit410Gauge" prob="0.09"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="GunStuffT2" count="1" prob="0.5">
+<item name="Magnum Frame" count="1,1" prob="0.01"/>
+<item name="SxS Shotgun Frame" count="1,1" prob="0.08"/>
+<item name="Pump Shotgun Frame" count="1,1" prob="0.01"/>
+
+
+	<item name="Receiver10mmAuto" prob="0.6"/>
+	<item name="Receiver45ACP" prob="0.6"/>
+	<item name="Receiver327Magnum" prob="0.4"/>
+	<item name="Receiver357MAG38SP" prob="0.2"/>
+
+	<item name="Receiver308Win_762mmNATO" prob="0.5"/>
+	<item name="Receiver792x57mmMauser" prob="0.4"/>
+	<item name="Receiver30_06SPRG" prob="0.3"/>
+	<item name="Receiver300Win_Mag" prob="0.2"/>
+
+	<item name="Receiver300AACBlackout" prob="0.3"/>
+
+	<item name="Receiver12Gauge" prob="0.4"/>
+
+
+
+	<item name="Barrel10mmAuto" prob="0.7"/>
+	<item name="Barrel45ACP" prob="0.6"/>
+	<item name="Barrel327Magnum" prob="0.4"/>
+	<item name="Barrel357MAG38SP" prob="0.2"/>
+
+	<item name="Barrel308Win_762mmNATO" prob="0.5"/>
+	<item name="Barrel792x57mmMauser" prob="0.4"/>
+	<item name="Barrel30_06SPRG" prob="0.3"/>
+	<item name="Barrel300Win_Mag" prob="0.2"/>
+
+	<item name="Barrel300AACBlackout" prob="0.3"/>
+
+	<item name="Barrel12Gauge" prob="0.4"/>
+
+
+
+	<item name="Conversionkit10mmAuto" prob="0.04"/>
+	<item name="Conversionkit45ACP" prob="0.03"/>
+	<item name="Conversionkit327Magnum" prob="0.02"/>
+	<item name="Conversionkit357MAG38SP" prob="0.01"/>
+
+	<item name="Conversionkit308Win_762mmNATO" prob="0.02"/>
+	<item name="Conversionkit792x57mmMauser" prob="0.02"/>
+	<item name="Conversionkit30_06SPRG" prob="0.01"/>
+	<item name="Conversionkit300Win_Mag" prob="0.01"/>
+
+	<item name="Conversionkit300AACBlackout" prob="0.01"/>
+
+	<item name="Conversionkit12Gauge" prob="0.02"/>
+</lootgroup>
+
+
+
+<lootgroup name="GunStuffT3" count="1" prob="0.3">
+<item name="DMR Frame" count="1,1" prob="0.01"/>
+<item name="AK Frame" count="1,1" prob="0.01"/>
+<item name="SMG Frame" count="1,1" prob="0.01"/>
+<item name="LMG Frame" count="1,1" prob="0.005"/>
+
+
+
+	<item name="Receiver50ActionExpress" prob="0.7"/>
+	<item name="Receiver500S_WMagnum" prob="0.4"/>
+
+	<item name="Receiver45_70Government" prob="0.4"/>
+	<item name="Receiver338LapuaMagnum" prob="0.3"/>
+	<item name="Receiver458Win_Mag" prob="0.3"/>
+	<item name="Receiver500NitroExpress" prob="0.2"/>
+	<item name="Receiver50BMG" prob="0.01"/>
+
+	<item name="Receiver458SOCOM" prob="0.3"/>
+	<item name="Receiver50Beowulf" prob="0.2"/>
+
+	<item name="Receiver10Gauge" prob="0.3"/>
+
+
+
+	<item name="Barrel50ActionExpress" prob="0.7"/>
+	<item name="Barrel500S_WMagnum" prob="0.4"/>
+
+	<item name="Barrel45_70Government" prob="0.4"/>
+	<item name="Barrel338LapuaMagnum" prob="0.3"/>
+	<item name="Barrel458Win_Mag" prob="0.3"/>
+	<item name="Barrel500NitroExpress" prob="0.2"/>
+	<item name="Barrel50BMG" prob="0.01"/>
+
+	<item name="Barrel458SOCOM" prob="0.3"/>
+	<item name="Barrel50Beowulf" prob="0.2"/>
+
+	<item name="Barrel10Gauge" prob="0.3"/>
+
+
+
+	<item name="Conversionkit50ActionExpress" prob="0.007"/>
+	<item name="Conversionkit500S_WMagnum" prob="0.004"/>
+
+	<item name="Conversionkit45_70Government" prob="0.004"/>
+	<item name="Conversionkit338LapuaMagnum" prob="0.003"/>
+	<item name="Conversionkit458Win_Mag" prob="0.003"/>
+	<item name="Conversionkit500NitroExpress" prob="0.002"/>
+	<item name="Conversionkit50BMG" prob="0.001"/>
+
+	<item name="Conversionkit458SOCOM" prob="0.003"/>
+	<item name="Conversionkit50Beowulf" prob="0.002"/>
+
+	<item name="Conversionkit10Gauge" prob="0.003"/>
+</lootgroup>
+
+
+
+
+
+
+
+
+
+
+
+<lootgroup name="CommonGunFrameBooks" count="1">
+	<item name="Pistol Frame Schematic"/>
+	<item name="Rifle Frame Schematic"/>
+	<item name="AK Frame Schematic"/>
+	<item name="SxS Shotgun Frame Schematic"/>
+</lootgroup>
+
+<lootgroup name="RareGunFrameBooks" count="1">
+	<item name="Magnum Frame Schematic"/>
+	<item name="SMG Frame Schematic"/>
+	<item name="DMR Frame Schematic"/>
+	<item name="LMG Frame Schematic"/>
+	<item name="Pump Shotgun Frame Schematic"/>
+</lootgroup>
+
+
+
+
+
+
+
+<lootgroup name="CommonGunReceiverBooks" count="1">
+	<item name=".380 ACP Receiver Schematic"/>
+	<item name=".357 SIG Receiver Schematic"/>
+	<item name=".40SmithWessonReceiverSchematic"/>
+	<item name=".327 Magnum Receiver Schematic"/>
+
+	<item name=".22 LR Receiver Schematic"/>
+	<item name=".30-30 Winchester Receiver Schematic"/>
+	<item name=".308 Win/7.62mm NATO Receiver Schematic"/>
+	<item name="7.62x54R Receiver Schematic"/>
+	<item name="9x39mm Receiver Schematic"/>
+
+	<item name=".223/5.56 Receiver Schematic"/>
+	<item name="5.45x39mm Receiver Schematic"/>
+	<item name=".30 Carbine Receiver Schematic"/>
+
+	<item name="16 Gauge Receiver Schematic"/>
+	<item name="20 Gauge Receiver Schematic"/>
+	<item name=".410 Gauge Receiver Schematic"/>
+</lootgroup>
+
+
+
+<lootgroup name="RareGunReceiverBooks" count="1">
+	<item name="Receiver10mmAutoSchematic"/>
+	<item name=".45 ACP Receiver Schematic"/>
+	<item name=".50 Action Express Receiver Schematic"/>
+	<item name=".357 MAG/.38 SP Receiver Schematic"/>
+	<item name="500S_WMagnumReceiverSchematic"/>
+
+	<item name="6.5 Creedmoor Receiver Schematic"/>
+	<item name="30-06 Springfield Receiver Schematic"/>
+	<item name="7.92x57mm Mauser Receiver Schematic"/>
+	<item name=".45-70 Government Receiver Schematic"/>
+	<item name=".300 Winchester Magnum Receiver Schematic"/>
+	<item name=".338 Lapua Magnum Receiver Schematic"/>
+	<item name=".458 Winchester Magnum Receiver Schematic"/>
+	<item name="500 Nitro Express Receiver Schematic"/>
+	<item name="50 BMG Receiver Schematic"/>
+
+	<item name=".458 SOCOM Receiver Schematic"/>
+	<item name=".300 AAC Blackout Receiver Schematic"/>
+	<item name=".50 Beowulf Receiver Schematic"/>
+
+	<item name="10 Gauge Receiver Schematic"/>
+	<item name="12 Gauge Receiver Schematic"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="CommonGunBarrelBooks" count="1">
+	<item name=".380 ACP Barrel Schematic"/>
+	<item name=".357 SIG Barrel Schematic"/>
+	<item name=".40SmithWessonBarrelSchematic"/>
+	<item name=".327 Magnum Barrel Schematic"/>
+
+	<item name=".22 LR Barrel Schematic"/>
+	<item name=".30-30 Winchester Barrel Schematic"/>
+	<item name=".308 Win/7.62mm NATO Barrel Schematic"/>
+	<item name="7.62x54R Barrel Schematic"/>
+	<item name="9x39mm Barrel Schematic"/>
+
+	<item name=".223/5.56 Barrel Schematic"/>
+	<item name="5.45x39mm Barrel Schematic"/>
+	<item name=".30 Carbine Barrel Schematic"/>
+
+	<item name="16 Gauge Barrel Schematic"/>
+	<item name="20 Gauge Barrel Schematic"/>
+	<item name=".410 Gauge Barrel Schematic"/>
+</lootgroup>
+
+
+
+<lootgroup name="RareGunBarrelBooks" count="1">
+	<item name="Barrel10mmAutoSchematic"/>
+	<item name=".45 ACP Barrel Schematic"/>
+	<item name=".50 Action Express Barrel Schematic"/>
+	<item name=".357 MAG/.38 SP Barrel Schematic"/>
+	<item name="500S_WMagnumBarrelSchematic"/>
+
+	<item name="6.5 Creedmoor Barrel Schematic"/>
+	<item name="30-06 Springfield Barrel Schematic"/>
+	<item name="7.92x57mm Mauser Barrel Schematic"/>
+	<item name=".45-70 Government Barrel Schematic"/>
+	<item name=".300 Winchester Magnum Barrel Schematic"/>
+	<item name=".338 Lapua Magnum Barrel Schematic"/>
+	<item name=".458 Winchester Magnum Barrel Schematic"/>
+	<item name="500 Nitro Express Barrel Schematic"/>
+	<item name="50 BMG Barrel Schematic"/>
+
+	<item name=".458 SOCOM Barrel Schematic"/>
+	<item name=".300 AAC Blackout Barrel Schematic"/>
+	<item name=".50 Beowulf Barrel Schematic"/>
+
+	<item name="10 Gauge Barrel Schematic"/>
+	<item name="12 Gauge Barrel Schematic"/>
+
+</lootgroup>
+
+
+
+
+
+<lootgroup name="CommonGunConversionkitBooks" count="1">
+	<item name=".380 ACP Conversion kit Schematic"/>
+	<item name=".357 SIG Conversion kit Schematic"/>
+	<item name=".40SmithWessonConversionkitSchematic"/>
+	<item name=".327 Magnum Conversion kit Schematic"/>
+
+	<item name=".22 LR Conversion kit Schematic"/>
+	<item name=".30-30 Winchester Conversion kit Schematic"/>
+	<item name=".308 Win/7.62mm NATO Conversion kit Schematic"/>
+	<item name="7.62x54R Conversion kit Schematic"/>
+	<item name="9x39mm Conversion kit Schematic"/>
+
+	<item name=".223/5.56 Conversion kit Schematic"/>
+	<item name="5.45x39mm Conversion kit Schematic"/>
+	<item name=".30 Carbine Conversion kit Schematic"/>
+
+	<item name="16 Gauge Conversion kit Schematic"/>
+	<item name="20 Gauge Conversion kit Schematic"/>
+	<item name=".410 Gauge Conversion kit Schematic"/>
+</lootgroup>
+
+
+
+<lootgroup name="RareGunConversionkitBooks" count="1">
+	<item name="Conversionkit10mmAutoSchematic"/>
+	<item name=".45 ACP Conversion kit Schematic"/>
+	<item name=".50 Action Express Conversion kit Schematic"/>
+	<item name=".357 MAG/.38 SP Conversion kit Schematic"/>
+	<item name="500S_WMagnumConversionkitSchematic"/>
+
+	<item name="6.5 Creedmoor Conversion kit Schematic"/>
+	<item name="30-06 Springfield Conversion kit Schematic"/>
+	<item name="7.92x57mm Mauser Conversion kit Schematic"/>
+	<item name=".45-70 Government Conversion kit Schematic"/>
+	<item name=".300 Winchester Magnum Conversion kit Schematic"/>
+	<item name=".338 Lapua Magnum Conversion kit Schematic"/>
+	<item name=".458 Winchester Magnum Conversion kit Schematic"/>
+	<item name="500 Nitro Express Conversion kit Schematic"/>
+	<item name="50 BMG Conversion kit Schematic"/>
+
+	<item name=".458 SOCOM Conversion kit Schematic"/>
+	<item name=".300 AAC Blackout Conversion kit Schematic"/>
+	<item name=".50 Beowulf Conversion kit Schematic"/>
+
+	<item name="10 Gauge Conversion kit Schematic"/>
+	<item name="12 Gauge Conversion kit Schematic"/>
+</lootgroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<lootgroup name="CommonCaliberBooks" count="1">
+	<item name=".380 ACP Schematic"/>
+	<item name=".357 SIG Schematic"/>
+	<item name=".40SWSchematic"/>
+
+	<item name=".327 Magnum Schematic"/>
+
+	<item name=".22 LR Schematic"/>
+	<item name=".30-30 Winchester Schematic"/>
+	<item name="7.62x51mm NATO Schematic"/>
+	<item name=".308 Winchester Schematic"/>
+
+	<item name="7.62x54R Schematic"/>
+	<item name="9x39mm Schematic"/>
+
+	<item name=".223 Remington Schematic"/>
+	<item name="5.56x45mm NATO Schematic"/>
+	<item name="5.45x39mm Schematic"/>
+	<item name=".30 Carbine Schematic"/>
+
+	<item name="16 Gauge Shotgun Shell Schematic"/>
+	<item name="16GaugeShotgunSlugSchematic"/>
+	<item name="20 Gauge Shotgun Shell Schematic"/>
+	<item name="20GaugeSSTShotgunSlugSchematic"/>
+	<item name=".410 Gauge Shotgun Shell Schematic"/>
+	<item name="410GaugeShotgunShellsSlugsSchematic"/>
+	<item name="410Gauge000BuckShotgunShellsSchematic"/>
+</lootgroup>
+
+
+
+<lootgroup name="RareCaliberBooks" count="1">
+	<item name="10mmautoSchematic"/>
+	<item name=".45 ACP Schematic"/>
+	<item name=".50 Action Express Schematic"/>
+
+	<item name=".38 Special Schematic"/>
+	<item name=".357 Magnum Schematic"/>
+	<item name="500SmithWessonMagnumSchematic"/>
+
+	<item name="6.5 Creedmoor Schematic"/>
+	<item name="30-06 Springfield Schematic"/>
+	<item name="7.92x57mm Mauser Schematic"/>
+	<item name=".45-70 Government Schematic"/>
+	<item name=".300 Winchester Magnum Schematic"/>
+	<item name=".338 Lapua Magnum Schematic"/>
+	<item name=".458 Winchester Magnum Schematic"/>
+	<item name="500 Nitro Express Schematic"/>
+	<item name="50 BMG Schematic"/>
+
+	<item name=".458 SOCOM Schematic"/>
+	<item name=".300 AAC Blackout Schematic"/>
+	<item name=".50 Beowulf Schematic"/>
+
+	<item name="10 Gauge Shotgun Shell Schematic"/>
+</lootgroup>
+
+
+
+
+
+<lootgroup name="CommonAmmoStuffBooks" count="1">
+	<item name="AmmunitionBeltLinksSchematic"/>
+</lootgroup>
+
+
+
+<lootgroup name="RareAmmoStuffBooks" count="1">
+	<item name="AmmunitionBeltLinksSchematic"/>
+</lootgroup>
+
+
+
+</insertBefore>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--   MY AMMO TYPES       LOOT LOOT LOOT LOOT LOOT LOOT LOOT LOOT LOOT LOOT LOOT        MY AMMO TYPES 
+<append xpath="lootcontainers/lootgroup[@name='ammo']">
+	<item name="10GaugeShotgunShells" count="1,24" prob="0.3"/>
+	<item name="16GaugeShotgunShells" count="1,30" prob="0.8"/>
+	<item name="20GaugeShotgunShells" count="1,32" prob="1.0"/>
+	<item name="12GaugeDragonsBreath" count="1,12" prob="0.1"/>
+
+	<item name="12GaugePower_Shok" count="1,16" prob="0.3"/>
+	<item name="10GaugeSSTSabotSlug" count="1,16" prob="0.2"/>
+	<item name="10GaugeMagnum00Buckshot" count="1,16" prob="0.2"/>
+
+	<item name="410GaugeShotgunShells" count="4,32" prob="0.8"/>
+
+	<item name="22LR" count="55,325" prob="0.9"/>
+	<item name="380ACP" count="1,31" prob="0.9"/>
+	<item name="357SIG" count="1,28" prob="0.9"/>
+	<item name="40S_W" count="1,26" prob="0.8"/>
+	<item name="45ACP" count="1,22" prob="0.7"/>
+	<item name="50ActionExpress" count="1,18" prob="0.3"/>
+
+	<item name="30_30Winchester" count="1,22" prob="0.8"/>
+	<item name="762x54R" count="1,20" prob="0.6"/>
+	<item name="65Creedmoor" count="1,20" prob="0.5"/>
+	<item name="762x51mmNATO" count="1,20" prob="0.6"/>
+	<item name="9x39mm" count="1,20" prob="0.5"/>
+	<item name="308Winchester" count="1,15" prob="0.5"/>
+	<item name="792x57mmMauser" count="1,12" prob="0.5"/>
+	<item name="30_06SPRG" count="1,10" prob="0.4"/>
+	<item name="45_70Government" count="1,8" prob="0.3"/>
+	<item name="300WinchesterMagnum" count="1,14" prob="0.2"/>
+	<item name="338LapuaMagnum" count="1,10" prob="0.2"/>
+	<item name="458WinchesterMagnum" count="1,8" prob="0.1"/>
+	<item name="500NitroExpress" count="1,8" prob="0.1"/>
+	<item name="50BMG" count="1,8" prob="0.1"/>
+
+	<item name="30Carbine" count="10,50" prob="0.9"/>
+	<item name="223Remington" count="4,32" prob="0.8"/>
+	<item name="545x39mm" count="3,32" prob="0.6"/>
+	<item name="556x45mmNATO" count="3,24" prob="0.6"/>
+	<item name="300AACBlackout" count="2,20" prob="0.5"/>
+	<item name="458SOCOM" count="1,18" prob="0.1"/>
+	<item name="50Beowulf" count="1,16" prob="0.1"/>
+
+	<item name="327Magnum" count="1,25" prob="0.5"/>
+	<item name="38Special" count="1,15" prob="0.4"/>
+	<item name="357Magnum" count="1,12" prob="0.4"/>
+	<item name="500S_WMagnum" count="1,7" prob="0.1"/>
+</append>  -->
+
+
+
+ 
+<!--
+<lootgroup name="groupAmmoRegularGunslinger">
+	<item name="ammo9mmBulletBall" loot_prob_template="T2" count="10,40"/>	
+	<item name="ammo9mmBulletBall" loot_prob_template="T3" count="10,40"/>	
+	<item name="ammo44MagnumBulletBall" loot_prob_template="T3" count="4,19"/>	
+</lootgroup> -->
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoRegularGunslinger']">
+	<item name="22short" loot_prob_template="T2" count="55,325"/>
+	<item name="22LR" loot_prob_template="T2" count="40,200"/>
+	<item name="380ACP" loot_prob_template="T2" count="1,31"/>
+	<item name="357SIG" loot_prob_template="T2" count="1,28"/>
+	<item name="40S_W" loot_prob_template="T2" count="1,26"/>
+	<item name="10mmauto" loot_prob_template="T2" count="1,24"/>
+	<item name="45ACP" loot_prob_template="T2" count="1,22"/>
+	<item name="50ActionExpress" loot_prob_template="T3" count="1,18"/>
+
+	<item name="327Magnum" loot_prob_template="T2" count="1,25"/>
+	<item name="38Special" loot_prob_template="T3" count="1,15"/>
+	<item name="357Magnum" loot_prob_template="T3" count="1,12"/>
+	<item name="500S_WMagnum" loot_prob_template="T3" count="1,7"/>
+</append> 
+
+
+ 
+
+<!--
+<lootgroup name="groupAmmoRegular">
+	<item group="groupAmmoRegularGunslinger"/>
+	<item name="ammoShotgunShell" count="3,12"/>						
+	<item name="ammo762mmBulletBall" count="6,25"/>						
+	<item name="ammoArrowIron" prob="0.1" count="6,24"/>				
+	<item name="ammoCrossbowBoltIron" prob="0.1" count="4,16"/>				
+</lootgroup> -->
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoRegular']">
+	<item name="10GaugeShotgunShells" count="1,24" prob="0.3"/>
+	<item name="16GaugeShotgunShells" count="1,30" prob="0.6"/>
+	<item name="16GaugeShotgunSlug" count="1,16" prob="0.4"/>
+	<item name="20GaugeShotgunShells" count="1,32" prob="0.7"/>
+	<item name="20GaugeSSTShotgunSlug" count="1,18" prob="0.5"/>
+	<item name="12GaugeDragonsBreath" count="1,12" prob="0.1"/>
+
+	<item name="12GaugePower_Shok" count="1,16" prob="0.1"/>
+	<item name="10GaugeSSTSabotSlug" count="1,16" prob="0.02"/>
+	<item name="10GaugeMagnum00Buckshot" count="1,16" prob="0.02"/>
+
+	<item name="410GaugeShotgunShells" count="4,32" prob="0.8"/>
+	<item name="410GaugeShotgunShellsSlugs" count="1,18" prob="0.7"/>
+	<item name="410Gauge000BuckShotgunShells" count="1,16" prob="0.6"/>
+
+	<item name="30_30Winchester" count="1,22" prob="0.8"/>
+	<item name="762x54R" count="1,20" prob="0.6"/>
+	<item name="65Creedmoor" count="1,20" prob="0.5"/>
+	<item name="762x51mmNATO" count="1,20" prob="0.6"/>
+	<item name="9x39mm" count="1,20" prob="0.5"/>
+	<item name="308Winchester" count="1,15" prob="0.5"/>
+	<item name="792x57mmMauser" count="1,12" prob="0.5"/>
+	<item name="30_06SPRG" count="1,10" prob="0.4"/>
+	<item name="45_70Government" count="1,8" prob="0.3"/>
+	<item name="300WinchesterMagnum" count="1,14" prob="0.2"/>
+	<item name="338LapuaMagnum" count="1,10" prob="0.2"/>
+	<item name="458WinchesterMagnum" count="1,8" prob="0.05"/>
+	<item name="500NitroExpress" count="1,8" prob="0.01"/>
+	<item name="50BMG" count="1,8" prob="0.01"/>
+
+	<item name="30Carbine" count="10,50" prob="0.9"/>
+	<item name="223Remington" count="4,32" prob="0.8"/>
+	<item name="545x39mm" count="3,32" prob="0.6"/>
+	<item name="556x45mmNATO" count="3,24" prob="0.6"/>
+	<item name="300AACBlackout" count="2,20" prob="0.5"/>
+	<item name="458SOCOM" count="1,18" prob="0.1"/>
+	<item name="50Beowulf" count="1,16" prob="0.1"/>
+</append> 
+
+
+
+
+
+<!--
+<lootgroup name="groupAmmoAdvancedGunslinger">
+	<item name="ammo9mmBulletAP" loot_prob_template="T2" count="10,40"/>		
+	<item name="ammo9mmBulletHP" loot_prob_template="T2" count="7,30"/>		
+	<item name="ammo9mmBulletAP" loot_prob_template="T3" count="10,40"/>		
+	<item name="ammo9mmBulletHP" loot_prob_template="T3" count="7,30"/>		
+	<item name="ammo44MagnumBulletAP" loot_prob_template="T3" count="4,19"/>	
+	<item name="ammo44MagnumBulletHP" loot_prob_template="T3" count="3,14"/>	
+</lootgroup> -->
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoAdvancedGunslinger']">
+
+</append> 
+
+
+
+
+
+
+<!--
+<lootgroup name="groupAmmoAdvanced">
+	<item group="groupAmmoAdvancedGunslinger" prob="2"/>
+
+	<item name="ammo762mmBulletAP" count="6,25"/>				
+	<item name="ammo762mmBulletHP" count="4,19"/>				
+	<item name="ammoShotgunSlug" count="4,16"/>					
+	<item name="ammoShotgunBreachingSlug" count="4,16"/>			
+
+	<item name="ammoArrowSteelAP" prob=".15" count="5,20"/>	
+
+	<item name="ammoArrowFlaming" count="3,8"/>					
+	<item name="ammoCrossbowBoltFlaming" count="3,8"/>			
+
+	<item name="ammoCrossbowBoltSteelAP" prob=".15" count="3,14"/>	
+	<item name="ammoArrowExploding" count="4"/>					
+	<item name="ammoCrossbowBoltExploding" count="3"/>			
+
+	<item name="ammoRocketHE" count="1"/>						
+	<item name="ammoRocketFrag" count="1"/>						
+</lootgroup> -->
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+
+</append> 
+
+
+
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsCommon']">
+	<item name="Beretta M9 [.22 S/LR] Schematic"/>
+	<item name="Beretta M9 [.380 ACP] Schematic"/>
+	<item name="Beretta M9 [.40 S/W] Schematic"/>
+	<item name="10mmAutoPistolSchematic"/>
+	<item name="Beretta M9 [.45 ACP] Schematic"/>
+	<item name="Beretta M9 [.50 Action Express] Schematic"/>
+
+	<item name="Remington 700 [.30 Carbine] Schematic"/>
+	<item name="Remington 700 [.223/5.56] Schematic"/>
+	<item name="Remington 700 [.30-30 Winchester] Schematic"/>
+	<item name="Remington 700 [7.62x54R] Schematic"/>
+	<item name="Remington 700 [9x39mm] Schematic"/>
+	<item name="Remington 700 [.308 Win/7.62mm NATO] Schematic"/>
+	<item name="Remington 700 [.45-70 Government] Schematic"/>
+	<item name="Remington 700 [.458 Win-Mag] Schematic"/>
+	<item name="Remington 700 [500 Nitro Express] Schematic"/>
+
+	<item name="AK-47 [.30 Carbine] Schematic"/>
+	<item name="AK-47 [.223/5.56] Schematic"/>
+	<item name="AK-47 [5.45x39mm] Schematic"/>
+	<item name="AK-47 [.300 AAC Blackout] Schematic"/>
+	<item name="AK-47 [9x39mm] Schematic"/>
+	<item name="AK-47 [.458 SOCOM] Schematic"/>
+	<item name="AK-47 [.50 Beowulf] Schematic"/>
+
+	<item name="Pedersoli Kodiak Mark IV [.300 Winchester Magnum] Schematic"/>
+
+	<item name="Remington Model-1887 [10 Gauge] Schematic"/>
+	<item name="Remington Model-1887 [16 Gauge] Schematic"/>
+	<item name="Remington Model-1887 [20 Gauge] Schematic"/>
+	<item name="Remington Model-1887 [.410] Schematic"/>
+</append> 
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsWeaponsRare']">
+	<item name="S/W Governor [.410 Gauge] Schematic"/>
+	<item name="S/W Model 617 [.22 S/LR] Schematic"/>
+	<item name="Ruger GP100 [.327 Magnum] Schematic"/>
+	<item name="S/W Model 686 [.357 MAG/.38 SP] Schematic"/>
+	<item name="S/W 500 [.500 S/W Magnum] Schematic"/>
+
+	<item name="Mossberg 590 [.410 Gauge] Schematic"/>
+	<item name="Mossberg 590 [20 Gauge] Schematic"/>
+	<item name="Mossberg 590 [16 Gauge] Schematic"/>
+	<item name="Mossberg 590 [10 Gauge] Schematic"/>
+
+	<item name="Remington 7600 [.22 S/LR] Schematic"/>
+	<item name="Remington 7600 [.223/5.56] Schematic"/>
+	<item name="Remington 7600 [.30-30 Winchester] Schematic"/>
+	<item name="Remington 7600 [.308 Win/7.62mm NATO] Schematic"/>
+	<item name="Remington 7600 [30-06 SPRG] Schematic"/>
+	<item name="Remington 7600 [.300 Win-Mag] Schematic"/>
+	<item name="Remington 7600 [.45-70 Government] Schematic"/>
+
+	<item name="MP5 [.22 S/LR] Schematic"/>
+	<item name="MP5 [.380 ACP] Schematic"/>
+	<item name="MP5 [.357 SIG] Schematic"/>
+	<item name="MP5 [.40 S/W] Schematic"/>
+	<item name="MP5 [10mm Auto] Schematic"/>
+	<item name="MP5 [.45 ACP] Schematic"/>
+
+	<item name="R11 RSASS [.223/5.56] Schematic"/>
+	<item name="R11 RSASS [6.5 Creedmoor] Schematic"/>
+	<item name="R11 RSASS [.308 Win/7.62mm NATO] Schematic"/>
+	<item name="R11 RSASS [7.92x57mm Mauser] Schematic"/>
+	<item name="R11 RSASS [30-06 SPRG] Schematic"/>
+	<item name="R11 RSASS [.300 Win-Mag] Schematic"/>
+	<item name="R11 RSASS [.338 Lapua Magnum] Schematic"/>
+	<item name="R11 RSASS [50 BMG] Schematic"/>
+
+	<item name="Saiga-12 [.410 Gauge] Schematic"/>
+	<item name="Saiga-12 [20 Gauge] Schematic"/>
+	<item name="Saiga-12 [16 Gauge] Schematic"/>
+	<item name="Saiga-12 [12 Gauge] Schematic"/>
+	<item name="Saiga-12 [10 Gauge] Schematic"/>
+</append> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='commonBooks']">
+	<item group="CommonGunFrameBooks" prob="6"/>
+
+	<item group="CommonGunReceiverBooks" prob="12"/>
+	<item group="CommonGunBarrelBooks" prob="20"/>
+	<item group="CommonGunConversionkitBooks" prob="6"/>
+
+	<item group="CommonCaliberBooks" prob="12"/>
+
+	<item group="CommonAmmoStuffBooks" prob="8"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='rareBooks']">
+	<item group="RareGunFrameBooks" prob="2"/>
+
+	<item group="RareGunReceiverBooks" prob="6"/>
+	<item group="RareGunBarrelBooks" prob="12"/>
+	<item group="RareGunConversionkitBooks" prob="2"/>
+
+	<item group="RareCaliberBooks" prob="6"/>
+
+	<item group="RareAmmoStuffBooks" prob="8"/>
+</append> 
+
+
+
+
+
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_DeadEye']">
+	<item group="PedersoliKodiakMarkIV300+ammo" loot_prob_template="T3" prob="0.18"/>
+
+	<item group="Remington70030+ammo" loot_prob_template="T2" prob="0.58"/>
+	<item group="Remington700223+ammo" loot_prob_template="T2" prob="0.48"/>
+	<item group="Remington7003030+ammo" loot_prob_template="T2" prob="0.37"/>
+	<item group="Remington70076254r+ammo" loot_prob_template="T2" prob="0.3"/>
+	<item group="Remington700939+ammo" loot_prob_template="T2" prob="0.2"/>
+	<item group="Remington700308762+ammo" loot_prob_template="T2" prob="0.1"/>
+	<item group="Remington7004570+ammo" loot_prob_template="T3" prob="0.07"/>
+	<item group="Remington700458+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Remington700500+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Remington700500rare+ammo" loot_prob_template="T3" prob="0.035"/>
+
+	<item group="Remington760022+ammo" loot_prob_template="T2" prob="0.11"/>
+	<item group="Remington7600223556+ammo" loot_prob_template="T2" prob="0.08"/>
+	<item group="Remington76003030+ammo" loot_prob_template="T3" prob="0.05"/>
+	<item group="Remington7600308762+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Remington76003006+ammo" loot_prob_template="T3" prob="0.4"/>
+	<item group="Remington7600300+ammo" loot_prob_template="T3" prob="0.34"/>
+	<item group="Remington76004570+ammo" loot_prob_template="T3" prob="0.22"/>
+	<item group="Remington76004570rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="RSASS223556+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS65+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="RSASS308762+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS79257+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS3006+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS300+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="RSASS338+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="RSASS50+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="RSASS50rare+ammo" loot_prob_template="T3" prob="0.001"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_DeadEyeTPlus']">
+	<item group="PedersoliKodiakMarkIV300+ammo" loot_prob_template="T3" prob="0.15"/>
+
+	<item group="Remington700308762+ammo" loot_prob_template="T2" prob="0.1"/>
+	<item group="Remington7004570+ammo" loot_prob_template="T3" prob="0.07"/>
+	<item group="Remington700458+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Remington700500+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Remington700500rare+ammo" loot_prob_template="T3" prob="0.035"/>
+
+	<item group="Remington76003006+ammo" loot_prob_template="T3" prob="0.4"/>
+	<item group="Remington7600300+ammo" loot_prob_template="T3" prob="0.34"/>
+	<item group="Remington76004570+ammo" loot_prob_template="T3" prob="0.22"/>
+	<item group="Remington76004570rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="RSASS79257+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS3006+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="RSASS300+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="RSASS338+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="RSASS50+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="RSASS50rare+ammo" loot_prob_template="T3" prob="0.001"/>
+</append> 
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Boomstick']">
+	<item group="RemingtonModel1887410+ammo" loot_prob_template="T2" prob="0.85"/>
+	<item group="RemingtonModel188720+ammo" loot_prob_template="T3" prob="0.80"/>
+	<item group="RemingtonModel188716+ammo" loot_prob_template="T3" prob="0.75"/>
+	<item group="RemingtonModel188710+ammo" loot_prob_template="T3" prob="0.05"/>
+
+    <item group="Mossberg590410+ammo" loot_prob_template="T2" prob="0.65"/>
+	<item group="Mossberg59020+ammo" loot_prob_template="T2" prob="0.5"/>
+	<item group="Mossberg59016+ammo" loot_prob_template="T3" prob="0.45"/>
+	<item group="Mossberg59010+ammo" loot_prob_template="T3" prob="0.05"/>
+	<item group="Mossberg59010rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="Saiga-12410+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="Saiga-1220+ammo" loot_prob_template="T3" prob="0.04"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_BoomstickTPlus']">
+	<item group="RemingtonModel188716+ammo" loot_prob_template="T3" prob="0.20"/>
+	<item group="RemingtonModel188710+ammo" loot_prob_template="T3" prob="0.02"/>
+
+	<item group="Mossberg59016+ammo" loot_prob_template="T3" prob="0.1"/>
+	<item group="Mossberg59010+ammo" loot_prob_template="T3" prob="0.05"/>
+	<item group="Mossberg59010rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="Saiga-1216+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="Saiga-1212+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="Saiga-1210+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="Saiga-1212slug+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="Saiga-1212rare+ammo" loot_prob_template="T3" prob="0.002"/>
+	<item group="Saiga-1210rare+ammo" loot_prob_template="T3" prob="0.002"/>
+</append> 
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Machinegunner']">
+	<item group="AK-4730+ammo" loot_prob_template="T2" prob="0.04"/>
+	<item group="AK-47223556+ammo" loot_prob_template="T2" prob="0.03"/>
+	<item group="AK-4754539+ammo" loot_prob_template="T2" prob="0.02"/>
+	<item group="AK-47300bo+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="AK-479x39mm+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="AK-47458so+ammo" loot_prob_template="T3" prob="0.008"/>
+	<item group="AK-4750bw+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="AK-47458sorare+ammo" loot_prob_template="T3" prob="0.003"/>
+	<item group="AK-4750bwrare+ammo" loot_prob_template="T3" prob="0.002"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_MachinegunnerTPlus']">
+	<item group="AK-47300bo+ammo" loot_prob_template="T3" prob="0.03"/>
+	<item group="AK-479x39mm+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="AK-47458so+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="AK-4750bw+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="AK-47458sorare+ammo" loot_prob_template="T3" prob="0.003"/>
+	<item group="AK-4750bwrare+ammo" loot_prob_template="T3" prob="0.002"/>
+
+	<item group="M60E4308762+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E479257+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E43006+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E4223556+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E4300bo+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E4458so+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E450bw+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E450bwrare+ammo" loot_prob_template="T3" prob="0.001"/>
+	<item group="M60E43006rare+ammo" loot_prob_template="T3" prob="0.001"/>
+</append> 
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_Gunslinger']">
+	<item group="Beretta22+ammo" loot_prob_template="T2" prob="0.8"/>
+	<item group="Beretta380+ammo" loot_prob_template="T2" prob="0.6"/>
+	<item group="Beretta40+ammo" loot_prob_template="T2" prob="0.4"/>
+	<item group="10mmAutoPistol+ammo" loot_prob_template="T2" prob="0.38"/>
+	<item group="Beretta45+ammo" loot_prob_template="T2" prob="0.34"/>
+	<item group="Beretta50+ammo" loot_prob_template="T3" prob="0.05"/>
+	<item group="Beretta50rare+ammo" loot_prob_template="T3" prob="0.02"/>
+
+	<item group="magnum410+ammo" loot_prob_template="T2" prob="0.8"/>
+	<item group="magnum22+ammo" loot_prob_template="T2" prob="0.08"/>
+	<item group="magnum327+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="magnum357+ammo" loot_prob_template="T3" prob="0.5"/>
+	<item group="magnum500+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="magnum500rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="mp522+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="mp5380+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="mp5357+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="mp540+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp510mmauto+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp545+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp545rare+ammo" loot_prob_template="T3" prob="0.002"/>
+</append> 
+
+<append xpath="lootcontainers/lootgroup[@name='groupWeapons_GunslingerTPlus']">
+	<item group="10mmAutoPistol+ammo" loot_prob_template="T2" prob="0.43"/>
+	<item group="Beretta45+ammo" loot_prob_template="T2" prob="0.34"/>
+	<item group="Beretta50+ammo" loot_prob_template="T3" prob="0.05"/>
+	<item group="Beretta50rare+ammo" loot_prob_template="T3" prob="0.02"/>
+
+	<item group="magnum327+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="magnum357+ammo" loot_prob_template="T3" prob="0.5"/>
+	<item group="magnum500+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="magnum500rare+ammo" loot_prob_template="T3" prob="0.01"/>
+
+	<item group="mp522+ammo" loot_prob_template="T3" prob="0.04"/>
+	<item group="mp5380+ammo" loot_prob_template="T3" prob="0.02"/>
+	<item group="mp5357+ammo" loot_prob_template="T3" prob="0.01"/>
+	<item group="mp540+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp510mmauto+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp545+ammo" loot_prob_template="T3" prob="0.005"/>
+	<item group="mp545rare+ammo" loot_prob_template="T3" prob="0.002"/>
+</append> 
+
+
+
+
+
+
+
+
+
+
+<!--
+<lootgroup name="groupWeaponsT2_TurretsSyndrome">
+	<item name="gunJunkTurret"/>
+</lootgroup>
+
+<lootgroup name="groupWeapons_TurretsSyndrome">
+	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="T2"/>
+</lootgroup>
+<lootgroup name="groupWeapons_TurretsSyndromeTPlus">
+	<item group="groupWeaponsT2_TurretsSyndrome" loot_prob_template="T2"/>
+</lootgroup> -->
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='schematicsElectrical']">
+<item name="22LRautoTurretSchematic"/>
+<item name="MK222LRautoTurretSchematic"/>
+<item name="45ACPautoTurretSchematic"/>
+<item name="MK245ACPautoTurret"/>
+<item name="30CarbineautoTurretSchematic"/>
+<item name="MK230CarbineautoTurretSchematic"/>
+<item name="556x45mmNATOautoTurretSchematic"/>
+<item name="MK2556x45mmNATOautoTurretSchematic"/>
+<item name="762x51mmNATOautoTurretSchematic"/>
+<item name="MK2762x51mmNATOautoTurretSchematic"/>
+<item name="3006SPRGautoTurretSchematic"/>
+<item name="MK23006SPRGautoTurretSchematic"/>
+<item name="50BMGautoTurretSchematic"/>
+<item name="MK250BMGautoTurretSchematic"/>
+
+<item name="SlugshotgunTurretSchematic"/>
+<item name="MK2SlugshotgunTurretSchematic"/>
+<item name="10GaugeshotgunTurretSchematic"/>
+<item name="MK210GaugeshotgunTurretSchematic"/>
+<item name="16GaugeshotgunTurretSchematic"/>
+<item name="MK216GaugeshotgunTurretSchematic"/>
+<item name="20GaugeshotgunTurretSchematic"/>
+<item name="MK220GaugeshotgunTurretSchematic"/>
+<item name="410GaugeshotgunTurretSchematic"/>
+<item name="MK2410GaugeshotgunTurretSchematic"/>
+
+<item name="MK2autoTurretSchematic"/>
+<item name="MK2shotgunTurretSchematic"/>
+</append> 
+
+
+
+
+
+<!--
+<append xpath="lootcontainers/lootgroup[@name='weaponsBasicGuns+ammo']">
+	<item group="Beretta22+ammo" prob="0.8"/>
+	<item group="Beretta380+ammo" prob="0.6"/>
+	<item group="Beretta40+ammo" prob="0.4"/>
+	<item group="Beretta45+ammo" prob="0.37"/>
+	<item group="Beretta50+ammo" prob="0.05"/>
+	<item group="Beretta50rare+ammo" prob="0.02"/>
+
+	<item group="magnum22+ammo" prob="0.08"/>
+	<item group="magnum327+ammo" prob="0.02"/>
+
+	<item group="Remington70030+ammo" prob="0.58"/>
+	<item group="Remington700223+ammo" prob="0.48"/>
+	<item group="Remington7003030+ammo" prob="0.37"/>
+	<item group="Remington70076254r+ammo" prob="0.3"/>
+	<item group="Remington700939+ammo" prob="0.2"/>
+	<item group="Remington700308762+ammo" prob="0.1"/>
+	<item group="Remington7004570+ammo" prob="0.07"/>
+	<item group="Remington700458+ammo" prob="0.03"/>
+	<item group="Remington700500+ammo" prob="0.03"/>
+
+	<item group="Remington760022+ammo" prob="0.11"/>
+	<item group="Remington7600223556+ammo" prob="0.08"/>
+	<item group="Remington76003030+ammo" prob="0.05"/>
+	<item group="Remington7600308762+ammo" prob="0.03"/>
+
+	<item group="Mossberg590410+ammo" prob="0.75"/>
+	<item group="Mossberg59020+ammo" prob="0.7"/>
+	<item group="Mossberg59016+ammo" prob="0.65"/>
+	<item group="Mossberg59010+ammo" prob="0.05"/>
+	<item group="Mossberg59010rare+ammo" prob="0.02"/>
+</append>  
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='weaponsMilitaryGuns+ammo']">
+	<item group="magnum410+ammo" prob="0.8"/>
+	<item group="magnum357+ammo" prob="0.5"/>
+	<item group="magnum500+ammo" prob="0.04"/>
+	<item group="magnum500rare+ammo" prob="0.01"/>
+
+	<item group="Remington700500rare+ammo" prob="0.035"/>
+
+	<item group="Remington76003006+ammo" prob="0.4"/>
+	<item group="Remington7600300+ammo" prob="0.34"/>
+	<item group="Remington76004570+ammo" prob="0.22"/>
+	<item group="Remington76004570rare+ammo" prob="0.01"/>
+
+	<item group="mp522+ammo" prob="0.04"/>
+	<item group="mp5380+ammo" prob="0.02"/>
+	<item group="mp5357+ammo" prob="0.01"/>
+	<item group="mp540+ammo" prob="0.005"/>
+	<item group="mp545+ammo" prob="0.005"/>
+	<item group="mp545rare+ammo" prob="0.002"/>
+
+	<item group="RSASS223556+ammo" prob="0.04"/>
+	<item group="RSASS65+ammo" prob="0.03"/>
+	<item group="RSASS308762+ammo" prob="0.04"/>
+	<item group="RSASS79257+ammo" prob="0.04"/>
+	<item group="RSASS3006+ammo" prob="0.04"/>
+	<item group="RSASS300+ammo" prob="0.03"/>
+	<item group="RSASS338+ammo" prob="0.03"/>
+	<item group="RSASS50+ammo" prob="0.01"/>
+	<item group="RSASS50rare+ammo" prob="0.001"/>
+
+	<item group="AK-4730+ammo" prob="0.04"/>
+	<item group="AK-47223556+ammo" prob="0.03"/>
+	<item group="AK-4754539+ammo" prob="0.04"/>
+	<item group="AK-47300bo+ammo" prob="0.01"/>
+	<item group="AK-47458so+ammo" prob="0.01"/>
+	<item group="AK-4750bw+ammo" prob="0.005"/>
+	<item group="AK-47458sorare+ammo" prob="0.003"/>
+	<item group="AK-4750bwrare+ammo" prob="0.002"/>
+
+	<item group="Saiga-12410+ammo" prob="0.04"/>
+	<item group="Saiga-1220+ammo" prob="0.04"/>
+	<item group="Saiga-1216+ammo" prob="0.03"/>
+	<item group="Saiga-1212+ammo" prob="0.02"/>
+	<item group="Saiga-1210+ammo" prob="0.01"/>
+	<item group="Saiga-1212slug+ammo" prob="0.02"/>
+	<item group="Saiga-1212rare+ammo" prob="0.002"/>
+	<item group="Saiga-1210rare+ammo" prob="0.002"/>
+</append> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='groupQuestRanged']">
+	<item name="Beretta M9 [.22 S/LR]" loot_prob_template="GradeALoot"/>
+	<item name="Beretta M9 [.380 ACP]" loot_prob_template="GradeALoot"/>
+	<item name="Beretta M9 [.40 S/W]" loot_prob_template="GradeALoot"/>
+	<item name="10mmAutoPistol" loot_prob_template="GradeALoot"/>
+	<item name="Beretta M9 [.45 ACP]" loot_prob_template="GradeBLoot"/>
+	<item name="Beretta M9 [.50 Action Express]" loot_prob_template="GradeCLoot"/>
+
+	<item name="S/W Governor [.410 Gauge]" loot_prob_template="GradeBLoot"/>
+	<item name="S/W Model 617 [.22 S/LR]" loot_prob_template="GradeBLoot"/>
+	<item name="Ruger GP100 [.327 Magnum]" loot_prob_template="GradeCLoot"/>
+	<item name="S/W Model 686 [.357 MAG/.38 SP]" loot_prob_template="GradeCLoot"/>
+	<item name="S/W 500 [.500 S/W Magnum]" loot_prob_template="GradeCLoot"/>
+
+	<item name="MP5 [.22 S/LR]" loot_prob_template="GradeCLoot"/>
+	<item name="MP5 [.380 ACP]" loot_prob_template="GradeCLoot"/>
+	<item name="MP5 [.357 SIG]" loot_prob_template="GradeCLoot"/>
+	<item name="MP5 [.40 S/W]" loot_prob_template="GradeCLoot"/>
+	<item name="MP5 [10mm Auto]" loot_prob_template="GradeCLoot"/>
+	<item name="MP5 [.45 ACP]" loot_prob_template="GradeCLoot"/>
+
+	<item name="Remington 700 [.30 Carbine]" loot_prob_template="GradeALoot"/>
+	<item name="Remington 700 [.223/5.56]" loot_prob_template="GradeALoot"/>
+	<item name="Remington 700 [.30-30 Winchester]" loot_prob_template="GradeALoot"/>
+	<item name="Remington 700 [7.62x54R]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington 700 [9x39mm]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington 700 [.308 Win/7.62mm NATO]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington 700 [.45-70 Government]" loot_prob_template="GradeCLoot"/>
+	<item name="Remington 700 [.458 Win-Mag]" loot_prob_template="GradeCLoot"/>
+	<item name="Remington 700 [500 Nitro Express]" loot_prob_template="GradeCLoot"/>
+
+	<item name="Remington 7600 [.22 S/LR]" loot_prob_template="GradeALoot"/>
+	<item name="Remington 7600 [.223/5.56]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington 7600 [.30-30 Winchester]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington 7600 [.308 Win/7.62mm NATO]" loot_prob_template="GradeCLoot"/>
+	<item name="Remington 7600 [30-06 SPRG]" loot_prob_template="GradeCLoot"/>
+	<item name="Remington 7600 [.300 Win-Mag]" loot_prob_template="GradeCLoot"/>
+	<item name="Remington 7600 [.45-70 Government]" loot_prob_template="GradeCLoot"/>
+
+	<item name="R11 RSASS [.223/5.56]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [6.5 Creedmoor]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [.308 Win/7.62mm NATO]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [7.92x57mm Mauser]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [30-06 SPRG]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [.300 Win-Mag]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [.338 Lapua Magnum]" loot_prob_template="GradeCLoot"/>
+	<item name="R11 RSASS [50 BMG]" loot_prob_template="GradeCLoot"/>
+
+	<item name="AK-47 [.30 Carbine]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [.223/5.56]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [5.45x39mm]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [.300 AAC Blackout]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [9x39mm]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [.458 SOCOM]" loot_prob_template="GradeCLoot"/>
+	<item name="AK-47 [.50 Beowulf]" loot_prob_template="GradeCLoot"/>
+
+	<item name="M60E4 [.223/5.56]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [.300 AAC Blackout]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [.458 SOCOM]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [.50 Beowulf]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [.308 Win/7.62mm NATO]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [7.92x57mm Mauser]" loot_prob_template="GradeCLoot"/>
+	<item name="M60E4 [30-06 SPRG]" loot_prob_template="GradeCLoot"/>
+
+	<item name="Saiga-12 [.410 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Saiga-12 [20 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Saiga-12 [16 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Saiga-12 [12 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Saiga-12 [10 Gauge]" loot_prob_template="GradeCLoot"/>
+
+	<item name="Mossberg 590 [.410 Gauge]" loot_prob_template="GradeBLoot"/>
+	<item name="Mossberg 590 [20 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Mossberg 590 [16 Gauge]" loot_prob_template="GradeCLoot"/>
+	<item name="Mossberg 590 [10 Gauge]" loot_prob_template="GradeCLoot"/>
+
+	<item name="Pedersoli Kodiak Mark IV [.300 Winchester Magnum]" loot_prob_template="GradeBLoot"/>
+
+	<item name="Remington Model-1887 [10 Gauge]" loot_prob_template="GradeBLoot"/>
+	<item name="Remington Model-1887 [16 Gauge]" loot_prob_template="GradeALoot"/>
+	<item name="Remington Model-1887 [20 Gauge]" loot_prob_template="GradeALoot"/>
+	<item name="Remington Model-1887 [.410]" loot_prob_template="GradeALoot"/>
+</append>
+
+<append xpath="lootcontainers/lootgroup[@name='groupQuestAmmo']">
+	<item name="10GaugeShotgunShells" count="10,28" loot_prob_template="GradeBLoot"/>
+	<item name="12GaugePower_Shok" count="15,30" prob="1.0"/>
+	<item name="10GaugeSSTSabotSlug" count="10,30" loot_prob_template="GradeCLoot"/>
+	<item name="12GaugeDragonsBreath" count="15,28" loot_prob_template="GradeBLoot"/>
+	<item name="10GaugeMagnum00Buckshot" count="10,28" loot_prob_template="GradeCLoot"/>
+
+	<item name="45ACP" count="18,50" prob="1.0"/>
+	<item name="50ActionExpress" count="14,40" loot_prob_template="GradeALoot"/>
+
+	<item name="308Winchester" count="20,40" prob="1.0"/>
+	<item name="30_06SPRG" count="18,38" loot_prob_template="GradeALoot"/>
+	<item name="300WinchesterMagnum" count="16,32" loot_prob_template="GradeALoot"/>
+	<item name="338LapuaMagnum" count="13,30" loot_prob_template="GradeBLoot"/>
+	<item name="458WinchesterMagnum" count="12,24" loot_prob_template="GradeBLoot"/>
+	<item name="500NitroExpress" count="10,18" loot_prob_template="GradeCLoot"/>
+	<item name="50BMG" count="10,18" loot_prob_template="GradeCLoot"/>
+
+	<item name="556x45mmNATO" count="20,40" prob="1.0"/>
+	<item name="300AACBlackout" count="20,40" loot_prob_template="GradeALoot"/>
+	<item name="458SOCOM" count="18,35" loot_prob_template="GradeBLoot"/>
+	<item name="50Beowulf" count="15,30" loot_prob_template="GradeCLoot"/>
+
+	<item name="38Special" count="25,40" prob="1.0"/>
+	<item name="357Magnum" count="23,36" loot_prob_template="GradeALoot"/>
+	<item name="500S_WMagnum" count="12,18" loot_prob_template="GradeCLoot"/>
+</append> 
+
+
+
+<append xpath="lootcontainers/lootgroup[@name='treasureAmmo']">
+	<item name="10GaugeShotgunShells" count="6,24" prob="0.3"/>
+	<item name="16GaugeShotgunShells" count="8,30" prob="0.8"/>
+	<item name="16GaugeShotgunSlug" count="6,25" prob="0.4"/>
+	<item name="20GaugeShotgunShells" count="12,32" prob="0.7"/>
+	<item name="20GaugeSSTShotgunSlug" count="6,18" prob="0.5"/>
+	<item name="12GaugeDragonsBreath" count="6,12" prob="0.1"/>
+
+	<item name="12GaugePower_Shok" count="8,16" prob="0.3"/>
+	<item name="10GaugeSSTSabotSlug" count="8,16" prob="0.2"/>
+	<item name="10GaugeMagnum00Buckshot" count="8,16" prob="0.2"/>
+
+	<item name="410GaugeShotgunShells" count="12,32" prob="0.8"/>
+	<item name="410GaugeShotgunShellsSlugs" count="10,28" prob="0.7"/>
+	<item name="410Gauge000BuckShotgunShells" count="8,25" prob="0.7"/>
+
+	<item name="22short" count="55,335" prob="0.9"/>
+	<item name="22LR" count="40,300" prob="0.9"/>
+	<item name="380ACP" count="7,31" prob="0.9"/>
+	<item name="357SIG" count="6,28" prob="0.9"/>
+	<item name="40S_W" count="6,26" prob="0.8"/>
+	<item name="10mmauto" count="6,24" prob="0.8"/>
+	<item name="45ACP" count="6,22" prob="0.7"/>
+	<item name="50ActionExpress" count="5,18" prob="0.3"/>
+
+	<item name="30_30Winchester" count="5,22" prob="0.8"/>
+	<item name="762x54R" count="5,20" prob="0.6"/>
+	<item name="65Creedmoor" count="5,20" prob="0.5"/>
+	<item name="762x51mmNATO" count="5,20" prob="0.6"/>
+	<item name="9x39mm" count="4,20" prob="0.5"/>
+	<item name="308Winchester" count="5,15" prob="0.5"/>
+	<item name="792x57mmMauser" count="5,12" prob="0.5"/>
+	<item name="30_06SPRG" count="5,10" prob="0.4"/>
+	<item name="45_70Government" count="2,8" prob="0.3"/>
+	<item name="300WinchesterMagnum" count="6,14" prob="0.2"/>
+	<item name="338LapuaMagnum" count="4,10" prob="0.2"/>
+	<item name="458WinchesterMagnum" count="3,8" prob="0.1"/>
+	<item name="500NitroExpress" count="3,8" prob="0.1"/>
+	<item name="50BMG" count="3,8" prob="0.1"/>
+
+	<item name="30Carbine" count="20,50" prob="0.9"/>
+	<item name="223Remington" count="12,32" prob="0.8"/>
+	<item name="545x39mm" count="10,32" prob="0.6"/>
+	<item name="556x45mmNATO" count="10,24" prob="0.6"/>
+	<item name="300AACBlackout" count="10,20" prob="0.5"/>
+	<item name="458SOCOM" count="6,18" prob="0.1"/>
+	<item name="50Beowulf" count="5,16" prob="0.1"/>
+
+	<item name="327Magnum" count="8,25" prob="0.5"/>
+	<item name="38Special" count="6,15" prob="0.4"/>
+	<item name="357Magnum" count="6,12" prob="0.4"/>
+	<item name="500S_WMagnum" count="2,7" prob="0.1"/>
+</append>  
+
+
+
+
+	<!-- Safes/weapon caches/rare good loot -->
+	<append xpath="/lootcontainers/lootcontainer[@id='11']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.02"/>
+	</append>
+
+
+
+	<!-- shotgun Messiah -->
+	<append xpath="/lootcontainers/lootcontainer[@id='50']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.02"/>
+	</append>
+
+
+
+
+		<!-- Gun Safe -->
+	<append xpath="/lootcontainers/lootcontainer[@id='42']">
+	<item group="GunStuffT1" prob="0.08"/>
+
+	<item group="GunStuffT2" prob="0.06"/>
+
+	<item group="GunStuffT3" prob="0.04"/>
+	</append>
+
+
+
+	<!-- Military Box -->
+	<append xpath="/lootcontainers/lootcontainer[@id='40']">
+	<item group="GunStuffT1" prob="0.08"/>
+
+	<item group="GunStuffT2" prob="0.10"/>
+
+	<item group="GunStuffT3" prob="0.12"/>
+	</append>
+
+
+
+	<!-- Metal desk -->
+	<append xpath="/lootcontainers/lootcontainer[@id='24']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.01"/>
+	</append>
+
+
+
+	<!-- Fancy chest -->
+	<append xpath="/lootcontainers/lootcontainer[@id='41']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.02"/>
+	</append>
+
+
+
+	<!-- Treasure chest -->
+	<append xpath="/lootcontainers/lootcontainer[@id='61']">
+	<item group="GunStuffT1" prob="0.2"/>
+
+	<item group="GunStuffT2" prob="0.14"/>
+
+	<item group="GunStuffT3" prob="0.1"/>
+	</append>
+
+
+
+	<!-- cntLootCrateHero, Hero / Hidden Stash Cardboard Loot-->
+	<append xpath="/lootcontainers/lootcontainer[@id='95']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.02"/>
+	</append>
+
+
+
+	<!-- cntWeaponsBagSmall -->
+	<append xpath="/lootcontainers/lootcontainer[@id='100']">
+	<item group="GunStuffT1" prob="0.06"/>
+
+	<item group="GunStuffT2" prob="0.04"/>
+
+	<item group="GunStuffT3" prob="0.02"/>
+	</append>
+
+
+
+	<!-- cntWeaponsBagLarge -->
+	<append xpath="/lootcontainers/lootcontainer[@id='101']">
+	<item group="GunStuffT1" prob="0.1"/>
+
+	<item group="GunStuffT2" prob="0.06"/>
+
+	<item group="GunStuffT3" prob="0.04"/>
+	</append>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+ cntAmmoPileSmall, cntAmmoPileMedium, cntAmmoPileLarge 
+<lootcontainer id="108" count="1" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
+	<item group="ammo" count="1" prob="1"/>
+	<item group="ammoSteel" prob=".5"/>
+</lootcontainer>
+<lootcontainer id="109" count="2" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
+	<item group="ammo" prob="1"/>
+	<item group="ammoSteel" prob=".7"/>
+</lootcontainer>
+<lootcontainer id="110" count="3,4" size="5,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate" destroy_on_close="true">
+	<item group="ammo" prob=".8"/>
+	<item group="ammoSteel" prob="1"/>
+</lootcontainer>
+
+
+
+
+
+
+
+<lootgroup name="ammoSteel" count="1">
+	<item name="ammoShotgunShell" count="1,10"/>
+	<item name="ammo9mmBulletSteel" count="5,25" prob="1.5"/>
+	<item name="ammo762mmBulletFMJSteel" count="5,25"/>
+	<item name="ammo44MagnumBulletSteel" count="5,17" prob="0.2"/>
+	<item name="ammoArrowSteelAP" count="8,16"/>
+	<item name="ammoCrossbowBoltSteelAP" count="8,16"/>
+</lootgroup>-->
+
+
+<!-- rthrthrthrherthrthrthrttrtrrthrth
+<append xpath="lootcontainers/lootgroup[@name='ammoSteel']">
+	<item name="ammoShotgunShell" count="1,10"/>
+	<item name="ammo9mmBulletSteel" count="5,25" prob="1.5"/>
+	<item name="ammo762mmBulletFMJSteel" count="5,25"/>
+	<item name="ammo44MagnumBulletSteel" count="5,17" prob="0.2"/>
+	<item name="ammoArrowSteelAP" count="8,16"/>
+	<item name="ammoCrossbowBoltSteelAP" count="8,16"/>
+</append> -->
+
+
+<!--
+<lootgroup name="ammoRocket" count="1">
+	<item name="ammoRocketHE" count="2,6"/>
+	<item name="ammoRocketFrag" count="2,6"/>
+</lootgroup>-->
+
+
+<!-- wreyweryrwrtywrtywrtywrytwrty
+<append xpath="lootcontainers/lootgroup[@name='ammoRocket']">
+	<item name="ammoRocketHE" count="2,6"/>
+	<item name="ammoRocketFrag" count="2,6"/>
+</append> -->
+
+<!--
+<lootgroup name="militaryAmmo">
+	<item name="ammo9mmBullet" count="10,40"/>
+	<item name="ammo762mmBulletFMJ" count="5,30"/>
+	<item name="ammoShotgunSlug" count="3,7"/>
+	<item name="ammoRocketHE" count="1,4"/>
+	<item name="ammoRocketFrag" count="1,4"/>
+</lootgroup>-->
+
+
+<!--
+<lootgroup name="treasureAmmo">
+	<item name="ammoShotgunShell" count="80,200"/>
+	<item name="ammo9mmBullet" count="80,220"/>
+	<item name="ammo762mmBulletFMJ" count="50,140"/>
+	<item name="ammo44MagnumBullet" count="60,150" prob="0.5"/>
+</lootgroup>-->
+
+
+<!-- weyuhuyfheuyhfewyhfewhyuefwyhuefwy
+<append xpath="lootcontainers/lootgroup[@name='treasureAmmo']">
+	<item name="ammoShotgunShell" count="80,200"/>
+	<item name="ammo9mmBullet" count="80,220"/>
+	<item name="ammo762mmBulletFMJ" count="50,140"/>
+	<item name="ammo44MagnumBullet" count="60,150" prob="0.5"/>
+</append> -->
+
+</HarrysIronBullets>

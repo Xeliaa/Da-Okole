@@ -1,0 +1,54 @@
+<HarrysIronBullets>
+<append xpath="/entity_classes">
+
+
+
+<entity_class name="223turretJunkNPC">
+	<property name="Tags" value="turret,deployed"/>
+	<property name="Class" value="EntityTurret"/>
+	<property name="Parent" value="NPC"/>
+	<property name="Prefab" value="#Other/Items?Weapons/Ranged/JunkTurret/junkTurret_Prefab.prefab"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="SurfaceCategory" value="metal"/>
+	<property name="IgnoreTrigger" value="true"/>
+	<property name="LootListAlive" value="0"/>
+	<property name="IsEnemyEntity" value="false"/>
+
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="FallAsleepTime" value="10"/>
+
+	<property name="YawRange" value="90"/> <!-- horizontal swivel range. Keep under 180. -->
+	<property name="PitchRange" value="70"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="25"/>
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="5"/>
+	<property name="RayCount" value="1"/>
+	<property name="BustRoundCount" value="1"/>
+	<property name="BurstFireRate" value="1"/>
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0"/>
+	<property name="MaxOwnerDistance" value="16"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+	<property name="FireSound" value="Rifle_fire_5"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="TimeStayAfterDeath" value="0"/>
+	<property name="Explosion.ParticleIndex" value="6"/>
+	<property name="Explosion.RadiusBlocks" value="1"/>
+	<property name="Explosion.RadiusEntities" value="1"/>
+	<property name="RotateToGround" value="true"/>
+	<property name="Faction" value="none"/>
+	<!--<property name="MapIcon" value="ui_game_symbol_electric_turret"/>-->
+</entity_class>
+
+</append>
+</HarrysIronBullets>
+

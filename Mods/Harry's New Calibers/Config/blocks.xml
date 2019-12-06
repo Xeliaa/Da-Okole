@@ -1,0 +1,4871 @@
+<HarrysIronBullets>
+<append xpath="/blocks">
+
+<block name=".22 LR autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="22LR"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="600"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="10"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="25"/>
+	<property name="BurstFireRate" value="0.12"/>
+	<property name="CooldownTime" value=".5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="Pistol_fire_3"/>
+	<property name="RequiredPower" value="5"/>
+	<property name="EconomicValue" value="800"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="2"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMechanicalParts" value="3"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 Lr AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,22LRautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 .22 LR autoTurret">
+
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="22LR"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1200"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="12"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="1.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="50"/>
+	<property name="BurstFireRate" value="0.1"/>
+	<property name="CooldownTime" value=".5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="Pistol_fire_3"/>
+	<property name="RequiredPower" value="10"/>
+	<property name="EconomicValue" value="1800"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="2"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/>
+		<property name="resourceMechanicalParts" value="4"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK222LRautoTurretSchematic"/>
+</block>
+
+
+
+
+
+<block name=".45 ACP autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="45ACP"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="41"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="13"/>
+	<property name="BurstFireRate" value="0.2"/>
+	<property name="CooldownTime" value="2.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="20"/>
+
+	<property name="FireSound" value="Pistol_fire_2"/>
+	<property name="RequiredPower" value="18"/>
+	<property name="EconomicValue" value="3700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,45ACPautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 .45 ACP autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="45ACP"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="51"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="18"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="25"/>
+
+	<property name="FireSound" value="Pistol_fire_2"/>
+	<property name="RequiredPower" value="36"/>
+	<property name="EconomicValue" value="4700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="20"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK245ACPautoTurret"/>
+</block>
+
+
+
+
+
+<block name=".30 Carbine autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30CarbineAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="600"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="44"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="3"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="20"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="Rifle_fire_11"/>
+	<property name="RequiredPower" value="13"/>
+	<property name="EconomicValue" value="1400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="9"/>
+		<property name="resourceMechanicalParts" value="2"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,30CarbineautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 .30 Carbine autoTurret">
+
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30CarbineAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1200"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="54"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="2.5"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="28"/>
+	<property name="BurstFireRate" value="0.12"/>
+	<property name="CooldownTime" value="1.4"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="Rifle_fire_11"/>
+	<property name="RequiredPower" value="26"/>
+	<property name="EconomicValue" value="2650"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="13"/>
+		<property name="resourceMechanicalParts" value="3"/>
+		<property name="resourceElectricParts" value="1"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK230CarbineautoTurretSchematic"/>
+</block>
+
+
+
+
+
+<block name="5.56x45mm NATO autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="556x45mmNATOAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="52"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="17"/>
+	<property name="BurstFireRate" value="0.16"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="Rifle_fire_5"/>
+	<property name="RequiredPower" value="15"/>
+	<property name="EconomicValue" value="3000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="13"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,556x45mmNATOautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 5.56x45mm NATO autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="556x45mmNATOAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="61"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.5"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="22"/>
+	<property name="BurstFireRate" value="0.12"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="Rifle_fire_5"/>
+	<property name="RequiredPower" value="30"/>
+	<property name="EconomicValue" value="4250"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="18"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK2556x45mmNATOautoTurretSchematic"/>
+</block>
+
+
+
+
+
+<block name="7.62x51mm NATO autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="762x51mmNATOAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="68"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.25"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="Rifle_fire_10"/>
+	<property name="RequiredPower" value="22"/>
+	<property name="EconomicValue" value="5700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="5"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,762x51mmNATOautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 7.62x51mm NATO autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="762x51mmNATOAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="80"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.16"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="Rifle_fire_10"/>
+	<property name="RequiredPower" value="44"/>
+	<property name="EconomicValue" value="7200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK2762x51mmNATOautoTurretSchematic"/>
+</block>
+
+
+
+
+
+<block name="30-06 SPRG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30_06SPRGAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="128"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.5"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="Rifle_fire_16"/>
+	<property name="RequiredPower" value="30"/>
+	<property name="EconomicValue" value="6900"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="18"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="5"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,3006SPRGautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 30-06 SPRG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30_06SPRGAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="150"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.0"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="Rifle_fire_16"/>
+	<property name="RequiredPower" value="60"/>
+	<property name="EconomicValue" value="8400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/> <!--12-->
+		<property name="resourceMechanicalParts" value="10"/> <!--2-->
+		<property name="resourceElectricParts" value="7"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK23006SPRGautoTurretSchematic"/>
+</block>
+
+
+
+
+
+<block name="50 BMG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50BMGAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="375"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="0.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="3"/>
+	<property name="BurstFireRate" value="3"/>
+	<property name="CooldownTime" value="7"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="2"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="Rifle_fire_8"/>
+	<property name="RequiredPower" value="100"/>
+	<property name="EconomicValue" value="16500"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="34"/> <!--12-->
+		<property name="resourceMechanicalParts" value="17"/> <!--2-->
+		<property name="resourceElectricParts" value="19"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,50BMGautoTurretSchematic"/>
+</block>
+
+
+
+<block name="MK-2 50 BMG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50BMGAmmunitionBelt"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="470"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="0.1"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="5"/>
+	<property name="BurstFireRate" value="2.5"/>
+	<property name="CooldownTime" value="5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="1.25"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="Rifle_fire_7"/>
+	<property name="RequiredPower" value="200"/>
+	<property name="EconomicValue" value="18000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="48"/> <!--12-->
+		<property name="resourceMechanicalParts" value="24"/> <!--2-->
+		<property name="resourceElectricParts" value="27"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering,MK250BMGautoTurretSchematic"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<block name="Slug shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="ammoShotgunSlug"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="80"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="4"/>
+	<property name="BurstFireRate" value=".8"/>
+	<property name="CooldownTime" value="4"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="1"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="20"/>
+
+	<property name="FireSound" value="Shotgun_Fire_2"/>
+	<property name="RequiredPower" value="35"/>
+	<property name="EconomicValue" value="3000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="5"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 Slug shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="ammoShotgunSlug"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="100"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="1.0"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value=".55"/>
+	<property name="CooldownTime" value="2.75"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value=".5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="25"/>
+
+	<property name="FireSound" value="Shotgun_Fire_2"/>
+	<property name="RequiredPower" value="70"/>
+	<property name="EconomicValue" value="4000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedSteel" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name="10 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+
+
+	<property name="AmmoItem" value="10GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="18"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="5.5"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="12"/>
+
+	<property name="BustRoundCount" value="4"/>
+	<property name="BurstFireRate" value="0.8"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="1"/>
+	<property name="TurnSpeed" value="10"/>
+
+	<property name="CooldownTime" value="4"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="4500"/>
+	<property name="RequiredPower" value="35"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="17"/> <!--12-->
+	<property name="resourceMechanicalParts" value="5"/> <!--2-->
+	<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_4"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 10 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="10GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="20"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="12"/>
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value="0.55"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="2.75"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="5500"/>
+	<property name="RequiredPower" value="70"/>
+
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="26"/> <!--12-->
+	<property name="resourceMechanicalParts" value="9"/> <!--2-->
+	<property name="resourceElectricParts" value="8"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_4"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name="16 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+
+
+	<property name="AmmoItem" value="16GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="10"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="5.2"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="6"/>
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value="0.5"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="10"/>
+
+	<property name="CooldownTime" value="1.75"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="1500"/>
+	<property name="RequiredPower" value="13"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="24"/> <!--12-->
+	<property name="resourceMechanicalParts" value="7"/> <!--2-->
+	<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_7"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 16 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="16GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="13"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="4"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="6"/>
+
+	<property name="BustRoundCount" value="8"/>
+	<property name="BurstFireRate" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="2500"/>
+	<property name="RequiredPower" value="26"/>
+
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="15"/> <!--12-->
+	<property name="resourceMechanicalParts" value="4"/> <!--2-->
+	<property name="resourceElectricParts" value="5"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_7"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+<block name="20 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+
+
+	<property name="AmmoItem" value="20GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+
+	<property name="MaxDamage" value="800"/>
+
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="8"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="5.2"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="5"/>
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value="0.45"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="10"/>
+
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="1200"/>
+	<property name="RequiredPower" value="11"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="4"/> <!--12-->
+	<property name="resourceMechanicalParts" value="3"/> <!--2-->
+	<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_5"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<block name="MK-2 20 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="20GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1600"/>
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="10"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="4"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="5"/>
+
+	<property name="BustRoundCount" value="8"/>
+	<property name="BurstFireRate" value="0.35"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="1.25"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="2200"/>
+	<property name="RequiredPower" value="22"/>
+
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="6"/> <!--12-->
+	<property name="resourceMechanicalParts" value="4"/> <!--2-->
+	<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_5"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+	<block name=".410 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+
+
+	<property name="AmmoItem" value="410GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+
+	<property name="MaxDamage" value="600"/>
+
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="5"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="5.2"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="5"/>
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="10"/>
+
+	<property name="CooldownTime" value="1.25"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="800"/>
+	<property name="RequiredPower" value="8"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="3"/> <!--12-->
+	<property name="resourceMechanicalParts" value="2"/> <!--2-->
+	<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_3"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .410 Gauge shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="410GaugeShotgunShells"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1200"/>
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="7"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="4"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="5"/>
+
+	<property name="BustRoundCount" value="8"/>
+	<property name="BurstFireRate" value="0.3"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="1"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="1800"/>
+	<property name="RequiredPower" value="16"/>
+
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="4"/> <!--12-->
+	<property name="resourceMechanicalParts" value="3"/> <!--2-->
+	<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="Shotgun_Fire_3"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<block name="MK-2 autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Ranged"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Mesh" value="models"/>
+	<property name="Path" value="solid"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+	<property name="AmmoItem" value="ammo9mmBulletBall"/>
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="MaxDistance" value="35"/>
+	<property name="EntityDamage" value="48"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="MaxDamage" value="2000"/>
+
+	<property name="BustRoundCount" value="25"/>
+	<property name="BurstFireRate" value="0.12"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="Turret_Target"/>
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="30"/>
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/>
+		<property name="resourceMechanicalParts" value="3"/>
+		<property name="resourceElectricParts" value="3"/>
+	</property>
+	<!-- <property class="UpgradeBlock">
+		<property name="ToBlock" value="autoTurretSteelCased"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="4"/>
+	</property>-->
+	<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+	<drop event="Harvest" name="resourceMechanicalParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceElectricParts" count="1,4" tag="salvageHarvest"/>
+	<drop event="Harvest" name="resourceScrapIron" count="10,40" prob="1" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicValue" value="4000"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
+	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="FilterTags" value="fdecor,felectrical,ftraps"/>
+	<property name="SortOrder1" value="70a0"/>
+</block>
+
+
+
+
+<block name="MK-2 shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="ammoShotgunShell"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="18"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="8"/>
+
+	<property name="BustRoundCount" value="6"/>
+	<property name="BurstFireRate" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="3500"/>
+	<property name="RequiredPower" value="30"/>
+
+	<property name="WakeUpSound" value="Turret_Target"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="17"/> <!--12-->
+	<property name="resourceMechanicalParts" value="3"/> <!--2-->
+	<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="pump_shotgun_fire"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<block name=".380 ACP autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+
+
+
+	<property name="AmmoItem" value="380ACP"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="800"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="19"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="20"/>
+	<property name="BurstFireRate" value="0.13"/>
+	<property name="CooldownTime" value="1.25"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="22"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="9"/>
+	<property name="EconomicValue" value="1500"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="8"/> <!--12-->
+		<property name="resourceMechanicalParts" value="1"/> <!--2-->
+		<property name="resourceElectricParts" value="1"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .380 ACP autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="380ACP"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1600"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="24"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="40"/>
+	<property name="BurstFireRate" value="0.11"/>
+	<property name="CooldownTime" value=".75"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="27"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="18"/>
+	<property name="EconomicValue" value="2500"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="11"/> <!--12-->
+		<property name="resourceMechanicalParts" value="1"/> <!--2-->
+		<property name="resourceElectricParts" value="1"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".357 SIG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="357SIG"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="25"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="20"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1.75"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="22"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="12"/>
+	<property name="EconomicValue" value="2200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/> <!--12-->
+		<property name="resourceMechanicalParts" value="2"/> <!--2-->
+		<property name="resourceElectricParts" value="1"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .357 SIG autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="357SIG"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="31"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="40"/>
+	<property name="BurstFireRate" value="0.13"/>
+	<property name="CooldownTime" value="1.25"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="27"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="24"/>
+	<property name="EconomicValue" value="3200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/> <!--12-->
+		<property name="resourceMechanicalParts" value="3"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".40 S/W autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="40S_W"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="30"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="18"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="22"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="14"/>
+	<property name="EconomicValue" value="2900"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="12"/> <!--12-->
+		<property name="resourceMechanicalParts" value="2"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .40 S/W autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="40S_W"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="38"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="36"/>
+	<property name="BurstFireRate" value="0.13"/>
+	<property name="CooldownTime" value="1.25"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="27"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="28"/>
+	<property name="EconomicValue" value="3900"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="3"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".50 Action Express autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50ActionExpress"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="70"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="3.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="10"/>
+	<property name="BurstFireRate" value="0.5"/>
+	<property name="CooldownTime" value="3"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="1.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="22"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="22"/>
+	<property name="EconomicValue" value="4400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="6"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .50 Action Express autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value=".50 Action Express autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50ActionExpress"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="88"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="2.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="1"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="27"/>
+
+	<property name="FireSound" value="Pistol_Fire"/>
+	<property name="RequiredPower" value="44"/>
+	<property name="EconomicValue" value="5400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="10"/> <!--2-->
+		<property name="resourceElectricParts" value="8"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<block name=".223 Remington autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretPrefab"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="MaxDamage" value="500"/>
+
+	<property name="AmmoItem" value="223Remington"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="800"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="41"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="17"/>
+	<property name="BurstFireRate" value="0.16"/>
+	<property name="CooldownTime" value="1.8"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="13"/>
+	<property name="EconomicValue" value="2200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="10"/>
+		<property name="resourceMechanicalParts" value="3"/>
+		<property name="resourceElectricParts" value="2"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .223 Remington autoTurret">
+
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="223Remington"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="1600"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="51"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="0"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="23"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1.7"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="26"/>
+	<property name="EconomicValue" value="3450"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/>
+		<property name="resourceMechanicalParts" value="4"/>
+		<property name="resourceElectricParts" value="3"/>
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name="5.45x39mm autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+
+
+
+	<property name="AmmoItem" value="545x39mm"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="47"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="17"/>
+	<property name="BurstFireRate" value="0.16"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="14"/>
+	<property name="EconomicValue" value="2600"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="11"/> <!--12-->
+		<property name="resourceMechanicalParts" value="3"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 5.45x39mm autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="545x39mm"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="59"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="23"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="28"/>
+	<property name="EconomicValue" value="3850"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="15"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".300 Blackout autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="300AACBlackout"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="60"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.17"/>
+	<property name="CooldownTime" value="2.2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="18"/>
+	<property name="EconomicValue" value="3400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .300 Blackout autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="300AACBlackout"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="75"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="20"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="36"/>
+	<property name="EconomicValue" value="4650"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="20"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".458 SOCOM autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="458SOCOM"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="73"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.2"/>
+	<property name="CooldownTime" value="2.4"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="23"/>
+	<property name="EconomicValue" value="3700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .458 SOCOM autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="458SOCOM"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="91"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="18"/>
+	<property name="BurstFireRate" value="0.18"/>
+	<property name="CooldownTime" value="2.2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="46"/>
+	<property name="EconomicValue" value="4950"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="8"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".50 Beowulf autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50Beowulf"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="81"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="10"/>
+	<property name="BurstFireRate" value="0.37"/>
+	<property name="CooldownTime" value="2.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="1.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="30"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="28"/>
+	<property name="EconomicValue" value="4300"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="18"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .50 Beowulf autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="50Beowulf"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="101"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.4"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="16"/>
+	<property name="BurstFireRate" value="0.32"/>
+	<property name="CooldownTime" value="2.3"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="1"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="35"/>
+
+	<property name="FireSound" value="ak47_fire"/>
+	<property name="RequiredPower" value="56"/>
+	<property name="EconomicValue" value="5550"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/> <!--12-->
+		<property name="resourceMechanicalParts" value="10"/> <!--2-->
+		<property name="resourceElectricParts" value="6"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+<!--asult calibers done
+everything above is up to date-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<block name=".30-30 Winchester autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30_30Winchester"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="60"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="20"/>
+	<property name="EconomicValue" value="5000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="13"/> <!--12-->
+		<property name="resourceMechanicalParts" value="3"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .30-30 Winchester autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="30_30Winchester"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="75"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.125"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="40"/>
+	<property name="EconomicValue" value="6500"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="18"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name=".308 Winchester autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="308Winchester"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="75"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.2"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="22"/>
+	<property name="EconomicValue" value="5700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="5"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .308 Winchester autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="308Winchester"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="94"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.175"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="44"/>
+	<property name="EconomicValue" value="7200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+<block name="7.62x54R autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="762x54R"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="64"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.15"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="20"/>
+	<property name="EconomicValue" value="5200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="14"/> <!--12-->
+		<property name="resourceMechanicalParts" value="4"/> <!--2-->
+		<property name="resourceElectricParts" value="2"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 7.62x54R autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="762x54R"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="80"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.125"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="40"/>
+	<property name="EconomicValue" value="6700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="20"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name="6.5 Creedmoor autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="65Creedmoor"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="67"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="1.0"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="20"/>
+	<property name="EconomicValue" value="5400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="15"/> <!--12-->
+		<property name="resourceMechanicalParts" value="8"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 6.5 Creedmoor autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="65Creedmoor"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="84"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="0.8"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.32"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="55"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="40"/>
+	<property name="EconomicValue" value="7000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="21"/> <!--12-->
+		<property name="resourceMechanicalParts" value="11"/> <!--2-->
+		<property name="resourceElectricParts" value="6"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name="9x39mm autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="9x39mm"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="71"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.14"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="22"/>
+	<property name="EconomicValue" value="5600"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="16"/> <!--12-->
+		<property name="resourceMechanicalParts" value="5"/> <!--2-->
+		<property name="resourceElectricParts" value="3"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 9x39mm autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="9x39mm"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="88"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.13"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="44"/>
+	<property name="EconomicValue" value="7100"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="22"/> <!--12-->
+		<property name="resourceMechanicalParts" value="7"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name="7.92x57mm Mauser autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="792x57mmMauser"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="91"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="27"/>
+	<property name="EconomicValue" value="6200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="17"/> <!--12-->
+		<property name="resourceMechanicalParts" value="6"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 7.92x57mm Mauser autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="792x57mmMauser"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="114"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.35"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="54"/>
+	<property name="EconomicValue" value="7700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="8"/> <!--2-->
+		<property name="resourceElectricParts" value="6"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name=".300 W/M autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="300WinchesterMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="184"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="0.7"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="40"/>
+	<property name="EconomicValue" value="8000"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="22"/> <!--12-->
+		<property name="resourceMechanicalParts" value="9"/> <!--2-->
+		<property name="resourceElectricParts" value="7"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .300 W/M autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="300WinchesterMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="230"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.6"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="80"/>
+	<property name="EconomicValue" value="9500"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="31"/> <!--12-->
+		<property name="resourceMechanicalParts" value="13"/> <!--2-->
+		<property name="resourceElectricParts" value="10"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name=".45-70 Government autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="45_70Government"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="230"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="1.2"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="20"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="50"/>
+	<property name="EconomicValue" value="9100"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="24"/> <!--12-->
+		<property name="resourceMechanicalParts" value="11"/> <!--2-->
+		<property name="resourceElectricParts" value="11"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .45-70 Government autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="45_70Government"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="288"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="1"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="26"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="100"/>
+	<property name="EconomicValue" value="10600"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="34"/> <!--12-->
+		<property name="resourceMechanicalParts" value="15"/> <!--2-->
+		<property name="resourceElectricParts" value="15"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name=".338 Lapua Mag autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="338LapuaMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="234"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="1.5"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="50"/>
+	<property name="EconomicValue" value="9200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="25"/> <!--12-->
+		<property name="resourceMechanicalParts" value="11"/> <!--2-->
+		<property name="resourceElectricParts" value="10"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .338 Lapua Mag autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="338LapuaMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="303"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="0.4"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="100"/>
+	<property name="EconomicValue" value="10700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="35"/> <!--12-->
+		<property name="resourceMechanicalParts" value="15"/> <!--2-->
+		<property name="resourceElectricParts" value="4"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name=".458 W/M autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="458WinchesterMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="247"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="1.8"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="52"/>
+	<property name="EconomicValue" value="9400"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="26"/> <!--12-->
+		<property name="resourceMechanicalParts" value="12"/> <!--2-->
+		<property name="resourceElectricParts" value="11"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 .458 W/M autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="458WinchesterMagnum"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="308"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="1.65"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="104"/>
+	<property name="EconomicValue" value="10900"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="36"/> <!--12-->
+		<property name="resourceMechanicalParts" value="17"/> <!--2-->
+		<property name="resourceElectricParts" value="15"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+<block name="500 Nitro Express autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="500NitroExpress"/>
+	<property name="CustomIcon" value="autoTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="TurnSpeed" value="10"/>
+	<property name="EntityDamage" value="286"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.6"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="12"/>
+	<property name="BurstFireRate" value="3"/>
+	<property name="CooldownTime" value="2"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="90"/>
+	<property name="PitchRange" value="90"/>
+	<property name="MaxDistance" value="40"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="60"/>
+	<property name="EconomicValue" value="10200"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="28"/> <!--12-->
+		<property name="resourceMechanicalParts" value="15"/> <!--2-->
+		<property name="resourceElectricParts" value="13"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 500 Nitro Express autoTurret">
+	<property name="DescriptionKey" value="autoTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="DisplayType" value="blockElectricalHardened" />
+	<property name="Material" value="Mmetal_medium"/>
+	<property name="OnlySimpleRotations" value="true"/> <!-- the targeting math will NOT work if it's not upright -->
+
+
+
+	<property name="AmmoItem" value="500NitroExpress"/>
+	<property name="CustomIcon" value="autoTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+	
+	<property name="TurnSpeed" value="22.5"/>
+	<property name="EntityDamage" value="357"/> <!-- 188 dps, 213 dps burst -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="2.2"/> <!-- Spread 2.6deg: 1m cone (55% hit) @ 22m -->
+
+	<property name="BustRoundCount" value="15"/>
+	<property name="BurstFireRate" value="2.5"/>
+	<property name="CooldownTime" value="1.5"/>
+	<property name="OvershootTime" value="0.4"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+	<property name="MaxDistance" value="50"/>
+
+	<property name="FireSound" value="sniperrifle_fire"/>
+	<property name="RequiredPower" value="120"/>
+	<property name="EconomicValue" value="11700"/>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflashuzi"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<property name="DamageBonus.head" value="3"/>
+
+	<property name="TargetingSound" value="turret_retarget_lp"/>
+	<property name="OverheatSound" value="turret_overheat_lp"/>
+	<property name="WakeUpSound" value="turret_windup"/>
+
+
+	<property class="RepairItems">
+		<property name="resourceForgedIron" value="39"/> <!--12-->
+		<property name="resourceMechanicalParts" value="21"/> <!--2-->
+		<property name="resourceElectricParts" value="18"/> <!--2-->
+	</property>
+	<!--
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value=".22 LR AA autoTurret"/>
+		<property name="Item" value="resourceForgedSteel"/>
+		<property name="ItemCount" value="10"/>
+		<property name="UpgradeHitCount" value="8"/>
+	</property>
+	-->
+
+	<property name="Stacknumber" value="10"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<block name="12 Gauge Dragon's Breath shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+
+
+	<property name="AmmoItem" value="12GaugeDragonsBreath"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+
+	<property name="MaxDamage" value="1000"/>
+
+	<property name="MaxDistance" value="15"/>
+
+	<property name="EntityDamage" value="20"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="7"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="8"/>
+
+	<property name="BustRoundCount" value="4"/>
+	<property name="BurstFireRate" value="0.8"/>
+
+	<property name="FallAsleepTime" value="10"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="10"/>
+
+	<property name="CooldownTime" value="4"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="4500"/>
+	<property name="RequiredPower" value="35"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="20"/> <!--12-->
+	<property name="resourceMechanicalParts" value="8"/> <!--2-->
+	<property name="resourceElectricParts" value="7"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="pump_shotgun_fire"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+
+	<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+
+
+<block name="MK-2 12 Gauge Dragon's Breath shotgunTurret">
+	<property name="DescriptionKey" value="shotgunTurretDesc"/>
+	<property name="Extends" value="autoTurret"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Model" value="Entities/Traps/AutoTurret/Auto_TurretShotgunPrefab"/>
+
+	<property name="AmmoItem" value="12GaugeDragonsBreath"/> <!-- does not use the damage value -->
+	<property name="CustomIcon" value="shotgunTurret"/>
+	<property name="CustomIconTint" value="#D14F4F" />
+
+	<property name="MaxDamage" value="2000"/>
+
+	<property name="MaxDistance" value="18"/>
+	<property name="YawRange" value="360"/>
+	<property name="PitchRange" value="360"/>
+
+	<property name="EntityDamage" value="25"/> <!-- does not use range falloff for damage -->
+	<property name="BlockDamage" value="1"/>
+	<property name="RaySpread" value="7"/> <!-- Spread 5.2deg: 1m cone(55% hit) @ 11m -->
+	<property name="RayCount" value="8"/>
+
+	<property name="BustRoundCount" value="4"/>
+	<property name="BurstFireRate" value="0.8"/>
+
+	<property name="FallAsleepTime" value="2"/>
+	<property name="WakeUpTime" value="0.5"/>
+	<property name="TurnSpeed" value="22.5"/>
+
+	<property name="CooldownTime" value="4"/>
+	<property name="OvershootTime" value="0.8"/>
+
+	<property name="EconomicValue" value="4500"/>
+	<property name="RequiredPower" value="70"/>
+
+
+
+	<property class="RepairItems">
+	<property name="resourceForgedIron" value="28"/> <!--12-->
+	<property name="resourceMechanicalParts" value="11"/> <!--2-->
+	<property name="resourceElectricParts" value="10"/> <!--2-->
+	</property>
+
+
+
+	<property name="ParticlesMuzzleFire" value="nozzleflash_shotgun"/>
+	<property name="ParticlesMuzzleSmoke" value="nozzlesmokeuzi"/>
+
+	<!--<property name="Buff" value="buffShotgunWound1"/>
+	<property name="BuffChance" value="0.8"/>-->
+
+	<property name="FireSound" value="pump_shotgun_fire"/>
+	<property name="PickupJournalEntry" value="cameraTip"/>
+
+	<triggered_effect trigger="onSelfAttackedOther" action="AddBuff" target="other" buff="buffBurningElement"/>
+	<property name="UnlockedBy" value="perkAdvancedEngineering"/>
+</block>
+
+<!--
+<configs>
+	<append xpath="/blocks/block[@name='autoTurret']/property[@name='AmmoItem']/@value">,ammo9mmBulletSteel</append>
+</configs>
+-->
+
+</append>
+</HarrysIronBullets>

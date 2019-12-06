@@ -1,0 +1,998 @@
+﻿Key,Source,Context,Changes,English,French,German,Klingon,Spanish,Polish
+
+
+PistolframeDesc,items,Ammo,New,Used for creating Pistols.,,,,,
+MagnumframeDesc,items,Ammo,New,Used for creating Magnums.,,,,,
+SMGframeDesc,items,Ammo,New,Used for creating SMGs.,,,,,
+RifleframeDesc,items,Ammo,New,Used for creating Rifles.,,,,,
+DMRframeDesc,items,Ammo,New,Used for creating DMRs.,,,,,
+AKframeDesc,items,Ammo,New,Used for creating Assault Rifles.,,,,,
+LMGframeDesc,items,Ammo,New,Used for creating LMGs.,,,,,
+PumpshotgunframeDesc,items,Ammo,New,Used for creating pump action weapons.,,,,,
+SxSshotgunframeDesc,items,Ammo,New,Used for creating double barrel weapons.,,,,,
+
+
+
+
+
+gunPumpShotgun,items,GunShotgun,KgNone,Mossberg 590 [12 Gauge],Fusil à pompe,Schrotflinte,,Escopeta,
+gunPumpShotgunSchematic,items,GunShotgun,KgNone,Mossberg 590 [12 Gauge] Schematic,Schéma de fusil à pompe,Bauplan – Schrotflinte,,Esquema de escopeta,
+
+gunPistol,items,GunPistol,KgNone,Beretta M9 [9mm],Pistolet,Pistole,,Revólver,
+gunPistolSchematic,items,GunPistol,New,Beretta M9 [9mm] Schematic,,,,,
+
+gun44Magnum,items,GunPistol,KgNone,S&W Model 629 [.44 Magnum],.44 magnum,.44 Magnum,,Magnum .44,
+gun44MagnumSchematic,items,GunPistol,New,S&W Model 629 [.44 Magnum] Schematic,,,,,
+
+gunSMG5,items,GunPistol,KgNone,MP5 [9mm],Mitraillette,Maschinenpistole,,Metralleta,
+gunSMG5Schematic,items,GunPistol,KgNone,MP5 [9mm] Schematic,Schéma de mitraillette,Bauplan – Maschinenpistole,,Esquema de metralleta,
+
+gunDoubleBarrelShotgun,items,GunShotgun,New,Remington Model-1887 [12 Gauge],,,,,
+gunDoubleBarrelShotgunSchematic,items,GunShotgun,New,Remington Model-1887 [12 Gauge] Schematic,,,,,
+
+gunHuntingRifle,items,GunRifle,KgNone,Remington 700 [7.62],Fusil de chasse,Jagdgewehr,,Rifle de caza,
+gunHuntingRifleSchematic,items,GunRifle,New,Remington 700 [7.62] Schematic,,,,,
+
+gunMR10,items,GunRifle,KgNone,R11 RSASS [7.62],MR-10,MR-10,,MR-10,
+gunMR10Schematic,items,GunRifle,KgNone,R11 RSASS [7.62] Schematic,Schéma de fusil de précision,Bauplan – Präzisionsgewehr,,Esquema de rifle de francotirador,
+
+gunAK47,items,GunMG,KgNone,Kalashnikov AK-47 [7.62],Fusil d'assaut AK-47,AK-47 Sturmgewehr,,Rifle de asalto AK-47,
+gunAK47Schematic,items,GunMG,KgNone,Kalashnikov AK-47 [7.62] Schematic,Schéma d'AK-47,Bauplan – AK-47,,Esquema de AK-47,
+
+gunM60,items,GunMG,New,M60E4 [7.62],,M60 Maschinengewehr,,,
+
+
+
+
+
+
+M922Desc,items,Ammo,New,This Beretta M9 can use .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M9380Desc,items,Ammo,New,This Beretta M9 uses .380 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M940swDesc,items,Ammo,New,This Beretta M9 uses .40 Smith & Wesson ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+10mmAutoPistol,items,Ammo,New,Beretta M9 [10mm Auto],,,,,
+10mmautopistolDesc,items,Ammo,New,This Beretta M9 uses 10mm Auto ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+10mmAutoPistolSchematic,items,Ammo,New,Beretta M9 [10mm Auto] Schematic,,,,,
+
+M945acpDesc,items,Ammo,New,This Beretta M9 uses .45 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+M950aeDesc,items,Ammo,New,This Beretta M9 uses .50 Action Express ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+
+
+Revolver410Desc,items,Ammo,New,This S&W Governor uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver22Desc,items,Ammo,New,This S&W Model 617 uses .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver327Desc,items,Ammo,New,This Ruger GP100 uses .327 Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver35738Desc,items,Ammo,New,This S&W Model 686 can use .357 Magnum and .38 Special ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Revolver500swDesc,items,Ammo,New,This S&W 500 uses .500 Smith & Wesson Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+S/W Governor [.410 Gauge],items,Weapons,New,S&W Governor [.410 Gauge],,,,,
+S/W Model 617 [.22 S/LR],items,Weapons,New,S&W Model 617 [.22 S/LR],,,,,
+Ruger GP100 [.327 Magnum],items,Weapons,New,Ruger GP100 [.327 Magnum],,,,,
+S/W Model 686 [.357 MAG/.38 SP],items,Weapons,New,S&W Model 686 [.357 MAG/.38 SP],,,,,
+S/W 500 [.500 S/W Magnum],items,Weapons,New,S&W 500 [.500 S&W Magnum],,,,,
+
+
+Mp522Desc,items,Ammo,New,This MP5 can use .22 Short and Long-Rifle ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp5380Desc,items,Ammo,New,This MP5 uses .380 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp5357Desc,items,Ammo,New,This MP5 uses .357 SIG ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp540swDesc,items,Ammo,New,This MP5 uses .40 Smith & Wesson ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp510mmautoDesc,items,Ammo,New,This MP5 uses 10mm Auto ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+Mp545acpDesc,items,Ammo,New,This MP5 uses .45 ACP ammo.\n\nRepair with a Repair Kit.\nScrap to Handgun Parts.,,,,,
+
+
+
+Rem70030carbDesc,items,Ammo,New,This Remington 700 uses .30 Carbine ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700223556Desc,items,Ammo,New,This Remington 700 can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7003030winDesc,items,Ammo,New,This Remington 700 uses .30-30 Winchester ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem70076254rDesc,items,Ammo,New,This Remington 700 uses 7.62x54R ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7009x39Desc,items,Ammo,New,This Remington 700 uses 9x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700308762Desc,items,Ammo,New,This Remington 700 can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem7004570Desc,items,Ammo,New,This Remington 700 uses .45-70 Government ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700458winmagDesc,items,Ammo,New,This Remington 700 uses .458 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+Rem700500nitroDesc,items,Ammo,New,Well hot dam! This Remington 700 uses 500 Nitro Express ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+
+
+Rem760022Desc,items,Ammo,New,What was remington thinking! This .22 S/LR rifle-barreled shotgun SUCKS against zombies.\nThis Remington 7600 uses 22 LR ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600223556Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76003030winDesc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .30-30 Winchester ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600308762Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76003006Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem7600300winmagDesc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem76004570Desc,items,Ammo,New,What was remington thinking! A rifle-barreled shotgun can't be as good as it sounds? I'll Take 10.\nThis Remington 7600 uses .45-70 Government ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+RSASS223556Desc,items,Ammo,New,This Remington R11 RSASS can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS65creeDesc,items,Ammo,New,This Remington R11 RSASS uses 6.5 Creedmoor ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS308762Desc,items,Ammo,New,This Remington R11 RSASS can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS8mmDesc,items,Ammo,New,This Remington R11 RSASS uses 7.92x57mm Mauser ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS3006Desc,items,Ammo,New,This Remington R11 RSASS uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS300winmagDesc,items,Ammo,New,This Remington R11 RSASS uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS338lapuamagDesc,items,Ammo,New,This Remington R11 RSASS uses .338 Lapua Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+RSASS50calDesc,items,Ammo,New,This Remington R11 RSASS uses 50 BMG ammo.\n\nRepair with a Repair Kit.\nScrap to Rifle parts.,,,,,
+
+
+
+AK4730carbHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .30 Carbine ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47223556HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK4754539HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses 5.45x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47300boHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .300 AAC Blackout ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK479x39HarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses 9x39mm ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK47458socomHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .458 SOCOM ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+AK4750beoHarryDesc,items,Ammo,New,This badass AK-47 Machine Gun uses .50 Beowulf ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+AK-47 [.30 Carbine],items,Ammo,New,Kalashnikov AK-47 [.30 Carbine],,,,,
+AK-47 [.223/5.56],items,Ammo,New,Kalashnikov AK-47 [.223/5.56],,,,,
+AK-47 [5.45x39mm],items,Ammo,New,Kalashnikov AK-47 [5.45x39mm],,,,,
+AK-47 [.300 AAC Blackout],items,Ammo,New,Kalashnikov AK-47 [.300 AAC Blackout],,,,,
+AK-47 [9x39mm],items,Ammo,New,Kalashnikov AK-47 [9x39mm],,,,,
+AK-47 [.458 SOCOM],items,Ammo,New,Kalashnikov AK-47 [.458 SOCOM],,,,,
+AK-47 [.50 Beowulf],items,Ammo,New,Kalashnikov AK-47 [.50 Beowulf],,,,,
+
+AK-47 [.30 Carbine] Schematic,items,Ammo,New,Kalashnikov AK-47 [.30 Carbine] Schematic,,,,,
+AK-47 [.223/5.56] Schematic,items,Ammo,New,Kalashnikov AK-47 [.223/5.56] Schematic,,,,,
+AK-47 [5.45x39mm] Schematic,items,Ammo,New,Kalashnikov AK-47 [5.45x39mm] Schematic,,,,,
+AK-47 [.300 AAC Blackout] Schematic,items,Ammo,New,Kalashnikov AK-47 [.300 AAC Blackout] Schematic,,,,,
+AK-47 [9x39mm] Schematic,items,Ammo,New,Kalashnikov AK-47 [9x39mm] Schematic,,,,,
+AK-47 [.458 SOCOM] Schematic,items,Ammo,New,Kalashnikov AK-47 [.458 SOCOM] Schematic,,,,,
+AK-47 [.50 Beowulf] Schematic,items,Ammo,New,Kalashnikov AK-47 [.50 Beowulf] Schematic,,,,,
+
+
+
+M60E4223556Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one can use .223 Remington and 5.56x45mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4300boDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .300 AAC Blackout ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4458socomDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .458 SOCOM ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E450beoDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses .50 Beowulf ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E4308762Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one can use .308 Winchester and 7.62x51mm NATO ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E48mmDesc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses 7.92x57mm Mauser ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+M60E43006Desc,items,Ammo,New,Machine guns are somewhat cumbersome to use but excel at automatic fire. This one uses 30-06 Springfield ammo.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+
+
+Saiga12410Desc,items,Ammo,New,This badass Saiga-12 uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1220Desc,items,Ammo,New,This badass Saiga-12 uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1216Desc,items,Ammo,New,This badass Saiga-12 uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1212Desc,items,Ammo,New,This badass Saiga-12 uses 12 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+Saiga1210Desc,items,Ammo,New,This badass Saiga-12 uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Machine Gun Parts.,,,,,
+
+
+
+Mossberg590410Desc,items,Ammo,New,This Mossberg 590 shotgun uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59020Desc,items,Ammo,New,This Mossberg 590 shotgun uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59016Desc,items,Ammo,New,This Mossberg 590 shotgun uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Mossberg59010Desc,items,Ammo,New,This Mossberg 590 shotgun uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+KodiakMark300winmagDesc,items,Ammo,New,Just another old rusty double barrel, but wait its chambered for .300 Winchester Magnum! Uses .300 Winchester Magnum ammo.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+Rem188710Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 10 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem188716Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 16 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem188720Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses 20 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+Rem1887410Desc,items,Ammo,New,A rusty old double barrel shotgun, great for close range carnage. Uses .410 Shotgun Shells.\n\nRepair with a Repair Kit.\nScrap to Shotgun Parts.,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+380ACP,items,Ammo,New,.380 ACP (AMMO),,,,,
+380ACPDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+
+ammoBundle380ACP,items,Ammo,New,Box of .380 ACP (100),,,,,
+
+Receiver380ACP,items,Ammo,New,Receiver [.380 ACP],,,,,
+Receiver380ACPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel380ACP,items,Ammo,New,Barrel [.380 ACP],,,,,
+Barrel380ACPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit380ACP,items,Ammo,New,Conversion kit [.380 ACP],,,,,
+Conversionkit380ACPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+357SIG,items,Ammo,New,.357 SIG (AMMO),,,,,
+357SIGDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle357SIG,items,Ammo,New,Box of .357 SIG (100),,,,,
+
+Receiver357SIG,items,Ammo,New,Receiver [.357 SIG],,,,,
+Receiver357SIGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel357SIG,items,Ammo,New,Barrel [.357 SIG],,,,,
+Barrel357SIGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit357SIG,items,Ammo,New,Conversion kit [.357 SIG],,,,,
+Conversionkit357SIGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+40S_W,items,Ammo,New,.40 Smith & Wesson (AMMO),,,,,
+40S_WDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle40S_W,items,Ammo,New,Box of .40 Smith & Wesson (100),,,,,
+
+Receiver40S_W,items,Ammo,New,Receiver [.40 Smith & Wesson],,,,,
+Receiver40S_WDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel40S_W,items,Ammo,New,Barrel [.40 Smith & Wesson],,,,,
+Barrel40S_WDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit40S_W,items,Ammo,New,Conversion kit [.40 Smith & Wesson],,,,,
+Conversionkit40S_WDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+.40SmithWessonReceiverSchematic,items,Ammo,New,.40 Smith & Wesson Receiver Schematic,,,,,
+.40SmithWessonBarrelSchematic,items,Ammo,New,.40 Smith & Wesson Barrel Schematic,,,,,
+.40SmithWessonConversionkitSchematic,items,Ammo,New,.40 Smith & Wesson Conversion kit Schematic,,,,,
+
+.40SWSchematic,items,Ammo,New,.40 Smith & Wesson Schematic,,,,,
+
+
+
+10mmauto,items,Ammo,New,10mm Auto (AMMO),,,,,
+10mmautoDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+10mmautoSchematic,items,Ammo,New,10mm Auto Schematic,,,,,
+
+10mmautoBundle,items,Ammo,New,Box of 10mm Auto (100),,,,,
+
+Receiver10mmAuto,items,Ammo,New,Receiver [10mm Auto],,,,,
+Receiver10mmAutoDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel10mmAuto,items,Ammo,New,Barrel [10mm Auto],,,,,
+Barrel10mmAutoDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit10mmAuto,items,Ammo,New,Conversion kit [10mm Auto],,,,,
+Conversionkit10mmAutoDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+Receiver10mmAutoSchematic,items,Ammo,New,Receiver [10mm Auto],,,,,
+Barrel10mmAutoSchematic,items,Ammo,New,Barrel [10mm Auto],,,,,
+Conversionkit10mmAutoSchematic,items,Ammo,New,Conversion kit [10mm Auto],,,,,
+
+
+
+45ACP,items,Ammo,New,.45 ACP (AMMO),,,,,
+45ACPDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle45ACP,items,Ammo,New,Box of .45 ACP (100),,,,,
+
+Receiver45ACP,items,Ammo,New,Receiver [.45 ACP],,,,,
+Receiver45ACPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel45ACP,items,Ammo,New,Barrel [.45 ACP],,,,,
+Barrel45ACPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit45ACP,items,Ammo,New,Conversion kit [.45 ACP],,,,,
+Conversionkit45ACPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50ActionExpress,items,Ammo,New,.50 Action Express (AMMO),,,,,
+50ActionExpressDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle50ActionExpress,items,Ammo,New,Box of .50 Action Express (100),,,,,
+
+Receiver50ActionExpress,items,Ammo,New,Receiver [.50 Action Express],,,,,
+Receiver50ActionExpressDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50ActionExpress,items,Ammo,New,Barrel [.50 Action Express],,,,,
+Barrel50ActionExpressDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50ActionExpress,items,Ammo,New,Conversion kit [.50 Action Express],,,,,
+Conversionkit50ActionExpressDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+327Magnum,items,Ammo,New,.327 Magnum (AMMO),,,,,
+327MagnumDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle327Magnum,items,Ammo,New,Box of .327 Magnum (100),,,,,
+
+Receiver327Magnum,items,Ammo,New,Receiver [.327 Magnum],,,,,
+Receiver327MagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel327Magnum,items,Ammo,New,Barrel [.327 Magnum],,,,,
+Barrel327MagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit327Magnum,items,Ammo,New,Conversion kit [.327 Magnum],,,,,
+Conversionkit327MagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+38Special,items,Ammo,New,.38 Special (AMMO),,,,,
+38SpecialDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle38Special,items,Ammo,New,Box of .38 Special (100),,,,,
+
+357Magnum,items,Ammo,New,.357 Magnum (AMMO),,,,,
+357MagnumDesc,items,Ammo,New,50 Damage,,,,,
+
+ammoBundle357Magnum,items,Ammo,New,Box of .357 Magnum (100),,,,,
+
+Receiver357MAG38SP,items,Ammo,New,Receiver [.357 MAG/.38 SP],,,,,
+Receiver357MAG38SPDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel357MAG38SP,items,Ammo,New,Barrel [.357 MAG/.38 SP],,,,,
+Barrel357MAG38SPDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit357MAG38SP,items,Ammo,New,Conversion kit [.357 MAG/.38 SP],,,,,
+Conversionkit357MAG38SPDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+500S_WMagnum,items,Ammo,New,.500 Smith & Wesson Magnum (AMMO),,,,,
+500S_WMagnumDesc,items,Ammo,New,500 Damage,,,,,
+
+ammoBundle500S_WMagnum,items,Ammo,New,Box of .500 Smith & Wesson Magnum (100),,,,,
+
+Receiver500S_WMagnum,items,Ammo,New,Receiver [.500 Smith & Wesson Magnum],,,,,
+Receiver500S_WMagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel500S_WMagnum,items,Ammo,New,Barrel [.500 Smith & Wesson Magnum],,,,,
+Barrel500S_WMagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit500S_WMagnum,items,Ammo,New,Conversion kit [.500 Smith & Wesson Magnum],,,,,
+Conversionkit500S_WMagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+500S_WMagnumReceiverSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Receiver Schematic,,,,,
+500S_WMagnumBarrelSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Barrel Schematic,,,,,
+500S_WMagnumConversionkitSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Conversion kit Schematic,,,,,
+
+500SmithWessonMagnumSchematic,items,Ammo,New,.500 Smith & Wesson Magnum Schematic,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+22short,items,Ammo,New,.22 Short (AMMO),,,,,
+
+22LR,items,Ammo,New,.22 LR (AMMO),,,,,
+
+22shortDesc,items,Ammo,New,10000 Damage I BET,,,,,
+
+22LRDesc,items,Ammo,New,IDK why you fellers be hateings on me 22s,,,,,
+
+22shortBundle,items,Ammo,New,Box of .22 Short (100),,,,,
+
+ammoBundle22LR,items,Ammo,New,Box of .22 LR (100),,,,,
+
+Receiver22LR,items,Ammo,New,Receiver [.22 S/LR],,,,,
+Receiver22LRDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel22LR,items,Ammo,New,Barrel [.22 S/LR],,,,,
+Barrel22LRDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit22LR,items,Ammo,New,Conversion kit [.22 S/LR],,,,,
+Conversionkit22LRDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+22shortSchematic,items,Ammo,New,.22 Short Schematic,,,,,
+
+
+
+30_30Winchester,items,Ammo,New,.30-30 Winchester (AMMO),,,,,
+30_30WinchesterDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle30_30Winchester,items,Ammo,New,Box of .30-30 Winchester (100),,,,,
+
+Receiver30_30Winchester,items,Ammo,New,Receiver [.30-30 Winchester],,,,,
+Receiver30_30WinchesterDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30_30Winchester,items,Ammo,New,Barrel [.30-30 Winchester],,,,,
+Barrel30_30WinchesterDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30_30Winchester,items,Ammo,New,Conversion kit [.30-30 Winchester],,,,,
+Conversionkit30_30WinchesterDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+308Winchester,items,Ammo,New,.308 Winchester (AMMO),,,,,
+308WinchesterDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle308Winchester,items,Ammo,New,Box of .308 Winchester (100),,,,,
+
+762x51mmNATO,items,Ammo,New,7.62x51mm NATO (AMMO),,,,,
+762x51mmNATODesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle762x51mmNATO,items,Ammo,New,Box of 7.62x51mm NATO (100),,,,,
+
+Receiver308Win_762mmNATO,items,Ammo,New,Receiver [.308 Win/7.62mm NATO],,,,,
+Receiver308Win_762mmNATODesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel308Win_762mmNATO,items,Ammo,New,Barrel [.308 Win/7.62mm NATO],,,,,
+Barrel308Win_762mmNATODesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit308Win_762mmNATO,items,Ammo,New,Conversion kit [.308 Win/7.62mm NATO],,,,,
+Conversionkit308Win_762mmNATODesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+65Creedmoor,items,Ammo,New,6.5 Creedmoor (AMMO),,,,,
+65CreedmoorDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle65Creedmoor,items,Ammo,New,Box of 6.5 Creedmoor (100),,,,,
+
+Receiver65Creedmoor,items,Ammo,New,Receiver [6.5 Creedmoor],,,,,
+Receiver65CreedmoorDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel65Creedmoor,items,Ammo,New,Barrel [6.5 Creedmoor],,,,,
+Barrel65CreedmoorDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit65Creedmoor,items,Ammo,New,Conversion kit [6.5 Creedmoor],,,,,
+Conversionkit65CreedmoorDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+762x54R,items,Ammo,New,7.62x54R (AMMO),,,,,
+762x54RDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle762x54R,items,Ammo,New,Box of 7.62x54R (100),,,,,
+
+Receiver762x54R,items,Ammo,New,Receiver [7.62x54R],,,,,
+Receiver762x54RDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel762x54R,items,Ammo,New,Barrel [7.62x54R],,,,,
+Barrel762x54RDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit762x54R,items,Ammo,New,Conversion kit [7.62x54R],,,,,
+Conversionkit762x54RDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+9x39mm,items,Ammo,New,9x39mm (AMMO),,,,,
+9x39mmDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle9x39mm,items,Ammo,New,Box of 9x39mm (100),,,,,
+
+Receiver9x39mm,items,Ammo,New,Receiver [9x39mm],,,,,
+Receiver9x39mmDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel9x39mm,items,Ammo,New,Barrel [9x39mm],,,,,
+Barrel9x39mmDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit9x39mm,items,Ammo,New,Conversion kit [9x39mm],,,,,
+Conversionkit9x39mmDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+30_06SPRG,items,Ammo,New,30-06 Springfield (AMMO),,,,,
+30_06SPRGDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle30_06SPRG,items,Ammo,New,Box of 30-06 Springfield (100),,,,,
+
+Receiver30_06SPRG,items,Ammo,New,Receiver [30-06 SPRG],,,,,
+Receiver30_06SPRGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30_06SPRG,items,Ammo,New,Barrel [30-06 SPRG],,,,,
+Barrel30_06SPRGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30_06SPRG,items,Ammo,New,Conversion kit [30-06 SPRG],,,,,
+Conversionkit30_06SPRGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+792x57mmMauser,items,Ammo,New,7.92x57mm Mauser (AMMO),,,,,
+792x57mmMauserDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle792x57mmMauser,items,Ammo,New,Box of 7.92x57mm Mauser (100),,,,,
+
+Receiver792x57mmMauser,items,Ammo,New,Receiver [7.92x57mm Mauser],,,,,
+Receiver792x57mmMauserDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel792x57mmMauser,items,Ammo,New,Barrel [7.92x57mm Mauser],,,,,
+Barrel792x57mmMauserDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit792x57mmMauser,items,Ammo,New,Conversion kit [7.92x57mm Mauser],,,,,
+Conversionkit792x57mmMauserDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+45_70Government,items,Ammo,New,.45-70 Government (AMMO),,,,,
+45_70GovernmentDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle45_70Government,items,Ammo,New,Box of .45-70 Government (100),,,,,
+
+Receiver45_70Government,items,Ammo,New,Receiver [.45-70 Government],,,,,
+Receiver45_70GovernmentDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel45_70Government,items,Ammo,New,Barrel [.45-70 Government],,,,,
+Barrel45_70GovernmentDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit45_70Government,items,Ammo,New,Conversion kit [.45-70 Government],,,,,
+Conversionkit45_70GovernmentDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+300WinchesterMagnum,items,Ammo,New,.300 Winchester Magnum (AMMO),,,,,
+300WinchesterMagnumDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle300WinchesterMagnum,items,Ammo,New,Box of .300 Winchester Magnum (100),,,,,
+
+Receiver300Win_Mag,items,Ammo,New,Receiver [.300 Win-Mag],,,,,
+Receiver300Win_MagDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel300Win_Mag,items,Ammo,New,Barrel [.300 Win-Mag],,,,,
+Barrel300Win_MagDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit300Win_Mag,items,Ammo,New,Conversion kit [.300 Win-Mag],,,,,
+Conversionkit300Win_MagDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+338LapuaMagnum,items,Ammo,New,.338 Lapua Magnum (AMMO),,,,,
+338LapuaMagnumDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle338LapuaMagnum,items,Ammo,New,Box of .338 Lapua Magnum (100),,,,,
+
+Receiver338LapuaMagnum,items,Ammo,New,Receiver [.338 Lapua Magnum],,,,,
+Receiver338LapuaMagnumDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel338LapuaMagnum,items,Ammo,New,Barrel [.338 Lapua Magnum],,,,,
+Barrel338LapuaMagnumDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit338LapuaMagnum,items,Ammo,New,Conversion kit [.338 Lapua Magnum],,,,,
+Conversionkit338LapuaMagnumDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+458WinchesterMagnum,items,Ammo,New,.458 Winchester Magnum (AMMO),,,,,
+458WinchesterMagnumDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle458WinchesterMagnum,items,Ammo,New,Box of .458 Winchester Magnum (100),,,,,
+
+Receiver458Win_Mag,items,Ammo,New,Receiver [.458 Win-Mag],,,,,
+Receiver458Win_MagDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel458Win_Mag,items,Ammo,New,Barrel [.458 Win-Mag],,,,,
+Barrel458Win_MagDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit458Win_Mag,items,Ammo,New,Conversion kit [.458 Win-Mag],,,,,
+Conversionkit458Win_MagDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+500NitroExpress,items,Ammo,New,500 Nitro Express (AMMO),,,,,
+500NitroExpressDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle500NitroExpress,items,Ammo,New,Box of 500 Nitro Express (100),,,,,
+
+Receiver500NitroExpress,items,Ammo,New,Receiver [500 Nitro Express],,,,,
+Receiver500NitroExpressDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel500NitroExpress,items,Ammo,New,Barrel [500 Nitro Express],,,,,
+Barrel500NitroExpressDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit500NitroExpress,items,Ammo,New,Conversion kit [500 Nitro Express],,,,,
+Conversionkit500NitroExpressDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50BMG,items,Ammo,New,50 BMG (AMMO),,,,,
+50BMGDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle50BMG,items,Ammo,New,Box of 50 BMG (100),,,,,
+
+Receiver50BMG,items,Ammo,New,Receiver [50 BMG],,,,,
+Receiver50BMGDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50BMG,items,Ammo,New,Barrel [50 BMG],,,,,
+Barrel50BMGDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50BMG,items,Ammo,New,Conversion kit [50 BMG],,,,,
+Conversionkit50BMGDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+223Remington,items,Ammo,New,.223 Remington (AMMO),,,,,
+223RemingtonDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle223Remington,items,Ammo,New,Box of .223 Remington (100),,,,,
+
+556x45mmNATO,items,Ammo,New,5.56x45mm NATO (AMMO),,,,,
+556x45mmNATODesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle556x45mmNATO,items,Ammo,New,Box of 5.56x45mm NATO (100),,,,,
+
+Receiver223_556,items,Ammo,New,Receiver [.223/5.56],,,,,
+Receiver223_556Desc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel223_556,items,Ammo,New,Barrel [.223/5.56],,,,,
+Barrel223_556Desc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit223_556,items,Ammo,New,Conversion kit [.223/5.56],,,,,
+Conversionkit223_556Desc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+545x39mm,items,Ammo,New,5.45x39mm (AMMO),,,,,
+545x39mmDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle545x39mm,items,Ammo,New,Box of 5.45x39mm (100),,,,,
+
+Receiver545x39mm,items,Ammo,New,Receiver [5.45x39mm],,,,,
+Receiver545x39mmDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel545x39mm,items,Ammo,New,Barrel [5.45x39mm],,,,,
+Barrel545x39mmDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit545x39mm,items,Ammo,New,Conversion kit [5.45x39mm],,,,,
+Conversionkit545x39mmDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+30Carbine,items,Ammo,New,.30 Carbine (AMMO),,,,,
+30CarbineDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle30Carbine,items,Ammo,New,Box of .30 Carbine (100),,,,,
+
+Receiver30Carbine,items,Ammo,New,Receiver [.30 Carbine],,,,,
+Receiver30CarbineDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel30Carbine,items,Ammo,New,Barrel [.30 Carbine],,,,,
+Barrel30CarbineDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit30Carbine,items,Ammo,New,Conversion kit [.30 Carbine],,,,,
+Conversionkit30CarbineDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+458SOCOM,items,Ammo,New,.458 SOCOM (AMMO),,,,,
+458SOCOMDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle458SOCOM,items,Ammo,New,Box of .458 SOCOM (100),,,,,
+
+Receiver458SOCOM,items,Ammo,New,Receiver [.458 SOCOM],,,,,
+Receiver458SOCOMDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel458SOCOM,items,Ammo,New,Barrel [.458 SOCOM],,,,,
+Barrel458SOCOMDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit458SOCOM,items,Ammo,New,Conversion kit [.458 SOCOM],,,,,
+Conversionkit458SOCOMDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+300AACBlackout,items,Ammo,New,.300 AAC Blackout (AMMO),,,,,
+300AACBlackoutDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle300AACBlackout,items,Ammo,New,Box of .300 AAC Blackout (100),,,,,
+
+Receiver300AACBlackout,items,Ammo,New,Receiver [.300 AAC Blackout],,,,,
+Receiver300AACBlackoutDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel300AACBlackout,items,Ammo,New,Barrel [.300 AAC Blackout],,,,,
+Barrel300AACBlackoutDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit300AACBlackout,items,Ammo,New,Conversion kit [.300 AAC Blackout],,,,,
+Conversionkit300AACBlackoutDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+50Beowulf,items,Ammo,New,.50 Beowulf (AMMO),,,,,
+50BeowulfDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle50Beowulf,items,Ammo,New,Box of .50 Beowulf (100),,,,,
+
+Receiver50Beowulf,items,Ammo,New,Receiver [.50 Beowulf],,,,,
+Receiver50BeowulfDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel50Beowulf,items,Ammo,New,Barrel [.50 Beowulf],,,,,
+Barrel50BeowulfDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit50Beowulf,items,Ammo,New,Conversion kit [.50 Beowulf],,,,,
+Conversionkit50BeowulfDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+10GaugeShotgunShells,items,Ammo,New,10 Gauge Shotgun Shells (AMMO),,,,,
+10GaugeShotgunShellsDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle10GaugeShotgunShells,items,Ammo,New,Box of 10 Gauge Shotgun Shells (100),,,,,
+
+Receiver10Gauge,items,Ammo,New,Receiver [10 Gauge],,,,,
+Receiver10GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel10Gauge,items,Ammo,New,Barrel [10 Gauge],,,,,
+Barrel10GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit10Gauge,items,Ammo,New,Conversion kit [10 Gauge],,,,,
+Conversionkit10GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+Receiver12Gauge,items,Ammo,New,Receiver [12 Gauge],,,,,
+Receiver12GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel12Gauge,items,Ammo,New,Barrel [12 Gauge],,,,,
+Barrel12GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit12Gauge,items,Ammo,New,Conversion kit [12 Gauge],,,,,
+Conversionkit12GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+16GaugeShotgunShells,items,Ammo,New,16 Gauge Shotgun Shells (AMMO),,,,,
+16GaugeShotgunShellsDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle16GaugeShotgunShells,items,Ammo,New,Box of 16 Gauge Shotgun Shells (100),,,,,
+
+Receiver16Gauge,items,Ammo,New,Receiver [16 Gauge],,,,,
+Receiver16GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel16Gauge,items,Ammo,New,Barrel [16 Gauge],,,,,
+Barrel16GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit16Gauge,items,Ammo,New,Conversion kit [16 Gauge],,,,,
+Conversionkit16GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+20GaugeShotgunShells,items,Ammo,New,20 Gauge Shotgun Shells (AMMO),,,,,
+20GaugeShotgunShellsDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle20GaugeShotgunShells,items,Ammo,New,Box of 20 Gauge Shotgun Shells (100),,,,,
+
+Receiver20Gauge,items,Ammo,New,Receiver [20 Gauge],,,,,
+Receiver20GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel20Gauge,items,Ammo,New,Barrel [20 Gauge],,,,,
+Barrel20GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit20Gauge,items,Ammo,New,Conversion kit [20 Gauge],,,,,
+Conversionkit20GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+410GaugeShotgunShells,items,Ammo,New,.410 Gauge Shotgun Shells (AMMO),,,,,
+410GaugeShotgunShellsDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle410GaugeShotgunShells,items,Ammo,New,Box of .410 Gauge Shotgun Shells (100),,,,,
+
+Receiver410Gauge,items,Ammo,New,Receiver [.410 Gauge],,,,,
+Receiver410GaugeDesc,items,Ammo,New,A secondary component for crafting a conversion kit,,,,,
+
+Barrel410Gauge,items,Ammo,New,Barrel [.410 Gauge],,,,,
+Barrel410GaugeDesc,items,Ammo,New,A primary component for crafting a conversion kit,,,,,
+
+Conversionkit410Gauge,items,Ammo,New,Conversion kit [.410 Gauge],,,,,
+Conversionkit410GaugeDesc,items,Ammo,New,Conversion kits are used to create a new weapon with the modified caliber,,,,,
+
+
+
+12GaugeDragonsBreath,items,Ammo,New,12 Gauge Dragon's Breath (AMMO),,,,,
+12GaugeDragonsBreathDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle12GaugeDragonsBreath,items,Ammo,New,Box of 12 Gauge Dragon's Breath (100),,,,,
+
+12GaugePower_Shok,items,Ammo,New,12 Gauge Power-Shok (AMMO),,,,,
+12GaugePower_ShokDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle12GaugePower_Shok,items,Ammo,New,Box of 12 Gauge Power-Shok (100),,,,,
+
+10GaugeSSTSabotSlug,items,Ammo,New,10 Gauge SST Sabot Slug (AMMO),,,,,
+10GaugeSSTSabotSlugDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle10GaugeSSTSabotSlug,items,Ammo,New,Box of 10 Gauge SST Sabot Slugs (100),,,,,
+
+10GaugeMagnum00Buckshot,items,Ammo,New,10 Gauge Magnum 00 Buckshot (AMMO),,,,,
+10GaugeMagnum00BuckshotDesc,items,Ammo,New,100 Damage,,,,,
+
+ammoBundle10GaugeMagnum00Buckshot,items,Ammo,New,Box of 10 Gauge Magnum 00 Buckshot (100),,,,,
+
+16GaugeShotgunSlug,items,Ammo,New,16 Gauge Shotgun Slug (AMMO),,,,,
+16GaugeShotgunSlugDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+16GaugeShotgunSlugSchematic,items,Ammo,New,16 Gauge Shotgun Slugs Schematic,,,,,
+
+16GaugeShotgunSlugBundle,items,Ammo,New,Box of 16 Gauge Shotgun Slugs (100),,,,,
+
+20GaugeSSTShotgunSlug,items,Ammo,New,20 Gauge SST Slug (AMMO),,,,,
+20GaugeSSTShotgunSlugDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+20GaugeSSTShotgunSlugSchematic,items,Ammo,New,20 Gauge SST Slug Schematic,,,,,
+
+20GaugeSSTShotgunSlugBundle,items,Ammo,New,Box of 20 Gauge SST Slugs (100),,,,,
+
+410GaugeShotgunShellsSlugs,items,Ammo,New,.410 Gauge Shotgun Slugs (AMMO),,,,,
+410GaugeShotgunShellsSlugsDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+410GaugeShotgunShellsSlugsSchematic,items,Ammo,New,.410 Gauge Shotgun Slug Schematic,,,,,
+
+410GaugeShotgunShellsSlugsBundle,items,Ammo,New,Box of .410 Gauge Shotgun Slugs (100),,,,,
+
+410Gauge000BuckShotgunShells,items,Ammo,New,.410 Gauge 000 Buckshot (AMMO),,,,,
+410Gauge000BuckShotgunShellsDesc,items,Ammo,New,Can be crafted at a workbench.\nDamage - 50\nRange-90,,,,,
+410Gauge000BuckShotgunShellsSchematic,items,Ammo,New,.410 Gauge 000 Buckshot Schematic,,,,,
+
+410Gauge000BuckShotgunShellsBundle,items,Ammo,New,Box of .410 Gauge 000 Buckshot (100),,,,,
+
+4GaugeLeadBall,items,Ammo,New,30mm Lead Ball (AMMO),,,,,
+4GaugeLeadBallDesc,items,Ammo,New,100 Damage,,,,,
+4 Gauge Lead Ball Schematic,items,Ammo,New,30mm Lead Ball Schematic,,,,,
+
+
+
+
+
+
+
+
+
+MK-2 autoTurret,items,Ammo,New,MK-2 AutoTurret,,,,,
+MK2autoTurretSchematic,items,Ammo,New,MK-2 AutoTurret Schematic,,,,,
+
+MK-2 shotgunTurret,items,Ammo,New,MK-2 ShotgunTurret,,,,,
+MK2shotgunTurretSchematic,items,Ammo,New,MK-2 ShotgunTurret Schematic,,,,,
+
+
+
+.22 LR autoTurret,items,Ammo,New,.22 LR AutoTurret,,,,,
+MK-2 .22 LR autoTurret,items,Ammo,New,MK-2 .22 LR AutoTurret,,,,,
+
+22LRautoTurretSchematic,items,Ammo,New,.22 LR AutoTurret Schematic,,,,,
+MK222LRautoTurretSchematic,items,Ammo,New,MK-2 .22 LR AutoTurret Schematic,,,,,
+
+.45 ACP autoTurret,items,Ammo,New,.45 ACP AutoTurret,,,,,
+MK-2 .45 ACP autoTurret,items,Ammo,New,MK-2 .45 ACP AutoTurret,,,,,
+
+45ACPautoTurretSchematic,items,Ammo,New,.45 ACP AutoTurret Schematic,,,,,
+MK245ACPautoTurret,items,Ammo,New,MK-2 .45 ACP AutoTurret Schematic,,,,,
+
+.30 Carbine autoTurret,items,Ammo,New,.30 Carbine AutoTurret,,,,,
+MK-2 .30 Carbine autoTurret,items,Ammo,New,MK-2 .30 Carbine AutoTurret,,,,,
+
+30CarbineautoTurretSchematic,items,Ammo,New,.30 Carbine AutoTurret Schematic,,,,,
+MK230CarbineautoTurretSchematic,items,Ammo,New,MK-2 .30 Carbine AutoTurret Schematic,,,,,
+
+5.56x45mm NATO autoTurret,items,Ammo,New,5.56x45mm NATO AutoTurret,,,,,
+MK-2 5.56x45mm NATO autoTurret,items,Ammo,New,MK-2 5.56x45mm NATO AutoTurret,,,,,
+
+556x45mmNATOautoTurretSchematic,items,Ammo,New,5.56x45mm NATO AutoTurret Schematic,,,,,
+MK2556x45mmNATOautoTurretSchematic,items,Ammo,New,MK-2 5.56x45mm NATO AutoTurret Schematic,,,,,
+
+7.62x51mm NATO autoTurret,items,Ammo,New,7.62x51mm NATO AutoTurret,,,,,
+MK-2 7.62x51mm NATO autoTurret,items,Ammo,New,MK-2 7.62x51mm NATO AutoTurret,,,,,
+
+762x51mmNATOautoTurretSchematic,items,Ammo,New,7.62x51mm NATO AutoTurret Schematic,,,,,
+MK2762x51mmNATOautoTurretSchematic,items,Ammo,New,MK-2 7.62x51mm NATO AutoTurret Schematic,,,,,
+
+30-06 SPRG autoTurret,items,Ammo,New,30-06 Springfield AutoTurret,,,,,
+MK-2 30-06 SPRG autoTurret,items,Ammo,New,MK-2 30-06 Springfield AutoTurret,,,,,
+
+3006SPRGautoTurretSchematic,items,Ammo,New,30-06 Springfield AutoTurret Schematic,,,,,
+MK23006SPRGautoTurretSchematic,items,Ammo,New,MK-2 30-06 Springfield AutoTurret Schematic,,,,,
+
+50 BMG autoTurret,items,Ammo,New,50 BMG AutoTurret,,,,,
+MK-2 50 BMG autoTurret,items,Ammo,New,MK-2 50 BMG AutoTurret,,,,,
+
+50BMGautoTurretSchematic,items,Ammo,New,50 BMG AutoTurret Schematic,,,,,
+MK250BMGautoTurretSchematic,items,Ammo,New,MK-2 50 BMG AutoTurret Schematic,,,,,
+
+
+
+Slug shotgunTurret,items,Ammo,New,Slug ShotgunTurret,,,,,
+MK-2 Slug shotgunTurret,items,Ammo,New,MK-2 Slug ShotgunTurret,,,,,
+
+SlugshotgunTurretSchematic,items,Ammo,New,Slug ShotgunTurret Schematic,,,,,
+MK2SlugshotgunTurretSchematic,items,Ammo,New,MK-2 Slug ShotgunTurret Schematic,,,,,
+
+10 Gauge shotgunTurret,items,Ammo,New,10 Gauge ShotgunTurret,,,,,
+MK-2 10 Gauge shotgunTurret,items,Ammo,New,MK-2 10 Gauge ShotgunTurret,,,,,
+
+10GaugeshotgunTurretSchematic,items,Ammo,New,10 Gauge ShotgunTurret Schematic,,,,,
+MK210GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 10 Gauge ShotgunTurret Schematic,,,,,
+
+16 Gauge shotgunTurret,items,Ammo,New,16 Gauge ShotgunTurret,,,,,
+MK-2 16 Gauge shotgunTurret,items,Ammo,New,MK-2 16 Gauge ShotgunTurret,,,,,
+
+16GaugeshotgunTurretSchematic,items,Ammo,New,16 Gauge ShotgunTurret Schematic,,,,,
+MK216GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 16 Gauge ShotgunTurret Schematic,,,,,
+
+20 Gauge shotgunTurret,items,Ammo,New,20 Gauge ShotgunTurret,,,,,
+MK-2 20 Gauge shotgunTurret,items,Ammo,New,MK-2 20 Gauge ShotgunTurret,,,,,
+
+20GaugeshotgunTurretSchematic,items,Ammo,New,20 Gauge ShotgunTurret Schematic,,,,,
+MK220GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 20 Gauge ShotgunTurret Schematic,,,,,
+
+.410 Gauge shotgunTurret,items,Ammo,New,.410 Gauge ShotgunTurret,,,,,
+MK-2 .410 Gauge shotgunTurret,items,Ammo,New,MK-2 .410 Gauge ShotgunTurret,,,,,
+
+410GaugeshotgunTurretSchematic,items,Ammo,New,.410 Gauge ShotgunTurret Schematic,,,,,
+MK2410GaugeshotgunTurretSchematic,items,Ammo,New,MK-2 .410 Gauge ShotgunTurret Schematic,,,,,
+
+
+
+
+
+BeltLinksDesc,items,Ammo,New,Machine Gun Links are used to make Ammunition Belts for belt-fed turrets.,,,,,
+AmmunitionBeltLinks,items,Ammo,New,Machine Gun Links,,,,,
+AmmunitionBeltLinksSchematic,items,Ammo,New,Machine Gun Link Schematic,,,,,
+
+
+
+
+
+LinkedAmmoDesc,items,Ammo,New,Ammunition Belts are used for belt-fed turrets and can hold more ammunition in one stack.,,,,,
+
+30CarbineAmmunitionBelt,items,Ammo,New,.30 Carbine Ammunition Belt (AMMO),,,,,
+
+556x45mmNATOAmmunitionBelt,items,Ammo,New,5.56x45mm NATO Ammunition Belt (AMMO),,,,,
+
+762x51mmNATOAmmunitionBelt,items,Ammo,New,7.62x51mm NATO Ammunition Belt (AMMO),,,,,
+
+30_06SPRGAmmunitionBelt,items,Ammo,New,30-06 Springfield Ammunition Belt (AMMO),,,,,
+
+50BMGAmmunitionBelt,items,Ammo,New,50 BMG Ammunition Belt (AMMO),,,,,

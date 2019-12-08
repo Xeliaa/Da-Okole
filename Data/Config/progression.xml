@@ -8,13 +8,13 @@
 
 	XP to complete the current level will cap out at 2^32/2. (lvl 252 in A18)
 
-	A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level
+	A15: 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP; XPRequired = exp_to_level * experience_multiplier ^ level5
 	A16: 8300 XP for level 1, total cumulative of 11MXP
 	A17: 11931 XP for level 1, total cumulative of 67MXP
 	A18: 10000 XP for level 1, total cumulative of 11.1MXP at lvl 100, Some 48.5MXP for lvl 300 -->
 </level>
 
-<attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.14"> <!--values here are simply base values for any attribute that doesn't override it. -->
+<attributes min_level="1" max_level="10" base_skill_point_cost="1" cost_multiplier_per_level="1.24"> <!--values here are simply base values for any attribute that doesn't override it. -->
 
 	<attribute name="attPerception" name_key="attPerceptionName" desc_key="attPerceptionDesc" icon="ui_game_symbol_stealth">
 		<level_requirements level="1"><requirement name="PlayerLevel" operation="GTE" value="1" desc_key="reqGenericPoints01"/></level_requirements>

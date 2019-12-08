@@ -482,7 +482,7 @@
 	<property name="DowngradeBlock" value="cntLootBlock"/>
 	<property name="FilterTags" value="floot"/>
 </block>
-
+		<!-- low tier box -->
 <block name="cntLootBlock">
 	<property name="Extends" value="cntAmmoPileSmall"/>
 	<property name="MaxDamage" value="777"/>
@@ -492,7 +492,7 @@
      <property name="Mesh" value="models"/>
 	<property name="LootList" value="180"/>
 </block>
-
+		<!--rng high rated box -->
 <block name="cntPowerLoot">
 	<property name="Extends" value="cntAmmoPileSmall"/>
 	<property name="CustomIcon" value="PowerLootBox" />
@@ -521,7 +521,7 @@
 	<property name="DowngradeBlock" value="cntLootBlock2"/>
 	<property name="FilterTags" value="floot"/>
 </block>
-
+		<!-- mid tier box -->
 <block name="cntLootBlock2">
 	<property name="Extends" value="cntAmmoPileSmall"/>
 	<property name="MaxDamage" value="777"/>

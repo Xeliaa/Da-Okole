@@ -150,7 +150,7 @@
 	<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mbrass"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property class="Action1">
@@ -166,7 +166,7 @@
 	<property name="Extends" value="AmmoBulletDropMaster"/>
 	<property name="DescriptionKey" value="380ACPDesc"/>
 	<property name="CustomIcon" value="380icon"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.380 ACP Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -444,7 +444,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mbrass"/>
-	<property name="Stacknumber" value="300"/> 
+	<property name="Stacknumber" value="500000"/> 
 	<property name="EconomicValue" value="9"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<effect_group name="ammo9mmBulletBall" tiered="false">
@@ -495,7 +495,7 @@
 
 <item name="ammo44MagnumBulletBall">
 	<property name="Extends" value="ammo9mmBulletBall"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="10"/>
 	<effect_group name="ammo44MagnumBulletBall" tiered="false">
 		<passive_effect name="EntityDamage" operation="base_set" value="65"/>
@@ -549,7 +549,7 @@
 	<property name="DescriptionKey" value="380ACPDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="380icon"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.380 ACP Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -618,7 +618,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -634,7 +634,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -650,7 +650,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -704,7 +704,7 @@
 	<property name="DescriptionKey" value="357SIGDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="357sig"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="6"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.357 SIG Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -756,7 +756,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -772,7 +772,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -788,7 +788,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -839,7 +839,7 @@
 	<property name="DescriptionKey" value="40S_WDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="40SW"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.40SWSchematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -892,7 +892,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -908,7 +908,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -924,7 +924,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -975,7 +975,7 @@
 	<property name="DescriptionKey" value="10mmautoDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="10mm"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="9"/>
 	<property name="UnlockedBy" value="Ammunition smithing,10mmautoSchematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1028,7 +1028,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1044,7 +1044,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1060,7 +1060,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1109,7 +1109,7 @@
 	<property name="CustomIcon" value="45acp"/>
 	<property name="DescriptionKey" value="45ACPDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
-	<property name="Stacknumber" value="300"/>
+	<property name="Stacknumber" value="500000"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.45 ACP Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1163,7 +1163,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1180,7 +1180,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1197,7 +1197,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1300,7 +1300,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1316,7 +1316,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1332,7 +1332,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1383,7 +1383,7 @@
 	<property name="DescriptionKey" value="327MagnumDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="327mag"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.327 Magnum Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1436,7 +1436,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1452,7 +1452,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1468,7 +1468,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1519,7 +1519,7 @@
 	<property name="DescriptionKey" value="38SpecialDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="38 Special"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="9"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.38 Special Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1568,7 +1568,7 @@
 	<property name="DescriptionKey" value="357MagnumDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="357mag"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.357 Magnum Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1621,7 +1621,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1637,7 +1637,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1653,7 +1653,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1704,7 +1704,7 @@
 	<property name="DescriptionKey" value="500S_WMagnumDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="500sw mag"/>
-	<property name="Stacknumber" value="100"/>
+	<property name="Stacknumber" value="5000"/>
 	<property name="EconomicValue" value="22"/>
 	<property name="UnlockedBy" value="Ammunition smithing,500SmithWessonMagnumSchematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -1760,7 +1760,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1776,7 +1776,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1792,7 +1792,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -1849,7 +1849,7 @@
 <!--
 <item name="ammo762mmBulletBall">
 	<property name="Extends" value="ammo9mmBulletBall"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="11"/>
 	<effect_group name="ammo762mmBulletBall" tiered="false">
 		<passive_effect name="EntityDamage" operation="base_set" value="50"/>
@@ -1954,7 +1954,7 @@
 	<property name="DescriptionKey" value="22LRDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>	
 	<property name="CustomIcon" value="22lr"/>
-	<property name="Stacknumber" value="1250"/>
+	<property name="Stacknumber" value="50250"/>
 	<property name="EconomicValue" value="4"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.22 LR Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2010,7 +2010,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2026,7 +2026,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2042,7 +2042,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2093,7 +2093,7 @@
 	<property name="DescriptionKey" value="30_30WinchesterDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="3030"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.30-30 Winchester Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2147,7 +2147,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2163,7 +2163,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2179,7 +2179,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2230,7 +2230,7 @@
 	<property name="DescriptionKey" value="308WinchesterDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="308"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="14"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.308 Winchester Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2282,7 +2282,7 @@
 	<property name="DescriptionKey" value="762x51mmNATODesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="762x51"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="13"/>
 	<property name="UnlockedBy" value="Ammunition smithing,7.62x51mm NATO Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2336,7 +2336,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2352,7 +2352,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2368,7 +2368,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2420,7 +2420,7 @@
 	<property name="DescriptionKey" value="65CreedmoorDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="6.5"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="13"/>
 	<property name="UnlockedBy" value="Ammunition smithing,6.5 Creedmoor Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2474,7 +2474,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2490,7 +2490,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2506,7 +2506,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2557,7 +2557,7 @@
 	<property name="DescriptionKey" value="762x54RDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="762x54r"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="11"/>
 	<property name="UnlockedBy" value="Ammunition smithing,7.62x54R Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2611,7 +2611,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2627,7 +2627,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2643,7 +2643,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2694,7 +2694,7 @@
 	<property name="DescriptionKey" value="30_06SPRGDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="3006"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="19"/>
 	<property name="UnlockedBy" value="Ammunition smithing,30-06 Springfield Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2751,7 +2751,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2767,7 +2767,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2783,7 +2783,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2834,7 +2834,7 @@
 	<property name="DescriptionKey" value="792x57mmMauserDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="8mm"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="18"/>
 	<property name="UnlockedBy" value="Ammunition smithing,7.92x57mm Mauser Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -2890,7 +2890,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2906,7 +2906,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2922,7 +2922,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -2973,7 +2973,7 @@
 	<property name="DescriptionKey" value="45_70GovernmentDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="4570"/>
-	<property name="Stacknumber" value="125"/>
+	<property name="Stacknumber" value="5025"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.45-70 Government Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -3028,7 +3028,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3044,7 +3044,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3060,7 +3060,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3111,7 +3111,7 @@
 	<property name="DescriptionKey" value="300WinchesterMagnumDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="300wm"/>
-	<property name="Stacknumber" value="125"/>
+	<property name="Stacknumber" value="5025"/>
 	<property name="EconomicValue" value="23"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.300 Winchester Magnum Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -3167,7 +3167,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3183,7 +3183,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3199,7 +3199,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3250,7 +3250,7 @@
 	<property name="DescriptionKey" value="338LapuaMagnumDesc"/>
 	<property name="DisplayType" value="HarryBulletAP3"/>
 	<property name="CustomIcon" value="338 Lapua Magnum"/>
-	<property name="Stacknumber" value="100"/>
+	<property name="Stacknumber" value="5000"/>
 	<property name="EconomicValue" value="30"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.338 Lapua Magnum Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -3307,7 +3307,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3323,7 +3323,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3339,7 +3339,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3447,7 +3447,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3463,7 +3463,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3479,7 +3479,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3587,7 +3587,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3603,7 +3603,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3619,7 +3619,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3729,7 +3729,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3745,7 +3745,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3761,7 +3761,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -3831,7 +3831,7 @@
 <!--
 <item name="ammo762mmBulletBall">
 	<property name="Extends" value="ammo9mmBulletBall"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="11"/>
 	<effect_group name="ammo762mmBulletBall" tiered="false">
 		<passive_effect name="EntityDamage" operation="base_set" value="50"/>
@@ -3884,7 +3884,7 @@
 	<property name="DescriptionKey" value="223RemingtonDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="223"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="9"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.223 Remington Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -3934,7 +3934,7 @@
 	<property name="DescriptionKey" value="556x45mmNATODesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="556"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="11"/>
 	<property name="UnlockedBy" value="Ammunition smithing,5.56x45mm NATO Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -3988,7 +3988,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4004,7 +4004,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4020,7 +4020,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4071,7 +4071,7 @@
 	<property name="DescriptionKey" value="545x39mmDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="545x39"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="UnlockedBy" value="Ammunition smithing,5.45x39mm Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -4125,7 +4125,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4141,7 +4141,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4157,7 +4157,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4262,7 +4262,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4278,7 +4278,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4294,7 +4294,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4345,7 +4345,7 @@
 	<property name="DescriptionKey" value="300AACBlackoutDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="300blackout"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="13"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.300 AAC Blackout Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -4399,7 +4399,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4415,7 +4415,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4431,7 +4431,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4482,7 +4482,7 @@
 	<property name="DescriptionKey" value="9x39mmDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="9x39"/>
-	<property name="Stacknumber" value="150"/>
+	<property name="Stacknumber" value="5050"/>
 	<property name="EconomicValue" value="14"/>
 	<property name="UnlockedBy" value="Ammunition smithing,9x39mm Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -4536,7 +4536,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4552,7 +4552,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4568,7 +4568,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4619,7 +4619,7 @@
 	<property name="DescriptionKey" value="458SOCOMDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="458socom"/>
-	<property name="Stacknumber" value="125"/>
+	<property name="Stacknumber" value="5025"/>
 	<property name="EconomicValue" value="24"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.458 SOCOM Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -4673,7 +4673,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4689,7 +4689,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4705,7 +4705,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4756,7 +4756,7 @@
 	<property name="DescriptionKey" value="50BeowulfDesc"/>
 	<property name="DisplayType" value="HarryBulletAP2"/>
 	<property name="CustomIcon" value="50beowulf"/>
-	<property name="Stacknumber" value="100"/>
+	<property name="Stacknumber" value="5000"/>
 	<property name="EconomicValue" value="27"/>
 	<property name="UnlockedBy" value="Ammunition smithing,.50 Beowulf Schematic"/>
 	<property name="Damage_type" value="Piercing"/>
@@ -4812,7 +4812,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4828,7 +4828,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4844,7 +4844,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -4908,7 +4908,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="11"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<effect_group name="ammoShotgunShell" tiered="false">
@@ -4936,7 +4936,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mbrass"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahSlugs"/>
@@ -4963,7 +4963,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mbrass"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="20"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="UnlockedBy" value="perkShotgunMessiahBreachingSlugs"/>
@@ -4991,7 +4991,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Mpaper"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="5"/>
 	<effect_group name="ammoBlunderbuss" tiered="false">
@@ -5017,7 +5017,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="100"/> 
+	<property name="Stacknumber" value="5000"/> 
 	<property name="EconomicValue" value="20"/>
 	<property name="UnlockedBy" value="Ammunition smithing,10 Gauge Shotgun Shell Schematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5078,7 +5078,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5094,7 +5094,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5110,7 +5110,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5167,7 +5167,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5183,7 +5183,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5199,7 +5199,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5257,7 +5257,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="175"/> 
+	<property name="Stacknumber" value="5075"/> 
 	<property name="EconomicValue" value="9"/>
 	<property name="UnlockedBy" value="Ammunition smithing,16 Gauge Shotgun Shell Schematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5318,7 +5318,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5334,7 +5334,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5350,7 +5350,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5467,7 +5467,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5483,7 +5483,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5499,7 +5499,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5616,7 +5616,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5632,7 +5632,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5648,7 +5648,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -5704,7 +5704,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mbrass"/>
-	<property name="Stacknumber" value="128"/>
+	<property name="Stacknumber" value="5028"/>
 	<property name="EconomicValue" value="32"/>
 	<property name="Damage_type" value="Piercing"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5742,7 +5742,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="150"/> 
+	<property name="Stacknumber" value="5050"/> 
 	<property name="EconomicValue" value="20"/>
 	<property name="UnlockedBy" value="Ammunition smithing,12 Gauge Dragon's Breath Schematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5862,7 +5862,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="100"/> 
+	<property name="Stacknumber" value="5000"/> 
 	<property name="EconomicValue" value="28"/>
 	<property name="UnlockedBy" value="Ammunition smithing,10 Gauge SST Sabot Slug Schematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5926,7 +5926,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="100"/> 
+	<property name="Stacknumber" value="5000"/> 
 	<property name="EconomicValue" value="37"/>
 	<property name="UnlockedBy" value="Ammunition smithing,10 Gauge Magnum 00 Buckshot Schematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -5991,7 +5991,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="175"/> 
+	<property name="Stacknumber" value="5075"/> 
 	<property name="EconomicValue" value="15"/>
 	<property name="UnlockedBy" value="Ammunition smithing,16GaugeShotgunSlugSchematic"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -6243,7 +6243,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mlead_scrap"/>
-	<property name="Stacknumber" value="10"/> 
+	<property name="Stacknumber" value="500"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="UnlockedBy" value="Ammunition smithing,4 Gauge Lead Ball Schematic"/>
@@ -6369,7 +6369,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="20"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="300"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -6398,7 +6398,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -6415,7 +6415,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MresourceScrapPolymers"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -7149,7 +7149,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="34"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="50"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="600"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -7763,7 +7763,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="50"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="800"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -8469,7 +8469,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/> 
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="350"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -10244,7 +10244,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="67"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="800"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -11167,7 +11167,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="400"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -11969,7 +11969,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="54"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="850"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -13289,7 +13289,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="750"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -13883,7 +13883,7 @@
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="MmechanicalParts"/> <property name="Weight" value="27"/>
-	<property name="Stacknumber" value="1"/> 
+	<property name="Stacknumber" value="50"/> 
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="250"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -14346,7 +14346,7 @@
 	<property name="SoundJammed" value="weapon_jam"/>
 	<property name="RepairTools" value="resourceRepairKit"/>
 	<property name="Group" value="Ammo/Weapons"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="50"/>
 	<property name="EconomicValue" value="2250"/>
 	<property name="SellableToTrader" value="true"/>
 	<property name="RequiredPower" value="15"/>
@@ -14824,7 +14824,7 @@
 	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
 	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
 	<property name="Material" value="Miron"/> <property name="Weight" value="1"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50000"/> <!-- STK resource -->
 	<property name="Weight" value="10"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -14956,7 +14956,7 @@
 	<property name="Extends" value="ammo762mmBulletBall"/>
 	<property name="DescriptionKey" value="LinkedAmmoDesc"/>
 	<property name="CustomIcon" value="50link"/>
-	<property name="Stacknumber" value="100"/>
+	<property name="Stacknumber" value="5000"/>
 	<property name="EconomicValue" value="64"/>
 	<property name="UnlockedBy" value="Ammunition smithing,50 BMG Schematic"/>
 	<property name="Damage_type" value="Piercing"/>

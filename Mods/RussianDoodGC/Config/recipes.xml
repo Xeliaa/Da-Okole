@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<append xpath="/recipes">
+		<recipe name="Grasscutter" count="1">
+			<ingredient name="resourceScrapIron" count="20"/>
+			<ingredient name="resourceWood" count="10"/>
+		</recipe>
+	</append>
+</configs>

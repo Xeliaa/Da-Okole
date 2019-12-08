@@ -1,0 +1,194 @@
+<configs>
+
+
+	<append xpath="/items">	
+	
+	<item name="Tablet"> 
+	<property name="DescriptionKey" value="tabletdesc"/>
+	<property name="Tags" value="tablet"/>
+	<property name="CustomIcon" value="3tablet"/>
+	<property name="HoldType" value="14"/>
+	<property name="Meshfile" value="#@modfolder:Resources/tablet.unity3d?Tablet"/>
+	<property name="Material" value="MmeleeToolKnifeMachete"/> <property name="Weight" value="6"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="2"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Group" value="Science"/>
+	<property name="ShowQuality" value="false"/>
+
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UseMeleeCrosshair" value="false"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="light_on"/>
+		<property name="Sound_reload" value=""/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+		<property name="UseMeleeCrosshair" value="false"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="unlocking"/>
+		<property name="Sound_reload" value=""/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>	
+	
+		<effect_group tiered="false">
+		<requirement name="!IsLocalPlayer"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenMap" transform_path="Screenm"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Screenc"/>
+	</effect_group>
+
+
+	<effect_group tiered="false">
+		<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="set" value="2"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOut" parentTransform="" localPos="0,0,0" localRot="0,0,0"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam2"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam3"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetPartActive" part="Cam" active="true"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="TabletSwap"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="ScreenMap" transform_path="Screenm"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Screenc"/>
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="$TabletCam" operation="set" value="1"/>
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="set" value="1"> -->
+		<!-- <requirement name="!CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/> -->
+		<!-- </triggered_effect> -->
+		
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="TabletSwap"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" target="self" buff="TabletCam"/>
+				<!-- <triggered_effect trigger="onSelfSecondaryActionStart" action="ModifyCVar" target="self" cvar="$CamActive" operation="set" value="!@CamActive"/> -->
+				<!-- <triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" target="self" buff="TabletSwap"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="add" value="1"> -->
+		<!-- <requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/> -->
+		<!-- <requirement name="NotHasBuff" buff="DelayTablet"/> -->
+		<!-- </triggered_effect> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="DelayTablet"/> -->
+	</effect_group>
+</item>
+
+
+	<item name="Smartphone"> 
+	<property name="DescriptionKey" value="phonedesc"/>
+	<property name="Tags" value="tablet"/>
+	<property name="CustomIcon" value="3smartphone"/>
+	<property name="HoldType" value="14"/>
+	<property name="Meshfile" value="#@modfolder:Resources/tablet.unity3d?Smartphone"/>
+	<property name="Material" value="MmeleeToolKnifeMachete"/> <property name="Weight" value="6"/>
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EconomicValue" value="2"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="Group" value="Science"/>
+	<property name="ShowQuality" value="false"/>
+
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UseMeleeCrosshair" value="false"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="light_on"/>
+		<property name="Sound_reload" value=""/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+		<!-- <requirement name="CVarCompare" cvar="$SCam" operation="Equals" value="1"/> -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Ranged"/>
+		<property name="Hitmask_override" value="Melee"/>
+		<property name="UsePowerAttackAnimation" value="false"/>
+		<property name="UseMeleeCrosshair" value="false"/>
+		<property name="Single_magazine_usage" value="false"/>
+		<property name="Magazine_items" value="ammoGasCan"/>
+		<property name="Bullet_material" value="metal"/>
+		<property name="Reload_time" value="4.1"/>
+		<property name="Sound_start" value=""/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="flashlight_toggle"/>
+		<property name="Sound_reload" value=""/>
+		<property name="SupportHarvesting" value="true"/>
+		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
+	</property>	
+	
+		<effect_group tiered="false">
+		<requirement name="!IsLocalPlayer"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenMap" transform_path="Screenm"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Flashlight"/>
+	</effect_group>
+
+
+	<effect_group tiered="false">
+		<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="TabletMarkers"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemoveBuff" target="self" buff="SmartphoneCam"/>
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="$SmartphoneScreen" operation="set" value="2"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOutSmartphone" parentTransform="" localPos="0,0,0" localRot="0,0,0"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam2"/>
+		<triggered_effect trigger="onSelfEquipStop" action="RemovePart" part="Cam3"/>
+		<triggered_effect trigger="onSelfEquipStart" action="SetPartActive" part="Cam" active="true"/>
+		<triggered_effect trigger="onSelfEquipStart" action="AddBuff" target="self" buff="SmartphoneSwap"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/>
+<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="true" parent_transform="ScreenMap" transform_path="Screenm"/>
+	<triggered_effect trigger="onSelfEquipStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Flashlight"/>
+	<triggered_effect trigger="onSelfEquipStop" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Flashlight"/>
+		<triggered_effect trigger="onSelfEquipStart" action="ModifyCVar" target="self" cvar="$SmartphoneCam" operation="set" value="1"/>
+		<!-- <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="set" value="1"> -->
+		<!-- <requirement name="!CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/> -->
+		<!-- </triggered_effect> -->
+		
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="SmartphoneSwap"/>
+				<triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" target="self" buff="SmartphoneUsage"/>
+				<triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" target="self" buff="SmartphoneCam"/>
+				<!-- <triggered_effect trigger="onSelfSecondaryActionStart" action="ModifyCVar" target="self" cvar="$CamActive" operation="set" value="!@CamActive"/> -->
+				<!-- <triggered_effect trigger="onSelfSecondaryActionStart" action="AddBuff" target="self" buff="TabletSwap"/> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionStart" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="add" value="1"> -->
+		<!-- <requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/> -->
+		<!-- <requirement name="NotHasBuff" buff="DelayTablet"/> -->
+		<!-- </triggered_effect> -->
+		<!-- <triggered_effect trigger="onSelfPrimaryActionStart" action="AddBuff" buff="DelayTablet"/> -->
+	</effect_group>
+</item>
+
+ </append>
+
+</configs>

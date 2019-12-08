@@ -1,0 +1,25 @@
+<configs>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawler']">
+	<property name="Tags" value="entity,zombie,crawl"/>
+</append>
+<append xpath="/entity_classes/entity_class[@name='zombieSteveCrawlerFeral']">
+	<property name="Tags" value="entity,zombie,crawl"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='vehicleMinibike']">
+	<property name="Tags" value="vehicle,minibike"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='vehicleBicycle']">
+	<property name="Tags" value="vehicle,bicycle"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='vehicleMotorcycle']">
+	<property name="Tags" value="vehicle,motorcycle"/>
+</append>
+
+<append xpath="/entity_classes/entity_class[@name='vehicle4x4Truck']">
+	<property name="Tags" value="vehicle,jeep"/>
+</append>
+
+</configs>

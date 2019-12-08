@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Faster Motorcycle, disable turbo" />
+		<Description value="increases both top and bottom speeds of the motorcycle and makes them the same" />
+		<Author value="R0bb0b" />
+		<Version value="1.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

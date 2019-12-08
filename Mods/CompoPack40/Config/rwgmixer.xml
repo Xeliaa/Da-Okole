@@ -1,0 +1,2219 @@
+<configs>
+
+<remove xpath="/rwgmixer/world"/>
+<remove xpath="/rwgmixer/rulesets"/>
+<remove xpath="/rwgmixer/cell_rules"/>
+<remove xpath="/rwgmixer/hub_rules"/>
+<remove xpath="/rwgmixer/wilderness_rules"/>
+<remove xpath="/rwgmixer/prefab_rules"/>
+<remove xpath="/rwgmixer/hub_layouts"/>
+<remove xpath="/rwgmixer/terrain_generators"/>
+<remove xpath="/rwgmixer/biome_generators"/>
+
+<append xpath="/rwgmixer">
+
+
+  <world ruleset="COMPOPACK_40" />
+  
+  <rulesets>
+    <ruleset name="vanillaSmall" terrain_generator="vanilla4k" biome_generator="vanilla4k">
+      <cell_rule name="default" prob="1" />
+    </ruleset>
+    <ruleset name="vanillaMedium" terrain_generator="vanilla8k" biome_generator="vanilla8k">
+      <cell_rule name="default" prob="1" />
+    </ruleset>
+    <ruleset name="vanillaLarge" terrain_generator="vanilla8k" biome_generator="vanilla8k">
+      <cell_rule name="default" prob="1" />
+    </ruleset>
+  </rulesets>
+
+ 
+
+	<cell_rules>
+		<cell_rule name="default">
+			<hub_rule name="asiatown" prob="0.2" />	
+			<hub_rule name="oldwesttown" prob="0.15" />	
+			<hub_rule name="newtown" prob="0.3" />
+			<hub_rule name="bigcitytown" prob="0.3" />
+			<hub_rule name="rustyruraltown" prob="0.3" />			
+			<hub_rule name="destroyedtown" prob="0.2" />
+			<hub_rule name="commontown1" prob="0.3"/>
+			<hub_rule name="commontown2" prob="0.3"/>
+			<hub_rule name="commontown3" prob="0.3"/>		
+			
+			<wilderness_rule name="default" prob="1"/>
+		</cell_rule>
+	</cell_rules>
+
+ 
+  
+
+
+
+	<hub_rules>
+	
+		<hub_rule name="asiatown">
+	        <hub_size value="200,200" />	
+			<prefab_rule name="asiatownPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+		
+		<hub_rule name="oldwesttown">
+	        <hub_size value="200,200" />		
+			<prefab_rule name="oldwestPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+
+		<hub_rule name="newtown">
+	        <hub_size value="300,400" />		
+			<prefab_rule name="newtownPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+
+		<hub_rule name="bigcitytown">
+	        <hub_size value="600,700" />		
+			<downtown_zone_size_perc value="0.45"/>
+			<prefab_rule name="bigcitytownPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+
+		<hub_rule name="rustyruraltown">
+	        <hub_size value="200,300" />		
+			<prefab_rule name="rustyruraltownPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+	
+		<hub_rule name="destroyedtown">
+	        <hub_size value="300,400" />		
+			<downtown_zone_size_perc value="0.45"/>
+			<prefab_rule name="destroyedtownPOIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+	
+		
+		<hub_rule name="commontown1">
+	        <hub_size value="300,400" />		
+			<downtown_zone_size_perc value="0.45"/>
+			<prefab_rule name="commontown1POIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+		
+
+		<hub_rule name="commontown2">
+	        <hub_size value="300,400" />		
+			<downtown_zone_size_perc value="0.45"/>
+			<prefab_rule name="commontown2POIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+
+
+		<hub_rule name="commontown3">
+	        <hub_size value="300,400" />		
+			<downtown_zone_size_perc value="0.45"/>
+			<prefab_rule name="commontown3POIS"/>
+			<street_gen level="5" length_multiplier="8">
+				<axiom value="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN][F-FF+FF[-T]FF+FF+FFFF-FF-FF[+I]FF-F[+N]" />
+				<rule char="T" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="I" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="N" replace_with="F-FF+FF[-T**]FF+FF+FFFF-FF-FF[+I**]FF-F[+N*K]" />
+				<rule char="K" replace_with="[FFCT][-FFT][+FFI][--FFN][+FFT][-FFI][++FN]" />
+				<alt_commands chars="T,I,N,K" />
+			</street_gen>
+		</hub_rule>		
+	
+
+
+	</hub_rules>
+
+
+  <wilderness_rules>
+    <wilderness_rule name="default">
+      <prefab_rule name="wildernessGroup" />
+    </wilderness_rule>
+  </wilderness_rules>
+
+
+<!-- ***************************************************** TOWN GROUPS ***************************************************** -->
+
+	<prefab_rules>
+	
+		<prefab_rule name="asiatownPOIS">
+			<prefab name="xcostum_Asia_Apartments(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_ChineseMarket(by_magoli)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Dojo(by_RedLotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_KhooKongsi(by_StompyNZ)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_KungFuSchool(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Livinghouse_sm_01(by_magoli)" min_count="1" max_count="3" />
+			<prefab name="xcostum_Asia_ModernCottage_01(by_StompyNZ)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Pagoda(by_RedLotus)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Pagoda_sm_01(by_magoli)" min_count="1" max_count="2" />			
+			<prefab name="xcostum_Asia_Restaurant(by_Redlotus)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_Swordmaster(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_Temple9Powermonks(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Asia_TempleMiddleVillage(by_SylenThunder)" min_count="1" max_count="1" />
+			<prefab name="xcostum_Asia_ChineseGate(by_XXX)" />
+			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="1" />
+			<prefab name="xcostum_Firedepartment(by_Guppycur)" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_trailer_01" max_count="2" />
+			<prefab name="xvanilla_trailer_02" max_count="2" />
+			<prefab name="xvanilla_trailer_03" max_count="2" />
+			<prefab name="xvanilla_trailer_04" max_count="2" />
+			<prefab name="xvanilla_trailer_park_01" max_count="1" />
+			<prefab name="xvanilla_store_book_lg_01" prob="0.6" max_count="1" />
+			<prefab name="xcostum_Flagstonemansion_sm(by_elitelex)" max_count="2" />			
+			<prefab name="xvanilla_store_pharmacy_sm_01" max_count="1" />
+			<prefab name="xvanilla_parking_lot_03" max_count="1"/>
+			<prefab name="xvanilla_park_01" max_count="1" />
+			<prefab name="xvanilla_park_02" max_count="1"/>			
+			<prefab name="xcostum_Firewatchtower(by_SciFiFlippa)" max_count="1" prob="0.1"/>			
+			
+			
+			<prefab rule="oldResidential_Garages" max_count="6" />
+			<prefab rule="gas_Station_Group" max_count="1"/>
+			<prefab rule="industrial_JunkyardsLots" max_count="4" />
+			<prefab rule="ruralGroup" max_count="6" />
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+		</prefab_rule>
+
+
+
+		<prefab_rule name="oldwestPOIS">
+			<prefab name="xvanilla_oldwest_business_01" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_02" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_03" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_04" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_05" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_06" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_07" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_08" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_business_09" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_10" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_11" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_12" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_business_13" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_business_14" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_coal_factory" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_gallows" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_strip_01" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_strip_02" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_strip_03" min_count="1" max_count="1" />			
+			<prefab name="xvanilla_oldwest_strip_04" min_count="1" max_count="1" />
+			<prefab name="xvanilla_oldwest_stables" min_count="1" max_count="2" />
+			<prefab name="xvanilla_oldwest_watertower" max_count="1" />
+			<prefab name="xvanilla_oldwest_church" min_count="1" max_count="2" />
+			<prefab name="xvanilla_oldwest_jail" min_count="1" max_count="2" />
+
+			<prefab name="xvanilla_remnant_oldwest_01" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_02" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_03" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_04" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_05" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_06" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_07" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_08" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_oldwest_09" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_burnt_01" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_burnt_02" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_burnt_03" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_burnt_04" min_count="1" max_count="1" />
+			<prefab name="xvanilla_remnant_mill_01" min_count="1" max_count="1" />
+
+			<prefab name="xvanilla_bar_sm_01" max_count="1" />
+			<prefab name="xcostum_oldwestBank(by_magoli)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" min_count="1" max_count="2" />			
+			<prefab name="xcostum_Library(by_War3zuk)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Trailerhousemix01" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix02" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix03" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix04" max_count="1" />
+			<prefab name="xvanilla_post_office_med_01" min_count="1" max_count="2" />
+			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Pawnshop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Wooden_Store(by_Guppycur)" min_count="1" max_count="2" />
+			<prefab name="xcostum_nationalparkLodge(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_deaddog_saloon(by_Libby)" min_count="1" max_count="2" />
+			<prefab name="xcostum_Jail_House(by_War3zuk)" max_count="1" />
+			<prefab name="xvanilla_business_burnt_01" max_count="1" />
+			<prefab name="xcostum_spanish_mission(by_The_Cure)" max_count="1" />
+			<prefab name="xvanilla_church_sm_01" min_count="1" max_count="2" />
+			<prefab name="xvanilla_funeral_home_01" min_count="1" max_count="2" />
+			
+		<!--	<prefab name="xvanilla_house_old_bungalow_03" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_04" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_06" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_07" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_09" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_10" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_11" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_bungalow_12" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_gambrel_02" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_gambrel_03" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_mansard_01" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_mansard_02" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_mansard_05" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_mansard_06" prob="0.18"  max_count="1" />
+			<prefab name="xvanilla_house_old_modular_05" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_modular_06" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_modular_08" prob="0.18" max_count="1" />			
+			<prefab name="xvanilla_house_old_pyramid_01" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_pyramid_02" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_pyramid_03" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_03" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_08" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_10" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_tudor_01" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_01" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_07" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_08" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_09" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_11" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_12" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_victorian_13" prob="0.18" max_count="1" />  -->
+
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="barns" min_count="1" max_count="3" />
+			<prefab rule="crop_Feilds" min_count="1" max_count="3" />			
+			<prefab rule="oldResidential_Trailers" min_count="1" max_count="4" />
+			<prefab rule="waterTowers_Ponds" max_count="3" />			
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" max_count="5" />
+			<prefab rule="detailFillerGroup" prob="0.05"/>	
+		
+		</prefab_rule>
+
+
+
+		<prefab_rule name="newtownPOIS">
+			<prefab name="xcostum_Apartment(by_Spider)" max_count="1" />
+			<prefab name="xcostum_Restaurant(by_Gertle)" max_count="1" />
+			<prefab name="xcostum_house_number14(by_Kam)" max_count="1" />
+			<prefab name="xcostum_Redhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_housewhiteblue(by_owl79)" max_count="1" />
+			<prefab name="xcostum_House_AF01P(19x35)(by_Nodabba)" max_count="1" />
+			<prefab name="xcostum_House_AF02P(17x16)(by_Nodabba)" max_count="1" />			
+			<prefab name="xcostum_House_AF03P(35x54)(by_Nodabba)" max_count="1" />			
+			<prefab name="xcostum_House_AF04P(15x15)(by_Nodabba)" max_count="1" />
+			<prefab name="xcostum_House_AF05P(14x19)(by_Nodabba)" max_count="1" />
+			<prefab name="xcostum_Car_Dealership_new(by_p1ut0nium)" max_count="1" />
+			<prefab name="xcostum_StripClub(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_Nicehouse(by_BigC90210)" max_count="1" />			
+			<prefab name="xcostum_house_modern_01(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_02(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_03(by_Kam)" max_count="1" />
+			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="1" />
+			<prefab name="xcostum_Bavarian_Bowse_Shop(by_magoli)" max_count="1" />			
+			<prefab name="xcostum_RedCatDiner(by_Najax)" max_count="1" />
+			<prefab name="xcostum_McDowell_restaurant(by_LazMan)" max_count="1" />
+			<prefab name="xcostum_seafoodshop(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_Multi_Storey(by_War3zuk)" max_count="1" />			
+			<prefab name="xcostum_Public_Pool(by_Warsaken)" max_count="1" />			
+			<prefab name="xcostum_Park(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" />
+			<prefab name="xcostum_rollerskatedisco(by_magoli)" max_count="1" />			
+			<prefab name="xvanilla_fire_station_02" min_count="1" max_count="1"/>
+			<prefab name="xvanilla_store_pawn_01" max_count="1" />
+			<prefab name="xvanilla_bar_stripclub_01" max_count="1" />
+			<prefab name="xcostum_Cell_Tower(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_Info_Center(by_LuckyStar)" max_count="1" />	
+			<prefab name="xcostum_LittleLeagueBaseball(by_Curmudgeon)" max_count="1" />
+			<prefab name="xcostum_donut_shop(by_bigstep70)" max_count="1" />			
+			<prefab name="xcostum_myhouse(by_magoli)" max_count="1" />
+			<prefab name="xcostum_crematory(by_magoli)" max_count="1" />			
+			<prefab name="xcostum_FarmerJoesNursery(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_modernvilla(by_owl79)" max_count="1" />
+			<prefab name="xcostum_Villa(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Redhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Hostel(by_Tom)" max_count="1" />	
+			<prefab name="xcostum_Experimentalhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Power_Station(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_PeerCafe(by_Stallionsden)" max_count="1" />
+			<prefab name="xvanilla_house_old_spanish_01" max_count="1" />			
+			<prefab name="xcostum_IZEA_market(by_Genosis)" max_count="1" />
+			<prefab name="xcostum_MonsterFlexGym(by_Swolk)" max_count="1" />
+			<prefab name="xcostum_swimmingbath(by_magoli)" max_count="1" prob="0.3"/>
+			
+			<prefab rule="residentialNew_Bldgs" max_count="8"/>
+			<prefab rule="residentialNew_Schools" min_count="1" max_count="1"/>
+			<prefab rule="gas_Station_Group" min_count="1" max_count="1"/>
+			<prefab rule="diner_FastfoodGroup" max_count="2"/>
+			<prefab rule="storeGroup" min_count="1" max_count="4"/>
+			<prefab rule="ruralGroup" max_count="3" />			
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+			<prefab rule="oldResidential_Garages" max_count="3" />
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="oldResidential_Trailers" max_count="1" />
+			<prefab rule="oldResidential_Bldgs" max_count="3" />			
+		</prefab_rule>
+
+
+
+
+		<prefab_rule name="bigcitytownPOIS">
+			<prefab name="xcostum_Apartments_Curtilage_Playground(by_magoli)" max_count="1" />
+			<prefab name="xcostum_3BlockStores(by_Leo_Liuos)" max_count="1" />
+			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" max_count="1" />			
+			<prefab name="xcostum_Courthouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="1" />
+			<prefab name="xcostum_bridgesideapartmentsA16(by_Batman)" max_count="1" />
+			<prefab name="xcostum_CasinoANKH(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Apartment(by_Gertle)" max_count="1" />
+			<prefab name="xcostum_Apartments(by_Batman)" max_count="1" />
+			<prefab name="xcostum_ShoppingCenter_Galleria(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_Spirallibrary(by_Tom)" max_count="1" />
+			<prefab name="xcostum_stripclub(by_magoli)" max_count="1" />
+			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Shoppingcenter(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_Gallery(by_TopMinder_and_Pille)" max_count="1" />
+			<prefab name="xcostum_UnionStation(by_BuLLeTZ)" max_count="1" />
+			<prefab name="xcostum_Bank(by_Limodor)" max_count="1" />
+			<prefab name="xcostum_Roundhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Brownstones_House(by_Laz_Man)" max_count="1" />			
+			<prefab name="xcostum_MultiStore(by_ANT)" max_count="1" />
+			<prefab name="xcostum_SuperStore(by_Volar)" max_count="1" />
+			<prefab name="xcostum_Haulier_lg(by_Limodor)" max_count="1" />			
+			<prefab name="xcostum_Office(by_Wsiegel)" max_count="1" />			
+			<prefab name="xcostum_CityPark(by_Spider)" max_count="1" />	
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
+			<prefab name="xcostum_Store_Automotive_sm(by_Laz_Man)" max_count="1" />	
+			<prefab name="xvanilla_business_old_01" max_count="1" />
+			<prefab name="xvanilla_business_old_02" max_count="1" />
+			<prefab name="xvanilla_business_old_03" max_count="1" />
+			<prefab name="xvanilla_business_old_04" max_count="1" />
+			<prefab name="xvanilla_business_old_05" max_count="1" />
+			<prefab name="xvanilla_business_old_06" max_count="1" />
+			<prefab name="xvanilla_business_old_07" max_count="1" />
+			<prefab name="xvanilla_business_old_08" max_count="1" />
+			<prefab name="xvanilla_business_strip_old_01" max_count="1"/>
+			<prefab name="xvanilla_business_strip_old_02" max_count="1"/>
+			<prefab name="xvanilla_business_strip_old_03" max_count="1"/>
+			<prefab name="xvanilla_business_strip_old_04" max_count="1"/>			
+			<prefab name="xcostum_Hightop(by_Curbolt)" max_count="1" />
+			<prefab name="xvanilla_parking_garage_01"  max_count="1" />
+			<prefab name="xvanilla_theater_01"  max_count="1"/>
+			<prefab name="xvanilla_theatre_01"  max_count="1"/>			
+			<prefab name="xvanilla_hotel_ostrich" max_count="1"/>
+			<prefab name="xvanilla_apartment_adobe_red_5_flr" max_count="1" />
+			<prefab name="xvanilla_apartment_brick_6_flr" max_count="1" />
+			<prefab name="xvanilla_skyscraper_01" max_count="1" />
+			<prefab name="xvanilla_skyscraper_02" max_count="1" />
+			<prefab name="xvanilla_skyscraper_03" max_count="1" />
+			<prefab name="xvanilla_skyscraper_04" max_count="2" />
+			<prefab name="xcostum_Skycpraper(by_Peppino)" max_count="1" />
+			<prefab name="xcostum_SkyDiner(by_Tom)" max_count="1" />			
+			<prefab name="xvanilla_business_burnt_02" max_count="1" />
+			<prefab name="xcostum_WaterPark1(by_NAGGcommunity)" max_count="1" />
+
+			<prefab rule="gas_Station_Group" max_count="1"/>
+			<prefab rule="industrial_Bldgs" max_count="4" />
+			<prefab rule="industrial_JunkyardsLots" max_count="1" />
+			<prefab rule="industrial_MpWasteBldgs" max_count="1" />
+			<prefab rule="industrial_RubbleBldgs" max_count="1" />	
+			<prefab rule="diner_FastfoodGroup" max_count="1"/>
+			<prefab rule="storeGroup" max_count="2"/>
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+		</prefab_rule>
+
+
+
+		<prefab_rule name="rustyruraltownPOIS">
+			<prefab name="xcostum_TruckStop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_TruckStop_Garage(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_TruckStop_Roadhouse(by_stallionsden)" max_count="1" />
+			<prefab name="xcostum_Rangercabin(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Motel(by_Limodor)" max_count="1" />
+			<prefab name="xvanilla_cornfield_med" max_count="1" />			
+			<prefab name="xvanilla_cornfield_sm" max_count="1" />
+			<prefab name="xvanilla_potatofield_sm" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix01" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix02" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix03" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix04" max_count="1" />
+			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_Storage(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_RestArea_Desert(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_ZombieZoo(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_RaceTrack(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
+			<prefab name="xcostum_shootingrange(by_magoli)" max_count="1" />
+			<prefab name="xcostum_LakesideLodge(by_Kam)" max_count="1" />
+			<prefab name="xcostum_Public_Pool(by_Warsaken)" max_count="1" />
+			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" />
+			<prefab name="xcostum_Prison1(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_Asylum(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" />
+			<prefab name="xcostum_nationalparkLodge(by_Laz_Man)" max_count="1" />
+			<prefab name="xcostum_TittyTwister(by_Sorrowthief)" max_count="1" />
+			<prefab name="xcostum_Farm(by_BigC90210)" max_count="1" />		
+			<prefab name="xcostum_Wooden_Store(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_oldwestBank(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Jail_House(by_War3zuk)" max_count="1" />			
+			<prefab name="xcostum_Library(by_War3zuk)" max_count="1" />
+			<prefab name="xcostum_bowlingcenter(by_magoli)" max_count="1" />
+			<prefab name="xcostum_ArtGallery(by_Wsiegel)" max_count="1"/>
+			<prefab name="xcostum_TheSect_Followers-of-M(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Trailerhousemix03(by_SandyBeaches)" max_count="1" />			
+			<prefab name="xcostum_Trailerhousemix04(by_SandyBeaches)" max_count="1" />
+			<prefab name="xcostum_Trailer(by_Sorrowthief)" max_count="1" />			
+			<prefab name="xcostum_Farm(by_BigC90210)" max_count="1" />
+			<prefab name="xcostum_Shrub_Conservatory(by_Werewulfen)" max_count="1" />
+			<prefab name="xcostum_Warehouse(by_Illidua)" max_count="1" />			
+			<prefab name="xvanilla_lodge_01" max_count="1" />
+			<prefab name="xcostum_Adam_House_Z1(by_DMC)" max_count="1" />
+			<prefab name="xcostum_Dave_Home_2(by_DMC)" max_count="1" />
+
+			<prefab name="xvanilla_remnant_house_01" max_count="1" />
+			<prefab name="xvanilla_remnant_house_02" max_count="1" />
+			<prefab name="xvanilla_remnant_house_03" max_count="1" />
+			<prefab name="xvanilla_remnant_house_04" max_count="1" />
+			<prefab name="xvanilla_remnant_house_05" max_count="1" />
+			<prefab name="xvanilla_remnant_house_06" max_count="1" />
+			<prefab name="xvanilla_remnant_house_07" max_count="1" />
+			<prefab name="xvanilla_remnant_house_08" max_count="1" />
+			<prefab name="xvanilla_remnant_house_09" max_count="1" />
+			<prefab name="xvanilla_remnant_house_10" max_count="1" />			
+
+			<prefab rule="gas_Station_Group" max_count="1"/>
+			<prefab rule="industrial_Bldgs" max_count="2" />
+			<prefab rule="industrial_JunkyardsLots" max_count="2" />
+			<prefab rule="industrial_MpWasteBldgs" max_count="1" />
+			<prefab rule="industrial_RubbleBldgs" max_count="1" />
+			<prefab rule="diner_FastfoodGroup" max_count="1"/>
+			<prefab rule="storeGroup" max_count="2"/>
+			<prefab rule="ruralGroup" max_count="7" />
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" max_count="2" />
+			<prefab rule="oldResidential_Garages" max_count="2" />
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="oldResidential_Trailers" max_count="4" />
+			<prefab rule="oldResidential_Bldgs" max_count="10" />			
+		</prefab_rule>
+
+
+
+
+		<prefab_rule name="destroyedtownPOIS">
+			<prefab name="xvanilla_bombshelter_lg_01" max_count="2"/>
+			<prefab name="xvanilla_bombshelter_md_01" max_count="2"/>			
+			<prefab name="xcostum_collapsed_bldg_01(by_BuLLeTZ)" max_count="2" />	
+			<prefab name="xcostum_house_number14(by_Kam)" max_count="2" />
+			<prefab name="xcostum_House_AF02R(19x35)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF03D(37x54)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF03R(37x53)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF04D(15x15)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF04R(15x15)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF05D(14x17)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF05R(14x17)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF06D(29x30)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_House_AF06R(29x30)(by_Nodabba)" max_count="2" />
+			<prefab name="xcostum_drivethru(by_bigstep70)" max_count="1" />			
+			<prefab name="xcostum_Mine1(by_NAGG_DaphyDuck91)" max_count="1" />
+
+			<prefab name="xvanilla_remnant_burnt_05" max_count="1" />	
+			<prefab name="xvanilla_remnant_burnt_06" max_count="1" />	
+			<prefab name="xvanilla_remnant_burnt_07" max_count="1" />	
+			<prefab name="xvanilla_remnant_burnt_08" max_count="1" />	
+			<prefab name="xvanilla_remnant_burnt_09" max_count="1" />				
+			<prefab name="xvanilla_remnant_burnt_deco_01" max_count="1" />
+			<prefab name="xvanilla_remnant_burnt_deco_02" max_count="1" />
+
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="2" />
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" />			
+			<prefab rule="industrial_JunkyardsLots" />
+			<prefab rule="industrial_MpWasteBldgs" />
+			<prefab rule="industrial_RubbleBldgs" />
+			<prefab rule="detailFillerGroup" prob="0.05"/>			
+		</prefab_rule>
+
+
+
+		<prefab_rule name="commontown1POIS">
+			<prefab name="xvanilla_carlot_01" max_count="1"/>			
+			<prefab name="xcostum_house01(byGuppycur)" max_count="1" />
+			<prefab name="xcostum_house02(byGuppycur)" max_count="1" />
+			<prefab name="xcostum_house03(byGuppycur)" max_count="1" />
+			<prefab name="xvanilla_parking_lot_01" max_count="1" />			
+			<prefab name="xvanilla_fire_station_01" max_count="1"/>			
+			<prefab name="xvanilla_hotel_roadside_01" max_count="1"/>
+			<prefab name="xvanilla_courthouse_med_01" max_count="1" />
+			<prefab name="xvanilla_prison_01" max_count="1" />
+			<prefab name="xvanilla_bar_theater_01" max_count="1" />			
+			<prefab name="xvanilla_post_office_med_01" max_count="1" />
+			<prefab name="xcostum_storeset1(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_moestaverne(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Church(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Paintballarena(by_Jackelmyer)" max_count="1" />
+			<prefab name="xcostum_townsquare(by_snake0567)" max_count="1" />
+			<prefab name="xcostum_house4(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_house7(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_kuldbrickhouse(by_Kuldiin)" max_count="1" />			
+			<prefab name="xcostum_Guildhall(ex_vanilla_ornate01)" max_count="1" />
+			<prefab name="xcostum_House(by_LastI)" max_count="1" />
+			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_Manorhouse(by_WereWulfen)" max_count="1" />
+			<prefab name="xcostum_simpsonshouse(by_magoli)" max_count="1" />
+			<prefab name="xcostum_McDonalds(by_BigC90210)" max_count="1" />
+			<prefab name="xcostum_kwikemart(by_magoli)" max_count="1" />
+			<prefab name="xcostum_tv_store(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Hydro_Plant(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_Blue_House(by_TopMinder_and_Pille)" max_count="1" />
+
+			<prefab rule="residentialNew_Bldgs" max_count="8"/>
+			<prefab rule="residentialNew_Schools" max_count="1"/>
+			<prefab rule="gas_Station_Group" max_count="1"/>
+			<prefab rule="industrial_Bldgs" max_count="2" />
+			<prefab rule="industrial_JunkyardsLots" max_count="2" />
+			<prefab rule="industrial_MpWasteBldgs" max_count="1" />
+			<prefab rule="industrial_RubbleBldgs" max_count="1" />
+			<prefab rule="diner_FastfoodGroup" max_count="1"/>
+			<prefab rule="storeGroup" max_count="2"/>
+			<prefab rule="ruralGroup" max_count="3" />			
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" max_count="2" />
+			<prefab rule="oldResidential_Garages" max_count="3" />
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="oldResidential_Trailers" max_count="1" />
+			<prefab rule="oldResidential_Bldgs" max_count="10" />			
+		</prefab_rule>
+
+
+
+
+		<prefab_rule name="commontown2POIS">
+			<prefab name="xvanilla_carlot_02" max_count="1"/>
+			<prefab name="xcostum_house04(byGuppycur)" max_count="1" />
+			<prefab name="xcostum_house05(byGuppycur)" max_count="1" />
+			<prefab name="xcostum_Stonehouse01(by_Tom)" max_count="1" />			
+			<prefab name="xvanilla_parking_lot_02" max_count="1" />			
+			<prefab name="xcostum_Firehouse(by_Warsaken)" max_count="1" />
+			<prefab name="xvanilla_hotel_roadside_02" max_count="1"/>
+			<prefab name="xvanilla_courthouse_med_02" max_count="1" />			
+			<prefab name="xvanilla_post_office_sm_01" max_count="1" />			
+			<prefab name="xcostum_CountyJail(by_Volar)" max_count="1" />
+			<prefab name="xcostum_storeset2(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Cantine(by_Limodor)" max_count="1" />	
+			<prefab name="xcostum_FuneralHome(by_Wsiegel)" max_count="1" />	
+			<prefab name="xvanilla_church_sm_01" max_count="1" />
+			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="1" />
+			<prefab name="xcostum_kuldlargehouse(by_Kuldiin)" max_count="1" />
+			<prefab name="xcostum_Warehouse(by_Batman)" max_count="1" />
+			<prefab name="xcostum_Haulier_md(by_Limodor)" max_count="1" />
+			<prefab name="xcostum_Woodhouse(by_Tom)" max_count="1" />
+			<prefab name="xcostum_Orphanage(ex_vanilla_ornate02)" max_count="1" />
+			<prefab name="xcostum_Alms_house(ex_vanilla_ornate03)" max_count="1" />
+			<prefab name="xcostum_WulftownA(by_WereWulfen)" max_count="1" />
+			<prefab name="xcostum_House(by_LastI)" max_count="1" />
+			<prefab name="xcostum_Bank(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Stripmall(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_Plant(by_Wsiegel)" max_count="1" />
+			<prefab name="xcostum_Windowfactory(by_magoli)" max_count="1" />			
+			<prefab name="xcostum_AmityvilleHorrorHouse(by_Swolk)" max_count="1" />
+			<prefab name="xcostum_DriveIn(by_NAGG_DaphyDuck91)" max_count="1" />
+
+			<prefab rule="residentialNew_Bldgs" max_count="8"/>
+			<prefab rule="residentialNew_Schools" max_count="1"/>
+			<prefab rule="gas_Station_Group" max_count="1"/>
+			<prefab rule="industrial_Bldgs" max_count="2" />
+			<prefab rule="industrial_JunkyardsLots" max_count="2" />
+			<prefab rule="industrial_MpWasteBldgs" max_count="1" />
+			<prefab rule="industrial_RubbleBldgs" max_count="1" />
+			<prefab rule="diner_FastfoodGroup" max_count="1"/>
+			<prefab rule="storeGroup" max_count="2"/>
+			<prefab rule="ruralGroup" max_count="3" />			
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" max_count="2" />
+			<prefab rule="oldResidential_Garages" max_count="3" />
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="oldResidential_Trailers" max_count="1" />
+			<prefab rule="oldResidential_Bldgs" max_count="10" />			
+		</prefab_rule>
+
+
+
+
+		<prefab_rule name="commontown3POIS">
+			<prefab name="xvanilla_carlot_03_temp" max_count="1"/>		
+			<prefab name="xvanilla_skate_park_01"  max_count="1"/>
+			<prefab name="xcostum_Car_Dealership_old(by_P1ut0nium)" max_count="1" />
+			<prefab name="xcostum_house2(by_Curbolt)" max_count="1" />
+			<prefab name="xcostum_house3(by_Curbolt)" max_count="1" />			
+			<prefab name="xvanilla_parking_lot_03" max_count="1" />			
+			<prefab name="xcostum_Firestation(by_Slick50)" max_count="1" />
+			<prefab name="xvanilla_hotel_new_01" max_count="1"/>
+			<prefab name="xvanilla_mp_waste_bldg_governer_08" max_count="1"/>
+			<prefab name="xvanilla_police_station1" max_count="1"/>			
+			<prefab name="xcostum_MiniMall(by_Spider)" max_count="1" />			
+			<prefab name="xcostum_TittyTwister(by_Sorrowthief)" max_count="1" />
+			<prefab name="xcostum_Dark_Mausoleum32(by_LuckyStar)" max_count="1" />			
+			<prefab name="xvanilla_funeral_home_01" max_count="1" />			
+			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="1" />
+			<prefab name="xcostum_cityhouse3(by_Kam)" max_count="1" />
+			<prefab name="xcostum_exfarmstead(by_owl79)" max_count="1" />
+			<prefab name="xcostum_townvilla(by_owl79)" max_count="1" />
+			<prefab name="xcostum_Cliff_House(by_War3zuk)" max_count="1" />
+			<prefab name="xcostum_TownHall(by_Guppycur)" max_count="1" />
+			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" />
+			<prefab name="xcostum_cityhouse3(by_Kam)" max_count="1" />			
+			<prefab name="xcostum_housewhiteblue(by_owl79)" max_count="1" />
+			<prefab name="xcostum_pistol_gunshop(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Bike_Shop(by_War3zuk)" max_count="1" />			
+			<prefab name="xcostum_CurlingCenter(by_magoli)" max_count="1" />
+			<prefab name="xcostum_Public_Pool(by_Warsaken)" max_count="1" />
+
+			<prefab rule="residentialNew_Bldgs" max_count="8"/>
+			<prefab rule="residentialNew_Schools" max_count="1"/>
+			<prefab rule="gas_Station_Group" max_count="1"/>			
+			<prefab rule="industrial_Bldgs" max_count="2" />
+			<prefab rule="industrial_JunkyardsLots" max_count="2" />
+			<prefab rule="industrial_MpWasteBldgs" max_count="1" />
+			<prefab rule="industrial_RubbleBldgs" max_count="1" />
+			<prefab rule="diner_FastfoodGroup" max_count="1"/>
+			<prefab rule="storeGroup" max_count="2"/>
+			<prefab rule="ruralGroup" max_count="3" />			
+			<prefab rule="detailFillerGroup" prob="0.05"/>
+			<prefab rule="oldResidential_abandoned_Burnt_Homes" max_count="2" />
+			<prefab rule="oldResidential_Garages" max_count="3" />
+			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
+			<prefab rule="oldResidential_Trailers" max_count="1" />
+			<prefab rule="oldResidential_Bldgs" max_count="10" />			
+		</prefab_rule>
+
+
+
+	
+		<prefab_rule name="wildernessGroup">
+			<prefab name="settlement_trader_05" max_count="1" min_repeat_distance="500" />
+			<prefab name="settlement_trader_04" max_count="1" min_repeat_distance="500" />
+			<prefab name="settlement_trader_03" max_count="1" min_repeat_distance="500" />
+			<prefab name="settlement_trader_02" max_count="1" min_repeat_distance="500" />
+			<prefab name="settlement_trader_01" max_count="1" min_repeat_distance="500" />
+			<prefab name="xcostum_Lost_Joels(pseudo-trader)(by_DMC)" max_count="1" min_repeat_distance="500" />			
+	
+			<prefab rule="W_POIs_common" prob="0.6"/>
+			<prefab rule="W_POIs_rare" prob="0.4"/>
+			<prefab rule="W_POIs_superrare" prob="0.1"/>
+		</prefab_rule>		
+	
+		<prefab_rule name="W_POIs_common">
+			<prefab rule="Cabins" max_count="1" />
+			<prefab name="xcostum_Polarstation(by_magoli)" max_count="1" prob="0.4" />			
+			<prefab name="xcostum_WWHouse(by_IceJudge)" max_count="1" prob="0.4"/>
+			<prefab name="xcostum_Safehouse(by_Limodor)" max_count="1" prob="0.4"/>
+			<prefab name="xcostum_wastelandtrain(by_Horst)" max_count="1" prob="0.4" />
+			<prefab name="xcostum_FuneralParlor(by_Zombieman)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_Villa(by_Limodor)" max_count="1" prob="0.4"/>		
+			<prefab name="xcostum_House(by_ShoNuff)" max_count="1" prob="0.4" />
+			<prefab name="xcostum_NSiteMissileSilo(byEphoie)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_TheMill(by_MoNKeYest1)" max_count="1" prob="0.1" />
+			<prefab name="xcostum_Trailerhousemix03(by_SandyBeaches)" max_count="1" />			
+			<prefab name="xcostum_Trailerhousemix04(by_SandyBeaches)" max_count="1" />
+			<prefab name="xcostum_hideout(by_TopMinder_and_Pille)" max_count="1" />
+			<prefab rule="Caves" max_count="1" />			
+			<prefab name="xcostum_army_camp(universal)" max_count="1" />		
+			<prefab name="xvanilla_ranger_station1" prob="0.2" max_count="1" />
+			<prefab rule="SurvivorSites" max_count="1" />
+			<prefab name="xcostum_Cabin(by_Sudo)" max_count="1" prob="0.4"/>		
+			<prefab name="xcostum_PersianMansion(by_saeid)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_rave_factory(by_orak)" max_count="1" />			
+		</prefab_rule>
+
+		
+		<prefab_rule name="W_POIs_rare">
+			<prefab name="xcostum_Nuket0wn(by_Limodor)" max_count="1" prob="0.3"/>
+			<prefab name="xcostum_Recycling(by_Limodor)" max_count="1" prob="0.3" />			
+			<prefab name="xcostum_strandresort(by_magoli)" max_count="1" prob="0.3"/>
+			<prefab name="xcostum_LumberMill(by_IceJudge)" max_count="1" prob="0.3"/>
+    		<prefab name="xcostum_Tavern(by_Limodor)" max_count="1" prob="0.3"/>
+			<prefab name="xcostum_icestadium(by_magoli)" max_count="1" prob="0.3"/>
+			<prefab name="xcostum_H0bbit(by_Limodor)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_Chernobyl(by_Maz_Burt)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_MiniBikeRaceTrack(by_Spider)" max_count="1" prob="0.3" />	
+			<prefab name="xcostum_nepa_base(by_Eihwaz)" max_count="1" prob="0.2" />	
+			<prefab name="xcostum_ancient_tomb(by_bigstep70)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_wastelandtrain(by_incrediblejimmy)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_homestead(by_Mana)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_ColonyShip(by_NAGGcommunity)" max_count="1" prob="0.3" />			
+			<prefab name="xcostum_Nuclear_Powerplant(by_Rocky)" max_count="1" prob="0.3" />
+			<prefab name="xcostum_timbershop(by_magoli)" max_count="1" prob="0.3"/>		
+			<prefab name="xcostum_Science_lab(by_kinklade)" max_count="1" prob="0.2"/>
+			<prefab name="xcostum_minigolf(by_magoli)" max_count="1" prob="0.1" />	
+			<prefab name="xcostum_AltenburgCastle(by_Horst)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_powerplant(byKam)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_spanish_mission(by_The_Cure)" max_count="1" prob="0.2" />	
+			<prefab name="xcostum_QuietPinesSpecial(by_hernan)" max_count="1" prob="0.2" />
+		</prefab_rule>		
+		
+	
+		<prefab_rule name="W_POIs_superrare">
+			<prefab name="xcostum_ZHigh(by_Volar)" max_count="1" prob="0.4"/>
+			<prefab name="xcostum_RocketLaunchPad(by_Saeid)" max_count="1" prob="0.3"/>
+			<prefab name="xcostum_CrashedAirplane(by_LazMan)" max_count="1" prob="0.4"/>
+			<prefab name="xcostum_TV_Tower_Restaurant(by_magoli)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_WulftownCD(by_WereWulfen)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_ResidentEvilMansion(by_magoli)" prob="0.4" max_count="1" />
+			<prefab name="xcostum_TheSphinx3(by_Andyjoki)" prob="0.2" max_count="1" />	
+			<prefab name="xcostum_ThemePark(by_stallionsden)" prob="0.2" max_count="1" />
+			<prefab name="xcostum_research_vessel(by_Pille)" prob="0.3" max_count="1" />			
+		</prefab_rule>		
+		
+
+
+
+<!-- ************************************************** Vanilla Groups *************************************************** -->
+
+
+		<prefab_rule name="ruralGroup">
+			<prefab rule="crop_Feilds" max_count="2"/>
+			<prefab rule="barns" max_count="2"/>
+			<prefab rule="waterTowers_Ponds" max_count="1" />
+			<prefab rule="armyCamps" max_count="2"/>
+		</prefab_rule>
+
+		
+		<prefab_rule name="detailFillerGroup">
+			<prefab name="street_light_01" prob="0.25"/>
+			<prefab name="street_light_02" prob="0.25"/>
+			<prefab name="sign_slow"/>
+			<prefab name="sign_speed_25"/>
+			<prefab name="sign_speed_35"/>
+			<prefab name="sign_speed_45"/>
+			<prefab name="sign_73_north"/>
+			<prefab name="sign_73_south"/>
+			<prefab name="sign_albuquerque"/>
+			<prefab name="sign_phoenix"/>
+			<prefab name="tree_burntpine_01"/>
+			<prefab name="tree_burntpine_02"/>
+			<prefab name="tree_burntpine_03"/>
+		</prefab_rule>
+		
+		
+		<prefab_rule name="residentialNew_Bldgs">
+			<prefab name="xvanilla_house_old_bungalow_03" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_construction_01" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_construction_02" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_02" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_03" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_04" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_07" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_old_ranch_08" prob="0.18" max_count="1" />
+			<prefab name="xvanilla_house_modern_01" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_02" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_03" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_04" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_05" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_06" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_07" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_08" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_09" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_10" prob="0.21" max_count="1" />
+			<prefab name="xvanilla_house_modern_11" prob="0.21" max_count="1" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="residentialNew_Schools">
+			<prefab name="xvanilla_school_01" prob="0.25" max_count="1" />
+			<prefab name="xvanilla_school_k6_01" prob="0.25" max_count="1" />
+			<prefab name="xvanilla_school_daycare_01" prob="0.25" max_count="1" />
+			<prefab name="xvanilla_football_stadium" prob="0.05" max_count="1" />
+			<prefab name="xcostum_School(by_LazMan)" prob="0.25" max_count="1" />			
+		</prefab_rule>
+
+	
+		<prefab_rule name="oldResidential_Bldgs">
+			<prefab name="xvanilla_house_old_bungalow_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_03" prob="0.18"/>			
+			<prefab name="xvanilla_house_old_bungalow_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_06" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_07" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_08" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_09" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_10" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_11" prob="0.18"/>
+			<prefab name="xvanilla_house_old_bungalow_12" prob="0.18"/>
+			<prefab name="xvanilla_house_old_gambrel_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_gambrel_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_gambrel_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_mansard_06" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_06" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_07" prob="0.18"/>
+			<prefab name="xvanilla_house_old_modular_08" prob="0.18"/>
+			<prefab name="xvanilla_house_old_pyramid_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_pyramid_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_pyramid_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_pyramid_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_pyramid_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_06" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_07" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_08" prob="0.18"/>			
+			<prefab name="xvanilla_house_old_ranch_09" prob="0.18"/>
+			<prefab name="xvanilla_house_old_ranch_10" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_tudor_06" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_01" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_02" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_03" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_04" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_05" prob="0.18"/>
+			<prefab name="xvanilla_house_old_victorian_06" prob="0.19"/>
+			<prefab name="xvanilla_house_old_victorian_07" prob="0.2"/>
+			<prefab name="xvanilla_house_old_victorian_08" prob="0.21"/>
+			<prefab name="xvanilla_house_old_victorian_09" prob="0.22"/>
+			<prefab name="xvanilla_house_old_victorian_10" prob="0.23"/>
+			<prefab name="xvanilla_house_old_victorian_11" prob="0.24"/>
+			<prefab name="xvanilla_house_old_victorian_12" prob="0.25"/>
+			<prefab name="xvanilla_house_old_victorian_13" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="oldResidential_abandoned_Burnt_Homes">
+			<prefab name="xvanilla_abandoned_house_01" prob="0.18"/>
+			<prefab name="xvanilla_abandoned_house_02" prob="0.18"/>
+			<prefab name="xvanilla_abandoned_house_03" prob="0.18"/>
+			<prefab name="xvanilla_abandoned_house_04" prob="0.18"/>
+			<prefab name="xvanilla_abandoned_house_05" prob="0.18"/>
+			<prefab name="xvanilla_abandoned_house_06" prob="0.19"/>
+			<prefab name="xvanilla_abandoned_house_07" prob="0.2"/>
+			<prefab name="xvanilla_abandoned_house_08" prob="0.21"/>
+			<prefab name="xvanilla_house_burnt_01" prob="0.22"/>
+			<prefab name="xvanilla_house_burnt_02" prob="0.22"/>
+			<prefab name="xvanilla_house_burnt_03" prob="0.22"/>
+			<prefab name="xvanilla_house_burnt_04" prob="0.22"/>
+			<prefab name="xvanilla_house_burnt_05" prob="0.22"/>
+			<prefab name="xvanilla_house_burnt_06" prob="0.22"/>			
+		</prefab_rule>
+		
+		<prefab_rule name="oldResidential_Trailers">
+			<prefab name="xvanilla_trailer_01" prob="0.2" />
+			<prefab name="xvanilla_trailer_02" prob="0.2" />
+			<prefab name="xvanilla_trailer_03" prob="0.2" />
+			<prefab name="xvanilla_trailer_04" prob="0.2" />
+			<prefab name="xvanilla_trailer_park_01" prob="0.2" />
+		</prefab_rule>
+		
+		<prefab_rule name="oldResidential_Garages">
+			<prefab name="xvanilla_garage_01" prob="0.2" />
+			<prefab name="xvanilla_garage_02" prob="0.2" />
+			<prefab name="xvanilla_garage_03" prob="0.2" />
+			<prefab name="xvanilla_garage_04" prob="0.2" />
+			<prefab name="xvanilla_garage_05" prob="0.2" />
+			<prefab name="xvanilla_garage_06" prob="0.2" />
+			<prefab name="xvanilla_garage_07"  prob="0.2" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="oldResidential_Cemetary-Churches">
+			<prefab name="xvanilla_cemetery_01" prob="0.3"/>
+			<prefab name="xvanilla_cemetery_02" prob="0.3"/>
+			<prefab name="xvanilla_church_graveyard1"  prob="0.3" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="armyCamps">
+			<prefab name="xvanilla_army_camp_01" prob="0.3" />
+			<prefab name="xvanilla_army_camp_02" prob="0.3" />
+			<prefab name="xvanilla_army_camp_03" prob="0.3" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="barns">
+			<prefab name="xvanilla_barn_01" prob="0.3" />
+			<prefab name="xvanilla_barn_02" prob="0.3" />
+			<prefab name="xvanilla_barn_03" prob="0.3" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="crop_Feilds">
+			<prefab name="xvanilla_cornfield_sm" prob="0.2" />
+			<prefab name="xvanilla_cornfield_med" prob="0.2" />
+			<prefab name="xvanilla_blueberryfield_sm" prob="0.2" />
+			<prefab name="xvanilla_potatofield_sm" prob="0.2" />
+			<prefab name="xcostum_strange_cornfield(by_magoli)" prob="0.15"/>			
+		</prefab_rule>
+		
+
+		<prefab_rule name="Cabins">
+			<prefab name="xvanilla_cabin_01" max_count="1" />
+			<prefab name="xvanilla_cabin_02" max_count="1" />
+			<prefab name="xvanilla_cabin_03" max_count="1" />
+			<prefab name="xvanilla_cabin_04" max_count="1" />
+			<prefab name="xvanilla_cabin_05" max_count="1" />
+			<prefab name="xvanilla_cabin_06" max_count="1" />
+			<prefab name="xvanilla_cabin_07" max_count="1" />
+			<prefab name="xvanilla_cabin_08" max_count="1" />
+			<prefab name="xvanilla_cabin_09" max_count="1" />
+			<prefab name="xvanilla_cabin_10" max_count="1" />
+			<prefab name="xvanilla_cabin_11" max_count="1" />
+			<prefab name="xvanilla_cabin_12" max_count="1" />
+			<prefab name="xvanilla_cabin_13" max_count="1" />
+			<prefab name="xvanilla_cabin_14" max_count="1" />
+			<prefab name="xvanilla_cabin_15" max_count="1" />			
+		</prefab_rule>
+
+
+		<prefab_rule name="Caves">
+			<prefab name="xvanilla_cave_01" max_count="1" />
+			<prefab name="xvanilla_cave_02" max_count="1" />
+			<prefab name="xvanilla_cave_03" max_count="1" />
+			<prefab name="xvanilla_cave_04" max_count="1" />
+			<prefab name="xcostum_Cave1(by_NAGGcommunity)" max_count="1" />	
+			<prefab name="xcostum_burialshrine(by_snake0567)" max_count="1" />
+			<prefab name="xvanilla_indian_burial_grounds_01" max_count="1" prob="0.05"/>			
+		</prefab_rule>
+
+
+		
+		<prefab_rule name="waterTowers_Ponds">
+			<prefab name="pond02" max_count="3" prob="0.2" />
+			<prefab name="pond01" max_count="3" prob="0.2" />
+			<prefab name="xvanilla_water_tower_01" max_count="2" prob="0.2" />
+			<prefab name="xvanilla_water_tower_02" max_count="2" prob="0.2" />
+			<prefab name="xvanilla_water_tower_03" max_count="2" prob="0.2" />
+		</prefab_rule>
+			
+		
+		<prefab_rule name="diner_FastfoodGroup">
+			<prefab name="xvanilla_diner_01" prob="0.2" max_count="1" />
+			<prefab name="xvanilla_diner_02" prob="0.2" max_count="1" />
+			<prefab name="xvanilla_diner_03" prob="0.2" max_count="1" />			
+			<prefab name="xvanilla_fastfood_01" prob="0.2" max_count="1" />
+			<prefab name="xvanilla_fastfood_02" prob="0.2" max_count="1" />
+			<prefab name="xvanilla_fastfood_03" prob="0.2" max_count="1" />
+			<prefab name="xvanilla_fastfood_04" prob="0.2" max_count="1" />
+			<prefab name="xcostum_CanucksCoffee(by_Genosis)" prob="0.2" max_count="1" />
+			<prefab name="xcostum_SUBDAY(by_Swolk)" prob="0.2" max_count="1" />			
+			<prefab name="xcostum_TacoBele(by_Swolk)" prob="0.2" max_count="1" />
+		</prefab_rule>
+
+
+		<prefab_rule name="gas_Station_Group">
+			<prefab name="xvanilla_gas_station1" max_count="1" />
+			<prefab name="xvanilla_gas_station2" max_count="1" />
+			<prefab name="xvanilla_gas_station3" max_count="1" />
+			<prefab name="xvanilla_gas_station4" max_count="1" />
+			<prefab name="xvanilla_gas_station5" max_count="1" />
+			<prefab name="xvanilla_gas_station6" max_count="1" />
+			<prefab name="xvanilla_gas_station7" max_count="1" />
+			<prefab name="xcostum_GasnWash32(by_LuckyStar)" max_count="1" />
+			<prefab name="xcostum_GasStation(by_Warsaken)" max_count="1" />
+			<prefab name="xcostum_Tank_Garage(by_LuckyStar)" max_count="1" />			
+		</prefab_rule>
+
+		
+		<prefab_rule name="storeGroup">
+			<prefab name="xvanilla_store_gun_lg_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_hardware_lg_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_book_lg_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_grocery_lg_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_bank_lg_01" max_count="1" porb="0.2"/>
+			<prefab name="xvanilla_store_laundry_01" max_count="1" prob="0.1" />
+			<prefab name="xvanilla_store_salon" max_count="1" prob="0.1" />
+			<prefab name="xvanilla_store_gun_sm_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_book_sm_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_autoparts_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_hardware_sm_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_grocery_sm_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_store_pharmacy_sm_01" max_count="1" prob="0.2" />
+			<prefab name="xvanilla_store_pawn_01" max_count="1" prob="0.15" />
+			<prefab name="xvanilla_warehouse_01" max_count="1" prob="0.1" />	
+			<prefab name="xcostum_7EndStore(by_Jackelmyer)" max_count="1" prob="0.2" />			
+			<prefab name="xcostum_Walcart(by_Swolk)" max_count="1" prob="0.2" />			
+		</prefab_rule>
+
+
+		<prefab_rule name="SurvivorSites">
+			<prefab name="xvanilla_survivor_site_01" max_count="1" />
+			<prefab name="xvanilla_survivor_site_02" max_count="1" />
+			<prefab name="xvanilla_survivor_site_03" max_count="1" />
+			<prefab name="xvanilla_survivor_site_04" max_count="1" />
+			<prefab name="xvanilla_survivor_site_05" max_count="1" />
+			<prefab name="xvanilla_survivor_site_06" max_count="1" />
+			<prefab name="xvanilla_survivor_site_07" max_count="1" />
+			<prefab name="xvanilla_survivor_site_08" max_count="1" />
+		</prefab_rule>
+
+	
+		<prefab_rule name="industrial_Bldgs">
+			<prefab name="xvanilla_installation_red_mesa" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_sawmill_01_snow" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_utility_waterworks_01" max_count="1" prob="0.25"/>
+			<prefab name="xvanilla_utility_electric_co_01" max_count="1" prob="0.25"/>
+			<prefab name="xvanilla_utility_refinery_01" max_count="1" prob="0.25"/>
+			<prefab name="xvanilla_factory_lg_01" max_count="1" prob="0.3"/>
+			<prefab name="xvanilla_factory_lg_02" max_count="1" prob="0.3"/>
+			<prefab name="xvanilla_settlement_01" max_count="1" prob="0.25" />
+			<prefab name="xvanilla_hospital_01" max_count="1" prob="0.25" />
+			<prefab name="xcostum_InsaneAsylum(by_Genosis)" max_count="1" prob="0.25" />
+			<prefab name="xcostum_Nuka_Factory(by_bdubyah)" max_count="1" prob="0.25" />
+			<prefab name="xcostum_Glass_factory_big(by_Khyber)" max_count="1" prob="0.25" />			
+		</prefab_rule>
+
+		
+		<prefab_rule name="industrial_MpWasteBldgs">
+			<prefab name="xvanilla_mp_waste_bldg_01_white" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_03_white" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_04_white" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_01_red" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_02_red" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_03_red" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_mp_waste_bldg_04_red" max_count="1" prob="0.19"/>
+			<prefab name="xvanilla_mp_waste_bldg_01_tan" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_mp_waste_bldg_02_tan" max_count="1" prob="0.21"/>
+			<prefab name="xvanilla_mp_waste_bldg_03_tan" max_count="1" prob="0.22"/>
+			<prefab name="xvanilla_mp_waste_bldg_04_tan" max_count="1" prob="0.23"/>
+			<prefab name="xvanilla_mp_waste_bldg_04_grey" max_count="1" prob="0.24"/>
+			<prefab name="xvanilla_mp_waste_bldg_05_grey" max_count="1" prob="0.25"/>
+			<prefab name="xvanilla_mp_waste_bldg_06_grey" max_count="1" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="industrial_RubbleBldgs">
+			<prefab name="waste_rubble_bldg_01" max_count="1" prob="0.18"/>
+			<prefab name="waste_rubble_bldg_02" max_count="1" prob="0.19"/>
+			<prefab name="waste_rubble_bldg_03" max_count="1" prob="0.2"/>
+			<prefab name="waste_rubble_bldg_04" max_count="1" prob="0.21"/>
+			<prefab name="waste_rubble_bldg_05" max_count="1" prob="0.22"/>
+			<prefab name="waste_rubble_bldg_06" max_count="1" prob="0.23"/>
+			<prefab name="waste_rubble_bldg_07" max_count="1" prob="0.24"/>
+			<prefab name="waste_rubble_bldg_08" max_count="1" prob="0.25"/>
+			<prefab name="waste_rubble_bldg_09" max_count="1" />
+		</prefab_rule>
+
+		
+		<prefab_rule name="industrial_JunkyardsLots">
+			<prefab name="xvanilla_vacant_lot_01" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_vacant_lot_02" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_vacant_lot_03" max_count="1" prob="0.18"/>
+			<prefab name="xvanilla_vacant_lot_04" max_count="1" prob="0.18"/>
+			<prefab name="mp_waste_sewer_hole_1" max_count="1" prob="0.1"/>
+			<prefab name="xvanilla_utility_celltower_02" max_count="1" prob="0.19"/>
+			<prefab name="xvanilla_utility_celltower_01" max_count="1" prob="0.2"/>
+			<prefab name="xvanilla_army_barracks_01" max_count="1" prob="0.25"/>
+			<prefab name="xvanilla_junkyard_lg_01" max_count="1" prob="0.3"/>
+			<prefab name="xvanilla_junkyard_med_01" max_count="1" />
+		</prefab_rule>
+
+
+     </prefab_rules>
+  
+  
+  
+  
+  <hub_layouts></hub_layouts>
+  
+  
+  <terrain_generators>
+    <terrain_generator name="vanilla4k" base_height="0" water_level="45">
+      <module name="Noise From Stamp Node19434" type="TerrainStamper">
+        <property name="stampNames" value="biomes01_1024.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="2" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="90" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="80" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="Random" />
+        <property name="upscalingType" value="Lerp" />
+      </module>
+      <module name="Noise From Stamp Node19436" type="TerrainStamper">
+        <property name="stampNames" value="desert_ground01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="0" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="Lerp" />
+      </module>
+      <module name="Noise From Stamp Node19438" type="TerrainStamper">
+        <property name="stampNames" value="plateau01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19440" type="TerrainStamper">
+        <property name="stampNames" value="plateau02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19396" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19438" />
+        <property name="sourceModule2" value="Noise From Stamp Node19440" />
+      </module>
+      <module name="Noise From Stamp Node19442" type="TerrainStamper">
+        <property name="stampNames" value="plateau03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="2" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19444" type="TerrainStamper">
+        <property name="stampNames" value="plateau04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19398" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19442" />
+        <property name="sourceModule2" value="Noise From Stamp Node19444" />
+      </module>
+      <module name="Larger Output Modifier Node19400" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19396" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19398" />
+      </module>
+      <module name="Larger Output Modifier Node19402" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19436" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19400" />
+      </module>
+      <module name="Noise From Stamp Node19446" type="TerrainStamper">
+        <property name="stampNames" value="plateau05.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19448" type="TerrainStamper">
+        <property name="stampNames" value="plateau06.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="3" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19406" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19446" />
+        <property name="sourceModule2" value="Noise From Stamp Node19448" />
+      </module>
+      <module name="Larger Output Modifier Node19404" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19402" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19406" />
+      </module>
+      <module name="Scale Bias Modifier Node19510" type="ScaleBiasOutput">
+        <property name="sourceModule" value="Larger Output Modifier Node19404" />
+        <property name="scale" value="1.05" />
+        <property name="bias" value="0" />
+      </module>
+      <module name="Noise From Stamp Node19426" type="TerrainStamper">
+        <property name="stampNames" value="outcrop01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19410" type="TerrainStamper">
+        <property name="stampNames" value="outcrop02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="7" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19386" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19426" />
+        <property name="sourceModule2" value="Noise From Stamp Node19410" />
+      </module>
+      <module name="Noise From Stamp Node19414" type="TerrainStamper">
+        <property name="stampNames" value="outcrop03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="8" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19428" type="TerrainStamper">
+        <property name="stampNames" value="outcrop04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="9" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19378" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19414" />
+        <property name="sourceModule2" value="Noise From Stamp Node19428" />
+      </module>
+      <module name="Noise From Stamp Node19432" type="TerrainStamper">
+        <property name="stampNames" value="outcrop05.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="10" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19392" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19378" />
+        <property name="sourceModule2" value="Noise From Stamp Node19432" />
+      </module>
+      <module name="Larger Output Modifier Node19394" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19386" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19392" />
+      </module>
+      <module name="Noise From Stamp Node19420" type="TerrainStamper">
+        <property name="stampNames" value="ground01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="0" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19430" type="TerrainStamper">
+        <property name="stampNames" value="hills01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19422" type="TerrainStamper">
+        <property name="stampNames" value="hills02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19382" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19430" />
+        <property name="sourceModule2" value="Noise From Stamp Node19422" />
+      </module>
+      <module name="Noise From Stamp Node19424" type="TerrainStamper">
+        <property name="stampNames" value="hills03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="2" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19416" type="TerrainStamper">
+        <property name="stampNames" value="hills04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19388" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19424" />
+        <property name="sourceModule2" value="Noise From Stamp Node19416" />
+      </module>
+      <module name="Larger Output Modifier Node19390" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19382" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19388" />
+      </module>
+      <module name="Larger Output Modifier Node19384" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19420" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19390" />
+      </module>
+      <module name="Larger Output Modifier Node19380" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19394" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19384" />
+      </module>
+      <module name="Blend Modifier Node19374" type="Blend">
+        <property name="controlModule" value="Noise From Stamp Node19434" />
+        <property name="sourceModule1" value="Scale Bias Modifier Node19510" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19380" />
+        <property name="lowerBound" value="0" />
+        <property name="upperBound" value="0.1" />
+        <property name="smoothStep" value="False" />
+      </module>
+      <module name="Noise From Stamp Node19412" type="TerrainStamper">
+        <property name="stampNames" value="outcrop03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="2" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="90" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Scale Bias Modifier Node19508" type="ScaleBiasOutput">
+        <property name="sourceModule" value="Noise From Stamp Node19412" />
+        <property name="scale" value="12" />
+        <property name="bias" value="0" />
+      </module>
+      <module name="Clamp Modifier Node19376" type="ClampOutput">
+        <property name="sourceModule" value="Scale Bias Modifier Node19508" />
+        <property name="bounds" value="0,1" />
+      </module>
+      <module name="Multiply Modifier Node19408" type="Multiply">
+        <property name="sourceModule1" value="Blend Modifier Node19374" />
+        <property name="sourceModule2" value="Clamp Modifier Node19376" />
+      </module>
+      <output module="Multiply Modifier Node19408" />
+    </terrain_generator>
+    <terrain_generator name="vanilla8k" base_height="0" water_level="43">
+      <module name="Noise From Stamp Node19278" type="TerrainStamper">
+        <property name="stampNames" value="biomes01_1024.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="1" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="90" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="80" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="Random" />
+        <property name="upscalingType" value="Lerp" />
+      </module>
+      <module name="Noise From Stamp Node19298" type="TerrainStamper">
+        <property name="stampNames" value="desert_ground01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="0" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="Lerp" />
+      </module>
+      <module name="Noise From Stamp Node19300" type="TerrainStamper">
+        <property name="stampNames" value="plateau01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19302" type="TerrainStamper">
+        <property name="stampNames" value="plateau02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19258" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19300" />
+        <property name="sourceModule2" value="Noise From Stamp Node19302" />
+      </module>
+      <module name="Noise From Stamp Node19274" type="TerrainStamper">
+        <property name="stampNames" value="plateau03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="2" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19290" type="TerrainStamper">
+        <property name="stampNames" value="plateau04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19256" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19274" />
+        <property name="sourceModule2" value="Noise From Stamp Node19290" />
+      </module>
+      <module name="Larger Output Modifier Node19254" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19258" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19256" />
+      </module>
+      <module name="Larger Output Modifier Node19252" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19298" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19254" />
+      </module>
+      <module name="Noise From Stamp Node19292" type="TerrainStamper">
+        <property name="stampNames" value="plateau05.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19294" type="TerrainStamper">
+        <property name="stampNames" value="plateau06.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="3" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19260" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19292" />
+        <property name="sourceModule2" value="Noise From Stamp Node19294" />
+      </module>
+      <module name="Larger Output Modifier Node19244" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19252" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19260" />
+      </module>
+      <module name="Scale Bias Modifier Node19364" type="ScaleBiasOutput">
+        <property name="sourceModule" value="Larger Output Modifier Node19244" />
+        <property name="scale" value="1.05" />
+        <property name="bias" value="0" />
+      </module>
+      <module name="Noise From Stamp Node19276" type="TerrainStamper">
+        <property name="stampNames" value="outcrop01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="6" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19268" type="TerrainStamper">
+        <property name="stampNames" value="outcrop02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="7" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19246" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19276" />
+        <property name="sourceModule2" value="Noise From Stamp Node19268" />
+      </module>
+      <module name="Noise From Stamp Node19282" type="TerrainStamper">
+        <property name="stampNames" value="outcrop03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="8" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19272" type="TerrainStamper">
+        <property name="stampNames" value="outcrop04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="9" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19240" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19282" />
+        <property name="sourceModule2" value="Noise From Stamp Node19272" />
+      </module>
+      <module name="Noise From Stamp Node19284" type="TerrainStamper">
+        <property name="stampNames" value="outcrop05.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.5" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.75" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="10" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19234" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19240" />
+        <property name="sourceModule2" value="Noise From Stamp Node19284" />
+      </module>
+      <module name="Larger Output Modifier Node19238" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19246" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19234" />
+      </module>
+      <module name="Noise From Stamp Node19266" type="TerrainStamper">
+        <property name="stampNames" value="ground01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="0" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19270" type="TerrainStamper">
+        <property name="stampNames" value="hills01.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19288" type="TerrainStamper">
+        <property name="stampNames" value="hills02.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19242" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19270" />
+        <property name="sourceModule2" value="Noise From Stamp Node19288" />
+      </module>
+      <module name="Noise From Stamp Node19264" type="TerrainStamper">
+        <property name="stampNames" value="hills03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="2" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Noise From Stamp Node19286" type="TerrainStamper">
+        <property name="stampNames" value="hills04.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="4" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="0" />
+        <property name="scaleMin" value="0.25" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="0.9" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="-1,-1" />
+        <property name="offsetMax" value="1,1" />
+        <property name="seedAdditive" value="0" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Larger Output Modifier Node19232" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19264" />
+        <property name="sourceModule2" value="Noise From Stamp Node19286" />
+      </module>
+      <module name="Larger Output Modifier Node19248" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19242" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19232" />
+      </module>
+      <module name="Larger Output Modifier Node19236" type="LargerOutput">
+        <property name="sourceModule1" value="Noise From Stamp Node19266" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19248" />
+      </module>
+      <module name="Larger Output Modifier Node19250" type="LargerOutput">
+        <property name="sourceModule1" value="Larger Output Modifier Node19238" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19236" />
+      </module>
+      <module name="Blend Modifier Node19228" type="Blend">
+        <property name="controlModule" value="Noise From Stamp Node19278" />
+        <property name="sourceModule1" value="Scale Bias Modifier Node19364" />
+        <property name="sourceModule2" value="Larger Output Modifier Node19250" />
+        <property name="lowerBound" value="0" />
+        <property name="upperBound" value="0.1" />
+        <property name="smoothStep" value="False" />
+      </module>
+      <module name="Noise From Stamp Node19280" type="TerrainStamper">
+        <property name="stampNames" value="outcrop03.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="1" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="90" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="1" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="No" />
+        <property name="yflip" value="No" />
+        <property name="upscalingType" value="None" />
+      </module>
+      <module name="Scale Bias Modifier Node19362" type="ScaleBiasOutput">
+        <property name="sourceModule" value="Noise From Stamp Node19280" />
+        <property name="scale" value="12" />
+        <property name="bias" value="0" />
+      </module>
+      <module name="Clamp Modifier Node19230" type="ClampOutput">
+        <property name="sourceModule" value="Scale Bias Modifier Node19362" />
+        <property name="bounds" value="0,1" />
+      </module>
+      <module name="Multiply Modifier Node19262" type="Multiply">
+        <property name="sourceModule1" value="Blend Modifier Node19228" />
+        <property name="sourceModule2" value="Clamp Modifier Node19230" />
+      </module>
+      <output module="Multiply Modifier Node19262" />
+    </terrain_generator>
+  </terrain_generators>
+  
+  
+    
+  
+  
+  
+  <biome_generators>
+    <biome_generator name="vanilla4k">
+      <module name="Noise From Stamp Node19418" type="TerrainStamper">
+		   <property name="stampNames" value="biomes01_1024.raw" />
+		   <property name="blendMode" value="Max" />
+		   <property name="frequency" value="2" />
+		   <property name="rotationMin" value="0" />
+		   <property name="rotationMax" value="360" />
+		   <property name="rotationStepAmount" value="90" />
+		   <property name="scaleMin" value="1" />
+		   <property name="scaleMax" value="1" />
+		   <property name="minHeightMultiplier" value="1" />
+		   <property name="maxHeightMultiplier" value="1" />
+		   <property name="offsetMin" value="0,0" />
+		   <property name="offsetMax" value="0,0" />
+		   <property name="seedAdditive" value="3" />
+		   <property name="blurRadius" value="0" />
+		   <property name="xflip" value="Random" />
+		   <property name="yflip" value="Random" />
+		   <property name="upscalingType" value="Closest" />
+		</module>
+		<module name="Biome Mapper Node19372" type="BiomeIDMapper">
+		   <property name="sourceModule" value="Noise From Stamp Node19418" />
+		   <property name="biomemap0.BiomeName" value="Snow" />
+		   <property name="biomemap0.ID" value="1" />
+		   <property name="biomemap0.Range" value="0.9,2" />
+		   <property name="biomemap1.BiomeName" value="PineForest" />
+		   <property name="biomemap1.ID" value="3" />
+		   <property name="biomemap1.Range" value="0.4,0.9" />
+		   <property name="biomemap2.BiomeName" value="BurntForest" />
+		   <property name="biomemap2.ID" value="9" />
+		   <property name="biomemap2.Range" value="0.2,0.4" />
+		   <property name="biomemap3.BiomeName" value="Wasteland" />
+		   <property name="biomemap3.ID" value="8" />
+		   <property name="biomemap3.Range" value="0.1,0.2" />
+		   <property name="biomemap4.BiomeName" value="Desert" />
+		   <property name="biomemap4.ID" value="5" />
+		   <property name="biomemap4.Range" value="0,0.1" />
+		</module>
+		<output module="Biome Mapper Node19372" />
+	</biome_generator>
+    <biome_generator name="vanilla8k">
+      <module name="Noise From Stamp Node19296" type="TerrainStamper">
+        <property name="stampNames" value="biomes01_1024.raw" />
+        <property name="blendMode" value="Max" />
+        <property name="frequency" value="1" />
+        <property name="rotationMin" value="0" />
+        <property name="rotationMax" value="360" />
+        <property name="rotationStepAmount" value="90" />
+        <property name="scaleMin" value="1" />
+        <property name="scaleMax" value="1" />
+        <property name="minHeightMultiplier" value="1" />
+        <property name="maxHeightMultiplier" value="1" />
+        <property name="offsetMin" value="0,0" />
+        <property name="offsetMax" value="0,0" />
+        <property name="seedAdditive" value="3" />
+        <property name="blurRadius" value="0" />
+        <property name="xflip" value="Random" />
+        <property name="yflip" value="Random" />
+        <property name="upscalingType" value="Closest" />
+      </module>
+      <module name="Biome Mapper Node19226" type="BiomeIDMapper">
+        <property name="sourceModule" value="Noise From Stamp Node19296" />
+        <property name="biomemap0.BiomeName" value="Snow" />
+        <property name="biomemap0.ID" value="1" />
+        <property name="biomemap0.Range" value="0.9,2" />
+        <property name="biomemap1.BiomeName" value="PineForest" />
+        <property name="biomemap1.ID" value="3" />
+        <property name="biomemap1.Range" value="0.4,0.9" />
+        <property name="biomemap2.BiomeName" value="BurntForest" />
+        <property name="biomemap2.ID" value="9" />
+        <property name="biomemap2.Range" value="0.2,0.4" />
+        <property name="biomemap3.BiomeName" value="Wasteland" />
+        <property name="biomemap3.ID" value="8" />
+        <property name="biomemap3.Range" value="0.1,0.2" />
+        <property name="biomemap4.BiomeName" value="Desert" />
+        <property name="biomemap4.ID" value="5" />
+        <property name="biomemap4.Range" value="0,0.1" />
+      </module>
+      <output module="Biome Mapper Node19226" />
+    </biome_generator>
+  </biome_generators>
+  <!--
+	GENERATOR MODULE TYPES
+	    AbsoluteOutput
+        Add
+        BiasOutput
+        Blend
+        ClampOutput
+        CurveOutput
+        DisplaceInput
+        ExponentialOutput
+        InvertInput
+        InvertOutput
+        LargerOutput
+        Multiply
+        Power
+        RotateInput
+        ScaleBiasOutput
+        ScaleInput
+        ScaleOutput
+        Select
+        SmallerOutput
+        Terrace
+        TranslateInput
+        Billow
+        Checkerboard
+        Constant
+        FastBillow
+        FastNoise
+        FastNoiseBasis
+        FastRidgedMultifractal
+        FastTurbulence
+        GradientNoiseBasis
+        RidgedMultifractal
+        Turbulence
+        Voronoi
+
+-->
+</append>
+
+</configs>

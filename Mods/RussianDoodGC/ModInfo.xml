@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="RussianDood's Grass Cutter" />
+		<Description value="Adds a grass cutter into the game for fast cutting of grass"/>
+		<Author value="RussianDood" />
+		<Version value="1.0" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

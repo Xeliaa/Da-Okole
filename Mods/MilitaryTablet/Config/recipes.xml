@@ -1,0 +1,23 @@
+<configs>
+	
+		<append xpath="/recipes">	
+
+
+<recipe name="Tablet" count="1" craft_area="workbench" craft_time="5">
+	<ingredient name="resourceElectricParts" count="25"/>
+<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="8"/>
+</recipe>
+
+<recipe name="Smartphone" count="1" craft_area="workbench" craft_time="5">
+	<ingredient name="resourceElectricParts" count="15"/>
+<ingredient name="resourceForgedIron" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+</recipe>
+
+
+
+
+
+		</append>
+</configs>

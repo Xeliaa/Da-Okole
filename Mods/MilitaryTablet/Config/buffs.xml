@@ -1,0 +1,283 @@
+<configs>
+
+
+
+<append xpath="/buffs/buff[@name='buffStatusCheck01']">
+<effect_group>
+	<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/tablet.unity3d?CameraOtherPlayer" arent_transform="Hips"/> -->
+<triggered_effect trigger="onSelfEnteredGame" action="ModifyCVar" target="self" cvar="$PhoneStatus" operation="set" value="1"/>
+</effect_group>
+<effect_group>
+<requirement name="IsLocalPlayer"/>
+<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="InVehicle"> 
+<requirement name="!IsFPV"/>
+</triggered_effect>
+<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="self" buff="InVehicle"> 
+<requirement name="IsFPV"/>
+</triggered_effect>
+		</effect_group>
+ </append>
+
+<append xpath="/buffs">	
+							<buff name="TabletMarkers">
+		<stack_type value="replace"/>
+			<update_rate value="2"/>
+		<duration value="0"/>
+		<effect_group>
+		<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="Marker" target_tags="zombie,npc,player,animal,vehicle"/>
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="selfAOE" range="50" buff="MarkerAllies" target_tags="ally"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" target="selfAOE" range="50" buff="MarkerAllies" target_tags="ally" invert_tag_check="true"/> -->
+
+			</effect_group>
+	</buff>
+	
+	
+		
+							<buff name="InVehicle">
+		<stack_type value="ignore"/>
+		<duration value="0"/>
+		<effect_group>
+			</effect_group>
+	</buff>
+
+		 <buff name="Marker">
+		<damage_type value="electrical"/>
+		<stack_type value="ignore"/>
+			<update_rate value="1"/>
+		<duration value="0"/>
+		<effect_group name="Marquage">
+<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?EnemyMarker" parent_transform="Origin"> -->.
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?EnemyMarker" parent_transform="Origin">
+                     <requirement name="EntityTagCompare" tags="zombie"/>
+					  <requirement name="!EntityTagCompare" tags="dog,bear,crawl"/>
+					  <requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+								<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?EnemyAltMarker"  local_offset="0,0,0" parent_transform="Origin">
+                     <requirement name="EntityTagCompare" tags="zombie"/>
+					  <requirement name="EntityTagCompare" tags="dog"/>
+					  <requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+												<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?EnemyAltMarker"  local_offset="0,0,0" parent_transform="Origin">
+                     <requirement name="EntityTagCompare" tags="crawl"/>
+					  <requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?EnemyAltMarker"  local_offset="0,0,0" parent_transform="Graphics">
+                     <requirement name="EntityTagCompare" tags="bear"/>
+					  <requirement name="IsAlive" target="self"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/tablet.unity3d?AnimalMarker" local_offset="0,0,0" parent_transform="Graphics"  local_rotation="0,0,0">
+					  <requirement name="EntityTagCompare" tags="animal"/>
+					  <requirement name="!EntityTagCompare" tags="bear,dog,vulture"/>
+					   <requirement name="IsAlive" target="self"/>
+				</triggered_effect>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="#@modfolder:Resources/tablet.unity3d?TraderMarker" local_offset="0,0,0" parent_transform="Position"  local_rotation="0,0,90">
+					  <requirement name="EntityTagCompare" tags="npc"/>
+					   <requirement name="IsAlive" target="self"/>
+				</triggered_effect>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?AllyMarker"  local_offset="0,0,0" parent_transform="Position"  local_rotation="0,0,90">
+					  <requirement name="EntityTagCompare" tags="player"/>
+					  <requirement name="!IsLocalPlayer"/>
+					  <requirement name="NotHasBuff" buff="InVehicle"/>
+					   <requirement name="IsAlive" target="self"/>
+				</triggered_effect>			
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?JeepMarker"  local_offset="0,0,0" parent_transform="Origin"  local_rotation="0,0,0"> -->
+					  <!-- <requirement name="EntityTagCompare" tags="jeep"/> -->
+				<!-- </triggered_effect>		 -->
+				
+								<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?MotorcycleMarker"  local_offset="0,0,0" parent_transform="Origin"  local_rotation="0,0,90"> -->
+					  <!-- <requirement name="EntityTagCompare" tags="motorcycle"/> -->
+				<!-- </triggered_effect>		 -->
+				
+				<!-- <effect_group> -->
+					<!-- <requirement name="!IsLocalPlayer"/> -->
+					 <!-- <requirement name="EntityTagCompare" target_tags="ally,party" invert_tag_check="true"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" target="self" prefab="/AllyMarker"/>	 -->
+			<!-- </effect_group> -->
+			</effect_group>
+								<effect_group name="Cleanup on death">
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Position" target="self" prefab="/AllyMarker"/>	
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Graphics" target="self" prefab="/EnemyAltMarker"/>	
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Origin" target="self" prefab="/EnemyAltMarker"/>					
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Position" target="self" prefab="/TraderMarker"/>	
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Graphics" target="self" prefab="/AnimalMarker"/>	
+				<triggered_effect trigger="onSelfDied" action="RemovePrefabFromEntity" parent_transform="Origin" target="self" prefab="/EnemyMarker"/>	
+			</effect_group>
+			
+					<effect_group>
+		<requirement name="HasBuff" buff="InVehicle"/>
+		 <requirement name="EntityTagCompare" tags="player"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" target="self" prefab="/AllyMarker"/>	
+			</effect_group>
+	</buff>
+
+		 <!-- <buff name="MarkerAllies"> -->
+		<!-- <damage_type value="electrical"/> -->
+		<!-- <stack_type value="ignore"/> -->
+			<!-- <update_rate value="1"/> -->
+		<!-- <duration value="0"/> -->
+		<!-- <effect_group> -->
+		<!-- <requirement name="!IsLocalPlayer"/> -->
+		<!-- <requirement name="NotHasBuff" buff="InVehicle"/> -->
+		<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" target="self" prefab="/PVPMarker"/>	 -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" target="self" prefab="#@modfolder:Resources/tablet.unity3d?AllyMarker"  local_offset="0,0,0" parent_transform="Position"  local_rotation="0,0,90"/>	 -->
+				
+			<!-- </effect_group> -->
+				<!-- <effect_group> -->
+		<!-- <requirement name="HasBuff" buff="InVehicle"/> -->
+				<!-- <triggered_effect trigger="onSelfBuffUpdate" action="RemovePrefabFromEntity" target="self" prefab="/AllyMarker"/>	 -->
+			<!-- </effect_group> -->
+	<!-- </buff>	 -->
+	
+							<buff name="TabletSwap">
+		<stack_type value="replace"/>
+			<update_rate value=".01"/>
+		<duration value="0.1"/>
+		<effect_group>
+				<requirement name="IsLocalPlayer"/>
+				<requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam2"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenMap" transform_path="Screenm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Screenc"/>
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletScreenTemp" operation="set" value="1">
+		<requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="2"/>
+		</triggered_effect>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletScreenTemp" operation="set" value="2">
+		<requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletScreen" operation="set" value="@$TabletScreenTemp"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="ScreenMap" transform_path="Screenm">
+                 <requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+		</triggered_effect>			
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOut" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$TabletScreenTemp" operation="Equals" value="1"/>
+		</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam2" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedIn" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$TabletScreenTemp" operation="Equals" value="2"/>
+		</triggered_effect>
+		<!-- <triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="Cam" transform_path="Camera"/> -->
+                 <!-- <requirement name="CVarCompare" cvar="$TabletScreenTemp" operation="Equals" value="3"/> -->
+		<!-- </triggered_effect> -->
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam2" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam3" active="true"/>
+			</effect_group>
+	</buff>
+	
+								<buff name="TabletCam">
+		<stack_type value="replace"/>
+			<update_rate value=".01"/>
+		<duration value="0.1"/>
+		<effect_group>
+				<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenMap" transform_path="Screenm"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Screenc"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam2"/>
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletCamTemp" operation="set" value="1">
+		<requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="2"/>
+		</triggered_effect>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletCamTemp" operation="set" value="2">
+		<requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+		</triggered_effect>
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$TabletCam" operation="set" value="@$TabletCamTemp"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOut" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="1"/>
+				 <requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+		</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam2" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedIn" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$TabletScreen" operation="Equals" value="2"/>
+				  <requirement name="CVarCompare" cvar="$TabletCam" operation="Equals" value="1"/>
+		</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="Cam" transform_path="Camera">
+                 <requirement name="CVarCompare" cvar="$TabletCamTemp" operation="Equals" value="2"/>
+		</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="ScreenCam" transform_path="Screenc">
+                 <requirement name="CVarCompare" cvar="$TabletCamTemp" operation="Equals" value="2"/>
+		</triggered_effect>		
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="ScreenMap" transform_path="Screenm">
+                 <requirement name="CVarCompare" cvar="$TabletCamTemp" operation="Equals" value="1"/>
+		</triggered_effect>					
+		
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam2" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam3" active="true"/>
+		<!-- <triggered_effect trigger="onSelfSecondaryActionStart" action="SetTransformActive" active="false" parent_transform="Cam" transform_path="Camera"/> -->
+			</effect_group>
+	</buff>
+	
+	
+							<buff name="SmartphoneSwap">
+		<stack_type value="replace"/>
+			<update_rate value=".01"/>
+		<duration value="0.1"/>
+		<effect_group>
+				<requirement name="IsLocalPlayer"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam2"/>
+		<triggered_effect trigger="onSelfBuffStart" action="RemovePart" part="Cam3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenMap" transform_path="Screenm"/>
+			
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneScreenTemp" operation="set" value="1">
+		<requirement name="CVarCompare" cvar="$SmartphoneScreen" operation="Equals" value="2"/>
+		</triggered_effect>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneScreenTemp" operation="set" value="2">
+		<requirement name="CVarCompare" cvar="$SmartphoneScreen" operation="Equals" value="1"/>
+		</triggered_effect>
+		
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneScreen" operation="set" value="@$SmartphoneScreenTemp"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="ScreenMap" transform_path="Screenm">
+		</triggered_effect>			
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOutSmartphone" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$SmartphoneScreenTemp" operation="Equals" value="1"/>
+		</triggered_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam2" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedInSmartphone" parentTransform="" localPos="0,0,0" localRot="0,0,0">
+                 <requirement name="CVarCompare" cvar="$SmartphoneScreenTemp" operation="Equals" value="2"/>
+		</triggered_effect>
+		<!-- <triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="Cam" transform_path="Camera"/> -->
+                 <!-- <requirement name="CVarCompare" cvar="$SmartphoneScreenTemp" operation="Equals" value="3"/> -->
+		<!-- </triggered_effect> -->
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam2" active="true"/>
+		<triggered_effect trigger="onSelfBuffStart" action="SetPartActive" part="Cam3" active="true"/>
+			</effect_group>
+	</buff>
+	
+								<buff name="SmartphoneCam">
+		<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+		<duration value="0.2"/>
+		<effect_group>
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneCamTemp" operation="set" value="1">
+		<requirement name="CVarCompare" cvar="$SmartphoneCam" operation="Equals" value="2"/>
+		</triggered_effect>
+					<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneCamTemp" operation="set" value="2">
+		<requirement name="CVarCompare" cvar="$SmartphoneCam" operation="Equals" value="1"/>
+		</triggered_effect>
+							<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" target="self" cvar="$SmartphoneCam" operation="set" value="@$SmartphoneCamTemp"/>
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedOutSmartphone" parentTransform="" localPos="0,0,0" localRot="0,0,0"> -->
+                 <!-- <requirement name="CVarCompare" cvar="$SmartphoneScreen" operation="Equals" value="1"/> -->
+				 <!-- <requirement name="CVarCompare" cvar="$SmartphoneCam" operation="Equals" value="1"/> -->
+		<!-- </triggered_effect> -->
+				<!-- <triggered_effect trigger="onSelfBuffStart" action="AddPart" part="Cam2" prefab="#@modfolder:Resources/tablet.unity3d?CameraZoomedInSmartphone" parentTransform="" localPos="0,0,0" localRot="0,0,0"> -->
+                 <!-- <requirement name="CVarCompare" cvar="$SmartphoneScreen" operation="Equals" value="2"/> -->
+				  <!-- <requirement name="CVarCompare" cvar="$SmartphoneCam" operation="Equals" value="1"/> -->
+		<!-- </triggered_effect> -->
+				<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false" parent_transform="ScreenCam" transform_path="Flashlight">
+                 <requirement name="CVarCompare" cvar="$SmartphoneCamTemp" operation="Equals" value="1"/>
+		</triggered_effect>				
+		
+						<triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="true" parent_transform="ScreenCam" transform_path="Flashlight">
+                 <requirement name="CVarCompare" cvar="$SmartphoneCamTemp" operation="Equals" value="2"/>
+		</triggered_effect>				
+			</effect_group>
+	</buff>
+	
+	
+	
+		</append>
+</configs>

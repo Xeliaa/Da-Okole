@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Military Tablet" />
+		<Description value="Adds an high-tech tablet and a smartphone that can tracks player zombs and see through wall with a camera" />
+		<Author value="Moong oignonchaud" />
+		<Version value="2" />
+		<Website value="" />
+	</ModInfo>
+</xml>

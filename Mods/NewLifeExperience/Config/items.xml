@@ -1958,7 +1958,7 @@
 </item>
 
 <item name="automaticwrench">
-	<property name="Tags" value="blunt,melee,light,tool,perkStayDown,perkSalvageOperations"/>
+	<property name="Tags" value="blunt,melee,light,tool,attPerception,perkStayDown,perkSalvageOperations,canHaveCosmetic"/>
 	<property name="DisplayType" value="meleeRepairTool"/>
 	<property name="CustomIcon" value="automaticwrench" />
 	<property name="HoldType" value="29"/>

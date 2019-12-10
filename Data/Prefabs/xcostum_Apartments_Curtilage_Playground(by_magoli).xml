@@ -1,74 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <prefab>
-  <property name="CopyAirBlocks" value="False" />
-  <property name="AllowTopSoilDecorations" value="True" />
-  <property name="TraderArea" value="False" />
-  <property name="ExcludeDistantPOIMesh" value="False" />
-  <property name="ExcludePOICulling" value="False" />
-  <property name="QuestTags" value="clear,fetch,hidden_cache" />
-  <property name="DifficultyTier" value="4" />
-  <property name="Zoning" value="Downtown,Industrial,ResidentialNew,ResidentialOld,Residential" />
-  <property name="RotationToFaceNorth" value="0" />
-  <property name="YOffset" value="-1" />
-  <property name="DistantPOIYOffset" value="0" />
-  <property name="StaticSpawner.Size" value="32,2,32" />
-  <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland" />
-  <property name="AllowedTownships" value="city,rural,town" />
-  <property name="EditorGroups" value="Wilderness" />
-  <property name="SleeperVolumeStart" value="2, 1, 2#2, 7, 2#2, 12, 2#2, 17, 2#2, 22, 2" />
-  <property name="SleeperVolumeSize" value="41, 5, 41#41, 3, 41#41, 3, 41#41, 3, 41#41, 6, 41" />
-  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,7,8,S_-Group_Generic_Zombie,6,7,S_-_Group_Abandoned_House,6,7,S_Zom_Utility_Worker,5,6,S_-_Group_Biker_Bar,9,10" />
-  <property name="SleeperVolumeGameStageAdjust" value=",,,," />
-  <property name="SleeperIsLootVolume" value="False,False,False,False,False" />
-  <property name="SleeperIsBossVolume" value="False,False,False,False,False" />
-  <property name="SleeperVolumeGroupId" value="0,0,0,0,0" />
-  <property name="SleeperVolumeFlags" value="0,0,0,0,0" />
-  <property class="Stats">
-    <property name="TotalVertices" value="837766" />
-    <property name="TotalTriangles" value="772322" />
-    <property class="BlockEntities">
-      <property name="Vertices" value="424121" />
-      <property name="Triangles" value="483757" />
-    </property>
-    <property class="ChunkMeshes0">
-      <property name="Vertices" value="201660" />
-      <property name="Triangles" value="108584" />
-    </property>
-    <property class="ChunkMeshes1">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes2">
-      <property name="Vertices" value="8368" />
-      <property name="Triangles" value="4272" />
-    </property>
-    <property class="ChunkMeshes3">
-      <property name="Vertices" value="1588" />
-      <property name="Triangles" value="794" />
-    </property>
-    <property class="ChunkMeshes4">
-      <property name="Vertices" value="195985" />
-      <property name="Triangles" value="165671" />
-    </property>
-    <property class="ChunkMeshes5">
-      <property name="Vertices" value="112" />
-      <property name="Triangles" value="56" />
-    </property>
-    <property class="ChunkMeshes6">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes7">
-      <property name="Vertices" value="5476" />
-      <property name="Triangles" value="8756" />
-    </property>
-    <property class="ChunkMeshes8">
-      <property name="Vertices" value="456" />
-      <property name="Triangles" value="432" />
-    </property>
-    <property class="ChunkMeshes9">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-  </property>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="QuestTags" value="clear,fetch,hidden_cache"/>
+    <property name="DifficultyTier" value="4"/>
+    <property name="Zoning" value="Downtown,Industrial,ResidentialNew,ResidentialOld,Residential"/>
+    <property name="RotationToFaceNorth" value="0"/>
+    <property name="YOffset" value="-1"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="StaticSpawner.Size" value="32, 2, 32"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
+    <property name="EditorGroups" value="Wilderness"/>
+    <property name="SleeperVolumeStart" value="2, 1, 2#2, 7, 2#2, 12, 2#2, 17, 2#2, 22, 2"/>
+    <property name="SleeperVolumeSize" value="41, 5, 41#41, 3, 41#41, 3, 41#41, 3, 41#41, 6, 41"/>
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,7,8,S_-Group_Generic_Zombie,6,7,S_-_Group_Abandoned_House,6,7,S_Zom_Utility_Worker,5,6,S_-_Group_Biker_Bar,9,10"/>
+    <property name="SleeperVolumeGameStageAdjust" value=",,,,"/>
+    <property name="SleeperIsLootVolume" value="False,False,False,False,False"/>
+    <property name="SleeperIsBossVolume" value="False,False,False,False,False"/>
+    <property name="SleeperVolumeFlags" value="0,0,0,0,0"/>
+    <property name="SleeperVolumeGroupId" value="0,0,0,0,0"/>
 </prefab>

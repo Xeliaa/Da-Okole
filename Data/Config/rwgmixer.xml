@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="utf-8"?>   <!-- COMPOPACK 40 for Alpha 18.1 (built 4) 29.10.2019 -->
+<?xml version="1.0" encoding="utf-8"?>   <!-- COMPOPACK 42 for Alpha 18.2 (built 5) 2019-11-28 -->
 
 <rwgmixer>
 
-  <world ruleset="COMPOPACK_40" />
+  <world ruleset="COMPOPACK_41" />
   
   <rulesets>
     <ruleset name="vanillaSmall" terrain_generator="vanilla4k" biome_generator="vanilla4k">
@@ -484,7 +484,6 @@
 			<prefab name="xcostum_Trailerhousemix04" max_count="1" />
 			<prefab name="xcostum_DriveIn(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_Storage(by_ShoNuff)" max_count="1" />
-			<prefab name="xcostum_RestArea_Desert(by_Guppycur)" max_count="1" />
 			<prefab name="xcostum_Wooden_Palisade(by_LuckyStar)" max_count="1" />
 			<prefab name="xcostum_ZombieZoo(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_RaceTrack(by_Guppycur)" max_count="1" />
@@ -540,7 +539,15 @@
 			<prefab rule="oldResidential_Garages" max_count="2" />
 			<prefab rule="oldResidential_Cemetary-Churches" max_count="1" />
 			<prefab rule="oldResidential_Trailers" max_count="4" />
-			<prefab rule="oldResidential_Bldgs" max_count="10" />			
+			<prefab rule="oldResidential_Bldgs" max_count="10" />	
+			<prefab name="xcostum_Coronado_barn_lg(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_cornfield_crash(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_cornfield_missle_silo(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_farm_lake(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_farmedField(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_farmSheds(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_Coronado_shamway_plant(by_Slaan)" max_count="1" />
+			<prefab name="xcostum_simplehouse(by_hernan)" max_count="1" />
 		</prefab_rule>
 
 
@@ -662,7 +669,7 @@
 			<prefab name="xcostum_Plant(by_Wsiegel)" max_count="1" />
 			<prefab name="xcostum_Windowfactory(by_magoli)" max_count="1" />			
 			<prefab name="xcostum_AmityvilleHorrorHouse(by_Swolk)" max_count="1" />
-			<prefab name="xcostum_DriveIn(by_NAGG_DaphyDuck91)" max_count="1" />
+			<prefab name="xcostum_DriveIn(by_NAGG_Genosis)" max_count="1" />
 
 			<prefab rule="residentialNew_Bldgs" max_count="8"/>
 			<prefab rule="residentialNew_Schools" max_count="1"/>
@@ -742,6 +749,7 @@
 			<prefab name="settlement_trader_02" max_count="1" min_repeat_distance="500" />
 			<prefab name="settlement_trader_01" max_count="1" min_repeat_distance="500" />
 			<prefab name="xcostum_Lost_Joels(pseudo-trader)(by_DMC)" max_count="1" min_repeat_distance="500" />			
+			<prefab name="xcostum_Multi_Trader_02(by_War3zuk)" max_count="1" min_repeat_distance="500" />
 	
 			<prefab rule="W_POIs_common" prob="0.6"/>
 			<prefab rule="W_POIs_rare" prob="0.4"/>
@@ -795,6 +803,10 @@
 			<prefab name="xcostum_powerplant(byKam)" max_count="1" prob="0.2" />
 			<prefab name="xcostum_spanish_mission(by_The_Cure)" max_count="1" prob="0.2" />	
 			<prefab name="xcostum_QuietPinesSpecial(by_hernan)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_airport_rundown(by_gt)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_airport1(by_ouch)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_airport2(by_ouch)" max_count="1" prob="0.2" />
+			<prefab name="xcostum_Canyon_Cave(by_War3zuk)" max_count="1" prob="0.2" />
 		</prefab_rule>		
 		
 	

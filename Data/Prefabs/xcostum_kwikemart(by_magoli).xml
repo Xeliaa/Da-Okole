@@ -1,74 +1,26 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <prefab>
-  <property name="CopyAirBlocks" value="False" />
-  <property name="AllowTopSoilDecorations" value="True" />
-  <property name="TraderArea" value="False" />
-  <property name="ExcludeDistantPOIMesh" value="False" />
-  <property name="ExcludePOICulling" value="False" />
-  <property name="QuestTags" value="clear,fetch,hidden_cache" />
-  <property name="DifficultyTier" value="1" />
-  <property name="Zoning" value="Commercial,ResidentialNew,ResidentialOld,Residential" />
-  <property name="RotationToFaceNorth" value="2" />
-  <property name="YOffset" value="-5" />
-  <property name="DistantPOIYOffset" value="0" />
-  <property name="StaticSpawner.Size" value="32,2,32" />
-  <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland" />
-  <property name="AllowedTownships" value="city,rural,town" />
-  <property name="EditorGroups" value="Wilderness" />
-  <property name="SleeperVolumeStart" value="8, 5, 13" />
-  <property name="SleeperVolumeSize" value="20, 3, 17" />
-  <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,1,2" />
-  <property name="SleeperVolumeGameStageAdjust" value="" />
-  <property name="SleeperIsLootVolume" value="False" />
-  <property name="SleeperIsBossVolume" value="False" />
-  <property name="SleeperVolumeGroupId" value="0" />
-  <property name="SleeperVolumeFlags" value="0" />
-  <property class="Stats">
-    <property name="TotalVertices" value="138501" />
-    <property name="TotalTriangles" value="131182" />
-    <property class="BlockEntities">
-      <property name="Vertices" value="90827" />
-      <property name="Triangles" value="95837" />
-    </property>
-    <property class="ChunkMeshes0">
-      <property name="Vertices" value="12916" />
-      <property name="Triangles" value="6698" />
-    </property>
-    <property class="ChunkMeshes1">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes2">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes3">
-      <property name="Vertices" value="464" />
-      <property name="Triangles" value="232" />
-    </property>
-    <property class="ChunkMeshes4">
-      <property name="Vertices" value="29914" />
-      <property name="Triangles" value="21711" />
-    </property>
-    <property class="ChunkMeshes5">
-      <property name="Vertices" value="208" />
-      <property name="Triangles" value="104" />
-    </property>
-    <property class="ChunkMeshes6">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes7">
-      <property name="Vertices" value="4172" />
-      <property name="Triangles" value="6600" />
-    </property>
-    <property class="ChunkMeshes8">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-    <property class="ChunkMeshes9">
-      <property name="Vertices" value="0" />
-      <property name="Triangles" value="0" />
-    </property>
-  </property>
+    <property name="CopyAirBlocks" value="False"/>
+    <property name="AllowTopSoilDecorations" value="True"/>
+    <property name="TraderArea" value="False"/>
+    <property name="ExcludeDistantPOIMesh" value="False"/>
+    <property name="ExcludePOICulling" value="False"/>
+    <property name="QuestTags" value="clear,fetch,hidden_cache"/>
+    <property name="DifficultyTier" value="1"/>
+    <property name="Zoning" value="Commercial,ResidentialNew,ResidentialOld,Residential"/>
+    <property name="RotationToFaceNorth" value="2"/>
+    <property name="YOffset" value="-5"/>
+    <property name="DistantPOIYOffset" value="0"/>
+    <property name="StaticSpawner.Size" value="32, 2, 32"/>
+    <property name="AllowedBiomes" value="burnt_forest,snow,plains,pine_forest,forest,desert,wasteland"/>
+    <property name="AllowedTownships" value="city,rural,town"/>
+    <property name="EditorGroups" value="Wilderness"/>
+    <property name="SleeperVolumeStart" value="8, 5, 13"/>
+    <property name="SleeperVolumeSize" value="20, 3, 17"/>
+    <property name="SleeperVolumeGroup" value="S_-Group_Generic_Zombie,1,2"/>
+    <property name="SleeperVolumeGameStageAdjust" value=""/>
+    <property name="SleeperIsLootVolume" value="False"/>
+    <property name="SleeperIsBossVolume" value="False"/>
+    <property name="SleeperVolumeFlags" value="0"/>
+    <property name="SleeperVolumeGroupId" value="0"/>
 </prefab>
